@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <div class="article-header">
+      <div class="article-title">{{ .Title | plainify }}</div>
+      <time class="article-date">{{ .Date.Format "2006-01-02" }}</time>
+  </div>
+  <div id="article" class="article-body">
+    {{ .Content }}
+  </div>
+{{ end }}

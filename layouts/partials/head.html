@@ -1,0 +1,16 @@
+{{ define "title" }}
+  {{ $title := .Title }}
+  {{ if not (eq $title .Site.Title) }}
+    <title>{{ $title | safeHTML }} &ndash; {{ .Site.Title | safeHTML }}</title>
+  {{ else }}
+    <title>{{ .Site.Title | safeHTML }}</title>
+  {{ end }}  
+{{ end }}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- block "title" . }}{{- end }}
+
+<link rel="stylesheet" href="{{ `css/layout.css` | relURL }}">
+<link rel="stylesheet" href="{{ `css/syntax.css` | relURL }}">

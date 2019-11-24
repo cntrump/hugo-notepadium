@@ -1,0 +1,49 @@
+{{ define "main" }}
+  {{ $paginator := .Paginator }}
+  {{ range $paginator.Pages }}
+    <a class="home-card" href="{{ .RelPermalink }}">
+      <div class="home-card-content">
+        <div class="home-card-content-title">{{ .Title | safeHTML }}</div>
+        <time class="home-card-content-date">{{ .Date.Format "2006-01-02" }}</time>
+        <div class="home-card-content-body">{{ .Plain | safeHTML | truncate 140 }}</div>
+        {{ if .Params.img }}
+          <figure>
+            {{ $imgurl := lower .Params.img }}
+            {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
+            {{ $imgurl = path.Join .RelPermalink .Params.img }}
+            {{ end }}
+            <img width=100% src="{{ $imgurl | relURL }}">
+          </figure>
+        {{ end }}
+      </div>
+    </a>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <ul class="pagination">
+      {{ if $paginator.HasPrev }}
+        <li>
+          <a href="{{ $paginator.Prev.URL }}" class="previous_page">&laquo;</a>
+        </li>
+      {{ end }}
+
+      {{ range $paginator.Pagers }}
+        {{ $pageNumber := .PageNumber }}
+        {{ $active := "" }}
+        {{ if eq . $paginator }}
+          {{ $active = "active" }}
+        {{ end }}
+          <li>
+            <a class="{{ $active }}" href="{{ .URL }}">{{ $pageNumber }}</a>
+          </li>
+        {{ end }}
+
+        {{ if $paginator.HasNext }}
+          <li>
+            <a href="{{ $paginator.Next.URL }}" class="next_page">&raquo;</a>
+          </li>
+        {{ end }}
+    </ul>
+  {{ end }}
+
+{{ end }}

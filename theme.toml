@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "hugo-notepadium"
+license = "MIT"
+licenselink = "https://github.com/cntrump/hugo-notepadium/blob/master/LICENSE"
+description = "a very simple gohugo theme, html + css, 100% javascript free."
+homepage = "https://lvv.me/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "lvv"
+  homepage = "https://lvv.me"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
