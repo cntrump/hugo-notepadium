@@ -33,6 +33,18 @@ pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 ```
 
+If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
+
+```toml
+# pygmentsUseClasses = true
+# pygmentsCodeFences = true
+# pygmentsCodeFencesGuessSyntax = true
+
+[params]
+  [params.syntax]
+    use = "hljs"  # 1. prismjs 2. hljs
+```
+
 custom your `404 page`:
 
 add `/* /404.html 404` to your `content/_redirects`

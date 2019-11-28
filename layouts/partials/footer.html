@@ -4,3 +4,31 @@
     {{ end }}
     <div>Built <a href="https://github.com/cntrump/hugo-notepadium">hugo-notepadium</a>. 100% JavaScript-free.</div>
 </div>
+
+{{ $syntaxJSUse := .Site.Params.syntax.use }}
+
+{{ $syntaxCSS := .Site.Params.syntax.css }}
+{{ if not $syntaxCSS }}
+  {{ if eq $syntaxJSUse "hljs" }}
+    {{ $syntaxCSS = "css/hljs.css" }}
+  {{ else if eq $syntaxJSUse "prismjs" }}
+    {{ $syntaxCSS = "css/prism.css" }}
+  {{ end }}
+{{ end }}
+
+{{ $syntaxJS := .Site.Params.syntax.js }}
+{{ if not $syntaxJS }}
+  {{ if eq $syntaxJSUse "hljs" }}
+    {{ $syntaxJS = "js/hljs.js" }}
+  {{ else if eq $syntaxJSUse "prismjs" }}
+    {{ $syntaxJS = "js/prism.js" }}
+  {{ end }}
+{{ end }}
+
+{{ with $syntaxJSUse }}
+  <link rel="stylesheet" href="{{ $syntaxCSS | relURL }}">
+  <script src="{{ $syntaxJS | relURL }}"></script>
+  {{ if eq $syntaxJSUse "hljs" }}
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{ end }}
+{{ end }}
