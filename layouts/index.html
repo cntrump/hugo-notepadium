@@ -20,30 +20,32 @@
   {{ end }}
 
   {{ if gt $paginator.TotalPages 1 }}
-    <ul class="pagination">
-      {{ if $paginator.HasPrev }}
-        <li>
-          <a href="{{ $paginator.Prev.URL }}" class="previous_page">&laquo;</a>
-        </li>
-      {{ end }}
-
-      {{ range $paginator.Pagers }}
-        {{ $pageNumber := .PageNumber }}
-        {{ $active := "" }}
-        {{ if eq . $paginator }}
-          {{ $active = "active" }}
-        {{ end }}
+    <div class="pagination">
+      <ul>
+        {{ if $paginator.HasPrev }}
           <li>
-            <a class="{{ $active }}" href="{{ .URL }}">{{ $pageNumber }}</a>
+            <a href="{{ $paginator.Prev.URL }}" class="previous_page">&laquo;</a>
           </li>
         {{ end }}
 
-        {{ if $paginator.HasNext }}
-          <li>
-            <a href="{{ $paginator.Next.URL }}" class="next_page">&raquo;</a>
-          </li>
-        {{ end }}
-    </ul>
+        {{ range $paginator.Pagers }}
+          {{ $pageNumber := .PageNumber }}
+          {{ $active := "" }}
+          {{ if eq . $paginator }}
+            {{ $active = "active" }}
+          {{ end }}
+            <li>
+              <a class="{{ $active }}" href="{{ .URL }}">{{ $pageNumber }}</a>
+            </li>
+          {{ end }}
+
+          {{ if $paginator.HasNext }}
+            <li>
+              <a href="{{ $paginator.Next.URL }}" class="next_page">&raquo;</a>
+            </li>
+          {{ end }}
+      </ul>
+    </div>
   {{ end }}
 
 {{ end }}
