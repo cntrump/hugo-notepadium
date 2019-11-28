@@ -3,6 +3,7 @@
 a fast [gohugo](https://gohugo.io) theme, HTML + CSS, 100% JavaScript-free.
 
 - built-in `syntanx highlight`
+- `MathJax` support
 - custom `404 page`
 
 ![](https://lvv.me/posts/2019-11-24_a_simple_hugo_theme/01.png)
@@ -62,6 +63,20 @@ If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 [params]
   [params.syntax]
     use = "hljs"  # 1. prismjs 2. hljs
+```
+
+enable `MathJax` support
+
+```toml
+[params.MathJax]
+    enable = true
+```
+
+Usage
+
+```
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 ```
 
 custom your `404 page`:
