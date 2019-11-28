@@ -28,6 +28,14 @@ copyright = "Copyright &copy;2019 lvv. All rights reserved."
 hasCJKLanguage = true
 enableRobotsTXT = true
 paginate = 5
+
+# Hugo v0.60+ new configuration
+[markup]
+  [markup.highlight]
+    codeFences = true
+    noClasses = false
+
+# old Hugo version
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
@@ -36,10 +44,21 @@ pygmentsCodeFencesGuessSyntax = true
 If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 
 ```toml
+
+# Disable Hugo bultin syntax highlight
+
+# Hugo v0.60+ new configuration
+[markup]
+  [markup.highlight]
+    codeFences = false
+    noClasses = false
+
+# old Hugo version
 # pygmentsUseClasses = true
 # pygmentsCodeFences = true
 # pygmentsCodeFencesGuessSyntax = true
 
+# enable JS highlight
 [params]
   [params.syntax]
     use = "hljs"  # 1. prismjs 2. hljs
