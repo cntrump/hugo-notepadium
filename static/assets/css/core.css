@@ -55,22 +55,8 @@ ol li { list-style-type: decimal; }
 blockquote {
     display: block;
     font-size: 14px;
-    padding: 0 8px;
-    color: #6a737d;
-    border-left: 4px solid #dfe2e5;
-
-    margin-block-start: 8px;
-    margin-block-end: 8px;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-
-    -webkit-margin-before: 8px;
-    -webkit-margin-after: 8px;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
+    margin: 0;
 }
-
-blockquote > p { margin: 0; }
 
 img { max-width: 100%; }
 
@@ -268,16 +254,22 @@ del { opacity: 0.5; }
     line-height: 1.8;
 }
 
+.markdown-body>:first-child { margin-top: 0!important; }
 .markdown-body>:last-child { margin-bottom: 0!important; }
 
 .markdown-body time { color: #969696; }
 
-.markdown-body p,
-.markdown-body pre,
-.markdown-body table { margin: 0 0 20px 0; }
-
-.markdown-body ol,
-.markdown-body ul { margin: 0 8px 20px 8px; }
+.markdown-body blockquote, 
+.markdown-body details, 
+.markdown-body dl, 
+.markdown-body ol, 
+.markdown-body p, 
+.markdown-body pre, 
+.markdown-body table, 
+.markdown-body ul { 
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
 .markdown-body h1,
 .markdown-body h2,
@@ -302,6 +294,14 @@ del { opacity: 0.5; }
     border: 0;
     margin: 0;
 }
+
+.markdown-body blockquote {
+    padding: 0 16px;
+    color: #6a737d;
+    border-left: 4px solid #dfe2e5;
+}
+.markdown-body blockquote>:first-child { margin-top: 0; }
+.markdown-body blockquote>:last-child { margin-bottom: 0; }
 
 .markdown-body .highlight {
     display: block;
