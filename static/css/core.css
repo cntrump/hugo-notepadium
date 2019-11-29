@@ -1,4 +1,7 @@
-:root { color-scheme: light; }
+:root { 
+    color-scheme: light only;
+    supported-color-schemes: light only;
+}
 
 * { box-sizing: border-box; }
 
