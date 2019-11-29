@@ -1,8 +1,16 @@
 <div id="footer" class="footer max-body-width text-gray">
     {{ if .Site.Copyright }}
-        <div> {{ .Site.Copyright | safeHTML }}</div>
+      <div>
+        <span>{{ .Site.Copyright | safeHTML }}</span>
+      </div>
     {{ end }}
-    <div>Built <a href="https://gohugo.io">Hugo {{ hugo.Version }}</a> with <a href="https://github.com/cntrump/hugo-notepadium">hugo-notepadium.</a>100% JavaScript-free.</div>
+    <div>
+      <span>Built</span>
+      <a href="https://gohugo.io">Hugo {{ hugo.Version }}</a>
+      <span>with</span>
+      <a href="https://github.com/cntrump/hugo-notepadium">hugo-notepadium.</a>
+      <span>100% JavaScript-free.</span>
+    </div>
 </div>
 
 {{ with .Site.Params.MathJax.enable }}
