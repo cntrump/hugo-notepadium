@@ -272,7 +272,8 @@ del { opacity: 0.5; }
 .markdown-body time { color: #969696; }
 
 .markdown-body p,
-.markdown-body pre { margin: 0 0 20px 0; }
+.markdown-body pre,
+.markdown-body table { margin: 0 0 20px 0; }
 
 .markdown-body ol,
 .markdown-body ul { margin: 0 8px 20px 8px; }
