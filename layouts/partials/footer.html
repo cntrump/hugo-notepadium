@@ -2,7 +2,7 @@
     {{ if .Site.Copyright }}
         <div> {{ .Site.Copyright | safeHTML }}</div>
     {{ end }}
-    <div>Built <a href="https://github.com/cntrump/hugo-notepadium">hugo-notepadium</a>. 100% JavaScript-free.</div>
+    <div>Built <a href="https://gohugo.io">Hugo {{ hugo.Version }}</a> with <a href="https://github.com/cntrump/hugo-notepadium">hugo-notepadium.</a>100% JavaScript-free.</div>
 </div>
 
 {{ with .Site.Params.MathJax.enable }}
