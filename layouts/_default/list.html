@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="markdown-body">
+    <div class="article-header">
+        <h1>{{ .Title | htmlEscape | safeHTML }}</h1>
+    </div>
+    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+    {{.Content}}
+    <div>
+        <!-- Ranges through content/posts/*.md -->
+        {{ range .Pages }}
+            <a class="home-card" href="{{ .RelPermalink }}">
+                <div class="home-card-content">
+                    <div class="home-card-content-title">{{ .Title | htmlEscape | safeHTML }}</div>
+                    
+                    {{ if eq .Kind "page" }}
+                        <time class="home-card-content-date">{{ .Date.Format "2006-01-02" }}</time>
+                        
+                        {{ range .Params.tags }}
+                            <span class="article-tag">{{ . }}</span>
+                        {{ end }}
+                        
+                        <div class="home-card-content-body">{{ .Plain | safeHTML | truncate 140 }}</div>
+
+                        {{ if .Params.img }}
+                            <figure>
+                                {{ $imgurl := lower .Params.img }}
+                                {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
+                                    {{ $imgurl = path.Join .RelPermalink .Params.img }}
+                                {{ end }}
+                                <img width=100% src="{{ $imgurl | relURL }}">
+                            </figure>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </a>
+        {{ end }}
+    </div>
+</article>
+{{ end }}
+

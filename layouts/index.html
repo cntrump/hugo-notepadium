@@ -11,8 +11,11 @@
   {{ range $paginator.Pages }}
     <a class="home-card" href="{{ .RelPermalink }}">
       <div class="home-card-content">
-        <div class="home-card-content-title">{{ .Title | safeHTML }}</div>
+        <div class="home-card-content-title">{{ .Title | htmlEscape | safeHTML }}</div>
         <time class="home-card-content-date">{{ .Date.Format "2006-01-02" }}</time>
+        {{ range .Params.tags }}
+          <span class="article-tag">{{ . }}</span>
+        {{ end }}
         <div class="home-card-content-body">{{ .Plain | safeHTML | truncate 140 }}</div>
         {{ if .Params.img }}
           <figure>
