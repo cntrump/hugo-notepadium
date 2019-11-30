@@ -193,11 +193,11 @@ del { opacity: 0.5; }
     color: #333;
 }
 .home-card-content-date {
-    font-size: 12px;
+    font-size: 13px;
     color: #b4b4b4;
 }
 .home-card-content-body {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
     color: #999;
 }
@@ -212,15 +212,17 @@ del { opacity: 0.5; }
 }
 
 .article-tag {
-    font-size: 12px;
+    font-size: 85%;
     color: #fff;
     background: #f7671d;
-    padding: 3px 4px;
+    padding: 2px 3px;
     border-radius: 3px;
-    cursor:pointer;
 }
-.article-tag:hover {
+.article-tag:hover,
+.article-tag:focus,
+.article-tag:active {
     background: #ffc09f;
+    text-decoration: none;
 }
 
 .pagination {

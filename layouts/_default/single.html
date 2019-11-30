@@ -2,10 +2,11 @@
   <div class="article-header">
       <h1>{{ .Title | htmlEscape | safeHTML }}</h1>
       <div>
-        <time class="article-date">{{ .Date.Format "2006-01-02" }}</time>
-        {{ range .Params.tags }}
-          <a class="article-tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
+        <span class="article-date"><time>{{ .Date.Format "2006-01-02" }}</time>
+          {{ range .Params.tags }}
+            <a class="article-tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </span>
       </div>
   </div>
   <article class="markdown-body">
