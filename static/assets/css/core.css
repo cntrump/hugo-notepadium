@@ -227,6 +227,22 @@ del { opacity: 0.5; }
     text-decoration: none;
 }
 
+.article-label {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 2px 3px 2px 0;
+    white-space: nowrap;
+    color: #28a745;
+    border: 1px solid rgba(27,31,35,.15);
+    border-radius: 3px;
+}
+.article-label:hover,
+.article-label:focus,
+.article-label:active {
+    background: #def;
+    text-decoration: none;
+}
+
 .pagination {
     display: block;
     text-align: center;

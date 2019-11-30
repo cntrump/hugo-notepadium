@@ -3,8 +3,11 @@
       <h1>{{ .Title | htmlEscape | safeHTML }}</h1>
       <div>
         <div class="article-date"><time>{{ .Date.Format "2006-01-02" }}</time>
+          {{ range .Params.categories }}
+            <a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
           {{ range .Params.tags }}
-            <a class="article-tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+            <a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
           {{ end }}
         </div>
       </div>

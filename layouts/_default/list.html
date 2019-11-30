@@ -14,6 +14,9 @@
                     
                     {{ if eq .Kind "page" }}
                       <div class="home-card-content-date"><time>{{ .Date.Format "2006-01-02" }}</time>
+                        {{ range .Params.categories }}
+                            <span class="article-label">{{ . }}</span>
+                        {{ end }}
                         {{ range .Params.tags }}
                             <span class="article-tag">{{ . }}</span>
                         {{ end }}
