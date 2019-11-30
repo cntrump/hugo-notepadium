@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="article-header">
-      <div class="article-title">{{ .Title | plainify }}</div>
+      <h1>{{ .Title | plainify }}</h1>
       <time class="article-date">{{ .Date.Format "2006-01-02" }}</time>
   </div>
   <article class="markdown-body">
