@@ -214,14 +214,14 @@ del { opacity: 0.5; }
 .article-tag {
     font-size: 85%;
     color: #fff;
-    background: #f7671d;
+    background: rgb(5,139,0);
     padding: 2px 3px;
     border-radius: 3px;
 }
 .article-tag:hover,
 .article-tag:focus,
 .article-tag:active {
-    background: #ffc09f;
+    background: rgba(5,139,0,.5);
     text-decoration: none;
 }
 

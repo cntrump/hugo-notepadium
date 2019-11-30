@@ -13,12 +13,11 @@
                     <div class="home-card-content-title">{{ .Title | htmlEscape | safeHTML }}</div>
                     
                     {{ if eq .Kind "page" }}
-                        <time class="home-card-content-date">{{ .Date.Format "2006-01-02" }}</time>
-                        
+                      <div class="home-card-content-date"><time>{{ .Date.Format "2006-01-02" }}</time>
                         {{ range .Params.tags }}
                             <span class="article-tag">{{ . }}</span>
                         {{ end }}
-                        
+                      </div>
                         <div class="home-card-content-body">{{ .Plain | safeHTML | truncate 140 }}</div>
 
                         {{ if .Params.img }}
