@@ -243,7 +243,7 @@ del { opacity: 0.5; }
 .pagination ul li { display: inline; }
 
 .pagination ul li a {
-    color: #586069;
+    color: #0366d6;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
@@ -254,7 +254,7 @@ del { opacity: 0.5; }
     color: #fff;
 }
 
-.pagination ul li a:hover:not(.active) { background-color: rgba(0, 0, 0, 0.3); }
+.pagination ul li a:hover:not(.active) { background-color: #def; }
 
 .markdown-body {
     display: block;
