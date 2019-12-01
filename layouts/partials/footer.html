@@ -23,18 +23,18 @@
 {{ $syntaxCSS := .Site.Params.syntax.css }}
 {{ if not $syntaxCSS }}
   {{ if eq $syntaxJSUse "hljs" }}
-    {{ $syntaxCSS = "assets/css/hljs.css" }}
+    {{ $syntaxCSS = "/assets/css/hljs.css" }}
   {{ else if eq $syntaxJSUse "prismjs" }}
-    {{ $syntaxCSS = "assets/css/prism.css" }}
+    {{ $syntaxCSS = "/assets/css/prism.css" }}
   {{ end }}
 {{ end }}
 
 {{ $syntaxJS := .Site.Params.syntax.js }}
 {{ if not $syntaxJS }}
   {{ if eq $syntaxJSUse "hljs" }}
-    {{ $syntaxJS = "assets/js/hljs.js" }}
+    {{ $syntaxJS = "/assets/js/hljs.js" }}
   {{ else if eq $syntaxJSUse "prismjs" }}
-    {{ $syntaxJS = "assets/js/prism.js" }}
+    {{ $syntaxJS = "/assets/js/prism.js" }}
   {{ end }}
 {{ end }}
 
