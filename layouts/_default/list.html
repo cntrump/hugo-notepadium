@@ -11,23 +11,29 @@
             <a class="note" href="{{ .RelPermalink }}">
                 <p class="note-title">{{ .Title | htmlEscape | safeHTML }}</p>
                 <p><span>{{ .Date.Format "2006-01-02" }}</span>
-                  {{ range .Params.categories }}
-                    <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
-                  {{ end }}
-                  {{ range .Params.tags }}
-                    <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
-                  {{ end }}
+                {{ range .Params.categories }}
+                <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
+                {{ end }}
+                {{ range .Params.tags }}
+                <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
+                {{ end }}
                 </p>
                 <p class="note-content">{{ .Plain | safeHTML | truncate 140 }}</p>
-                {{ if .Params.img }}
-                  <figure>
-                    {{ $imgurl := lower .Params.img }}
+                {{ $relURL := .RelPermalink }}
+                {{ $imgs := .Params.imgs }}
+                {{ with .Params.imgs }}
+                <figure>
+                    {{ $imgCount := len $imgs }}
+                    {{ range $imgs }}
+                    {{ $imgurl := lower . }}
                     {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
-                    {{ $imgurl = path.Join .RelPermalink .Params.img }}
+                    {{ $imgurl = path.Join $relURL . }}
                     {{ end }}
-                    <img width=100% src="{{ $imgurl | relURL }}">
-                  </figure>
-                {{ end }}
+                    {{ $percent := div 96 $imgCount }}
+                    <img width="{{ cond (gt $percent 25) $percent 24 }}%" src="{{ $imgurl | relURL }}">
+                    {{ end }}
+                    {{ end }}
+                </figure>
             </a>
           </li>
         {{ end }}
