@@ -33,7 +33,7 @@
                 {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
                 {{ $imgurl = path.Join $relURL . }}
                 {{ end }}
-                {{ $percent := cond (gt $imgCount 1) 23 100 }}
+                {{ $percent := cond (gt $imgCount 1) 25 100 }}
                 <img width="{{ $percent }}%" src="{{ $imgurl | relURL }}">
                 {{ end }}
                 {{ end }}
