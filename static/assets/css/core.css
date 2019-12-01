@@ -45,10 +45,6 @@ ol, ul {
     -webkit-padding-start: 18px;
 }
 
-ul li { list-style-type: square; }
-
-ol li { list-style-type: decimal; }
-
 blockquote {
     display: block;
     margin: 0;
@@ -170,36 +166,41 @@ del { opacity: 0.5; }
     padding: 16px;
     border-top: 1px solid #eaecef;
 }
-
-.home-card {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    margin: 0 0 10px 0;
-    box-shadow: 0 1px 6px #e1e4e8;
-    border-radius: 8px;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+.note-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-.home-card:hover,
-.home-card:focus,
-.home-card:active {
-    opacity: 0.5;
+.note-list li {
+    position: relative;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px 2px 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+    word-wrap: break-word;
+}
+.note-list li:last-child {
+    border: 0 !important;
+}
+.note {
+    display: block;
+    font-size: 13px;
+    color: #999;
     text-decoration: none;
 }
-.home-card-content { margin: 10px 15px; }
-.home-card-content-title {
+.note:hover,
+.note:focus,
+.note:active {
+    text-decoration: none;
+}
+
+.note-title {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #24292e;
 }
-.home-card-content-date {
-    font-size: 13px;
-    color: #b4b4b4;
-}
-.home-card-content-body {
-    font-size: 15px;
+.note-content {
     line-height: 24px;
-    color: #999;
 }
 
 .article-header {
@@ -281,8 +282,6 @@ del { opacity: 0.5; }
 
 .markdown-body>:first-child { margin-top: 0!important; }
 .markdown-body>:last-child { margin-bottom: 0!important; }
-
-.markdown-body time { color: #969696; }
 
 .markdown-body blockquote,
 .markdown-body details,

@@ -8,31 +8,34 @@
   {{ $startPage := sub (mul $row $cols) $cols }}
   {{ $endPage := add $startPage $cols }}
 
-  {{ range $paginator.Pages }}
-    <a class="home-card" href="{{ .RelPermalink }}">
-      <div class="home-card-content">
-        <div class="home-card-content-title">{{ .Title | htmlEscape | safeHTML }}</div>
-        <div class="home-card-content-date"><time>{{ .Date.Format "2006-01-02" }}</time>
-          {{ range .Params.categories }}
-            <span class="article-label">{{ . }}</span>
-          {{ end }}
-          {{ range .Params.tags }}
-            <span class="article-tag">{{ . }}</span>
-          {{ end }}
-        </div>
-        <div class="home-card-content-body">{{ .Plain | safeHTML | truncate 140 }}</div>
-        {{ if .Params.img }}
-          <figure>
-            {{ $imgurl := lower .Params.img }}
-            {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
-            {{ $imgurl = path.Join .RelPermalink .Params.img }}
+  
+  <ul class="note-list">
+    {{ range $paginator.Pages }}
+      <li>
+        <a class="note" href="{{ .RelPermalink }}">
+            <p class="note-title">{{ .Title | htmlEscape | safeHTML }}</p>
+            <p><span>{{ .Date.Format "2006-01-02" }}</span>
+              {{ range .Params.categories }}
+                <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
+              {{ end }}
+              {{ range .Params.tags }}
+                <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
+              {{ end }}
+            </p>
+            <p class="note-content">{{ .Plain | safeHTML | truncate 140 }}</p>
+            {{ if .Params.img }}
+              <figure>
+                {{ $imgurl := lower .Params.img }}
+                {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
+                {{ $imgurl = path.Join .RelPermalink .Params.img }}
+                {{ end }}
+                <img width=100% src="{{ $imgurl | relURL }}">
+              </figure>
             {{ end }}
-            <img width=100% src="{{ $imgurl | relURL }}">
-          </figure>
-        {{ end }}
-      </div>
-    </a>
-  {{ end }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
 
   {{ if gt $paginator.TotalPages 1 }}
     <div class="pagination">

@@ -1,16 +1,14 @@
 {{ define "main" }}
   <div class="article-header">
       <h1>{{ .Title | htmlEscape | safeHTML }}</h1>
-      <div>
-        <div class="article-date"><time>{{ .Date.Format "2006-01-02" }}</time>
-          {{ range .Params.categories }}
-            <a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a>
-          {{ end }}
-          {{ range .Params.tags }}
-            <a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
-          {{ end }}
-        </div>
-      </div>
+      <p class="article-date"><span>{{ .Date.Format "2006-01-02" }}</span>
+        {{ range .Params.categories }}
+          <a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+        {{ range .Params.tags }}
+          <a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+      </p>
   </div>
   <article class="markdown-body">
     {{ .Content }}
