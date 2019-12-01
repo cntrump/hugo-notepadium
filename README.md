@@ -62,7 +62,7 @@ If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 # enable JS highlight
 [params]
   [params.syntax]
-    use = "hljs"  # 1. prismjs 2. hljs
+    use = "hljs"  # 1. prismjs 2. hljs 3. none
 ```
 
 enable `MathJax` support

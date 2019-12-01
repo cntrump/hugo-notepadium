@@ -16,3 +16,6 @@
 {{- block "title" . }}{{- end }}
 
 <link rel="stylesheet" href="{{ `assets/css/core.css` | relURL }}">
+{{ if not .Site.Params.syntax.use }}
+<link rel="stylesheet" href="{{ `assets/css/syntax.css` | relURL }}">
+{{ end }}
