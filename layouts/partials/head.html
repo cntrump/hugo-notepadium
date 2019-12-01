@@ -1,3 +1,4 @@
+
 <meta charset="utf-8">
 {{ hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
 
 {{- block "title" . }}{{- end }}
 
-<link rel="stylesheet" href="{{ `assets/css/core.css` | relURL }}">
 {{ if not .Site.Params.syntax.use }}
 <link rel="stylesheet" href="{{ `assets/css/syntax.css` | relURL }}">
 {{ end }}
+<link rel="stylesheet" href="{{ `assets/css/core.css` | relURL }}">
