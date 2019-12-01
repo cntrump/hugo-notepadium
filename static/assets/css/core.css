@@ -330,7 +330,11 @@ del { opacity: 0.5; }
     margin: 0 0 20px 0;
 }
 
-.markdown-body figure>img { margin: 0 }
+.markdown-body figure>img {
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+}
 
 .markdown-body figcaption>h4 {
     color: #586069;
