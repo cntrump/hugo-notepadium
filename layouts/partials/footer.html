@@ -14,8 +14,10 @@
 </div>
 
 {{ with .Site.Params.MathJax.enable }}
+  {{ if eq . true }}
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+  {{ end }}
 {{ end }}
 
 {{ with .Site.Params.syntax.use }}
