@@ -18,30 +18,28 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
 {{ end }}
 
-{{ $syntaxJSUse := .Site.Params.syntax.use }}
-
-{{ $syntaxCSS := .Site.Params.syntax.css }}
-{{ if not $syntaxCSS }}
-  {{ if eq $syntaxJSUse "hljs" }}
-    {{ $syntaxCSS = "/assets/css/hljs.css" }}
-  {{ else if eq $syntaxJSUse "prismjs" }}
-    {{ $syntaxCSS = "/assets/css/prism.css" }}
+{{ with .Site.Params.syntax.use }}
+  {{ $syntaxCSS := "" }}
+  {{ $syntaxJS := "" }}
+  {{ if eq . "hljs" }}
+    {{ $syntaxCSS = "css/hljs.css" }}
+  {{ else if eq . "prismjs" }}
+    {{ $syntaxCSS = "css/prism.css" }}
   {{ end }}
-{{ end }}
 
-{{ $syntaxJS := .Site.Params.syntax.js }}
-{{ if not $syntaxJS }}
-  {{ if eq $syntaxJSUse "hljs" }}
-    {{ $syntaxJS = "/assets/js/hljs.js" }}
-  {{ else if eq $syntaxJSUse "prismjs" }}
-    {{ $syntaxJS = "/assets/js/prism.js" }}
+  {{ if eq . "hljs" }}
+    {{ $syntaxJS = "js/hljs.js" }}
+  {{ else if eq . "prismjs" }}
+    {{ $syntaxJS = "js/prism.js" }}
   {{ end }}
-{{ end }}
 
-{{ with $syntaxJSUse }}
-  <link rel="stylesheet" href="{{ $syntaxCSS | relURL }}">
-  <script src="{{ $syntaxJS | relURL }}"></script>
-  {{ if eq $syntaxJSUse "hljs" }}
-  <script>hljs.initHighlightingOnLoad();</script>
+  {{ if and (ne $syntaxCSS "") (ne $syntaxJS "") }}
+    {{ $css := resources.Get $syntaxCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $js := resources.Get $syntaxJS | resources.Minify | resources.Fingerprint "sha512" }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{ if eq . "hljs" }}
+    <script>hljs.initHighlightingOnLoad();</script>
+    {{ end }}
   {{ end }}
 {{ end }}

@@ -17,6 +17,8 @@
 {{- block "title" . }}{{- end }}
 
 {{ if not .Site.Params.syntax.use }}
-<link rel="stylesheet" href="/assets/css/syntax.css">
+{{ $css := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
-<link rel="stylesheet" href="/assets/css/core.css">
+{{ $css := resources.Get "css/core.css" | resources.Minify | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
