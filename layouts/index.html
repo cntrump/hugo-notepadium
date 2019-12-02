@@ -1,13 +1,5 @@
 {{ define "main" }}
-{{ $paginator := .Paginator }}
-{{ $pageIndex := $paginator.PageNumber }}
-{{ $totalPages := $paginator.TotalPages }}
-{{ $cols := 5.0 }}
-{{ $rows := math.Ceil (div $totalPages $cols) }}
-{{ $row := math.Ceil (div $pageIndex $cols) }}
-{{ $startPage := sub (mul $row $cols) $cols }}
-{{ $endPage := add $startPage $cols }}
-
+{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 
 <ul class="note-list">
     {{ range $paginator.Pages }}
@@ -44,6 +36,15 @@
 </ul>
 
 {{ if gt $paginator.TotalPages 1 }}
+
+{{ $pageIndex := $paginator.PageNumber }}
+{{ $totalPages := $paginator.TotalPages }}
+{{ $cols := 5.0 }}
+{{ $rows := math.Ceil (div $totalPages $cols) }}
+{{ $row := math.Ceil (div $pageIndex $cols) }}
+{{ $startPage := sub (mul $row $cols) $cols }}
+{{ $endPage := add $startPage $cols }}
+
 <div class="pagination">
     <ul>
         {{ if gt $row 1 }}
