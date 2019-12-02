@@ -78,9 +78,3 @@ Usage
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 ```
-
-custom your `404 page`:
-
-add `/* /404.html 404` to your `content/_redirects`
-
-if `_redirects` not exists, you can create a new one.
