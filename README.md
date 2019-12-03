@@ -31,10 +31,9 @@ enableRobotsTXT = true
 paginate = 5
 
 # Hugo v0.60+ new configuration
-[markup]
-  [markup.highlight]
-    codeFences = true
-    noClasses = false
+[markup.highlight]
+  codeFences = true
+  noClasses = false
 
 # old Hugo version
 pygmentsUseClasses = true
@@ -49,10 +48,9 @@ If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 # Disable Hugo bultin syntax highlight
 
 # Hugo v0.60+ new configuration
-[markup]
-  [markup.highlight]
-    codeFences = false
-    noClasses = false
+[markup.highlight]
+  codeFences = false
+  noClasses = false
 
 # old Hugo version
 # pygmentsUseClasses = true
@@ -60,9 +58,8 @@ If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 # pygmentsCodeFencesGuessSyntax = true
 
 # enable JS highlight
-[params]
-  [params.syntax]
-    use = "hljs"  # 1. prismjs 2. hljs 3. none
+[params.syntax]
+  use = "hljs"  # 1. prismjs 2. hljs 3. none
 ```
 
 enable `MathJax` support
