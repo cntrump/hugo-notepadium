@@ -3,16 +3,14 @@
   {{ if not $copyright }}
     {{ $copyright = .Site.Title }}
   {{ end }}
-  <div>
-    <span>{{ $copyright | safeHTML }}</span>
-  </div>
-  <div>
+  <p><span>{{ $copyright | safeHTML }}</span></p>
+  <p>
     <span>Built</span>
     <a href="https://gohugo.io">Hugo {{ hugo.Version }}</a>
     <span>with</span>
     <a href="https://github.com/cntrump/hugo-notepadium">hugo-notepadium.</a>
     <span>100% JavaScript-free.</span>
-  </div>
+  </p>
 </div>
 
 {{ with .Site.Params.MathJax.enable }}
