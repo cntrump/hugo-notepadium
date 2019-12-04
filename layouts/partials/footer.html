@@ -38,9 +38,9 @@
   {{ end }}
 
   {{ if and (ne $syntaxCSS "") (ne $syntaxJS "") }}
-    {{ $css := resources.Get $syntaxCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $css := resources.Get $syntaxCSS | resources.Minify | resources.Fingerprint "sha384" }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-    {{ $js := resources.Get $syntaxJS | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $js := resources.Get $syntaxJS | resources.Minify | resources.Fingerprint "sha384" }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
     {{ if eq . "hljs" }}
     <script>hljs.initHighlightingOnLoad();</script>
