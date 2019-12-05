@@ -176,6 +176,7 @@ del { opacity: 0.5; }
 
 .nav {
     padding-top: 12px;
+    border-bottom: 6px solid #f0f0f0;
 }
 .nav ul {
     display: inline-block;
