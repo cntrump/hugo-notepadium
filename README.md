@@ -28,12 +28,13 @@ theme = "hugo-notepadium"
 copyright = "Copyright ©2019 lvv. All rights reserved."
 hasCJKLanguage = true
 enableRobotsTXT = true
-paginate = 5
+paginate = 10
+summaryLength = 140
 
 # Hugo v0.60+ new configuration
 [markup.highlight]
-  codeFences = true
-  noClasses = false
+codeFences = true
+noClasses = false
 
 # old Hugo version
 pygmentsUseClasses = true
@@ -49,8 +50,8 @@ If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 
 # Hugo v0.60+ new configuration
 [markup.highlight]
-  codeFences = false
-  noClasses = false
+codeFences = false
+noClasses = false
 
 # old Hugo version
 # pygmentsUseClasses = true
@@ -59,14 +60,14 @@ If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 
 # enable JS highlight
 [params.syntax]
-  use = "hljs"  # 1. prismjs 2. hljs 3. none
+use = "hljs"  # 1. prismjs 2. hljs 3. none
 ```
 
 enable `MathJax` support
 
 ```toml
 [params.MathJax]
-    enable = true
+enable = true
 ```
 
 Usage
@@ -80,7 +81,14 @@ You can custom nav items:
 
 ```toml
 [params.nav]
-  showCategories = true       # /categories/
-  showTags = true             # /tags/
-  customs = ["album","about"]  # /album/; /about/
+showCategories = true       # /categories/
+showTags = true             # /tags/
+customs = ["album","about"]  # /album/; /about/
+```
+
+Add your site slogan
+
+```toml
+[params]
+slogan = "code my life ~"
 ```
