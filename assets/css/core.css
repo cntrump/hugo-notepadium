@@ -196,6 +196,12 @@ del { opacity: 0.5; }
     position: relative;
     color: #ea6f5a;
 }
+.tag:hover,
+.tag:focus,
+.tag:active {
+    text-decoration: none;
+    background: #ea6f5a1a;
+}
 .tag:after {
     content: "";
     position: absolute;
