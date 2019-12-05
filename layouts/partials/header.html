@@ -1,7 +1,8 @@
 <div id="header" class="header max-body-width">
   <p>
-    <a class="header-home" href="{{ .Site.BaseURL }}">
+    <a class="site-name" href="{{ .Site.BaseURL }}">
       {{ .Site.Title }}
     </a>
+    {{ with .Site.Params.slogan }}<span class="slogan">{{ . }}</span>{{ end }}
   </p>
 </div>
