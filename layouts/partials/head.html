@@ -8,9 +8,9 @@
 {{ define "title" }}
   {{ $title := .Title }}
   {{ if not (eq $title .Site.Title) }}
-    <title>{{ $title | safeHTML }} &ndash; {{ .Site.Title | safeHTML }}</title>
+    <title>{{ $title }} &ndash; {{ .Site.Title }}</title>
   {{ else }}
-    <title>{{ .Site.Title | safeHTML }}</title>
+    <title>{{ .Site.Title }} &ndash; {{ with .Site.Params.slogan }}{{ . }}{{ end }}</title>
   {{ end }}  
 {{ end }}
 

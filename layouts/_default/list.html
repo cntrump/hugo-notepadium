@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $paginator := .Paginator }}
-<h1>{{ .Title | htmlEscape | safeHTML }}</h1>
+<h1>{{ .Title }}</h1>
 {{ if .Content }}
 <article class="markdown-body">
     <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
@@ -12,7 +12,7 @@
     {{ range $paginator.Pages }}
     <li>
         <a class="note" href="{{ .RelPermalink }}">
-            <p class="note-title">{{ .Title | htmlEscape | safeHTML }}</p>
+            <p class="note-title">{{ .Title }}</p>
             <p><span>{{ .Date.Format "2006-01-02" }}</span>
             {{ range .Params.categories }}
             <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
@@ -21,7 +21,7 @@
             <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
             {{ end }}
             </p>
-            <p class="note-content">{{ .Plain | safeHTML | truncate 140 }}</p>
+            <p class="note-content">{{ .Summary }}{{ if .Truncated }}…{{ end }}</p>
             {{ $relURL := .RelPermalink }}
             {{ $imgs := .Params.imgs }}
             {{ with .Params.imgs }}

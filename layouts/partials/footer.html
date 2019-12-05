@@ -3,7 +3,7 @@
   {{ if not $copyright }}
     {{ $copyright = .Site.Title }}
   {{ end }}
-  <p><span>{{ $copyright | safeHTML }}</span></p>
+  <p><span>{{ $copyright }}</span></p>
   <p>
     <span>Built</span>
     <a href="https://gohugo.io">Hugo {{ hugo.Version }}</a>
