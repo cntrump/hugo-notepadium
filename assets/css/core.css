@@ -3,7 +3,11 @@
     supported-color-schemes: light only;
 }
 
-* { box-sizing: border-box; }
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 body {
     display: block;
@@ -119,6 +123,7 @@ td {
 a {
     color: #0366d6;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a:hover,
@@ -165,21 +170,46 @@ del { opacity: 0.5; }
     font-size: 20px;
     font-weight: bold;
 }
+.header p {
+    margin: 0;
+}
 
 .nav {
-    display: inline;
+    padding-top: 12px;
 }
 .nav ul {
     display: inline-block;
     margin: 0;
-    padding-inline-start: 20px;
+    padding: 0;
 }
+
 .nav li {
-    display: inline;
-    margin-left: 20px;
+    display: inline-block;
 }
-.nav a {
-    font-weight: 600;
+
+.tag {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 12px 12px 0;
+    font-size: 14px;
+    position: relative;
+    color: #ea6f5a;
+}
+.tag:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ea6f5a;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 8px;
 }
 
 .flex-body {
