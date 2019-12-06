@@ -212,7 +212,7 @@ del { opacity: 0.5; }
     vertical-align: middle;
 }
 
-.tag {
+.site-tag {
     display: inline-block;
     padding: 2px 10px;
     margin: 0 12px 12px 0;
@@ -220,13 +220,13 @@ del { opacity: 0.5; }
     position: relative;
     color: #0366d6;
 }
-.tag:hover,
-.tag:focus,
-.tag:active {
+.site-tag:hover,
+.site-tag:focus,
+.site-tag:active {
     text-decoration: none;
     background: #0366d61a;
 }
-.tag:after {
+.site-tag:after {
     content: "";
     position: absolute;
     top: 0;
