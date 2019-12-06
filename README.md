@@ -1,6 +1,6 @@
 # hugo-notepadium ![](https://img.shields.io/badge/license-MIT-blue.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/2f389751-e070-437b-9dbd-3773bd57322e/deploy-status)](https://lvv.me)
 
-a fast [gohugo](https://gohugo.io) theme, HTML + CSS, 100% JavaScript-free.
+a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 
 - built-in `syntanx highlight`
 - `MathJax` support
