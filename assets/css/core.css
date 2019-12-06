@@ -157,7 +157,6 @@ del { opacity: 0.5; }
 
 .max-width { max-width: 730px; }
 .max-body-width { padding-left: 24px; padding-right: 24px; }
-.text-gray { color: #586069!important; }
 
 .base-body {
     display: block;
@@ -176,7 +175,7 @@ del { opacity: 0.5; }
 
 .nav {
     padding-top: 12px;
-    border-bottom: 6px solid #f0f0f0;
+    border-bottom: 2px solid #00a4ef;
 }
 .nav ul {
     display: inline-block;
@@ -207,7 +206,7 @@ del { opacity: 0.5; }
 .site-slogan {
     display: inline-block;
     font-size: 16px;
-    color: #333;
+    color: #737373;
     margin-left: 12px;
     vertical-align: middle;
 }
@@ -217,30 +216,16 @@ del { opacity: 0.5; }
     padding: 2px 10px;
     margin: 0 12px 12px 0;
     font-size: 14px;
+    font-weight: 600;
     position: relative;
-    color: #0366d6;
+    color: #f25022;
+    background: #f250220a;
 }
 .site-tag:hover,
 .site-tag:focus,
 .site-tag:active {
     text-decoration: none;
-    background: #0366d61a;
-}
-.site-tag:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #0366d6;
-    width: 200%;
-    height: 200%;
-    -webkit-transform: scale(.5);
-    -ms-transform: scale(.5);
-    transform: scale(.5);
-    -webkit-transform-origin: left top;
-    -ms-transform-origin: left top;
-    transform-origin: left top;
-    border-radius: 8px;
+    background: #f250221a;
 }
 
 .flex-body {
@@ -251,6 +236,7 @@ del { opacity: 0.5; }
 .footer {
     text-align: center;
     font-size: 12px;
+    color: #737373;
     margin: 0 auto;
     padding: 16px;
     border-top: 1px solid #eaecef;
@@ -422,12 +408,12 @@ del { opacity: 0.5; }
 .markdown-body .notepadium-heading {
     margin: 30px 0;
     padding: 0;
-    border-bottom: 2px solid #408dee;
+    border-bottom: 2px solid #00a4ef;
 }
 
 .markdown-body .notepadium-heading-title {
     display: inline-block;
-    background: #408dee;
+    background: #00a4ef;
     font-weight: normal;
     color: #fff;
     padding: 6px 10px 6px;
