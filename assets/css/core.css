@@ -124,6 +124,9 @@ a {
     color: #0366d6;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    -moz-text-decoration-skip: objects;
+    text-decoration-skip: objects;
 }
 
 a:hover,
@@ -168,6 +171,7 @@ del { opacity: 0.5; }
 }
 .header p {
     margin: 0;
+    line-height: 1;
 }
 
 .nav {
@@ -185,10 +189,17 @@ del { opacity: 0.5; }
 
 .site-name {
     display: inline-block;
-    font-size: 32px;
+    font-size: 45px;
     font-weight: bold;
     vertical-align: middle;
 }
+.site-name:hover,
+.site-name:focus,
+.site-name:active {
+    opacity: .5;
+    text-decoration: none;
+}
+
 .slogan {
     display: inline-block;
     font-size: 16px;
@@ -203,20 +214,20 @@ del { opacity: 0.5; }
     margin: 0 12px 12px 0;
     font-size: 14px;
     position: relative;
-    color: #ea6f5a;
+    color: #0366d6;
 }
 .tag:hover,
 .tag:focus,
 .tag:active {
     text-decoration: none;
-    background: #ea6f5a1a;
+    background: #0366d61a;
 }
 .tag:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #ea6f5a;
+    border: 1px solid #0366d6;
     width: 200%;
     height: 200%;
     -webkit-transform: scale(.5);
