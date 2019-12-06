@@ -1,8 +1,14 @@
 <div id="header" class="header max-body-width">
   <p>
     <a class="site-name" href="{{ .Site.BaseURL }}">
-      {{ .Site.Title }}
+      {{ with .Site.Params.logo }}
+        <img class="site-logo" src="{{ . | relURL }}">
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
     </a>
-    {{ with .Site.Params.slogan }}<span class="slogan">{{ . }}</span>{{ end }}
+    {{ with .Site.Params.slogan }}
+      <span class="site-slogan">{{ . }}</span>
+    {{ end }}
   </p>
 </div>

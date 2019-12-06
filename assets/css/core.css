@@ -200,7 +200,11 @@ del { opacity: 0.5; }
     text-decoration: none;
 }
 
-.slogan {
+.site-logo {
+    height: 100%;
+    vertical-align: middle;
+}
+.site-slogan {
     display: inline-block;
     font-size: 16px;
     color: #333;
