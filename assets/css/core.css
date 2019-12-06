@@ -108,16 +108,25 @@ pre>samp {
     border: 0;
 }
 
-th {
-    font-size: 14px;
-    padding: 4px 2px;
-    border-bottom: 2px solid #0366d6;
+table {
+    display: inline-block;
+    font-size: 12px;
+    width: auto;
+    max-width: 100%;
+    overflow: auto;
+    border: 1px solid #f0f0f0;
 }
-
+thead {
+    background: #f0f0f0;
+    color: #000;
+    text-align: left;
+}
 td {
-    font-size: 85%;
-    padding: 4px 2px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+td, th {
+    padding: 12px 6px;
+    line-height: 2;
 }
 
 a {
