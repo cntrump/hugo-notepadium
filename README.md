@@ -86,9 +86,10 @@ showTags = true             # /tags/
 customs = ["album","about"]  # /album/; /about/
 ```
 
-Add your site slogan
+Set site slogan and logo
 
 ```toml
 [params]
+logo = "logo.png"
 slogan = "code my life ~"
 ```
