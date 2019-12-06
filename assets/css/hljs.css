@@ -1,100 +1,91 @@
 /*
 
-XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
 
-.hljs {
-  color: #404040;
-}
-
-/* Gray DOCTYPE selectors like WebKit */
-.xml .hljs-meta {
-  color: #c0c0c0;
-}
-
 .hljs-comment,
 .hljs-quote {
-  color: #007400;
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
 }
 
 .hljs-tag,
-.hljs-attribute,
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-name {
-  color: #aa0d91;
-}
-
-.hljs-variable,
-.hljs-template-variable {
-  color: #3F6E74;
-}
-
-.hljs-code,
-.hljs-string,
-.hljs-meta-string {
-  color: #c41a16;
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
 }
 
 .hljs-regexp,
 .hljs-link {
-  color: #0E0EFF;
+  color: #009926;
 }
 
-.hljs-title,
 .hljs-symbol,
-.hljs-bullet,
-.hljs-number {
-  color: #1c00cf;
+.hljs-bullet {
+  color: #990073;
 }
 
-.hljs-section,
-.hljs-meta {
-  color: #643820;
-}
-
-
-.hljs-class .hljs-title,
-.hljs-type,
 .hljs-built_in,
-.hljs-builtin-name,
-.hljs-params {
-  color: #5c2699;
+.hljs-builtin-name {
+  color: #0086b3;
 }
 
-.hljs-attr {
-  color: #836C28;
-}
-
-.hljs-subst {
-  color: #000;
-}
-
-.hljs-formula {
-  background-color: #eee;
-  font-style: italic;
-}
-
-.hljs-addition {
-  background-color: #baeeba;
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
 }
 
 .hljs-deletion {
-  background-color: #ffc8bd;
+  background: #fdd;
 }
 
-.hljs-selector-id,
-.hljs-selector-class {
-  color: #9b703f;
-}
-
-.hljs-doctag,
-.hljs-strong {
-  font-weight: bold;
+.hljs-addition {
+  background: #dfd;
 }
 
 .hljs-emphasis {
   font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
 }
