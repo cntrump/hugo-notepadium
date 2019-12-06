@@ -422,12 +422,12 @@ del { opacity: 0.5; }
 .markdown-body .notepadium-heading {
     margin: 30px 0;
     padding: 0;
-    border-bottom: 2px solid #0366d6;
+    border-bottom: 2px solid #4c8bf5;
 }
 
 .markdown-body .notepadium-heading-title {
     display: inline-block;
-    background: #0366d6;
+    background: #4c8bf5;
     font-weight: normal;
     color: #fff;
     padding: 6px 10px 6px;
