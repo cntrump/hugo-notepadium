@@ -79,10 +79,10 @@ code, pre, tt, kbd, samp { font-family: Consolas, Inconsolata, Courier, monospac
 pre {
     display: block;
     overflow: auto;
-    background: #f6f8fa;
-    font-size: 12px;
+    background: #eff0f1;
+    font-size: 13px;
     line-height: 1.45;
-    padding: 16px;
+    padding: 12px 8px;
     margin: 8px 0;
     border-radius: 3px;
     word-wrap: normal;
