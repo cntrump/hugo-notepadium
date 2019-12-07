@@ -160,11 +160,11 @@ figure {
 }
 
 figcaption>h4 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
-    color: #6a737d;
+    color: #999;
     border: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
@@ -448,7 +448,6 @@ del { opacity: 0.5; }
 }
 
 .markdown-body figcaption>h4 {
-    color: #586069;
     border: 0;
     margin: 0;
 }
