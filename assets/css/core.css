@@ -60,9 +60,15 @@ ol, ul {
     -webkit-padding-start: 18px;
 }
 
-blockquote {
-    display: block;
+blockquote, q {
+    quotes: none;
     margin: 0;
+    background-color: #FFF8DC;
+}
+blockquote {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 2px solid #ffeb8e;
 }
 
 img { max-width: 100%; }
@@ -447,11 +453,6 @@ del { opacity: 0.5; }
     margin: 0;
 }
 
-.markdown-body blockquote {
-    padding: 0 16px;
-    color: #6a737d;
-    border-left: 4px solid #dfe2e5;
-}
 .markdown-body blockquote>:first-child { margin-top: 0; }
 .markdown-body blockquote>:last-child { margin-bottom: 0; }
 
