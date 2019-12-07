@@ -228,13 +228,13 @@ del { opacity: 0.5; }
     font-weight: 600;
     position: relative;
     color: #f25022;
-    background: #f250220a;
+    background: #fef9f7;
 }
 .site-tag:hover,
 .site-tag:focus,
 .site-tag:active {
     text-decoration: none;
-    background: #f250221a;
+    background: #fcefea;
 }
 
 .flex-body {
