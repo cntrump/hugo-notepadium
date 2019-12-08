@@ -14,7 +14,7 @@ body {
     font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #404040;
+    color: #3e3e3e;
     text-rendering: optimizeLegibility;
     background: #fff;
     margin: 0 auto;
@@ -305,7 +305,7 @@ del { opacity: 0.5; }
 .note-title {
     font-size: 18px;
     font-weight: 600;
-    color: #404040;
+    color: #3e3e3e;
 }
 .note-content {
     line-height: 1.5;
