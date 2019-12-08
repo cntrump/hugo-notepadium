@@ -2,13 +2,13 @@
 {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 
 {{ if .Site.Params.nav }}
-  <div class="nav">
+<div class="nav">
     <ul>
-    {{ if .Site.Params.nav.showCategories }}<li><a class="site-tag" href="/categories/">Categories</a></li>{{ end }}
-    {{ if .Site.Params.nav.showTags }}<li><a class="site-tag" href="/tags/">Tags</a></li>{{ end }}
-    {{ range .Site.Params.nav.customs }}<li><a class="site-tag" href="/{{ . | lower }}/">{{ . }}</a></li>{{ end }}
+        {{ if .Site.Params.nav.showCategories }}<li><a class="site-tag" href="/categories/">Categories</a></li>{{ end }}
+        {{ if .Site.Params.nav.showTags }}<li><a class="site-tag" href="/tags/">Tags</a></li>{{ end }}
+        {{ range .Site.Params.nav.customs }}<li><a class="site-tag" href="/{{ . | lower }}/">{{ . }}</a></li>{{ end }}
     </ul>
-  </div>
+</div>
 {{ end }}
 
 <ul class="note-list">
@@ -16,30 +16,30 @@
     <li>
         <a class="note" href="{{ .RelPermalink }}">
             <p class="note-title">{{ .Title }}</p>
-            <p><span>{{ .Date.Format "2006-01-02" }}</span>
-            {{ range .Params.categories }}
-            <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
-            {{ end }}
-            {{ range .Params.tags }}
-            <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
-            {{ end }}
+            <p>
+                <span>{{ .Date.Format "2006-01-02" }}</span>
+                {{ range .Params.categories }}
+                    <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
+                {{ end }}
+                {{ range .Params.tags }}
+                    <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
+                {{ end }}
             </p>
             <p class="note-content">{{ .Summary }}{{ if .Truncated }}…{{ end }}</p>
             {{ $relURL := .RelPermalink }}
             {{ $imgs := .Params.imgs }}
             {{ with .Params.imgs }}
-            <figure>
-                {{ $imgCount := len $imgs }}
-                {{ range $imgs }}
-                {{ $imgurl := lower . }}
-                {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
-                {{ $imgurl = path.Join $relURL . }}
-                {{ end }}
-                {{ $percent := cond (gt $imgCount 1) 25 100 }}
-                <img width="{{ $percent }}%" src="{{ $imgurl | relURL }}">
-                {{ end }}
-                {{ end }}
-            </figure>
+                <figure>
+                    {{ $imgCount := len $imgs }}
+                    {{ range $imgs }}
+                        {{ $imgurl := lower . }}
+                        {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
+                            {{ $imgurl = path.Join $relURL . }}
+                        {{ end }}
+                        <img src="{{ $imgurl | relURL }}">
+                    {{ end }}
+                </figure>
+            {{ end }}
         </a>
     </li>
     {{ end }}
@@ -79,4 +79,5 @@
 {{ end }}
 
 {{ end }}
+
 
