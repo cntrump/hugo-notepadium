@@ -61,6 +61,7 @@ noClasses = false
 # enable JS highlight
 [params.syntax]
 use = "hljs"  # 1. prismjs 2. hljs 3. none
+enableBuiltinFont = true  # use builtin font: source-code-pro
 ```
 
 enable `MathJax` support
