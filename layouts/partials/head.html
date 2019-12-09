@@ -22,3 +22,8 @@
 {{ end }}
 {{ $css := resources.Get "css/core.css" | resources.Minify | resources.Fingerprint "sha384" }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ if .Site.Params.syntax.enableBuiltinFont }}
+{{ $css := resources.Get "css/source-code-pro.css" | resources.Minify | resources.Fingerprint "sha384" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}"> 
+{{ end }}
