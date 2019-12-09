@@ -6,7 +6,7 @@ a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 - `MathJax` support
 - custom `404 page`
 
-![](https://lvv.me/posts/2019-11-24_a_simple_hugo_theme/01.png)
+![](https://lvv.me/posts/2019/11/24_a_simple_hugo_theme/01.png)
 
 the core CSS is `core.css`, transferred size < 3KB.
 
