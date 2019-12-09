@@ -83,7 +83,17 @@ You can custom nav items:
 [params.nav]
 showCategories = true       # /categories/
 showTags = true             # /tags/
-customs = ["album","about"]  # /album/; /about/
+
+# custom links
+
+[[params.nav.custom]]
+title = "iOS"
+url = "/tags/ios"
+
+[[params.nav.custom]]
+title = "Repo"
+url = "//github.com/cntrump"
+
 ```
 
 Set site slogan and logo
