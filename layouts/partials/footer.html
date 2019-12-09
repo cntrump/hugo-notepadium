@@ -1,4 +1,4 @@
-<div id="footer" class="footer max-body-width">
+<section id="footer" class="footer max-body-width">
   {{ $copyright := .Site.Copyright }}
   {{ if not $copyright }}
     {{ $copyright = .Site.Title }}
@@ -10,7 +10,7 @@
     <span>and the</span>
     <a href="https://github.com/cntrump/hugo-notepadium">Notepadium</a>
   </p>
-</div>
+</section>
 
 {{ with .Site.Params.MathJax.enable }}
   {{ if eq . true }}
