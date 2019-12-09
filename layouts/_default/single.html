@@ -14,8 +14,8 @@
     {{ .Content }}
   </article>
 
-  {{ if .Params.comments }}
-  <div>
+  {{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
+  <div class="article-discussion">
     {{ template "_internal/disqus.html" . }}
   </div>
   {{ end }}

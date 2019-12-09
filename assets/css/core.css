@@ -355,6 +355,12 @@ del { opacity: 0.5; }
     text-decoration: none;
 }
 
+.article-discussion {
+    border-top: 2px solid #e1e4e8;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 .pagination {
     display: block;
     text-align: center;
