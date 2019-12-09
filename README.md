@@ -5,6 +5,7 @@ a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 - built-in `syntanx highlight`
 - `MathJax` support
 - custom `404 page`
+- support comments (disqus)
 
 ![](https://lvv.me/posts/2019/11/24_a_simple_hugo_theme/01.png)
 
@@ -103,4 +104,28 @@ Set site slogan and logo
 [params]
 logo = "logo.png"
 slogan = "code my life ~"
+```
+
+enable comments
+
+add [disqus short name](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
+
+```toml
+# disqus
+disqusShortname = "XXX"  # your short name
+```
+
+by default, comments is disabled for all posts.
+
+you can enable comments like below:
+
+```md
++++
+title = "..."
+date = 2019-12-08
+...
+comments = true
++++
+
+...
 ```
