@@ -5,6 +5,7 @@ tags = []
 categories = []
 imgs = []
 toc = true
+comments = false
 draft = true
 +++
 

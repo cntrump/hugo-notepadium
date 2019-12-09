@@ -13,4 +13,10 @@
   <article class="markdown-body">
     {{ .Content }}
   </article>
+
+  {{ if .Params.comments }}
+  <div>
+    {{ template "_internal/disqus.html" . }}
+  </div>
+  {{ end }}
 {{ end }}
