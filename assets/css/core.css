@@ -357,8 +357,8 @@ del { opacity: 0.5; }
 
 .article-discussion {
     border-top: 2px solid #e1e4e8;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .pagination {

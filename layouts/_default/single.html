@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="article-header">
+  <section class="article-header">
       <h1>{{ .Title }}</h1>
       <p class="article-date"><span>{{ .Date.Format "2006-01-02" }}</span>
         {{ range .Params.categories }}
@@ -9,14 +9,14 @@
           <a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
         {{ end }}
       </p>
-  </div>
+  </section>
   <article class="markdown-body">
     {{ .Content }}
   </article>
 
   {{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
-  <div class="article-discussion">
-    {{ template "_internal/disqus.html" . }}
-  </div>
+    <figure class="article-discussion">
+      {{ template "_internal/disqus.html" . }}
+    </figure>
   {{ end }}
 {{ end }}
