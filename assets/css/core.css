@@ -82,7 +82,10 @@ p {
     margin-inline-end: 0px;
 }
 
-code, pre, tt, kbd, samp { font-family: 'Source Code Pro',Menlo,Consolas,Monaco,monospace; }
+code, pre, tt, kbd, samp {
+    font-family: 'Source Code Pro',Menlo,Consolas,Monaco,monospace;
+    font-weight: 500;
+}
 
 pre {
     display: block;
