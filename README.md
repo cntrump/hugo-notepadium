@@ -2,10 +2,11 @@
 
 a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 
-- built-in `syntanx highlight`
+- builtin syntanx highlighting
+- builtin all chroma/hljs/prismjs themes
+- support comments (Disqus)
 - `MathJax` support
 - custom `404 page`
-- support comments (disqus)
 
 ![](https://lvv.me/posts/2019/11/24_a_simple_hugo_theme/01.png)
 
@@ -46,22 +47,10 @@ pygmentsCodeFencesGuessSyntax = true
 If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
 
 ```toml
-
-# Disable Hugo bultin syntax highlight
-
-# Hugo v0.60+ new configuration
-[markup.highlight]
-codeFences = false
-noClasses = false
-
-# old Hugo version
-# pygmentsUseClasses = true
-# pygmentsCodeFences = true
-# pygmentsCodeFencesGuessSyntax = true
-
 # enable JS highlight
 [params.syntax]
 use = "hljs"  # 1. prismjs 2. hljs 3. none
+theme = "dracula"  # load css/chroma/* themes when use="none"
 enableBuiltinFont = true  # use builtin font: source-code-pro
 ```
 
