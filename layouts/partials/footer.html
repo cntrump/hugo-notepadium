@@ -21,16 +21,7 @@
 
 {{ with .Site.Params.syntax }}
   {{ $use := "none" }}
-  {{ $theme := "darcula" }}
-  {{ if isset . "use" }}{{ $use = .use }}{{ end }}
-  {{ if isset . "theme" }}{{ $theme = .theme }}{{ end }}
-
-  {{ $syntaxCSS := "" }}
-  {{ if eq $use "hljs" }}
-    {{ $syntaxCSS = print (path.Join "css/hljs/" $theme) ".css" }}
-  {{ else if eq $use "prismjs" }}
-    {{ $syntaxCSS = print (path.Join "css/prism/" $theme) ".css" }}
-  {{ end }}
+  {{ if isset . "use" }}{{ $use = .use | lower }}{{ end }}
 
   {{ $syntaxJS := "" }}
   {{ if eq $use "hljs" }}
@@ -39,9 +30,7 @@
     {{ $syntaxJS = "js/prism.js" }}
   {{ end }}
 
-  {{ if and (ne $syntaxCSS "") (ne $syntaxJS "") }}
-    {{ $css := resources.Get $syntaxCSS | resources.Minify | resources.Fingerprint "sha384" }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ if ne $syntaxJS "" }}
     {{ $js := resources.Get $syntaxJS | resources.Minify | resources.Fingerprint "sha384" }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
     {{ if eq $use "hljs" }}

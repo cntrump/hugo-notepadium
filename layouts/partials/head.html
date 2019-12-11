@@ -16,14 +16,31 @@
 
 {{- block "title" . }}{{- end }}
 
-{{ if not .Site.Params.syntax.use }}
-{{ $css := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint "sha384" }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-{{ end }}
-{{ $css := resources.Get "css/core.css" | resources.Minify | resources.Fingerprint "sha384" }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-
 {{ if .Site.Params.syntax.enableBuiltinFont }}
 {{ $css := resources.Get "css/source-code-pro.css" | resources.Minify | resources.Fingerprint "sha384" }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}"> 
 {{ end }}
+
+{{ $css := resources.Get "css/core.css" | resources.Minify | resources.Fingerprint "sha384" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ $themePath := "" }}
+{{ $theme := "dracula" }}
+{{ with .Site.Params.syntax }}
+  {{ $use := "none" }}
+  {{ if isset . "use" }}{{ $use = .use | lower }}{{ end }}
+  {{ if isset . "theme" }}{{ $theme = .theme | lower }}{{ end }}
+
+  {{ if eq $use "hljs" }}
+    {{ $themePath = print (path.Join "css/hljs/" $theme) ".css" }}
+  {{ else if eq $use "prismjs" }}
+    {{ $themePath = print (path.Join "css/prism/" $theme) ".css" }}
+  {{ end }}
+{{ end }}
+
+{{ if eq $themePath "" }}
+{{ $themePath = print (path.Join "css/chroma/" $theme) ".css" }}
+{{ end }}
+
+{{ $css := resources.Get $themePath | resources.Minify | resources.Fingerprint "sha384" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
