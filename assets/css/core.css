@@ -97,6 +97,7 @@ pre {
     margin: 8px 0;
     border-radius: 3px;
     word-wrap: normal;
+    border: 1px solid #f0f0f0;
 }
 
 code, kbd, tt, samp {

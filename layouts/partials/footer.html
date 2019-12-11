@@ -19,18 +19,23 @@
   {{ end }}
 {{ end }}
 
-{{ with .Site.Params.syntax.use }}
+{{ with .Site.Params.syntax }}
+  {{ $use := "none" }}
+  {{ $theme := "darcula" }}
+  {{ if isset . "use" }}{{ $use = .use }}{{ end }}
+  {{ if isset . "theme" }}{{ $theme = .theme }}{{ end }}
+
   {{ $syntaxCSS := "" }}
-  {{ $syntaxJS := "" }}
-  {{ if eq . "hljs" }}
-    {{ $syntaxCSS = "css/hljs.css" }}
-  {{ else if eq . "prismjs" }}
-    {{ $syntaxCSS = "css/prism.css" }}
+  {{ if eq $use "hljs" }}
+    {{ $syntaxCSS = print (path.Join "css/hljs/" $theme) ".css" }}
+  {{ else if eq $use "prismjs" }}
+    {{ $syntaxCSS = print (path.Join "css/prism/" $theme) ".css" }}
   {{ end }}
 
-  {{ if eq . "hljs" }}
+  {{ $syntaxJS := "" }}
+  {{ if eq $use "hljs" }}
     {{ $syntaxJS = "js/hljs.js" }}
-  {{ else if eq . "prismjs" }}
+  {{ else if eq $use "prismjs" }}
     {{ $syntaxJS = "js/prism.js" }}
   {{ end }}
 
@@ -39,7 +44,7 @@
     <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
     {{ $js := resources.Get $syntaxJS | resources.Minify | resources.Fingerprint "sha384" }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
-    {{ if eq . "hljs" }}
+    {{ if eq $use "hljs" }}
     <script>hljs.initHighlightingOnLoad();</script>
     {{ end }}
   {{ end }}
