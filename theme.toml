@@ -4,7 +4,7 @@
 name = "hugo-notepadium"
 license = "MIT"
 licenselink = "https://github.com/cntrump/hugo-notepadium/blob/master/LICENSE"
-description = "a fast Hugo theme, HTML + CSS, 100% Javascript-free."
+description = "a fast Hugo theme, 100% JavaScript-free."
 homepage = "https://lvv.me/"
 tags = ["blog"]
 features = ["MathJax", "HighlightJS", "PrismJS"]
@@ -13,9 +13,3 @@ min_version = "0.60.0"
 [author]
   name = "lvv"
   homepage = "https://lvv.me"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

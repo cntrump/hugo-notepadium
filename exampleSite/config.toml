@@ -1,0 +1,36 @@
+baseURL = "https://example.com"
+title = "Notepadium"
+theme = "hugo-notepadium"
+copyright = "©2019 Notepadium."
+
+languageCode = "zh-cn"
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+
+# Enable Disqus
+# disqusShortname = "XXX"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[params]
+logo = ""
+slogan = "100% Javascript-free"
+
+[params.MathJax]
+url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "dracula"
+enableBuiltinFont = true  # builtin: 'Source Code Pro'
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+[[params.nav.custom]]
+title = "About"
+url = "/pages/about"

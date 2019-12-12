@@ -4,15 +4,20 @@ a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 
 - builtin syntanx highlighting
 - builtin all chroma/hljs/prismjs themes
-- support comments (Disqus)
-- `MathJax` support
-- custom `404 page`
+- support comments by Disqus
+- support math by MathJax
 
-![](https://lvv.me/posts/2019/11/24_a_simple_hugo_theme/01.png)
+![](images/screenshot.png)
 
-the core CSS is `core.css`, transferred size < 3KB.
+The core CSS is `core.css`, transferred size < 3KB.
 
-preview this theme: https://lvv.me
+Preview exampleSite:
+
+```shell
+git clone https://github.com/cntrump/hugo-notepadium.git hugo-notepadium
+cd hugo-notepadium/exampleSite
+hugo server --themesDir ../..
+```
 
 ## Quick Start
 
@@ -93,7 +98,7 @@ slogan = "code my life ~"
 
 Enable comments
 
-add [disqus short name](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
+Setup Disqus [shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
 
 ```toml
 # disqus

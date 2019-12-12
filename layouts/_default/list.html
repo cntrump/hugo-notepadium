@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $paginator := .Paginator }}
+
 <h1>{{ .Title }}</h1>
 {{ if .Content }}
 <article class="markdown-body">
@@ -22,7 +23,7 @@
                     <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
                 {{ end }}
             </p>
-            <p class="note-content">{{ .Summary }}{{ if .Truncated }}…{{ end }}</p>
+            <p class="note-content">{{ .Summary | plainify | safeHTML }}{{ if .Truncated }}…{{ end }}</p>
             {{ $relURL := .RelPermalink }}
             {{ $imgs := .Params.imgs }}
             {{ with .Params.imgs }}
@@ -33,7 +34,7 @@
                     {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
                         {{ $imgurl = path.Join $relURL . }}
                     {{ end }}
-                    <img src="{{ $imgurl | relURL }}">
+                    <img src="{{ $imgurl }}">
                 {{ end }}
                 </figure>
             {{ end }}
