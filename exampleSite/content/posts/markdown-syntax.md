@@ -133,7 +133,7 @@ html
 1. First Sub-item
 2. Second Sub-item
 
-## Other Elements — abbr, sub, sup, kbd, mark
+{{<h2 "Other Elements — abbr, sub, sup, kbd, mark">}}
 
 {{<raw>}}
 <!-- insert raw html using <raw> shortcode -->
