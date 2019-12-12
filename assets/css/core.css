@@ -185,7 +185,8 @@ del { opacity: 0.5; }
 
 .header {
     margin: 0 auto;
-    padding: 16px 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .header p {
     margin: 0;
@@ -257,7 +258,8 @@ del { opacity: 0.5; }
     font-size: 12px;
     color: #737373;
     margin: 0 auto;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-top: 1px solid #eaecef;
 }
 .footer p { margin: 0; }
@@ -407,6 +409,7 @@ del { opacity: 0.5; }
 .markdown-body details,
 .markdown-body dl,
 .markdown-body ol,
+.markdown-body hr,
 .markdown-body p,
 .markdown-body pre,
 .markdown-body table,
@@ -430,22 +433,6 @@ del { opacity: 0.5; }
     border-bottom: 1px solid #eaecef;
 }
 
-.markdown-body .notepadium-heading {
-    margin: 30px 0;
-    padding: 0;
-    border-bottom: 2px solid #00a4ef;
-}
-
-.markdown-body .notepadium-heading-title {
-    display: inline-block;
-    background: #00a4ef;
-    font-weight: normal;
-    color: #fff;
-    padding: 6px 10px 6px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
-
 .markdown-body figure {
     text-align: center;
     margin: 0 0 20px 0;
@@ -464,6 +451,29 @@ del { opacity: 0.5; }
 
 .markdown-body blockquote>:first-child { margin-top: 0; }
 .markdown-body blockquote>:last-child { margin-bottom: 0; }
+
+.markdown-body hr {
+    border-top: 1px dashed #a5a5a5;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.markdown-body .notepadium-heading {
+    margin: 30px 0;
+    padding: 0;
+    border-bottom: 2px solid #00a4ef;
+}
+
+.markdown-body .notepadium-heading-title {
+    display: inline-block;
+    background: #00a4ef;
+    font-weight: normal;
+    color: #fff;
+    padding: 6px 10px 6px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
 
 .markdown-body .highlight {
     display: block;
