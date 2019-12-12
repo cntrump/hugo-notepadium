@@ -1,3 +1,5 @@
+![](images/screenshot.png)
+
 # hugo-notepadium ![](https://img.shields.io/badge/license-MIT-blue.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/2f389751-e070-437b-9dbd-3773bd57322e/deploy-status)](https://lvv.me)
 
 a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
@@ -6,8 +8,6 @@ a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 - builtin all chroma/hljs/prismjs themes
 - support comments by Disqus
 - support math by MathJax
-
-![](images/screenshot.png)
 
 The core CSS is `core.css`, transferred size < 3KB.
 
