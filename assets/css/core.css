@@ -98,6 +98,9 @@ pre {
     border-radius: 3px;
     word-wrap: normal;
     border: 1px solid #f0f0f0;
+    -o-tab-size: 4;
+    -moz-tab-size: 4;
+    tab-size: 4;
 }
 
 code, kbd, tt, samp {
@@ -473,10 +476,4 @@ del { opacity: 0.5; }
     padding: 6px 10px 6px;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-}
-
-.markdown-body .highlight {
-    display: block;
-    overflow: auto;
-    border-radius: 3px;
 }
