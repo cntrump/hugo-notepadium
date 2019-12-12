@@ -20,28 +20,23 @@ preview this theme: https://lvv.me
 git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
 ```
 
-demo `config.toml`:
+Demo `config.toml`:
 
 ```toml
 baseURL = "/"
 languageCode = "zh-cn"
-title = "Lvv's notepad"
 theme = "hugo-notepadium"
-copyright = "Copyright ©2019 lvv. All rights reserved."
+
 hasCJKLanguage = true
 enableRobotsTXT = true
-paginate = 10
-summaryLength = 140
 
-# Hugo v0.60+ new configuration
+title = "Lvv's notepad"
+copyright = "Copyright ©2019 lvv. All rights reserved."
+
 [markup.highlight]
 codeFences = true
 noClasses = false
 
-# old Hugo version
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
 ```
 
 If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
@@ -54,11 +49,12 @@ theme = "dracula"  # load css/chroma/* themes when use="none"
 enableBuiltinFont = true  # use builtin font: source-code-pro
 ```
 
-enable `MathJax` support
+Enable `MathJax` support
 
 ```toml
 [params.MathJax]
 enable = true
+url = ""  # builtin CDN: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 ```
 
 Usage
@@ -95,7 +91,7 @@ logo = "logo.png"
 slogan = "code my life ~"
 ```
 
-enable comments
+Enable comments
 
 add [disqus short name](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
 
@@ -104,9 +100,9 @@ add [disqus short name](https://help.disqus.com/en/articles/1717111-what-s-a-sho
 disqusShortname = "XXX"  # your short name
 ```
 
-by default, comments is disabled for all posts.
+By default, comments is disabled for all posts.
 
-you can enable comments like below:
+You can enable comments like below:
 
 ```md
 +++
