@@ -4,7 +4,7 @@
 name = "hugo-notepadium"
 license = "MIT"
 licenselink = "https://github.com/cntrump/hugo-notepadium/blob/master/LICENSE"
-description = "a fast gohugo theme, html + css, 100% javascript free."
+description = "a fast Hugo theme, html + css, 100% javascript free."
 homepage = "https://lvv.me/"
 tags = []
 features = []
