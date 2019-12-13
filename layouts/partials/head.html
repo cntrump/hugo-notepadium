@@ -7,10 +7,11 @@
 
 {{ define "title" }}
   {{ $title := .Title }}
-  {{ if not (eq $title .Site.Title) }}
+  {{ if and (ne $title "") (ne $title .Site.Title) }}
     <title>{{ $title }} &ndash; {{ .Site.Title }}</title>
   {{ else }}
-    <title>{{ .Site.Title }}{{ if and (isset .Site.Params "slogan") (ne .Site.Params.slogan "") }} &ndash; {{ with .Site.Params.slogan }}{{ . }}{{ end }}{{ end }}</title>
+    {{ $slogan := .Site.Params.slogan }}
+    <title>{{ .Site.Title }}{{ if and (isset .Site.Params "slogan") (ne $slogan "") }} &ndash; {{ $slogan }}{{ end }}</title>
   {{ end }}  
 {{ end }}
 
