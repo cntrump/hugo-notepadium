@@ -17,10 +17,12 @@
             <p>
                 <span>{{ .Date.Format "2006-01-02" }}</span>
                 {{ range .Params.categories }}
-                    <object><a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a></object>
+                  {{ $url := print "/categories/"  (. | urlize) "/" }}
+                  <object><a class="article-label" href={{ $url | relURL }}>{{ . }}</a></object>
                 {{ end }}
                 {{ range .Params.tags }}
-                    <object><a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a></object>
+                  {{ $url := print "/tags/" (. | urlize) "/" }}
+                  <object><a class="article-tag" href={{ $url | relURL }}>{{ . }}</a></object>
                 {{ end }}
             </p>
             <p class="note-content">{{ .Summary | plainify | safeHTML }}{{ if .Truncated }}…{{ end }}</p>

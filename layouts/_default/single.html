@@ -3,10 +3,12 @@
       <h1>{{ .Title }}</h1>
       <p class="article-date"><span>{{ .Date.Format "2006-01-02" }}</span>
         {{ range .Params.categories }}
-          <a class="article-label" href="/categories/{{ . | urlize }}/">{{ . }}</a>
+          {{ $url := print "/categories/" (. | urlize) "/" }}
+          <a class="article-label" href={{ $url | relURL }}>{{ . }}</a>
         {{ end }}
         {{ range .Params.tags }}
-          <a class="article-tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+          {{ $url := print "/tags/" ( . | urlize) "/" }}
+          <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
         {{ end }}
       </p>
   </section>

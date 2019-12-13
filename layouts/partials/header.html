@@ -1,8 +1,8 @@
 <section id="header" class="header max-body-width">
   <p>
-    <a class="site-name" href="{{ .Site.BaseURL }}">
+    <a class="site-name" href="{{ `/` | relURL }}">
       {{ with .Site.Params.logo }}
-        <img class="site-logo" src="{{ . }}">
+        <img class="site-logo" src="{{ . | relURL }}">
       {{ else }}
         {{ .Site.Title }}
       {{ end }}
