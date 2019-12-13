@@ -15,9 +15,12 @@ enableRobotsTXT = true
 codeFences = true
 noClasses = false
 
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
 [params]
 logo = ""
-slogan = "100% Javascript-free"
+slogan = "100% JavaScript-free"
 
 [params.MathJax]
 url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
@@ -33,4 +36,8 @@ showTags = true             # /tags/
 
 [[params.nav.custom]]
 title = "About"
-url = "/pages/about"
+url = "/about"
+
+[[params.nav.custom]]
+title = "Hugo"
+url = "https://gohugo.io/"

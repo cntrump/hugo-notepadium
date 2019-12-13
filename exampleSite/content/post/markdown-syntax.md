@@ -133,17 +133,15 @@ html
 1. First Sub-item
 2. Second Sub-item
 
-{{<h2 "Other Elements — abbr, sub, sup, kbd, mark">}}
+## Other Elements — abbr, sub, sup, kbd, mark
 
-{{<raw>}}
-<!-- insert raw html using <raw> shortcode -->
-<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
-<p>H<sub>2</sub>O</p>
+H<sub>2</sub>O
 
-<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-<p>Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.</p>
+Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
-<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-{{</raw>}}
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
