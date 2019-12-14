@@ -4,14 +4,15 @@
 
 a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
 
-- builtin syntanx highlighting
-- builtin all chroma/hljs/prismjs themes
-- support comments by Disqus
-- support math by MathJax
+Features
 
-The core CSS is `core.css`, transferred size < 3KB.
+- Logo and slogan
+- Navigation items
+- Syntanx highlighting
+- Math by MathJax
+- Comments by Disqus
 
-Preview exampleSite:
+Preview the exampleSite:
 
 ```shell
 git clone https://github.com/cntrump/hugo-notepadium.git hugo-notepadium
@@ -25,40 +26,98 @@ hugo server --themesDir ../..
 git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
 ```
 
-Demo `config.toml`:
+Example `config.toml`:
 
 ```toml
-baseURL = "/"
-languageCode = "zh-cn"
+baseURL = "https://example.com"
+title = "Notepadium"
 theme = "hugo-notepadium"
+copyright = "©2019 Notepadium."
 
+languageCode = "zh-cn"
 hasCJKLanguage = true
+
 enableRobotsTXT = true
 
-title = "Lvv's notepad"
-copyright = "Copyright ©2019 lvv. All rights reserved."
+# Enable Disqus
+# disqusShortname = "XXX"
 
 [markup.highlight]
 codeFences = true
 noClasses = false
 
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+logo = ""  # if you have a logo png
+slogan = "100% JavaScript-free"
+
+[params.MathJax]
+url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "dracula"
+enableBuiltinFont = true  # builtin: 'Source Code Pro'
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+[[params.nav.custom]]
+title = "About"
+url = "/about"
+
+[[params.nav.custom]]
+title = "Hugo"
+url = "https://gohugo.io/"
 ```
 
-If you like syntax highlight with JS, both `hljs` and `prismjs` are builtin:
+### Logo and Slogan
+
+```toml
+[params]
+logo = "/img/logo.png"
+slogan = "code my life ~"
+```
+
+### Navigation items
+
+```toml
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom items
+
+[[params.nav.custom]]
+title = "iOS"
+url = "/tags/ios"
+
+[[params.nav.custom]]
+title = "Hugo"
+url = "https://gohugo.io/"
+
+```
+
+### Syntax highlighting:
 
 ```toml
 # enable JS highlight
 [params.syntax]
 use = "hljs"  # 1. prismjs 2. hljs 3. none
-theme = "dracula"  # load css/chroma/* themes when use="none"
-enableBuiltinFont = true  # use builtin font: source-code-pro
+theme = "dracula"
+enableBuiltinFont = true  # use builtin font: Source Code Pro
 ```
 
-Enable `MathJax` support
+### Math by MathJax
 
 ```toml
 [params.MathJax]
-enable = true
+enable = true  # true means globally, or on a per page set "math = true"
 url = ""  # builtin CDN: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 ```
 
@@ -69,34 +128,7 @@ When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 ```
 
-You can custom nav items:
-
-```toml
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
-
-# custom links
-
-[[params.nav.custom]]
-title = "iOS"
-url = "/tags/ios"
-
-[[params.nav.custom]]
-title = "Repo"
-url = "//github.com/cntrump"
-
-```
-
-Set site slogan and logo
-
-```toml
-[params]
-logo = "logo.png"
-slogan = "code my life ~"
-```
-
-Enable comments
+### Comments by Disqus
 
 Setup Disqus [shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
 
@@ -119,3 +151,11 @@ comments = true
 
 ...
 ```
+
+## Thanks
+
+- [**Hugo**](https://gohugo.io/)
+- [**HighlightJS**](https://highlightjs.org/)
+- [**PrismJS**](https://prismjs.com/)
+- [**MathJax**](https://www.mathjax.org/)
+- [**Disqus**](https://disqus.com/)
