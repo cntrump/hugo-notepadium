@@ -6,6 +6,7 @@ categories = []
 imgs = []
 toc = true
 comments = false
+license = ""  # CC License
 draft = true
 +++
 

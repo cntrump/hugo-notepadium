@@ -11,6 +11,7 @@ Features
 - Syntanx highlighting
 - Math by MathJax
 - Comments by Disqus
+- CC License
 
 Preview the exampleSite:
 
@@ -52,6 +53,7 @@ unsafe = true  # enable raw HTML in Markdown
 [params]
 logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
+license = ""  # CC License
 
 [params.MathJax]
 url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
