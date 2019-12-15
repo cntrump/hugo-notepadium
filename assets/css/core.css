@@ -62,6 +62,10 @@ ol, ul {
     -webkit-padding-start: 18px;
 }
 
+li + li {
+    margin-top: 4px;
+}
+
 blockquote, q {
     quotes: none;
     margin: 0;
@@ -342,8 +346,9 @@ del { opacity: 0.5; }
 
 .article-tag {
     display: inline-block;
-    padding: 2px 6px;
+    padding: 4px 6px;
     margin: 2px 3px 2px 0;
+    line-height: 1;
     white-space: nowrap;
     color: #0366d6;
     background: #f1f8ff;
@@ -358,9 +363,10 @@ del { opacity: 0.5; }
 
 .article-label {
     display: inline-block;
-    padding: 2px 6px;
+    padding: 4px 6px;
     margin: 2px 3px 2px 0;
     font-weight: 600;
+    line-height: 1;
     white-space: nowrap;
     color: #28a745;
     border: 1px solid rgba(27,31,35,.15);
@@ -372,11 +378,18 @@ del { opacity: 0.5; }
     background: #def;
     text-decoration: none;
 }
+.article-navigation {
+    border-top: 1px dashed #e1e4e8;
+    padding: 20px 0;
+}
+.article-navigation  .article-label,
+.article-navigation  .article-tag {
+    font-size: 14px;
+}
 
 .article-discussion {
-    border-top: 2px solid #e1e4e8;
-    margin: 20px 0 0 0;
-    padding: 20px 0 0 0;
+    border-top: 1px dashed #e1e4e8;
+    padding: 20px 0;
 }
 
 .pagination {

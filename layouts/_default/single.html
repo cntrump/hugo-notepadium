@@ -16,9 +16,44 @@
     {{ .Content }}
   </article>
 
-  {{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
-    <figure class="article-discussion">
-      {{ template "_internal/disqus.html" . }}
-    </figure>
+  {{ if or .PrevInSection .NextInSection }}
+    <section class="article-navigation">
+      <ul>
+        {{ with .NextInSection }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ range .Params.categories }}
+              {{ $url := print "/categories/" (. | urlize) "/" }}
+              <a class="article-label" href={{ $url | relURL }}>{{ . }}</a>
+          {{ end }}
+          {{ range .Params.tags }}
+              {{ $url := print "/tags/" ( . | urlize) "/" }}
+              <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
+          {{ end }}
+        </li>
+        {{end}}
+
+        {{ with .PrevInSection }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ range .Params.categories }}
+                {{ $url := print "/categories/" (. | urlize) "/" }}
+                <a class="article-label" href={{ $url | relURL }}>{{ . }}</a>
+            {{ end }}
+            {{ range .Params.tags }}
+                {{ $url := print "/tags/" ( . | urlize) "/" }}
+                <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
+            {{ end }}
+          </li>
+        {{end}}
+      </ul>
+    </section>
   {{ end }}
+
+  {{ if and .Params.comments (gt (len .Site.DisqusShortname) 0) }}
+    <section class="article-discussion">
+      {{ template "_internal/disqus.html" . }}
+    </section>
+  {{ end }}
+
 {{ end }}
