@@ -378,15 +378,21 @@ del { opacity: 0.5; }
     background: #def;
     text-decoration: none;
 }
-.article-navigation {
-    border-top: 1px dashed #e1e4e8;
-    padding: 20px 0;
+
+.article-license {
+    text-align: center;
+    font-size: 14px;
+    color: #869194;
+    background: #eff2f3;
 }
+
 .article-navigation  .article-label,
 .article-navigation  .article-tag {
     font-size: 14px;
 }
 
+.article-license,
+.article-navigation,
 .article-discussion {
     border-top: 1px dashed #e1e4e8;
     padding: 20px 0;

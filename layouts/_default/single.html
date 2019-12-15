@@ -12,9 +12,23 @@
         {{ end }}
       </p>
   </section>
+
   <article class="markdown-body">
     {{ .Content }}
   </article>
+
+  {{ $license := ""}}
+  {{ if and (isset .Params "license") (ne .Params.license "") }}
+    {{ $license = .Params.license }}
+  {{ else if and (isset .Site.Params "license") (ne .Site.Params.license "") }}
+    {{ $license = .Site.Params.license }}
+  {{ end }}
+
+  {{ if ne $license "" }}
+    <section class="article-license">
+      <p>{{ $license | htmlUnescape }}</p>
+    </section>
+  {{ end }}
 
   {{ if or .PrevInSection .NextInSection }}
     <section class="article-navigation">

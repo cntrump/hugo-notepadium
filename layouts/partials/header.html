@@ -8,7 +8,7 @@
       {{ end }}
     </a>
     {{ with .Site.Params.slogan }}
-      <span class="site-slogan">{{ . }}</span>
+      <span class="site-slogan">{{ . | htmlUnescape }}</span>
     {{ end }}
   </p>
 </section>
