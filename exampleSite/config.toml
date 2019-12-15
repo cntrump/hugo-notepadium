@@ -21,6 +21,7 @@ unsafe = true  # enable raw HTML in Markdown
 [params]
 logo = ""
 slogan = "100% JavaScript-free"
+license = "This work is licensed under a Creative Commons Attribution 4.0 International License."
 
 [params.MathJax]
 url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
