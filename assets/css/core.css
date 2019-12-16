@@ -69,7 +69,7 @@ li + li {
 blockquote, q {
     quotes: none;
     margin: 0;
-    background-color: #FFF8DC;
+    background-color: #fff8dc;
 }
 blockquote {
     margin-bottom: 10px;
@@ -137,8 +137,7 @@ pre>samp {
 }
 
 table {
-    display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     width: auto;
     max-width: 100%;
     overflow: auto;
@@ -146,7 +145,7 @@ table {
 }
 thead {
     background: #f0f0f0;
-    color: #000;
+    color: #333;
     text-align: left;
 }
 td {
@@ -154,7 +153,7 @@ td {
 }
 td, th {
     padding: 12px 6px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 a {
