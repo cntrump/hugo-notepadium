@@ -1,0 +1,29 @@
+/**
+ * Github-like theme for Prism.js
+ * @author lvv https://lvv.me
+ */
+
+ pre[class*='language-'] {
+   color: #24292e;
+   background: #fff;
+ }
+ 
+ .token.function, .token.number, .token.constant {
+   color: #005cc5;
+ }
+
+ .token.boolean, .token.keyword, .token.key.atrule {
+   color: #d73a49;
+ }
+
+ .token.builtin {
+   color: #6f42c1;
+ }
+
+ .token.string {
+   color: #032f62;
+ }
+
+ .token.comment {
+   color: #6a737d;
+ }
