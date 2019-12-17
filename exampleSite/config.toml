@@ -29,7 +29,7 @@ url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJ
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "dracula"
-enableBuiltinFont = true  # builtin: 'Source Code Pro'
+webFonts = true  # builtin: 'Source Code Pro'
 
 [params.nav]
 showCategories = true       # /categories/

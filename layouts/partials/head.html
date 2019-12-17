@@ -18,7 +18,7 @@
 {{- block "title" . }}{{- end }}
 
 {{ $fontCSS := "" }}
-{{ if .Site.Params.syntax.enableBuiltinFont }}
+{{ if .Site.Params.syntax.webFonts }}
   {{ $fontCSS = resources.Get "css/source-code-pro.css" }}
 {{ end }}
 

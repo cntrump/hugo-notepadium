@@ -61,7 +61,7 @@ url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJ
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "dracula"
-enableBuiltinFont = true  # builtin: 'Source Code Pro'
+webFonts = true  # builtin: 'Source Code Pro'
 
 [params.nav]
 showCategories = true       # /categories/
@@ -112,7 +112,7 @@ url = "https://gohugo.io/"
 [params.syntax]
 use = "hljs"  # 1. prismjs 2. hljs 3. none
 theme = "dracula"
-enableBuiltinFont = true  # use builtin font: Source Code Pro
+webFonts = true  # use builtin font: Source Code Pro
 ```
 
 ### Math by MathJax
