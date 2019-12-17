@@ -12,6 +12,7 @@ Features
 - Math by MathJax
 - Comments by Disqus
 - CC License
+- Builtin `Source Code Pro` font for code
 
 Preview the exampleSite:
 
@@ -161,3 +162,4 @@ comments = true
 - [**PrismJS**](https://prismjs.com/)
 - [**MathJax**](https://www.mathjax.org/)
 - [**Disqus**](https://disqus.com/)
+- [**Source Code Pro**](https://fonts.adobe.com/fonts/source-code-pro)
