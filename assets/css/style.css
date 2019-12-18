@@ -87,7 +87,7 @@ p {
 }
 
 mark {
-    background: #fffbdd;
+    background: yellow;
     color: inherit;
 }
 
@@ -99,9 +99,10 @@ code, pre, tt, kbd, samp {
 pre {
     display: block;
     overflow: auto;
-    background: #eff0f1;
-    font-size: 12px;
-    line-height: 1.7;
+    font-size: 85%;
+    line-height: 1.45;
+    color: #24292e;
+    background: #f6f8fa;
     padding: 12px 10px;
     margin: 8px 0;
     border-radius: 3px;
