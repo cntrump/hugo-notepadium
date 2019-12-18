@@ -10,7 +10,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre)>code[class*="language-"] {
-	background: #2a2a2a;
+	background-color: #2a2a2a;
 }
 
 .token.namespace {
@@ -102,7 +102,7 @@ pre[data-line] .line-highlight {
 	right: 0;
 	padding: 0;
 	margin-top: 1em;
-	background: rgba(255, 255, 255, 0.08);
+	background-color: rgba(255, 255, 255, 0.08);
 	pointer-events: none;
 	line-height: inherit;
 	white-space: pre;

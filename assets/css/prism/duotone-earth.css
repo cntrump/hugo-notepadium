@@ -8,20 +8,20 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 
 code[class*="language-"],
 pre[class*="language-"] {
-	background: #322d29;
+	background-color: #322d29;
 	color: #88786d;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: #6f5849;
+	background-color: #6f5849;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: #6f5849;
+	background-color: #6f5849;
 }
 
 .token.comment,
@@ -132,7 +132,7 @@ pre > code.highlight {
 * http://prismjs.com/plugins/line-highlight/
 */
 .line-highlight {
-	background: rgba(191, 160, 90, 0.2);
+	background-color: rgba(191, 160, 90, 0.2);
 	background: -webkit-linear-gradient(left, rgba(191, 160, 90, 0.2) 70%, rgba(191, 160, 90, 0));
 	background: linear-gradient(to right, rgba(191, 160, 90, 0.2) 70%, rgba(191, 160, 90, 0));
 }

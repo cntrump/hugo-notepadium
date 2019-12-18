@@ -13,7 +13,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #282a36; }
+	background-color: #282a36; }
 
 .token.comment,
 .token.prolog,

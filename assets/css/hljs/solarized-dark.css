@@ -5,7 +5,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 */
 
 pre {
-  background: #002b36;
+  background-color: #002b36;
   color: #839496;
 }
 
@@ -69,7 +69,7 @@ pre {
 }
 
 .hljs-formula {
-  background: #073642;
+  background-color: #073642;
 }
 
 .hljs-emphasis {

@@ -5,7 +5,7 @@
 
 pre[class*="language-"] {
   color: #24292e;
-  background: #fff;
+  background-color: #fff;
 }
 
 .token.function,

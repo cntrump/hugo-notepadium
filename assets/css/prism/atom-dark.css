@@ -12,7 +12,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #1d1f21;
+	background-color: #1d1f21;
 }
 
 .token.comment,

@@ -16,7 +16,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-	background: #222;
+	background-color: #222;
 }
 
 .token.comment,
@@ -93,7 +93,7 @@ pre[data-line] {
 	left: 0;
 	right: 0;
 	margin-top: 1em; /* Same as .prism's padding-top */
-	background: rgba(255,255,255,.2);
+	background-color: rgba(255,255,255,.2);
 	pointer-events: none;
 	line-height: inherit;
 	white-space: pre;

@@ -11,7 +11,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #2b2b2b;
+	background-color: #2b2b2b;
 }
 
 .token.comment,
@@ -87,16 +87,16 @@ pre[class*="language-"] {
 	code[class*="language-"],
 	pre[class*="language-"] {
 		color: windowText;
-		background: window;
+		background-color: window;
 	}
 
 	:not(pre) > code[class*="language-"],
 	pre[class*="language-"] {
-		background: window;
+		background-color: window;
 	}
 
 	.token.important {
-		background: highlight;
+		background-color: highlight;
 		color: window;
 		font-weight: normal;
 	}

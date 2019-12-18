@@ -1,21 +1,21 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #c3cee3;
-	background: #263238;
+	background-color: #263238;
 }
 
 code[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
-	background: #363636;
+	background-color: #363636;
 }
 
 code[class*="language-"]::selection,
 pre[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"] ::selection {
-	background: #363636;
+	background-color: #363636;
 }
 
 .language-css > code,

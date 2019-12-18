@@ -5,7 +5,7 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 */
 
 pre {
-  background: #444;
+  background-color: #444;
 }
 
 .hljs-keyword,

@@ -20,12 +20,12 @@ pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
 	color: inherit;
-	background: #a599e9;
+	background-color: #a599e9;
 }
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-	background: #1e1e3f;
+	background-color: #1e1e3f;
 }
 
 .token {
@@ -104,7 +104,7 @@ pre[class*='language-'] {
 }
 
 .token.regex {
-	background: #364135;
+	background-color: #364135;
 }
 
 .token.bold {
@@ -116,11 +116,11 @@ pre[class*='language-'] {
 }
 
 .token.inserted {
-	background: #00ff00;
+	background-color: #00ff00;
 }
 
 .token.deleted {
-	background: #ff000d;
+	background-color: #ff000d;
 }
 
 code.language-css .token.property,
@@ -148,7 +148,7 @@ code.language-css .token.selector > .token.pseudo-element {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	background: none;
+	background-color: none;
 }
 
 pre .line-highlight,

@@ -6,7 +6,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 pre {
   color: #333;
-  background: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .hljs-comment,
@@ -80,11 +80,11 @@ pre {
 }
 
 .hljs-deletion {
-  background: #fdd;
+  background-color: #fdd;
 }
 
 .hljs-addition {
-  background: #dfd;
+  background-color: #dfd;
 }
 
 .hljs-emphasis {

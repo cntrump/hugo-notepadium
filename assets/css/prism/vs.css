@@ -10,12 +10,12 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	background: #C1DEF1;
+	background-color: #C1DEF1;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	background: #C1DEF1;
+	background-color: #C1DEF1;
 }
 
 /* Code blocks */
@@ -103,7 +103,7 @@ code[class*="language-css"]{
 }
 
 .token.directive.tag  .tag {
-	background: #ffff00;
+	background-color: #ffff00;
 	color: #393A34;
 }
 
@@ -122,7 +122,7 @@ code[class*="language-css"]{
 * http://prismjs.com/plugins/line-highlight/
 */
 .line-highlight {
-	background: rgba(193, 222, 241, 0.2);
+	background-color: rgba(193, 222, 241, 0.2);
 	background: -webkit-linear-gradient(left, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
 	background: linear-gradient(to right, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
 }

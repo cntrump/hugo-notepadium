@@ -9,20 +9,20 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 */
 code[class*="language-"],
 pre[class*="language-"] {
-	background: #f5f7ff;
+	background-color: #f5f7ff;
 	color: #5e6687;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: #dfe2f1;
+	background-color: #dfe2f1;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: #dfe2f1;
+	background-color: #dfe2f1;
 }
 
 /* Code blocks */
@@ -151,7 +151,7 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-highlight/
  */
 .line-highlight {
-	background: rgba(107, 115, 148, 0.2);
+	background-color: rgba(107, 115, 148, 0.2);
 	background: -webkit-linear-gradient(left, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
 	background: linear-gradient(to right, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
 }

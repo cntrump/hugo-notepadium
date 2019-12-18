@@ -6,18 +6,18 @@ vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
 
 /*background color*/
 pre {
-  background: #1d1f21;
+  background-color: #1d1f21;
 }
 
 /*selection color*/
 .hljs::selection,
 .hljs span::selection {
-  background: #373b41;
+  background-color: #373b41;
 }
 
 .hljs::-moz-selection,
 .hljs span::-moz-selection {
-  background: #373b41;
+  background-color: #373b41;
 }
 
 /*foreground color*/

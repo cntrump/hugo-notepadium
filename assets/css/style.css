@@ -20,7 +20,7 @@ body {
   display: block;
   color: #3e3e3e;
   text-rendering: optimizeLegibility;
-  background: #fff;
+  background-color: #fff;
   margin: 0 auto;
   padding: 0;
   word-wrap: break-word;
@@ -109,7 +109,7 @@ p {
 }
 
 mark {
-  background: yellow;
+  background-color: yellow;
   color: inherit;
 }
 
@@ -146,13 +146,13 @@ samp {
   padding: 2px 4px;
   border-radius: 3px;
   color: #c7254e;
-  background: #f9f2f4;
+  background-color: #f9f2f4;
 }
 
 kbd {
   display: inline-block;
   color: #333;
-  background: #eee;
+  background-color: #eee;
   border: 1px solid #b4b4b4;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
   line-height: 1;
@@ -164,7 +164,7 @@ pre > tt,
 pre > samp {
   font-size: inherit;
   color: inherit;
-  background: inherit;
+  background-color: inherit;
   padding: 0;
   border: 0;
 }
@@ -177,7 +177,7 @@ table {
   border: 1px solid #f0f0f0;
 }
 thead {
-  background: #f0f0f0;
+  background-color: #f0f0f0;
   color: #333;
   text-align: left;
 }
@@ -236,7 +236,7 @@ del {
 .base-body {
   display: block;
   margin: 0 auto;
-  background: #fff;
+  background-color: #fff;
 }
 
 .header {
@@ -295,13 +295,13 @@ del {
   font-weight: 600;
   position: relative;
   color: #f25022;
-  background: #fef9f7;
+  background-color: #fef9f7;
 }
 .site-tag:hover,
 .site-tag:focus,
 .site-tag:active {
   text-decoration: none;
-  background: #fcefea;
+  background-color: #fcefea;
 }
 
 .flex-body {
@@ -395,13 +395,13 @@ del {
   line-height: 1;
   white-space: nowrap;
   color: #0366d6;
-  background: #f1f8ff;
+  background-color: #f1f8ff;
   border-radius: 3px;
 }
 .article-tag:hover,
 .article-tag:focus,
 .article-tag:active {
-  background: #def;
+  background-color: #def;
   text-decoration: none;
 }
 
@@ -419,7 +419,7 @@ del {
 .article-label:hover,
 .article-label:focus,
 .article-label:active {
-  background: #def;
+  background-color: #def;
   text-decoration: none;
 }
 
@@ -427,7 +427,7 @@ del {
   text-align: center;
   font-size: 14px;
   color: #6a737d;
-  background: #fffbdd;
+  background-color: #fffbdd;
 }
 
 .article-navigation .article-label,
@@ -555,7 +555,7 @@ del {
 
 .markdown-body .notepadium-heading-title {
   display: inline-block;
-  background: #00a4ef;
+  background-color: #00a4ef;
   font-weight: normal;
   color: #fff;
   padding: 6px 10px 6px;
