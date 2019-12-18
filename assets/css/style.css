@@ -86,6 +86,11 @@ p {
     margin-inline-end: 0px;
 }
 
+mark {
+    background: #fffbdd;
+    color: inherit;
+}
+
 code, pre, tt, kbd, samp {
     font-family: 'Source Code Pro', SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     font-weight: 500;
@@ -382,8 +387,8 @@ del { opacity: 0.5; }
 .article-license {
     text-align: center;
     font-size: 14px;
-    color: #869194;
-    background: #eff2f3;
+    color: #6a737d;
+    background: #fffbdd;
 }
 
 .article-navigation  .article-label,
