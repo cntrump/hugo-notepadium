@@ -5,7 +5,7 @@
 
 pre[class*="language-"] {
   color: #24292e;
-  background: #f6f8fa;
+  background: #fff;
 }
 
 .token.function,
@@ -16,7 +16,8 @@ pre[class*="language-"] {
 
 .token.boolean,
 .token.keyword,
-.token.key.atrule {
+.token.key.atrule,
+.token.operator {
   color: #d73a49;
 }
 
