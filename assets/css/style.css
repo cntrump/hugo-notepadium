@@ -429,13 +429,6 @@ del {
   text-decoration: none;
 }
 
-.article-license {
-  text-align: center;
-  font-size: 14px;
-  color: #6a737d;
-  background-color: #fffbdd;
-}
-
 .article-navigation .article-label,
 .article-navigation .article-tag {
   font-size: 14px;
@@ -445,7 +438,15 @@ del {
 .article-navigation,
 .article-discussion {
   border-top: 1px dashed #e1e4e8;
-  padding: 20px 0;
+  padding: 16px 0;
+}
+
+.article-license {
+  text-align: center;
+  font-size: 14px;
+  color: #165c26;
+  background-color: #dcffe4;
+  padding: 8px 0;
 }
 
 .pagination {
