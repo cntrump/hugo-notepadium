@@ -24,8 +24,11 @@ body {
   margin: 0 auto;
   padding: 0;
   word-wrap: break-word;
-  -ms-text-size-adjust: 100%;
+
+  text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 
   padding-top: constant(safe-area-inset-top);
   padding-right: constant(safe-area-inset-right);
@@ -567,6 +570,11 @@ del {
 }
 
 .markdown-body .chroma .lntable {
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 682px;
   margin-top: 0;
   margin-bottom: 20px;
   border-radius: 3px;
@@ -574,21 +582,32 @@ del {
 }
 .markdown-body .chroma .lntable .lntd {
   min-width: 0;
-  padding: 12px 10px;
+  max-width: 50px;
+  width: 30px;
 }
-.markdown-body .chroma .lntable tr>td:last-child {
+.markdown-body .chroma .lntable tr > td:last-child {
+  width: auto;
+}
+.markdown-body .chroma .lntable tr > td:last-child > pre {
   padding-left: 0;
 }
 .markdown-body .chroma .lntable .lntd .lnt {
   display: block;
+  text-align: right;
   margin: 0;
   padding: 0;
+  overflow: visible;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .markdown-body .chroma .lntable pre {
   font-size: inherit;
   border-radius: 0;
   border: 0;
   margin: 0;
-  padding: 0;
-  overflow: visible;
+  width: 100%;
+  overflow: auto;
 }
