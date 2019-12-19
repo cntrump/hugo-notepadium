@@ -126,6 +126,8 @@ pre {
   display: block;
   overflow: auto;
   font-size: 85%;
+  color: #24292e;
+  line-height: 1.45;
   padding: 12px 10px;
   margin: 8px 0;
   border-radius: 3px;
@@ -167,10 +169,11 @@ pre > samp {
   background-color: inherit;
   padding: 0;
   border: 0;
+  border-radius: 0;
 }
 
 table {
-  font-size: 14px;
+  font-size: 85%;
   width: auto;
   max-width: 100%;
   overflow: auto;
@@ -563,7 +566,29 @@ del {
   border-top-left-radius: 3px;
 }
 
-.markdown-body pre {
-  color: #24292e;
-  line-height: 1.45;
+.markdown-body .chroma .lntable {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+.markdown-body .chroma .lntable .lntd {
+  min-width: 0;
+  padding: 12px 10px;
+}
+.markdown-body .chroma .lntable tr>td:last-child {
+  padding-left: 0;
+}
+.markdown-body .chroma .lntable .lntd .lnt {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.markdown-body .chroma .lntable pre {
+  font-size: inherit;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
 }
