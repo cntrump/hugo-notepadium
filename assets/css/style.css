@@ -120,6 +120,7 @@ kbd,
 samp {
   font-family: "Source Code Pro", SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   font-weight: 500;
+  white-space: pre;
 }
 
 pre {
@@ -130,9 +131,8 @@ pre {
   line-height: 1.45;
   padding: 12px 10px;
   margin: 8px 0;
-  border-radius: 3px;
   word-wrap: normal;
-  white-space: pre;
+  border-radius: 3px;
   border: 1px solid #eee;
   -o-tab-size: 4;
   -moz-tab-size: 4;
