@@ -1,4 +1,4 @@
-![](images/screenshot.png)
+![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/screenshot.png)
 
 # hugo-notepadium ![](https://img.shields.io/badge/license-MIT-blue.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/2f389751-e070-437b-9dbd-3773bd57322e/deploy-status)](https://lvv.me)
 
