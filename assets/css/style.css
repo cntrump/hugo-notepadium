@@ -437,13 +437,13 @@ del {
 .article-license,
 .article-navigation,
 .article-discussion {
+  font-size: 14px;
   border-top: 1px dashed #e1e4e8;
   padding: 16px 0;
 }
 
 .article-license {
   text-align: center;
-  font-size: 14px;
   color: #165c26;
   background-color: #dcffe4;
   padding: 8px 0;
