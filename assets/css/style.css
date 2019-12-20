@@ -578,6 +578,7 @@ del {
   background-color: #00a4ef;
   font-weight: normal;
   color: #fff;
+  text-shadow: none;
   padding: 6px 10px 6px;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
