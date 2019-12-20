@@ -176,24 +176,11 @@ pre > samp {
 }
 
 table {
-  font-size: 85%;
-  width: auto;
-  max-width: 100%;
-  overflow: auto;
-  border: 1px solid #f0f0f0;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
-thead {
-  background-color: #f0f0f0;
-  color: #333;
-  text-align: left;
-}
-td {
-  min-width: 120px;
-}
-td,
-th {
-  padding: 12px 6px;
-  line-height: 1.5;
+td, th {
+  padding: 0;
 }
 
 a {
@@ -227,6 +214,10 @@ figcaption > h4 {
   margin: 0;
 }
 
+svg {
+  max-width: 100%;
+}
+
 del {
   opacity: 0.5;
 }
@@ -257,7 +248,7 @@ del {
 
 .nav {
   padding-top: 12px;
-  border-bottom: 2px solid #00a4ef;
+  border-bottom: 2px solid #fef9f7;
 }
 .nav ul {
   display: inline-block;
@@ -554,6 +545,24 @@ del {
   border-left: none;
 }
 
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+.markdown-body table th {
+  font-weight: 600;
+}
+.markdown-body table td,
+.markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
 .markdown-body .notepadium-heading {
   margin: 30px 0;
   padding: 0;
@@ -572,10 +581,9 @@ del {
 
 .markdown-body .chroma .lntable {
   display: table;
-  border-spacing: 0;
-  border-collapse: collapse;
   table-layout: auto;
-  width: 682px;
+  width: 100%;
+  font-size: 85%;
   margin-top: 0;
   margin-bottom: 20px;
   border-radius: 3px;
@@ -585,6 +593,9 @@ del {
   min-width: 0;
   max-width: 50px;
   width: 30px;
+}
+.markdown-body .chroma .lntable tr {
+  border: 0;
 }
 .markdown-body .chroma .lntable tr > td:last-child {
   width: auto;
