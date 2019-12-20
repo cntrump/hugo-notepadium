@@ -222,6 +222,11 @@ del {
   opacity: 0.5;
 }
 
+abbr,
+acronym {
+  cursor: help;
+}
+
 .max-width {
   max-width: 730px;
 }
@@ -508,7 +513,7 @@ del {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  text-shadow: #ddd 0.1em 0.1em 0.2em;
+  text-shadow: #ccc 2px 2px 4px;
   margin-top: 24px;
   margin-bottom: 20px;
 }
