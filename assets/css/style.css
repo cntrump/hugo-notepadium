@@ -508,6 +508,7 @@ del {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
+  text-shadow: #ddd 0.1em 0.1em 0.2em;
   margin-top: 24px;
   margin-bottom: 20px;
 }
