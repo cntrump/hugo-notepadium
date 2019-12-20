@@ -567,23 +567,6 @@ del {
   border: 1px solid #dfe2e5;
 }
 
-.markdown-body .notepadium-heading {
-  margin: 30px 0;
-  padding: 0;
-  border-bottom: 2px solid #00a4ef;
-}
-
-.markdown-body .notepadium-heading-title {
-  display: inline-block;
-  background-color: #00a4ef;
-  font-weight: normal;
-  color: #fff;
-  text-shadow: none;
-  padding: 6px 10px 6px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
 .markdown-body .chroma .lntable {
   display: table;
   table-layout: auto;
