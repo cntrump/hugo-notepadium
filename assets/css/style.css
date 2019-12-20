@@ -513,7 +513,7 @@ acronym {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  text-shadow: #ccc 2px 2px 4px;
+  text-shadow: #ccc 1px 1px 2px;
   margin-top: 24px;
   margin-bottom: 20px;
 }
