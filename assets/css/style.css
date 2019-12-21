@@ -14,11 +14,11 @@ html {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, SimHei, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 body {
   display: block;
-  color: #3e3e3e;
+  color: #2f2f2f;
   text-rendering: optimizeLegibility;
   background-color: #fff;
   margin: 0 auto;
@@ -375,7 +375,7 @@ acronym {
 .note-title {
   font-size: 18px;
   font-weight: 600;
-  color: #3e3e3e;
+  color: #2f2f2f;
 }
 .note-content {
   line-height: 1.5;

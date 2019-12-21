@@ -13,7 +13,7 @@
       </p>
   </section>
 
-  <article class="markdown-body">
+  <article class="markdown-body" {{ if and (isset .Params "justify") (eq .Params.justify true) }}style="text-align: justify;"{{ end }}>
     {{ .Content }}
   </article>
 
