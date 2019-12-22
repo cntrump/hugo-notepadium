@@ -18,7 +18,7 @@ html {
 }
 body {
   display: block;
-  color: #2f2f2f;
+  color: #333;
   text-rendering: optimizeLegibility;
   background-color: #fff;
   margin: 0 auto;
@@ -315,7 +315,6 @@ acronym {
   text-align: center;
   font-size: 12px;
   color: #586069;
-  text-shadow: #ccc 1px 1px 2px;
   margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -364,7 +363,7 @@ acronym {
 .note {
   display: block;
   font-size: 13px;
-  color: #828c9b;
+  color: #999;
   text-decoration: none;
 }
 .note:hover,
@@ -376,7 +375,7 @@ acronym {
 .note-title {
   font-size: 18px;
   font-weight: 600;
-  color: #2f2f2f;
+  color: #333;
 }
 .note-content {
   line-height: 1.5;
@@ -481,6 +480,7 @@ acronym {
 
 .markdown-body {
   display: block;
+  color: #2f2f2f;
   padding: 20px 0;
   line-height: 1.8;
   background-image: linear-gradient(90deg, #f5f3f3 3%, transparent 3%), linear-gradient(360deg, #f5f3f3 3%, transparent 3%);
