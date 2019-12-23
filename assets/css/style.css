@@ -446,17 +446,10 @@ acronym {
 }
 .article-category .hashtag,
 .article-tag .hashtag {
-  font-weight: 600;
+  font-weight: 700;
   opacity: .5;
 }
-.article-category.li {
-  border-radius: 0;
-  border-bottom: 1px solid #28a745;
-}
-.article-tag.li {
-  border-radius: 0;
-  border-bottom: 1px solid #0366d6;
-}
+
 .pagination {
   display: block;
   text-align: center;
