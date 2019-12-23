@@ -1,21 +1,27 @@
 {{ define "main" }}
-  <section class="article-header">
+  {{ $justify := false }}
+  {{ if and (isset .Params "justify") (eq .Params.justify true) }} {{ $justify = true }} {{ end }}
+
+  <section class="article-header" {{ if $justify }}style="text-align: justify;"{{ end }}>
       <h1>{{ .Title }}</h1>
-      <p class="article-date"><span>{{ .Date.Format "2006-01-02" }}</span>
-        {{ range .Params.categories }}
-          {{ $url := print "/categories/" (. | urlize) "/" }}
-          <a class="article-label" href={{ $url | relURL }}>{{ . }}</a>
-        {{ end }}
-        {{ range .Params.tags }}
-          {{ $url := print "/tags/" ( . | urlize) "/" }}
-          <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
-        {{ end }}
-      </p>
+      <p class="article-date">{{ .Date.Format "2006-01-02" }}</p>
   </section>
 
-  <article class="markdown-body" {{ if and (isset .Params "justify") (eq .Params.justify true) }}style="text-align: justify;"{{ end }}>
+  <article class="markdown-body" {{ if $justify }}style="text-align: justify;"{{ end }}>
     {{ .Content }}
   </article>
+  {{ if or .Params.categories .Params.tags }}
+    <section class="article-labels">
+      {{ range .Params.categories }}
+            {{ $url := print "/categories/" (. | urlize) "/" }}
+            <a class="article-category" href={{ $url | relURL }}>{{ . }}</a>
+          {{ end }}
+          {{ range .Params.tags }}
+            {{ $url := print "/tags/" ( . | urlize) "/" }}
+            <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
+          {{ end }}
+    </section>
+  {{ end }}
 
   {{ $license := ""}}
   {{ if and (isset .Params "license") (ne .Params.license "") }}
@@ -38,7 +44,7 @@
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{ range .Params.categories }}
               {{ $url := print "/categories/" (. | urlize) "/" }}
-              <a class="article-label" href={{ $url | relURL }}>{{ . }}</a>
+              <a class="article-category" href={{ $url | relURL }}>{{ . }}</a>
           {{ end }}
           {{ range .Params.tags }}
               {{ $url := print "/tags/" ( . | urlize) "/" }}
@@ -52,7 +58,7 @@
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             {{ range .Params.categories }}
                 {{ $url := print "/categories/" (. | urlize) "/" }}
-                <a class="article-label" href={{ $url | relURL }}>{{ . }}</a>
+                <a class="article-category" href={{ $url | relURL }}>{{ . }}</a>
             {{ end }}
             {{ range .Params.tags }}
                 {{ $url := print "/tags/" ( . | urlize) "/" }}

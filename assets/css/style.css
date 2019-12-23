@@ -206,12 +206,11 @@ figure {
 }
 
 figcaption > h4 {
-  font-size: 13px;
+  display: inline-block;
+  color: #969696;
+  font-size: 14px;
   font-weight: normal;
-  color: #999;
-  border: none;
-  padding: 10px;
-  margin: 0;
+  line-height: 1.7;
 }
 
 svg {
@@ -284,7 +283,7 @@ acronym {
 .site-slogan {
   display: inline-block;
   font-size: 16px;
-  color: #586069;
+  color: #999;
   margin-left: 12px;
   vertical-align: middle;
 }
@@ -314,7 +313,7 @@ acronym {
 .footer {
   text-align: center;
   font-size: 12px;
-  color: #586069;
+  color: #999;
   margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -362,7 +361,7 @@ acronym {
 
 .note {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   color: #999;
   text-decoration: none;
 }
@@ -386,9 +385,12 @@ acronym {
 }
 .article-date {
   font-size: 14px;
-  color: #586069;
+  color: #999;
 }
-
+.article-labels {
+  font-size: 14px;
+  padding: 8px 0;
+}
 .article-tag {
   display: inline-block;
   padding: 4px 6px;
@@ -406,7 +408,7 @@ acronym {
   text-decoration: none;
 }
 
-.article-label {
+.article-category {
   display: inline-block;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
@@ -417,14 +419,14 @@ acronym {
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 3px;
 }
-.article-label:hover,
-.article-label:focus,
-.article-label:active {
+.article-category:hover,
+.article-category:focus,
+.article-category:active {
   background-color: #def;
   text-decoration: none;
 }
 
-.article-navigation .article-label,
+.article-navigation .article-category,
 .article-navigation .article-tag {
   font-size: 14px;
 }
@@ -536,8 +538,12 @@ acronym {
 }
 
 .markdown-body figcaption > h4 {
-  border: 0;
-  margin: 0;
+  min-width: 20%;
+  max-width: 80%;
+  min-height: 22px;
+  padding: 10px 10px 6px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .markdown-body blockquote > :first-child {

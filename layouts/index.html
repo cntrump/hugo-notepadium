@@ -16,17 +16,7 @@
     <li>
         <a class="note" href="{{ .RelPermalink }}">
             <p class="note-title">{{ .Title }}</p>
-            <p>
-                <span>{{ .Date.Format "2006-01-02" }}</span>
-                {{ range .Params.categories }}
-                  {{ $url := print "/categories/" (. | urlize) "/" }}
-                  <object><a class="article-label" href={{ $url | relURL }}>{{ . }}</a></object>
-                {{ end }}
-                {{ range .Params.tags }}
-                  {{ $url := print "/tags/" ( . | urlize) "/" }}
-                  <object><a class="article-tag" href={{ $url | relURL }}>{{ . }}</a></object>
-                {{ end }}
-            </p>
+            <p>{{ .Date.Format "2006-01-02" }}</p>
             <p class="note-content">{{ .Summary | plainify | safeHTML }}{{ if .Truncated }}…{{ end }}</p>
             {{ $relURL := .RelPermalink }}
             {{ $imgs := .Params.imgs }}
@@ -41,6 +31,18 @@
                         <img src="{{ $imgurl }}">
                     {{ end }}
                 </figure>
+            {{ end }}
+            {{ if or .Params.categories .Params.tags }}
+                <p>
+                    {{ range .Params.categories }}
+                    {{ $url := print "/categories/" (. | urlize) "/" }}
+                    <object><a class="article-category" href={{ $url | relURL }}>{{ . }}</a></object>
+                    {{ end }}
+                    {{ range .Params.tags }}
+                    {{ $url := print "/tags/" ( . | urlize) "/" }}
+                    <object><a class="article-tag" href={{ $url | relURL }}>{{ . }}</a></object>
+                    {{ end }}
+                </p>
             {{ end }}
         </a>
     </li>
