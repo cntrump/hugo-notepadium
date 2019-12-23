@@ -14,11 +14,11 @@
     <section class="article-labels">
       {{ range .Params.categories }}
             {{ $url := print "/categories/" (. | urlize) "/" }}
-            <a class="article-category" href={{ $url | relURL }}>{{ . }}</a>
+            <a class="article-category li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
           {{ end }}
           {{ range .Params.tags }}
             {{ $url := print "/tags/" ( . | urlize) "/" }}
-            <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
+            <a class="article-tag li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
           {{ end }}
     </section>
   {{ end }}
@@ -32,41 +32,41 @@
 
   {{ if ne $license "" }}
     <section class="article-license">
-      <p>{{ $license | htmlUnescape }}</p>
+      {{ $license | htmlUnescape }}
     </section>
   {{ end }}
 
   {{ if or .PrevInSection .NextInSection }}
     <section class="article-navigation">
-      <ul>
+      
         {{ with .NextInSection }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <p>
+          <a class="li" href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{ range .Params.categories }}
               {{ $url := print "/categories/" (. | urlize) "/" }}
-              <a class="article-category" href={{ $url | relURL }}>{{ . }}</a>
+              <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
           {{ end }}
           {{ range .Params.tags }}
               {{ $url := print "/tags/" ( . | urlize) "/" }}
-              <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
+              <a class="article-tag" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
           {{ end }}
-        </li>
+        </p>
         {{end}}
 
         {{ with .PrevInSection }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <p>
+            <a class="li" href="{{ .RelPermalink }}">{{ .Title }}</a>
             {{ range .Params.categories }}
                 {{ $url := print "/categories/" (. | urlize) "/" }}
-                <a class="article-category" href={{ $url | relURL }}>{{ . }}</a>
+                <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
             {{ end }}
             {{ range .Params.tags }}
                 {{ $url := print "/tags/" ( . | urlize) "/" }}
-                <a class="article-tag" href={{ $url | relURL }}>{{ . }}</a>
+                <a class="article-tag" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
             {{ end }}
-          </li>
+          </p>
         {{end}}
-      </ul>
+      
     </section>
   {{ end }}
 

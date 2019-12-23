@@ -36,11 +36,11 @@
                 <p>
                     {{ range .Params.categories }}
                     {{ $url := print "/categories/" (. | urlize) "/" }}
-                    <object><a class="article-category" href={{ $url | relURL }}>{{ . }}</a></object>
+                    <object><a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a></object>
                     {{ end }}
                     {{ range .Params.tags }}
                     {{ $url := print "/tags/" ( . | urlize) "/" }}
-                    <object><a class="article-tag" href={{ $url | relURL }}>{{ . }}</a></object>
+                    <object><a class="article-tag" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a></object>
                     {{ end }}
                 </p>
             {{ end }}
