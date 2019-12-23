@@ -160,9 +160,6 @@ kbd {
   background-color: #eee;
   border: 1px solid #b4b4b4;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  font-weight: 600;
-  font-variant: small-caps;
-  letter-spacing: 1px;
   line-height: 1;
 }
 kbd+kbd {
@@ -424,25 +421,24 @@ acronym {
 .article-license,
 .article-navigation,
 .article-discussion {
-  font-size: 14px;
   padding: 16px 0;
 }
+.article-navigation,
 .article-discussion {
   border-top: 1px dashed #e1e4e8;
 }
 .article-navigation .li {
-  border-left: 2px solid #0366d6;
+  border-left: 4px solid #0366d6;
   padding-left: 6px;
 }
 .article-license {
   text-align: center;
   color: #165c26;
   background-color: #dcffe4;
-  padding: 16px 0;
+  padding: 16px 8px;
 }
 .article-labels {
   font-size: 14px;
-  text-align: center;
 }
 .article-category .hashtag,
 .article-tag .hashtag {

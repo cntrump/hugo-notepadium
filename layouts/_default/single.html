@@ -10,18 +10,6 @@
   <article class="markdown-body" {{ if $justify }}style="text-align: justify;"{{ end }}>
     {{ .Content }}
   </article>
-  {{ if or .Params.categories .Params.tags }}
-    <section class="article-labels">
-      {{ range .Params.categories }}
-            {{ $url := print "/categories/" (. | urlize) "/" }}
-            <a class="article-category li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
-          {{ end }}
-          {{ range .Params.tags }}
-            {{ $url := print "/tags/" ( . | urlize) "/" }}
-            <a class="article-tag li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
-          {{ end }}
-    </section>
-  {{ end }}
 
   {{ $license := ""}}
   {{ if and (isset .Params "license") (ne .Params.license "") }}
@@ -33,6 +21,19 @@
   {{ if ne $license "" }}
     <section class="article-license">
       {{ $license | htmlUnescape }}
+    </section>
+  {{ end }}
+
+  {{ if or .Params.categories .Params.tags }}
+    <section class="article-labels">
+      {{ range .Params.categories }}
+            {{ $url := print "/categories/" (. | urlize) "/" }}
+            <a class="article-category li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
+          {{ end }}
+          {{ range .Params.tags }}
+            {{ $url := print "/tags/" ( . | urlize) "/" }}
+            <a class="article-tag li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
+          {{ end }}
     </section>
   {{ end }}
 
