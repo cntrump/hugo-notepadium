@@ -212,7 +212,7 @@ figcaption > h4 {
   display: inline-block;
   color: #969696;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -274,7 +274,7 @@ strong {
 .site-name {
   display: inline-block;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 600;
   vertical-align: middle;
 }
 .site-name:hover,
@@ -457,7 +457,7 @@ strong {
 
 .pagination ul {
   display: inline-block;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0;
   margin: 16px 0px;
 }
