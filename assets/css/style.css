@@ -12,15 +12,14 @@
 }
 html {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, SimHei, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.65;
 }
 body {
   display: block;
   color: #303033;
-  text-rendering: optimizeLegibility;
-  background-color: #fff;
+  background-color: #feffff;
   margin: 0 auto;
   padding: 0;
   word-wrap: break-word;
@@ -127,7 +126,7 @@ pre,
 tt,
 kbd,
 samp {
-  font-family: "Source Code Pro", SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
   font-weight: 500;
   white-space: pre;
 }
@@ -136,8 +135,8 @@ pre {
   display: block;
   overflow: auto;
   font-size: 85%;
+  line-height: 1.5;
   color: #24292e;
-  line-height: 1.45;
   padding: 12px 10px;
   margin: 8px 0;
   word-wrap: normal;
@@ -253,7 +252,6 @@ strong {
 .base-body {
   display: block;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 .header {
@@ -446,7 +444,7 @@ strong {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border: 1px solid #0366d6;
+  border: 1px solid #838387;
   border-radius: 4px;
   margin-right: 6px;
   vertical-align: middle;
@@ -501,7 +499,6 @@ strong {
   display: block;
   color: #838387;
   padding: 20px 0;
-  line-height: 1.8;
 }
 
 .markdown-body > :first-child {
