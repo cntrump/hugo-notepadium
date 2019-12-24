@@ -229,6 +229,11 @@ acronym {
   cursor: help;
 }
 
+b,
+strong {
+  font-weight: 700;
+}
+
 .max-width {
   max-width: 730px;
 }
