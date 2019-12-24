@@ -1,7 +1,7 @@
 {{ $url := .Destination | safeURL }}
 <figure class="image-container">
   <a target="_blank" rel="noopener noreferrer" href="{{ $url }}">
-    <img class="img" src="{{ $url }}" {{ with .Text }}alt="{{ . }}"{{ end }} />
+    <img class="img" src="{{ $url }}" alt{{ with .Text }}="{{ . }}"{{ end }} />
   </a>
   {{ with .Title }}
     <figcaption>
