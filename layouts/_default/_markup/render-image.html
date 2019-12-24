@@ -1,11 +1,11 @@
 {{ $url := .Destination | safeURL }}
-<figure class="image-container">
-  <a target="_blank" rel="noopener noreferrer" href="{{ $url }}">
-    <img class="img" src="{{ $url }}" alt{{ with .Text }}="{{ . }}"{{ end }} />
-  </a>
+<span class="image-container">
+  <span class="link">
+    <a target="_blank" rel="noopener noreferrer" href="{{ $url }}"><img class="img" src="{{ $url }}" alt{{ with .Text }}="{{ . }}"{{ end }} /></a>
+  </span>
   {{ with .Title }}
-    <figcaption>
-      <h4 class="title">{{ . | htmlUnescape }}</h4>
-    </figcaption>
+    <span class="caption">
+      <span class="title">{{ . | htmlUnescape }}</span>
+    </span>
   {{ end }}
-</figure>
+  </span>

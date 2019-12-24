@@ -208,7 +208,8 @@ figure {
   margin-inline-end: 10px;
 }
 
-figcaption > h4 {
+figcaption > h4,
+.markdown-body .image-container .caption .title {
   display: inline-block;
   color: #969696 !important;
   font-size: 14px;
@@ -389,9 +390,6 @@ strong {
   line-height: 1.5;
 }
 
-.article-header {
-  padding-bottom: 20px;
-}
 .article-date {
   font-size: 14px;
   color: #999;
@@ -536,12 +534,24 @@ strong {
   border-bottom: 1px solid #eaecef;
 }
 
-.markdown-body .image-container,
+.markdown-body .image-container {
+  display: block;
+  line-height: 1;
+  text-align: center;
+}
+
+.markdown-body .image-container .link,
+.markdown-body .image-container .caption {
+  display: block;
+}
+.markdown-body .image-container .caption {
+  margin-top: 8px;
+}
+
 .markdown-body figure {
   text-align: center;
   margin: 0 0 20px 0;
 }
-
 .markdown-body .image-container .img,
 .markdown-body figure > img {
   margin: 0;
@@ -549,7 +559,7 @@ strong {
   border: 1px solid #f0f0f0;
 }
 
-.markdown-body .image-container .title,
+.markdown-body .image-container .caption .title,
 .markdown-body figcaption > h4 {
   min-width: 20%;
   max-width: 80%;
