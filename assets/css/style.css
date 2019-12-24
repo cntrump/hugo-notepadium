@@ -432,9 +432,18 @@ strong {
 .article-discussion {
   border-top: 1px dashed #e1e4e8;
 }
+.article-navigation .link {
+  font-weight: 600;
+  color: #333;
+}
 .article-navigation .li {
-  border-left: 4px solid #0366d6;
-  padding-left: 6px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #0366d6;
+  border-radius: 4px;
+  margin-right: 6px;
+  vertical-align: middle;
 }
 .article-license {
   font-size: 85%;

@@ -42,7 +42,7 @@
       
         {{ with .NextInSection }}
         <p>
-          <span class="li"></span><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title }}</a>
           {{ range .Params.categories }}
               {{ $url := print "/categories/" (. | urlize) "/" }}
               <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
@@ -56,7 +56,7 @@
 
         {{ with .PrevInSection }}
           <p>
-            <span class="li"></span><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title }}</a class="link">
             {{ range .Params.categories }}
                 {{ $url := print "/categories/" (. | urlize) "/" }}
                 <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
