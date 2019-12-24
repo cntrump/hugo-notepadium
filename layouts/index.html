@@ -28,7 +28,7 @@
                         {{ if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
                             {{ $imgurl = path.Join $relURL . }}
                         {{ end }}
-                        <img src="{{ $imgurl }}">
+                        <img src="{{ $imgurl }}" alt />
                     {{ end }}
                 </figure>
             {{ end }}
