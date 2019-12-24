@@ -588,6 +588,7 @@ strong {
 }
 .markdown-body table td,
 .markdown-body table th {
+  min-width: 120px;
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
