@@ -168,7 +168,7 @@ kbd {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
   line-height: 1;
 }
-kbd+kbd {
+kbd + kbd {
   margin-left: 4px;
 }
 
@@ -606,7 +606,7 @@ strong {
   overflow: auto;
 }
 .markdown-body table tr {
-  border-top: 1px solid #c6cbd1;
+  border: 0;
 }
 .markdown-body table th {
   color: #303033;
@@ -617,6 +617,11 @@ strong {
   min-width: 120px;
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+}
+
+.markdown-body table th:empty {
+  padding: 0;
+  border: 0;
 }
 
 .markdown-body .highlight {
