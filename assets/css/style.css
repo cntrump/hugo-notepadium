@@ -360,6 +360,7 @@ strong {
 .note-list figure > img {
   object-fit: cover;
   height: 80px;
+  min-width: 80px;
   max-width: 120px;
   border-radius: 4px;
   border: 1px solid #eee;
