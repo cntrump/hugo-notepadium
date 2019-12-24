@@ -590,7 +590,6 @@ strong {
   overflow: auto;
 }
 .markdown-body table tr {
-  background-color: #fff;
   border-top: 1px solid #c6cbd1;
 }
 .markdown-body table th {
@@ -604,13 +603,18 @@ strong {
   border: 1px solid #dfe2e5;
 }
 
+.markdown-body .highlight {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.markdown-body .highlight .chroma {
+  margin: 0;
+}
 .markdown-body .chroma .lntable {
   display: table;
   table-layout: auto;
   width: 100%;
   font-size: 85%;
-  margin-top: 0;
-  margin-bottom: 20px;
   border-radius: 3px;
   border: 1px solid #eee;
 }
