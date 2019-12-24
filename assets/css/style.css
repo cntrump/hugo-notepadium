@@ -523,17 +523,20 @@ acronym {
   border-bottom: 1px solid #eaecef;
 }
 
+.markdown-body .image-container,
 .markdown-body figure {
   text-align: center;
   margin: 0 0 20px 0;
 }
 
+.markdown-body .image-container .img,
 .markdown-body figure > img {
   margin: 0;
   border-radius: 4px;
   border: 1px solid #f0f0f0;
 }
 
+.markdown-body .image-container .title,
 .markdown-body figcaption > h4 {
   min-width: 20%;
   max-width: 80%;

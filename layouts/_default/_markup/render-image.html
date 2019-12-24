@@ -1,0 +1,5 @@
+{{ $url := .Destination | safeURL }}
+<figure class="image-container">
+  <img class="img" src="{{ $url }}" {{ with .Text }}alt="{{ . }}"{{ end }} />
+  {{ with .Title }}<figcaption><h4 class="title">{{ . | htmlUnescape }}</h4></figcaption>{{ end }}
+</figure>
