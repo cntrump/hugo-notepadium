@@ -630,6 +630,21 @@ strong {
   border: 0;
 }
 
+.markdown-body p > span.math {
+  display: inline-block;
+  font-size: 85%;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: #24292e;
+  background-color: #f6f8fa;
+}
+.markdown-body .math .mo {
+  color: #d73a49;
+}
+.markdown-body .math .mn {
+  color: #005cc5;
+}
+
 .markdown-body .highlight {
   margin-top: 0;
   margin-bottom: 20px;
