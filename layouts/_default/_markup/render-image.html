@@ -5,7 +5,7 @@
   </span>
   {{ with .Title }}
     <span class="caption">
-      <span class="title">{{ . | htmlUnescape }}</span>
+      <span class="title">{{ . | safeHTML }}</span>
     </span>
   {{ end }}
   </span>
