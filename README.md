@@ -127,14 +127,14 @@ enable = true  # true means globally, or on a per page set "math = true"
 use = "katex"  # "mathjax" or "katex"
 ```
 
-Usage
+Example
 
 ```
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 ```
 
-### Comments by Disqus
+### Comments
 
 Setup Disqus [shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
 
@@ -164,6 +164,6 @@ comments = true
 - [**HighlightJS**](https://highlightjs.org/)
 - [**PrismJS**](https://prismjs.com/)
 - [**MathJax**](https://www.mathjax.org/)
-- [*Katex*](https://katex.org/)
+- [**Katex**](https://katex.org/)
 - [**Disqus**](https://disqus.com/)
 - [**Source Code Pro**](https://fonts.adobe.com/fonts/source-code-pro)
