@@ -8,10 +8,10 @@
 {{ define "title" }}
   {{ $title := .Title }}
   {{ if and (ne $title "") (ne $title .Site.Title) }}
-    <title>{{ $title }} &ndash; {{ .Site.Title | htmlUnescape }}</title>
+    <title>{{ $title }} &ndash; {{ .Site.Title | safeHTML }}</title>
   {{ else }}
     {{ $slogan := .Site.Params.slogan }}
-    <title>{{ .Site.Title | htmlUnescape }}{{ if and (isset .Site.Params "slogan") (ne $slogan "") }} &ndash; {{ $slogan | htmlUnescape }}{{ end }}</title>
+    <title>{{ .Site.Title | safeHTML }}{{ if and (isset .Site.Params "slogan") (ne $slogan "") }} &ndash; {{ $slogan | safeHTML }}{{ end }}</title>
   {{ end }}  
 {{ end }}
 

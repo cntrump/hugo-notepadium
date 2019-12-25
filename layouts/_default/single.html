@@ -20,7 +20,7 @@
 
   {{ if ne $license "" }}
     <section class="article-license">
-      {{ $license | htmlUnescape }}
+      {{ $license | safeHTML }}
     </section>
   {{ end }}
 
