@@ -11,7 +11,7 @@ Features
 - Logo and slogan
 - Navigation items
 - Syntanx highlighting
-- Math by MathJax
+- Support Math by MathJax and Katex
 - Comments by Disqus
 - CC License
 - Builtin `Source Code Pro` font for code
@@ -58,8 +58,9 @@ logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
 
-[params.MathJax]
-url = ""  # builtin: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false, you can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
 
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
@@ -118,12 +119,12 @@ theme = "dracula"
 webFonts = true  # use builtin font: Source Code Pro
 ```
 
-### Math by MathJax
+### Math
 
 ```toml
-[params.MathJax]
+[params.math]
 enable = true  # true means globally, or on a per page set "math = true"
-url = ""  # builtin CDN: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+use = "katex"  # "mathjax" or "katex"
 ```
 
 Usage
@@ -163,5 +164,6 @@ comments = true
 - [**HighlightJS**](https://highlightjs.org/)
 - [**PrismJS**](https://prismjs.com/)
 - [**MathJax**](https://www.mathjax.org/)
+- [*Katex*](https://katex.org/)
 - [**Disqus**](https://disqus.com/)
 - [**Source Code Pro**](https://fonts.adobe.com/fonts/source-code-pro)

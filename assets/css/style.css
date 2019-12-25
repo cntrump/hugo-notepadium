@@ -630,25 +630,34 @@ strong {
   border: 0;
 }
 
-.markdown-body .MathJax_Display,
-.markdown-body .MathJax {
+.markdown-body .math .katex {
+  font-size: inherit !important;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+.markdown-body .math .MathJax {
+  outline: none;
+}
+.markdown-body .math .katex,
+.markdown-body .math .MathJax_Display,
+.markdown-body .math .MathJax {
   display: inline-block !important;
   font-size: 85%;
   width: auto;
   margin: 0;
   padding: 2px 4px;
-  color: #24292e;
+  color: #303033;
 }
-.markdown-body .MathJax_Display .MathJax {
+.markdown-body .math .MathJax_Display .MathJax {
   font-size: inherit;
 }
-.markdown-body .MathJax .math .mi {
+.markdown-body .math .MathJax .mi {
   color: #6f42c1;
 }
-.markdown-body .MathJax .math .mo {
+.markdown-body .math .MathJax .mo {
   color: #d73a49;
 }
-.markdown-body .MathJax .math .mn {
+.markdown-body .math .MathJax .mn {
   color: #005cc5;
 }
 
