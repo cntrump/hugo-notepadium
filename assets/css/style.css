@@ -429,7 +429,7 @@ strong {
 .article-navigation,
 .article-discussion {
   font-size: 15px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .article-navigation,
 .article-discussion {
@@ -463,7 +463,6 @@ strong {
   text-align: center;
   color: #165c26;
   background-color: #dcffe4;
-  margin-top: 0;
   padding: 16px 8px;
 }
 .article-category .hashtag,
