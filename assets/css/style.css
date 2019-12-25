@@ -155,7 +155,7 @@ samp {
   padding: 2px 4px;
   border-radius: 3px;
   color: #c7254e;
-  background-color: #f9f2f4;
+  background-color: rgba(199,37,78,.1);
 }
 
 kbd {

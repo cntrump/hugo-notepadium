@@ -15,7 +15,7 @@
     {{ range $paginator.Pages }}
     <li>
         <a class="note" href="{{ .RelPermalink }}">
-            <p class="note-title">{{ .Title }}</p>
+            <p class="note-title">{{ .Title | safeHTML }}</p>
             <p>{{ .Date.Format "2006-01-02" }}</p>
             <p class="note-content">{{ .Summary | plainify | safeHTML }}{{ if .Truncated }}…{{ end }}</p>
             {{ $relURL := .RelPermalink }}

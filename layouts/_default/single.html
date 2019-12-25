@@ -3,7 +3,7 @@
   {{ if and (isset .Params "justify") (eq .Params.justify true) }} {{ $justify = true }} {{ end }}
 
   <section class="article-header" {{ if $justify }}style="text-align: justify;"{{ end }}>
-      <h1>{{ .Title }}</h1>
+      <h1>{{ .Title | safeHTML }}</h1>
       <p class="article-date">{{ .Date.Format "2006-01-02" }}</p>
   </section>
 
@@ -42,7 +42,7 @@
       
         {{ with .NextInSection }}
         <p>
-          <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title }}</a>
+          <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title | safeHTML }}</a>
           {{ range .Params.categories }}
               {{ $url := print "/categories/" (. | urlize) "/" }}
               <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
@@ -56,7 +56,7 @@
 
         {{ with .PrevInSection }}
           <p>
-            <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title }}</a class="link">
+            <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title | safeHTML }}</a class="link">
             {{ range .Params.categories }}
                 {{ $url := print "/categories/" (. | urlize) "/" }}
                 <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
