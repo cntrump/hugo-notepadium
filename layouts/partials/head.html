@@ -8,7 +8,7 @@
 {{ define "title" }}
   {{ $title := .Title }}
   {{ if and (ne $title "") (ne $title .Site.Title) }}
-    <title>{{ $title }} &ndash; {{ .Site.Title | safeHTML }}</title>
+    <title>{{ $title | safeHTML }} &ndash; {{ .Site.Title | safeHTML }}</title>
   {{ else }}
     {{ $slogan := .Site.Params.slogan }}
     <title>{{ .Site.Title | safeHTML }}{{ if and (isset .Site.Params "slogan") (ne $slogan "") }} &ndash; {{ $slogan | safeHTML }}{{ end }}</title>
