@@ -630,18 +630,22 @@ strong {
   border: 0;
 }
 
-.markdown-body p > span.math {
-  display: inline-block;
+.markdown-body .MathJax_Display,
+.markdown-body .MathJax {
+  display: inline-block !important;
   font-size: 85%;
+  width: auto;
+  margin: 0;
   padding: 2px 4px;
-  border-radius: 3px;
   color: #24292e;
-  background-color: #f6f8fa;
 }
-.markdown-body .math .mo {
+.markdown-body .MathJax_Display .MathJax {
+  font-size: inherit;
+}
+.markdown-body .MathJax .math .mo {
   color: #d73a49;
 }
-.markdown-body .math .mn {
+.markdown-body .MathJax .math .mn {
   color: #005cc5;
 }
 
