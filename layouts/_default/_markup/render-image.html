@@ -1,5 +1,5 @@
 {{- $url := .Destination | safeURL -}}
-{{- $block := (eq .Title " ") -}}
+{{- $block := gt (len .Title) 0 -}}
 
 {{- if $block -}}
 <span class="image-container">
