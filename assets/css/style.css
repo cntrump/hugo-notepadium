@@ -97,12 +97,11 @@ blockquote,
 q {
   quotes: none;
   margin: 0;
-  background-color: #fff8dc;
 }
 blockquote {
   margin-bottom: 10px;
   padding: 10px;
-  border-left: 2px solid #ffeb8e;
+  border-left: 2px solid #c6c6cc;
 }
 
 img {
@@ -540,6 +539,38 @@ strong {
 .markdown-body h2 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body blockquote,
+.markdown-body q {
+  font-size: 85%;
+  color: #303033;
+}
+.markdown-body blockquote {
+  position: relative;
+  border: 0;
+  padding: 0 0 0 22px;
+}
+.markdown-body blockquote::before,
+.markdown-body blockquote::after,
+.markdown-body q::before,
+.markdown-body q::after {
+  color: #c6c6cc;
+}
+.markdown-body blockquote::before,
+.markdown-body q::before {
+  content: "❝";
+}
+.markdown-body q::after {
+  content: "❞";
+}
+.markdown-body blockquote::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .markdown-body li + li {
