@@ -151,7 +151,7 @@ kbd,
 tt,
 samp {
   display: inline;
-  font-size: 85%;
+  font-size: 15px;
   padding: 2px 4px;
   border-radius: 3px;
   color: #c7254e;
@@ -394,7 +394,7 @@ strong {
 .article-tag,
 .article-category {
   display: inline-block;
-  font-size: 85%;
+  font-size: 15px;
   line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
@@ -453,7 +453,7 @@ strong {
 }
 
 .article-license {
-  font-size: 85%;
+  font-size: 15px;
   text-align: center;
 }
 .article-category .hashtag,
@@ -665,7 +665,7 @@ strong {
 .markdown-body .math .MathJax_Display,
 .markdown-body .math .MathJax {
   display: inline-block !important;
-  font-size: 85%;
+  font-size: 15px;
   width: auto;
   margin: 0;
   padding: 2px 4px;
@@ -695,7 +695,7 @@ strong {
   display: table;
   table-layout: auto;
   width: 100%;
-  font-size: 85%;
+  font-size: 13.6px;
   border-radius: 3px;
   border: 1px solid #eee;
 }
