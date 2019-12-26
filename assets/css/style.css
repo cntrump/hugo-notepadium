@@ -394,9 +394,10 @@ strong {
 .article-tag,
 .article-category {
   display: inline-block;
+  font-size: 85%;
+  line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
-  line-height: 1;
   white-space: nowrap;
   border-radius: 3px;
 }
@@ -425,7 +426,6 @@ strong {
 .article-license,
 .article-navigation,
 .article-discussion {
-  font-size: 85%;
   margin-bottom: 20px;
 }
 .article-discussion {
@@ -451,6 +451,7 @@ strong {
   margin-right: 4px;
   vertical-align: middle;
 }
+
 .article-license {
   font-size: 85%;
   text-align: center;
