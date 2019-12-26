@@ -14,7 +14,7 @@ html {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, SimHei, 'Segoe UI', Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 body {
   display: block;
@@ -264,7 +264,6 @@ strong {
 
 .nav {
   padding-top: 12px;
-  border-bottom: 2px solid #fef9f7;
 }
 .nav ul {
   display: inline-block;
@@ -308,13 +307,14 @@ strong {
   font-weight: 600;
   position: relative;
   color: #f25022;
-  background-color: #fef9f7;
+  background-color: rgba(242,80,34,.05);
+  border-radius: 3px;
 }
 .site-tag:hover,
 .site-tag:focus,
 .site-tag:active {
   text-decoration: none;
-  background-color: #fcefea;
+  background-color: rgba(242,80,34,.1);
 }
 
 .flex-body {
@@ -326,10 +326,7 @@ strong {
   text-align: center;
   font-size: 12px;
   color: #8e8e93;
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-top: 1px solid #eaecef;
+  margin: 20px auto;
 }
 .footer p {
   margin: 0;
@@ -405,22 +402,22 @@ strong {
 }
 .article-tag {
   color: #0366d6;
-  background-color: rgba(3,102,214,.1);
+  background-color: rgba(3,102,214,.05);
 }
 .article-category {
   color: #28a745;
-  background-color: rgba(40,167,69,.1);
+  background-color: rgba(40,167,69,.05);
 }
 .article-category:hover,
 .article-category:focus,
 .article-category:active {
-  background-color: rgba(40,167,69,.2);
+  background-color: rgba(40,167,69,.1);
   text-decoration: none;
 }
 .article-tag:hover,
 .article-tag:focus,
 .article-tag:active {
-  background-color: rgba(3,102,214,.2);
+  background-color: rgba(3,102,214,.1);
   text-decoration: none;
 }
 
@@ -428,15 +425,14 @@ strong {
 .article-license,
 .article-navigation,
 .article-discussion {
-  font-size: 15px;
+  font-size: 85%;
   margin-bottom: 20px;
 }
-.article-navigation,
 .article-discussion {
   border-top: 1px dashed #e1e4e8;
 }
 .article-navigation {
-  background-color: #e5e5ea;
+  background-color: #f1f4f6;
   border-radius: 8px;
   padding: 12px 16px;
 }
