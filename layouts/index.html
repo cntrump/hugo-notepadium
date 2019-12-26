@@ -11,74 +11,7 @@
 </div>
 {{- end }}
 
-<ul class="note-list">
-    {{- range $paginator.Pages }}
-    <li>
-        <a class="note" href="{{ .RelPermalink }}">
-            <p class="note-title">{{ .Title | safeHTML }}</p>
-            <p>{{ .Date.Format "2006-01-02" }}</p>
-            <p class="note-content">{{ .Summary | plainify | safeHTML }}{{ if .Truncated }}…{{ end }}</p>
-            {{- $relURL := .RelPermalink -}}
-            {{- $imgs := .Params.imgs -}}
-            {{- with .Params.imgs }}
-            <figure>
-                {{- $imgCount := len $imgs -}}
-                {{- range $imgs }}
-                {{- $imgurl := lower . -}}
-                {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) }}
-                {{- $imgurl = path.Join $relURL . -}}
-                {{- end }}
-                <img src="{{ $imgurl }}" alt />
-                {{- end }}
-            </figure>
-            {{- end }}
-            {{- if or .Params.categories .Params.tags }}
-            <p>
-                {{- range .Params.categories }}
-                {{- $url := print "/categories/" (. | urlize) "/" -}}
-                <object><a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a></object>
-                {{- end }}
-                {{- range .Params.tags }}
-                {{- $url := print "/tags/" ( . | urlize) "/" -}}
-                <object><a class="article-tag" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a></object>
-                {{- end }}
-            </p>
-            {{- end }}
-        </a>
-    </li>
-    {{- end }}
-</ul>
+{{- partial "note-list.html" $paginator -}}
+{{- partial "pagination.html" $paginator -}}
 
-{{- if gt $paginator.TotalPages 1 }}
-
-{{- $pageIndex := $paginator.PageNumber -}}
-{{- $totalPages := $paginator.TotalPages -}}
-{{- $cols := 5.0 -}}
-{{- $rows := math.Ceil (div $totalPages $cols) -}}
-{{- $row := math.Ceil (div $pageIndex $cols) -}}
-{{- $startPage := sub (mul $row $cols) $cols -}}
-{{- $endPage := add $startPage $cols -}}
-
-<div class="pagination">
-    <ul>
-        {{- if gt $row 1 }}
-        <li><a href="{{ $paginator.Prev.URL }}" class="previous_page">&laquo;</a></li>
-        {{- end }}
-
-        {{- range $paginator.Pagers }}
-        {{- if and (gt .PageNumber $startPage) (le .PageNumber $endPage) }}
-        {{- $active := "" -}}
-        {{- if eq .PageNumber $paginator.PageNumber }}
-        {{- $active = "active" -}}
-        {{- end }}
-        <li><a class="{{ $active }}" href="{{ .URL }}">{{ .PageNumber }}</a></li>
-        {{- end }}
-        {{- end }}
-
-        {{- if lt $row $rows }}
-        <li><a href="{{ $paginator.Next.URL }}" class="next_page">&raquo;</a></li>
-        {{- end }}
-    </ul>
-</div>
-{{- end }}
 {{- end }}
