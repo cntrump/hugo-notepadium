@@ -34,30 +34,10 @@
 {{- if or .PrevInSection .NextInSection }}
 <section class="article-navigation">
   {{- with .NextInSection }}
-  <p>
-    <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title | safeHTML }}</a>
-    {{- range .Params.categories }}
-    {{- $url := print "/categories/" (. | urlize) "/" -}}
-    <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
-    {{- end }}
-    {{- range .Params.tags }}
-    {{- $url := print "/tags/" ( . | urlize) "/" -}}
-    <a class="article-tag" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
-    {{- end }}
-  </p>
+  <p><a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title | safeHTML }}</a></p>
   {{- end }}
   {{- with .PrevInSection }}
-  <p>
-    <a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title | safeHTML }}</a class="link">
-    {{- range .Params.categories }}
-    {{- $url := print "/categories/" (. | urlize) "/" -}}
-    <a class="article-category" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
-    {{- end }}
-    {{- range .Params.tags }}
-    {{- $url := print "/tags/" ( . | urlize) "/" -}}
-    <a class="article-tag" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
-    {{- end }}
-  </p>
+  <p><a class="link" href="{{ .RelPermalink }}"><span class="li"></span>{{ .Title | safeHTML }}</a class="link"></p>
   {{- end }}
 </section>
 {{- end }}
