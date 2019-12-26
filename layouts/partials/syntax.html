@@ -1,21 +1,21 @@
-{{- with .Site.Params.syntax }}
+{{- with .Site.Params.syntax -}}
 {{- $use := "none" -}}
-{{- if and (isset . "use") (ne .use "") }}
+{{- if and (isset . "use") (ne .use "") -}}
 {{- $use = .use | lower -}}
-{{- end }}
+{{- end -}}
 
 {{- $syntaxJS := "" -}}
-{{- if eq $use "hljs" }}
+{{- if eq $use "hljs" -}}
 {{- $syntaxJS = "js/hljs.js" -}}
 {{- else if eq $use "prismjs" -}}
 {{- $syntaxJS = "js/prism.js" -}}
-{{- end }}
+{{- end -}}
 
-{{- if ne $syntaxJS "" }}
+{{- if ne $syntaxJS "" -}}
 {{- $js := resources.Get $syntaxJS | resources.Minify | resources.Fingerprint "sha384" -}}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+<script src="{{- $js.RelPermalink -}}" integrity="{{- $js.Data.Integrity -}}"></script>
 {{- if eq $use "hljs" -}}
 <script>hljs.initHighlightingOnLoad();</script>
-{{- end }}
-{{- end }}
-{{- end }}
+{{- end -}}
+{{- end -}}
+{{- end -}}

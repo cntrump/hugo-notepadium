@@ -1,9 +1,9 @@
 <section id="footer" class="footer max-body-width">
   {{- $copyright := .Site.Copyright -}}
-  {{- if not $copyright }}
+  {{- if not $copyright -}}
   {{- $copyright = .Site.Title | safeHTML -}}
-  {{- end }}
-  <p>{{ $copyright | safeHTML }}</p>
+  {{- end -}}
+  <p>{{- $copyright | safeHTML -}}</p>
   <p>
     <span>Powered by</span>
     <a href="https://gohugo.io">Hugo</a>

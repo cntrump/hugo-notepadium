@@ -1,14 +1,14 @@
 <section id="header" class="header max-body-width">
   <p>
-    <a class="site-name" href="{{ `/` | relURL }}">
-      {{- with .Site.Params.logo }}
-      <img class="site-logo" src="{{ . | relURL }}" alt />
+    <a class="site-name" href="{{- `/` | relURL -}}">
+      {{- with .Site.Params.logo -}}
+      <img class="site-logo" src="{{- . | relURL -}}" alt />
       {{- else -}}
       {{- .Site.Title -}}
-      {{- end }}
+      {{- end -}}
     </a>
-    {{- with .Site.Params.slogan }}
-    <span class="site-slogan">{{ . | safeHTML }}</span>
-    {{- end }}
+    {{- with .Site.Params.slogan -}}
+    <span class="site-slogan">{{- . | safeHTML -}}</span>
+    {{- end -}}
   </p>
 </section>
