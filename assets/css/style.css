@@ -430,12 +430,9 @@ strong {
 }
 .article-discussion {
   border-top: 1px dashed #e1e4e8;
+  border-bottom: 1px dashed #e1e4e8;
 }
-.article-navigation {
-  background-color: #f1f4f6;
-  border-radius: 8px;
-  padding: 12px 16px;
-}
+
 .article-navigation p {
   margin: 0;
 }
