@@ -167,3 +167,15 @@ comments = true
 - [**Katex**](https://katex.org/)
 - [**Disqus**](https://disqus.com/)
 - [**Source Code Pro**](https://fonts.adobe.com/fonts/source-code-pro)
+
+## Note
+
+For Hugo 0.62.0+ users
+
+ `![](01.png)` render as inline `<img>`, like as Github's style
+
+ ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/01.png)
+
+`![](01.png " ")` render as block `<img>`, like as `<figure>` tag style.
+
+![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/02.png)
