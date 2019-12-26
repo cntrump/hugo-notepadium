@@ -539,7 +539,7 @@ strong {
 
 .markdown-body blockquote,
 .markdown-body q {
-  font-size: 85%;
+  font-size: 15px;
   color: #303033;
 }
 .markdown-body blockquote {
