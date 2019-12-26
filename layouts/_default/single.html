@@ -18,12 +18,6 @@
     {{ $license = .Site.Params.license }}
   {{ end }}
 
-  {{ if ne $license "" }}
-    <section class="article-license">
-      {{ $license | safeHTML }}
-    </section>
-  {{ end }}
-
   {{ if or .Params.categories .Params.tags }}
     <section class="article-labels">
       {{ range .Params.categories }}
@@ -34,6 +28,12 @@
             {{ $url := print "/tags/" ( . | urlize) "/" }}
             <a class="article-tag li" href={{ $url | relURL }}><span class="hashtag">#</span>{{ . }}</a>
           {{ end }}
+    </section>
+  {{ end }}
+
+  {{ if ne $license "" }}
+    <section class="article-license">
+      {{ $license | safeHTML }}
     </section>
   {{ end }}
 
