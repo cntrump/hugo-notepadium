@@ -1,6 +1,6 @@
 :root {
-  color-scheme: light only;
-  supported-color-schemes: light only;
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
 }
 
 *,
@@ -15,6 +15,32 @@ html {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.7;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #303033 !important;
+  }
+  body,
+  kbd,
+  b,
+  strong,
+  .note-title,
+  .article-navigation .link,
+  .markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3,
+  .markdown-body h4,
+  .markdown-body h5,
+  .markdown-body h6,
+  .markdown-body blockquote,
+  .markdown-body q,
+  .markdown-body table th,
+  .markdown-body .katex,
+  .markdown-body .katex-display,
+  .markdown-body .MathJax,
+  .markdown-body .MathJax_Display {
+    color: #fff !important;
+  }
 }
 @media (max-width: 320px) {
   html {
