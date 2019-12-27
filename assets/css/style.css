@@ -585,6 +585,8 @@ strong {
   -webkit-margin-end: 0;
   -webkit-padding-start: 20px;
 }
+.markdown-body ul + ol,
+.markdown-body ol + ul,
 .markdown-body li + li {
   margin-top: 20px;
 }
