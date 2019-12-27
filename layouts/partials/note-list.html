@@ -2,40 +2,38 @@
 
 {{- if gt $paginator.TotalPages 0 -}}
 <ul class="note-list">
-    {{- range $paginator.Pages -}}
-    <li>
-        <a class="note" href="{{- .RelPermalink -}}">
-            <p class="note-title">{{- .Title | safeHTML -}}</p>
-            <p>{{- .Date.Format "2006-01-02" -}}</p>
-            <p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}…{{- end -}}</p>
-            {{- $relURL := .RelPermalink -}}
-            {{- $imgs := .Params.imgs -}}
-            {{- with .Params.imgs -}}
-            <figure>
-                {{- $imgCount := len $imgs -}}
-                {{- range $imgs -}}
-                {{- $imgurl := lower . -}}
-                {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
-                {{- $imgurl = path.Join $relURL . -}}
-                {{- end -}}
-                <img src="{{- $imgurl -}}" alt />
-                {{- end -}}
-            </figure>
-            {{- end -}}
-            {{- if or .Params.categories .Params.tags -}}
-            <p>
-                {{- range .Params.categories -}}
-                {{- $url := print "/categories/" (. | urlize) "/" -}}
-                <object><a class="article-category" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a></object>
-                {{- end -}}
-                {{- range .Params.tags -}}
-                {{- $url := print "/tags/" ( . | urlize) "/" -}}
-                <object><a class="article-tag" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a></object>
-                {{- end -}}
-            </p>
-            {{- end -}}
-        </a>
-    </li>
-    {{- end -}}
+{{- range $paginator.Pages -}}
+<li><a class="note" href="{{- .RelPermalink -}}">
+<p class="note-title">{{- .Title | safeHTML -}}</p>
+<p>{{- .Date.Format "2006-01-02" -}}</p>
+<p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}…{{- end -}}</p>
+{{- $relURL := .RelPermalink -}}
+{{- $imgs := .Params.imgs -}}
+{{- with .Params.imgs -}}
+<figure>
+{{- $imgCount := len $imgs -}}
+{{- range $imgs -}}
+{{- $imgurl := lower . -}}
+{{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
+{{- $imgurl = path.Join $relURL . -}}
+{{- end -}}
+<img src="{{- $imgurl -}}" alt />
+{{- end -}}
+</figure>
+{{- end -}}
+{{- if or .Params.categories .Params.tags -}}
+<p>
+{{- range .Params.categories -}}
+{{- $url := print "/categories/" (. | urlize) "/" -}}
+<object><a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a></object>
+{{- end -}}
+{{- range .Params.tags -}}
+{{- $url := print "/tags/" ( . | urlize) "/" -}}
+<object><a class="article-tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a></object>
+{{- end -}}
+</p>
+{{- end -}}
+</a></li>
+{{- end -}}
 </ul>
 {{- end -}}
