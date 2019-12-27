@@ -1,4 +1,4 @@
-<section id="header" class="header max-body-width"><a class="home" href="{{- `/` | relURL -}}"><p>
+<section id="header" class="header max-body-width"><p><a class="home" href="{{- `/` | relURL -}}">
 {{- with .Site.Params.logo -}}
 <img class="site-logo" src="{{- . | relURL -}}" alt />
 {{- else -}}
@@ -7,4 +7,4 @@
 {{- with .Site.Params.slogan -}}
 <span class="site-slogan">{{- . | safeHTML -}}</span>
 {{- end -}}
-</p></a></section>
+</a></p></section>

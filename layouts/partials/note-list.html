@@ -5,12 +5,12 @@
 {{- range $paginator.Pages -}}
 <li><a class="note" href="{{- .RelPermalink -}}">
 <p class="note-title">{{- .Title | safeHTML -}}</p>
-<p>{{- .Date.Format "2006-01-02" -}}</p>
+<p class="note-date">{{- .Date.Format "2006-01-02" -}}</p>
 <p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}…{{- end -}}</p>
 {{- $relURL := .RelPermalink -}}
 {{- $imgs := .Params.imgs -}}
 {{- with .Params.imgs -}}
-<figure>
+<figure class="note-imgs">
 {{- $imgCount := len $imgs -}}
 {{- range $imgs -}}
 {{- $imgurl := lower . -}}
@@ -22,7 +22,7 @@
 </figure>
 {{- end -}}
 {{- if or .Params.categories .Params.tags -}}
-<p>
+<p class="note-labels">
 {{- range .Params.categories -}}
 {{- $url := print "/categories/" (. | urlize) "/" -}}
 <object><a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a></object>
