@@ -11,10 +11,11 @@ Features
 - Logo and slogan
 - Navigation items
 - Syntanx highlighting
-- Support Math by MathJax and Katex
+- Math supporting
 - Comments by Disqus
 - CC License
 - Builtin `Source Code Pro` font for code
+- Pagination with large number of pages supporting
 
 Preview the exampleSite:
 
@@ -157,6 +158,12 @@ comments = true
 
 ...
 ```
+
+### Pagination
+
+Support large number of pages
+
+![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/03.png)
 
 ## Thanks
 
