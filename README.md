@@ -4,7 +4,7 @@
 
 Request Hugo Version: [0.60.0+](https://github.com/gohugoio/hugo/releases/)
 
-a fast [gohugo](https://gohugo.io) theme, **100% JavaScript-free**.
+a fast and focus on reading [Hugo](https://gohugo.io) theme, **100% JavaScript-free**.
 
 Features
 
