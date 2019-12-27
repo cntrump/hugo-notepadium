@@ -292,7 +292,7 @@ strong {
 }
 
 .nav {
-  padding-top: 12px;
+  margin: 20px 0;
 }
 .nav ul {
   display: inline-block;
