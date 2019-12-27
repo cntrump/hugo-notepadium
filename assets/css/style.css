@@ -75,6 +75,8 @@ h5,
 h6 {
   font-weight: 600;
   line-height: 1.3;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 h1 {
   font-size: 26px;
@@ -136,8 +138,8 @@ img {
 }
 
 p {
-  margin-block-start: 8px;
-  margin-block-end: 8px;
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -233,10 +235,10 @@ a:active {
 }
 
 figure {
-  margin-block-start: 10px;
-  margin-block-end: 10px;
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 figcaption > h4,
@@ -281,8 +283,8 @@ strong {
 
 .header {
   margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header p {
   margin: 0;
@@ -303,13 +305,12 @@ strong {
 
 .site-name {
   display: inline-block;
-  font-size: 22px;
   font-weight: 600;
   vertical-align: middle;
 }
-.site-name:hover,
-.site-name:focus,
-.site-name:active {
+.home:hover,
+.home:focus,
+.home:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -320,7 +321,7 @@ strong {
 }
 .site-slogan {
   display: inline-block;
-  font-size: 16px;
+  font-size: 85%;
   color: #8e8e93;
   margin-left: 12px;
   vertical-align: middle;
