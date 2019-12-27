@@ -21,22 +21,22 @@ html {
     font-size: 15px !important;
   }
   h1 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   h2 {
-    font-size: 23px;
+    font-size: 23px !important;
   }
   h3 {
-    font-size: 21px;
+    font-size: 21px !important;
   }
   h4 {
-    font-size: 19px;
+    font-size: 19px !important;
   }
   h5 {
-    font-size: 17px;
+    font-size: 17px !important;
   }
   h6 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
   .max-body-width {
     padding-left: 15px !important;
