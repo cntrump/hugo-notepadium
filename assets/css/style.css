@@ -12,9 +12,14 @@
 }
 html {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, SimHei, 'Segoe UI', Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 17px;
+  }
 }
 body {
   display: block;
@@ -127,7 +132,6 @@ kbd,
 samp {
   font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
   font-weight: 500;
-  white-space: pre;
 }
 
 pre {
@@ -139,6 +143,7 @@ pre {
   padding: 12px 10px;
   margin: 8px 0;
   word-wrap: normal;
+  white-space: pre;
   border-radius: 3px;
   border: 1px solid #eee;
   -o-tab-size: 4;
