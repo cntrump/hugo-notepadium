@@ -21,19 +21,20 @@
 {{- end -}}
 </figure>
 {{- end -}}
+</a>
 {{- if or .Params.categories .Params.tags -}}
 <p class="note-labels">
 {{- range .Params.categories -}}
 {{- $url := print "/categories/" (. | urlize) "/" -}}
-<object><a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a></object>
+<a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
 {{- end -}}
 {{- range .Params.tags -}}
 {{- $url := print "/tags/" ( . | urlize) "/" -}}
-<object><a class="article-tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a></object>
+<a class="article-tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
 {{- end -}}
 </p>
 {{- end -}}
-</a></li>
+</li>
 {{- end -}}
 </ul>
 {{- end -}}

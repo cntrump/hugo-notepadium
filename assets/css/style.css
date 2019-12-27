@@ -16,59 +16,6 @@ html {
   font-weight: 400;
   line-height: 1.7;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #303033 !important;
-  }
-  body,
-  kbd,
-  b,
-  strong,
-  .note-title,
-  .article-navigation .link,
-  .markdown-body h1,
-  .markdown-body h2,
-  .markdown-body h3,
-  .markdown-body h4,
-  .markdown-body h5,
-  .markdown-body h6,
-  .markdown-body blockquote,
-  .markdown-body q,
-  .markdown-body table th,
-  .markdown-body .katex,
-  .markdown-body .katex-display,
-  .markdown-body .MathJax,
-  .markdown-body .MathJax_Display {
-    color: #fff !important;
-  }
-}
-@media (max-width: 320px) {
-  html {
-    font-size: 15px !important;
-  }
-  h1 {
-    font-size: 25px !important;
-  }
-  h2 {
-    font-size: 23px !important;
-  }
-  h3 {
-    font-size: 21px !important;
-  }
-  h4 {
-    font-size: 19px !important;
-  }
-  h5 {
-    font-size: 17px !important;
-  }
-  h6 {
-    font-size: 15px !important;
-  }
-  .max-body-width {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-}
 body {
   display: block;
   color: #303033;
@@ -189,7 +136,7 @@ pre {
   overflow: auto;
   font-size: 13.6px;
   line-height: 1.45;
-  color: #24292e;
+  color: #303033;
   padding: 12px 10px;
   margin: 8px 0;
   word-wrap: normal;
@@ -465,7 +412,6 @@ strong {
   border-radius: 3px;
 }
 .article-tag {
-  color: #0366d6;
   background-color: rgba(3,102,214,.05);
 }
 .article-category {
@@ -680,7 +626,6 @@ strong {
 .markdown-body .image-container .img,
 .markdown-body figure > img {
   margin: 0;
-  background-color: #f0f0f7;
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,.15);
 }
@@ -800,4 +745,78 @@ strong {
   margin: 0;
   width: 100%;
   overflow: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #303033;
+  }
+  body,
+  pre,
+  b,
+  strong,
+  .note-title,
+  .article-navigation .link,
+  .markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3,
+  .markdown-body h4,
+  .markdown-body h5,
+  .markdown-body h6,
+  .markdown-body blockquote,
+  .markdown-body q,
+  .markdown-body table th,
+  .markdown-body .katex,
+  .markdown-body .katex-display,
+  .markdown-body .MathJax,
+  .markdown-body .MathJax_Display {
+    color: rgba(255, 255, 255, .95);
+  }
+  .markdown-body h1, .markdown-body h2 {
+    border-bottom-color: rgba(234, 236, 239, .3);
+  }
+  pre {
+    border-color: rgba(238, 238, 238, .3);
+  }
+  .note-list li {
+    border-bottom-color: rgba(240, 240, 240, .3);
+  }
+  .markdown-body .image-container .caption .title, .markdown-body figcaption>h4 {
+    border-bottom-color: rgba(217, 217, 217, .3);
+  }
+  .article-discussion {
+    border-top-color: rgba(225, 228, 232, .3);
+    border-bottom-color: rgba(225, 228, 232, .3);
+  }
+  .markdown-body table td,
+  .markdown-body table th {
+    border-color: rgba(223, 226, 229, .3);
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h4 {
+    font-size: 19px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+  .max-body-width {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
