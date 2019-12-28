@@ -193,7 +193,7 @@ td, th {
 }
 
 a {
-  color: rgb(10,132,255);
+  color: rgb(0,122,255);
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -413,7 +413,7 @@ strong {
   border-radius: 3px;
 }
 .article-tag {
-  background-color: rgba(10,132,255,.05);
+  background-color: rgba(0,122,255,.05);
 }
 .article-category {
   color: rgb(58, 140, 66);
@@ -428,7 +428,7 @@ strong {
 .article-tag:hover,
 .article-tag:focus,
 .article-tag:active {
-  background-color: rgba(10,132,255,.1);
+  background-color: rgba(0,122,255,.1);
   text-decoration: none;
 }
 
@@ -493,19 +493,19 @@ strong {
 }
 
 .pagination ul li a {
-  color: rgb(10,132,255);
+  color: rgb(0,122,255);
   float: left;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 .pagination ul li a.active {
-  background-color: rgb(10,132,255);
+  background-color: rgb(0,122,255);
   color: #fff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(10,132,255,.1);
+  background-color: rgba(0,122,255,.1);
 }
 
 .markdown-body {
@@ -788,6 +788,26 @@ strong {
   .markdown-body table td,
   .markdown-body table th {
     border-color: rgba(84, 84, 88, .6);
+  }
+  a {
+    color: rgb(10,132,255);
+  }
+  .article-tag {
+    background-color: rgba(10,132,255,.05);
+  }
+  .article-tag:hover,
+  .article-tag:focus,
+  .article-tag:active {
+    background-color: rgba(10,132,255,.1);
+  }
+  .pagination ul li a {
+    color: rgb(10,132,255);
+  }
+  .pagination ul li a.active {
+    background-color: rgb(10,132,255);
+  }
+  .pagination ul li a:hover:not(.active) {
+    background-color: rgba(10,132,255,.1);
   }
   .article-category {
     color: rgb(114, 240, 126);
