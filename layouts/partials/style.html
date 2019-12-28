@@ -1,0 +1,42 @@
+{{- $fontCSS := "" -}}
+{{- if .Site.Params.syntax.webFonts -}}
+{{- $fontCSS = resources.Get "css/source-code-pro.css" -}}
+{{- end -}}
+
+{{- $coreCSS := resources.Get "css/style.css" -}}
+{{- if ne $fontCSS "" -}}
+{{- $coreCSS = slice $fontCSS $coreCSS | resources.Concat "css/tmp.css" -}}
+{{- end -}}
+
+{{- $themePath := "" -}}
+{{- $theme := "dracula" -}}
+{{- with .Site.Params.syntax -}}
+{{- $use := "none" -}}
+{{- if and (isset . "use") (ne .use "") -}}{{- $use = .use | lower -}}{{- end -}}
+{{- if and (isset . "theme") (ne .theme "") -}}{{- $theme = .theme | lower -}}{{- end -}}
+
+{{- if eq $use "hljs" -}}
+{{- $themePath = "css/hljs/" -}}
+{{- else if eq $use "prismjs" -}}
+{{- $themePath = "css/prism/" -}}
+{{- end -}}
+{{- end -}}
+
+{{- if eq $themePath "" -}}
+{{- $themePath = "css/chroma/" -}}
+{{- end -}}
+
+{{- $themeCSS := resources.Get (print (path.Join $themePath $theme) ".css") -}}
+
+{{- $darkTheme := .Site.Params.syntax.darkTheme -}}
+{{- if gt (len $darkTheme) 0 -}}
+{{- $darkBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/dark_begin.css" -}}
+{{- $darkCSS := resources.Get (print (path.Join $themePath $darkTheme) ".css") -}}
+{{- $darkEnd := (print "}") | resources.FromString "css/dark_end.css" -}}
+{{- $darkThemeCSS := slice $darkBegin $darkCSS | resources.Concat "css/tmp_dark.css" -}}
+{{- $darkThemeCSS = slice $darkThemeCSS $darkEnd | resources.Concat "css/dark.css" -}}
+{{- $themeCSS = slice $themeCSS $darkThemeCSS | resources.Concat "css/syntax.css" -}}
+{{- end -}}
+
+{{- $coreCSS = slice $coreCSS $themeCSS | resources.Concat "css/core.css" | minify | fingerprint "sha384" -}}
+<link rel="stylesheet" href="{{- $coreCSS.RelPermalink -}}" integrity="{{- $coreCSS.Data.Integrity -}}">
