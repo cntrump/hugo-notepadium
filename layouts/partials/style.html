@@ -29,13 +29,13 @@
 {{- $themeCSS := resources.Get (print (path.Join $themePath $theme) ".css") -}}
 
 {{- $darkTheme := .Site.Params.syntax.darkTheme -}}
-{{- if gt (len $darkTheme) 0 -}}
-{{- $darkBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/dark_begin.css" -}}
+{{- if and $darkTheme (ne $darkTheme "") -}}
+{{- $darkBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_dark_begin.css" -}}
 {{- $darkCSS := resources.Get (print (path.Join $themePath $darkTheme) ".css") -}}
-{{- $darkEnd := (print "}") | resources.FromString "css/dark_end.css" -}}
+{{- $darkEnd := (print "}") | resources.FromString "css/tmp_dark_end.css" -}}
 {{- $darkThemeCSS := slice $darkBegin $darkCSS | resources.Concat "css/tmp_dark.css" -}}
-{{- $darkThemeCSS = slice $darkThemeCSS $darkEnd | resources.Concat "css/dark.css" -}}
-{{- $themeCSS = slice $themeCSS $darkThemeCSS | resources.Concat "css/syntax.css" -}}
+{{- $darkThemeCSS = slice $darkThemeCSS $darkEnd | resources.Concat "css/tmp_syntax_dark.css" -}}
+{{- $themeCSS = slice $themeCSS $darkThemeCSS | resources.Concat "css/tmp_syntax.css" -}}
 {{- end -}}
 
 {{- $coreCSS = slice $coreCSS $themeCSS | resources.Concat "css/core.css" | minify | fingerprint "sha384" -}}
