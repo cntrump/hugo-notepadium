@@ -771,7 +771,7 @@ strong {
   .markdown-body .katex-display,
   .markdown-body .MathJax,
   .markdown-body .MathJax_Display {
-    color: rgb(235, 235, 245);
+    color: rgba(235, 235, 245, .9);
   }
   .markdown-body {
     color: rgba(235, 235, 245, .6);
@@ -779,7 +779,10 @@ strong {
   .markdown-body h1, .markdown-body h2 {
     border-bottom-color: rgba(84, 84, 88, .6);
   }
-  pre {
+  pre,
+  .note-imgs>img,
+  .markdown-body table td,
+  .markdown-body table th {
     border-color: rgba(84, 84, 88, .6);
   }
   .article-category {
@@ -801,10 +804,6 @@ strong {
   .article-discussion {
     border-top-color: rgba(84, 84, 88, .6);
     border-bottom-color: rgba(84, 84, 88, .6);
-  }
-  .markdown-body table td,
-  .markdown-body table th {
-    border-color: rgba(84, 84, 88, .6);
   }
 }
 @media (max-width: 320px) {
