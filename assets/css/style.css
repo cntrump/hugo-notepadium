@@ -752,7 +752,11 @@ strong {
   body {
     background-color: #1c1c1e;
   }
+  mark {
+    background-color: #a08000;
+  }
   body,
+  mark,
   pre,
   b,
   strong,
