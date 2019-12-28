@@ -775,7 +775,7 @@ strong {
   .markdown-body .katex-display,
   .markdown-body .MathJax,
   .markdown-body .MathJax_Display {
-    color: rgba(235, 235, 245, .9);
+    color: #ebebf5;
   }
   .markdown-body {
     color: rgba(235, 235, 245, .6);
