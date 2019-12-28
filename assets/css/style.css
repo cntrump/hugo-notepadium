@@ -193,7 +193,7 @@ td, th {
 }
 
 a {
-  color: #0366d6;
+  color: rgb(10,132,255);
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -291,6 +291,7 @@ strong {
 .site-logo {
   height: 42px;
   vertical-align: middle;
+  border-radius: 3px;
 }
 .site-slogan {
   display: inline-block;
@@ -412,22 +413,22 @@ strong {
   border-radius: 3px;
 }
 .article-tag {
-  background-color: rgba(3,102,214,.05);
+  background-color: rgba(10,132,255,.05);
 }
 .article-category {
-  color: #28a745;
-  background-color: rgba(40,167,69,.05);
+  color: rgb(114, 240, 126);
+  background-color: rgba(114,240,126,.05);
 }
 .article-category:hover,
 .article-category:focus,
 .article-category:active {
-  background-color: rgba(40,167,69,.1);
+  background-color: rgba(114,240,126,.1);
   text-decoration: none;
 }
 .article-tag:hover,
 .article-tag:focus,
 .article-tag:active {
-  background-color: rgba(3,102,214,.1);
+  background-color: rgba(10,132,255,.1);
   text-decoration: none;
 }
 
@@ -492,19 +493,19 @@ strong {
 }
 
 .pagination ul li a {
-  color: #0366d6;
+  color: rgb(10,132,255);
   float: left;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 .pagination ul li a.active {
-  background-color: #0366d6;
+  background-color: rgb(10,132,255);
   color: #fff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(3,102,214,.1);
+  background-color: rgba(10,132,255,.1);
 }
 
 .markdown-body {
@@ -749,7 +750,7 @@ strong {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #303033;
+    background-color: #1c1c1e;
   }
   body,
   pre,
@@ -770,27 +771,30 @@ strong {
   .markdown-body .katex-display,
   .markdown-body .MathJax,
   .markdown-body .MathJax_Display {
-    color: rgba(255, 255, 255, .95);
+    color: rgb(235, 235, 245);
+  }
+  .markdown-body {
+    color: rgba(235, 235, 245, .6);
   }
   .markdown-body h1, .markdown-body h2 {
-    border-bottom-color: rgba(234, 236, 239, .3);
+    border-bottom-color: rgba(84, 84, 88, .6);
   }
   pre {
-    border-color: rgba(238, 238, 238, .3);
+    border-color: rgba(84, 84, 88, .6);
   }
   .note-list li {
-    border-bottom-color: rgba(240, 240, 240, .3);
+    border-bottom-color: rgba(84, 84, 88, .6);
   }
   .markdown-body .image-container .caption .title, .markdown-body figcaption>h4 {
-    border-bottom-color: rgba(217, 217, 217, .3);
+    border-bottom-color: rgba(84, 84, 88, .6);
   }
   .article-discussion {
-    border-top-color: rgba(225, 228, 232, .3);
-    border-bottom-color: rgba(225, 228, 232, .3);
+    border-top-color: rgba(84, 84, 88, .6);
+    border-bottom-color: rgba(84, 84, 88, .6);
   }
   .markdown-body table td,
   .markdown-body table th {
-    border-color: rgba(223, 226, 229, .3);
+    border-color: rgba(84, 84, 88, .6);
   }
 }
 @media (max-width: 320px) {
