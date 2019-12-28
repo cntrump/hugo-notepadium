@@ -829,7 +829,7 @@ strong {
     border-bottom-color: rgba(84, 84, 88, .6);
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   html {
     font-size: 15px;
   }
