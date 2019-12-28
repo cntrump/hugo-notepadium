@@ -316,7 +316,7 @@ strong {
 .site-tag:focus,
 .site-tag:active {
   text-decoration: none;
-  background-color: rgba(242,80,34,.1);
+  background-color: rgba(242,80,34,.5);
 }
 
 .flex-body {
@@ -415,6 +415,12 @@ strong {
 .article-tag {
   background-color: rgba(0,122,255,.05);
 }
+.article-tag:hover,
+.article-tag:focus,
+.article-tag:active {
+  background-color: rgba(0,122,255,.5);
+  text-decoration: none;
+}
 .article-category {
   color: rgb(58, 140, 66);
   background-color: rgba(58,140,66,.05);
@@ -422,16 +428,9 @@ strong {
 .article-category:hover,
 .article-category:focus,
 .article-category:active {
-  background-color: rgba(58,140,66,.1);
+  background-color: rgba(58,140,66,.5);
   text-decoration: none;
 }
-.article-tag:hover,
-.article-tag:focus,
-.article-tag:active {
-  background-color: rgba(0,122,255,.1);
-  text-decoration: none;
-}
-
 .article-labels,
 .article-license,
 .article-navigation,
@@ -505,7 +504,7 @@ strong {
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(0,122,255,.1);
+  background-color: rgba(0,122,255,.5);
 }
 
 .markdown-body {
@@ -791,14 +790,6 @@ strong {
   a {
     color: rgb(10,132,255);
   }
-  .article-tag {
-    background-color: rgba(10,132,255,.05);
-  }
-  .article-tag:hover,
-  .article-tag:focus,
-  .article-tag:active {
-    background-color: rgba(10,132,255,.1);
-  }
   .pagination ul li a {
     color: rgb(10,132,255);
   }
@@ -806,7 +797,15 @@ strong {
     background-color: rgb(10,132,255);
   }
   .pagination ul li a:hover:not(.active) {
-    background-color: rgba(10,132,255,.1);
+    background-color: rgba(10,132,255,.5);
+  }
+  .article-tag {
+    background-color: rgba(10,132,255,.05);
+  }
+  .article-tag:hover,
+  .article-tag:focus,
+  .article-tag:active {
+    background-color: rgba(10,132,255,.5);
   }
   .article-category {
     color: rgb(114, 240, 126);
@@ -815,8 +814,7 @@ strong {
   .article-category:hover,
   .article-category:focus,
   .article-category:active {
-    background-color: rgba(114,240,126,.1);
-    text-decoration: none;
+    background-color: rgba(114,240,126,.5);
   }
   .note-list li {
     border-bottom-color: rgba(84, 84, 88, .6);
