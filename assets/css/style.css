@@ -416,13 +416,13 @@ strong {
   background-color: rgba(10,132,255,.05);
 }
 .article-category {
-  color: rgb(114, 240, 126);
-  background-color: rgba(114,240,126,.05);
+  color: rgb(58, 140, 66);
+  background-color: rgba(58,140,66,.05);
 }
 .article-category:hover,
 .article-category:focus,
 .article-category:active {
-  background-color: rgba(114,240,126,.1);
+  background-color: rgba(58,140,66,.1);
   text-decoration: none;
 }
 .article-tag:hover,
@@ -781,6 +781,16 @@ strong {
   }
   pre {
     border-color: rgba(84, 84, 88, .6);
+  }
+  .article-category {
+    color: rgb(114, 240, 126);
+    background-color: rgba(114,240,126,.05);
+  }
+  .article-category:hover,
+  .article-category:focus,
+  .article-category:active {
+    background-color: rgba(114,240,126,.1);
+    text-decoration: none;
   }
   .note-list li {
     border-bottom-color: rgba(84, 84, 88, .6);
