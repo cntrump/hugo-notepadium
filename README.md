@@ -16,7 +16,7 @@ Features
 - CC License
 - Builtin `Source Code Pro` font for code
 - Pagination with large number of pages supporting
-- Support DarkMode
+- DarkMode supporting
 
 Preview the exampleSite:
 
@@ -67,7 +67,7 @@ use = "katex"  # option: "katex", "mathjax". default: "katex"
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "dracula"
-darkTheme = "xcode-dark"  # apply this theme in dark mode.
+darkTheme = "xcode-dark"  # apply this theme in dark mode
 webFonts = true  # builtin: 'Source Code Pro'
 
 [params.nav]
@@ -119,6 +119,7 @@ url = "https://gohugo.io/"
 [params.syntax]
 use = "hljs"  # 1. prismjs 2. hljs 3. none
 theme = "dracula"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
 webFonts = true  # use builtin font: Source Code Pro
 ```
 
