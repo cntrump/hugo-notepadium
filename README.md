@@ -16,6 +16,7 @@ Features
 - CC License
 - Builtin `Source Code Pro` font for code
 - Pagination with large number of pages supporting
+- Support DarkMode
 
 Preview the exampleSite:
 
@@ -66,6 +67,7 @@ use = "katex"  # option: "katex", "mathjax". default: "katex"
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "dracula"
+darkTheme = "xcode-dark"  # apply this theme in dark mode.
 webFonts = true  # builtin: 'Source Code Pro'
 
 [params.nav]
