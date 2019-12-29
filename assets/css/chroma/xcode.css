@@ -15,9 +15,9 @@
 /* Name */ .chroma .n { color: #262626 }
 /* NameAttribute */ .chroma .na { color: #6C36A9 }
 /* NameBuiltin */ .chroma .nb { color: #9B2393 }
-/* NameBuiltinPseudo */ .chroma .bp { color: #5b269a }
+/* NameBuiltinPseudo */ .chroma .bp { color: #6C36A9 }
 /* NameClass */ .chroma .nc { color: #3900A0 }
-/* NameConstant */ .chroma .no { color: #262626 }
+/* NameConstant */ .chroma .no { color: #6C36A9 }
 /* NameDecorator */ .chroma .nd { color: #262626 }
 /* NameEntity */ .chroma .ni { color: #262626 }
 /* NameException */ .chroma .ne { color: #262626 }
