@@ -29,7 +29,7 @@ use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
 
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "github"
+theme = "xcode"
 darkTheme = "xcode-dark"
 webFonts = true  # builtin: 'Source Code Pro'
 
