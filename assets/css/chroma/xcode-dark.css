@@ -15,13 +15,13 @@
 /* Name */ .chroma .n { color: #DFDFE0 }
 /* NameAttribute */ .chroma .na { color: #A167E6 }
 /* NameBuiltin */ .chroma .nb { color: #FC5FA3 }
-/* NameBuiltinPseudo */ .chroma .bp { color: #5b269a }
+/* NameBuiltinPseudo */ .chroma .bp { color: #A167E6 }
 /* NameClass */ .chroma .nc { color: #D0A8FF }
 /* NameConstant */ .chroma .no { color: #DFDFE0 }
 /* NameDecorator */ .chroma .nd { color: #DFDFE0 }
 /* NameEntity */ .chroma .ni { color: #DFDFE0 }
 /* NameException */ .chroma .ne { color: #DFDFE0 }
-/* NameFunction */ .chroma .nf { color: #A167E6 }
+/* NameFunction */ .chroma .nf { color: #D0A8FF }
 /* NameFunctionMagic */ .chroma .fm { color: #DFDFE0 }
 /* NameLabel */ .chroma .nl { color: #DFDFE0 }
 /* NameNamespace */ .chroma .nn { color: #DFDFE0 }
@@ -58,6 +58,7 @@
 /* LiteralNumberOct */ .chroma .mo { color: #D0BF69 }
 /* Operator */ .chroma .o { color: #DFDFE0 }
 /* OperatorWord */ .chroma .ow { color: #DFDFE0 }
+/* Punctuation */ .chroma .p { color: #67B7A4 }
 /* Comment */ .chroma .c { color: #6C7986 }
 /* CommentHashbang */ .chroma .ch { color: #6C7986 }
 /* CommentMultiline */ .chroma .cm { color: #6C7986 }
