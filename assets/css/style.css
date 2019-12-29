@@ -898,8 +898,8 @@ strong {
   }
 
   .article-category {
-    color: #42eb53;
-    background-color: rgba(66, 235, 83, .05);
+    color: rgb(22, 208, 40);
+    background-color: rgba(22, 208, 40, .05);
   }
 
   .article-category:hover,
