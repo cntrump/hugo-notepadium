@@ -3,7 +3,9 @@
 {{- if and (isset .Params "justify") (eq .Params.justify true) -}} {{- $justify = true -}} {{- end -}}
 <section class="article-header" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
 <h1>{{- .Title | safeHTML -}}</h1>
+{{- if .Date -}}
 <p class="article-date">{{- .Date.Format "2006-01-02" -}}</p>
+{{- end -}}
 </section>
 <article class="markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
 {{- .Content -}}
