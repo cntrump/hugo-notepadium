@@ -16,7 +16,7 @@ Features
 - CC License
 - Builtin `Source Code Pro` font for code
 - Pagination with large number of pages supporting
-- DarkMode supporting
+- Light & Dark Mode
 - Google analytics supporting
 
 Preview the exampleSite:
@@ -60,6 +60,7 @@ noClasses = false
 unsafe = true  # enable raw HTML in Markdown
 
 [params]
+style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
@@ -93,6 +94,15 @@ url = "https://gohugo.io/"
 
 ```toml
 [params]
+logo = "/img/logo.png"
+slogan = "code my life ~"
+```
+
+### Light and Dark Mode
+
+```toml
+[params]
+style = "auto"  # default: "auto", based on system. "light": light theme, "dark": dark theme.
 logo = "/img/logo.png"
 slogan = "code my life ~"
 ```
