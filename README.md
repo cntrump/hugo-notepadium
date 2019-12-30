@@ -17,6 +17,7 @@ Features
 - Builtin `Source Code Pro` font for code
 - Pagination with large number of pages supporting
 - DarkMode supporting
+- Google analytics supporting
 
 Preview the exampleSite:
 
@@ -46,7 +47,10 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 
 # Enable Disqus
-# disqusShortname = "XXX"
+#disqusShortname = "XXX"
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
 
 [markup.highlight]
 codeFences = true
