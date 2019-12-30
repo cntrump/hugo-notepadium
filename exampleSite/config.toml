@@ -9,7 +9,10 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 
 # Enable Disqus
-# disqusShortname = "XXX"
+#disqusShortname = "XXX"
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
 
 [markup.highlight]
 codeFences = true
