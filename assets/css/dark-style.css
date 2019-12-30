@@ -55,7 +55,7 @@ pre,
 }
 
 a {
-  color: rgb(10, 132, 255);
+  color: #0a84ff;
 }
 
 .site-tag {
@@ -71,11 +71,11 @@ a {
 }
 
 .pagination ul li a {
-  color: rgb(10, 132, 255);
+  color: #0a84ff;
 }
 
 .pagination ul li a.active {
-  background-color: rgb(10, 132, 255);
+  background-color: #0a84ff;
 }
 
 .pagination ul li a:hover:not(.active) {
@@ -93,7 +93,7 @@ a {
 }
 
 .article-category {
-  color: rgb(22, 208, 40);
+  color: #16d028;
   background-color: rgba(22, 208, 40, .05);
 }
 
