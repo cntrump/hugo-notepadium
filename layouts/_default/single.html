@@ -2,11 +2,11 @@
 {{- $justify := false -}}
 {{- if and (isset .Params "justify") (eq .Params.justify true) -}} {{- $justify = true -}} {{- end -}}
 <section class="article-header" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
-<h1>{{- .Title | safeHTML -}}</h1>
-<p class="article-date">{{- .Date.Format "2006-01-02" -}}</p>
+    <h1>{{- .Title | safeHTML -}}</h1>
+    <p class="article-date">{{- .Date.Format "2006-01-02" -}}</p>
 </section>
 <article class="markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
-{{- .Content -}}
+    {{- .Content -}}
 </article>
 {{- $license := "" -}}
 {{- if and (isset .Params "license") (ne .Params.license "") -}}
@@ -16,34 +16,35 @@
 {{- end -}}
 {{- if or .Params.categories .Params.tags -}}
 <section class="article-labels">
-{{- range .Params.categories -}}
-{{- $url := print "/categories/" (. | urlize) "/" -}}
-<a class="article-category li" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
-{{- end -}}
-{{- range .Params.tags -}}
-{{- $url := print "/tags/" ( . | urlize) "/" -}}
-<a class="article-tag li" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
-{{- end -}}
+    {{- range .Params.categories -}}
+    {{- $url := print "/categories/" (. | urlize) "/" -}}
+    <a class="article-category li" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
+    {{- end -}}
+    {{- range .Params.tags -}}
+    {{- $url := print "/tags/" ( . | urlize) "/" -}}
+    <a class="article-tag li" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
+    {{- end -}}
 </section>
 {{- end -}}
 {{- if ne $license "" -}}
 <section class="article-license">
-{{- $license | safeHTML -}}
+    {{- $license | safeHTML -}}
 </section>
 {{- end -}}
 {{- if or .PrevInSection .NextInSection -}}
 <section class="article-navigation">
-{{- with .NextInSection -}}
-<p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a></p>
-{{- end -}}
-{{- with .PrevInSection -}}
-<p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a class="link"></p>
-{{- end -}}
+    {{- with .NextInSection -}}
+    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a></p>
+    {{- end -}}
+    {{- with .PrevInSection -}}
+    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a class="link">
+    </p>
+    {{- end -}}
 </section>
 {{- end -}}
 {{- if and .Params.comments (gt (len .Site.DisqusShortname) 0) -}}
 <section class="article-discussion">
-{{- template "_internal/disqus.html" . -}}
+    {{- template "_internal/disqus.html" . -}}
 </section>
 {{- end -}}
 {{- end -}}

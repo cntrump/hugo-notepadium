@@ -2,11 +2,16 @@
 {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
 
 {{- if .Site.Params.nav -}}
-<div class="nav"><ul>
-{{- if .Site.Params.nav.showCategories -}}<li><a class="site-tag" href="{{- `/categories/` | relURL -}}">Categories</a></li>{{- end -}}
-{{- if .Site.Params.nav.showTags -}}<li><a class="site-tag" href="{{- `/tags/` | relURL -}}">Tags</a></li>{{- end -}}
-{{- range .Site.Params.nav.custom -}}<li><a class="site-tag" href="{{- .url | relURL -}}">{{- .title -}}</a></li>{{- end -}}
-</ul></div>
+<div class="nav">
+    <ul>
+        {{- if .Site.Params.nav.showCategories -}}<li><a class="site-tag"
+                href="{{- `/categories/` | relURL -}}">Categories</a></li>{{- end -}}
+        {{- if .Site.Params.nav.showTags -}}<li><a class="site-tag" href="{{- `/tags/` | relURL -}}">Tags</a></li>
+        {{- end -}}
+        {{- range .Site.Params.nav.custom -}}<li><a class="site-tag" href="{{- .url | relURL -}}">{{- .title -}}</a>
+        </li>{{- end -}}
+    </ul>
+</div>
 {{- end -}}
 
 {{- partial "note-list.html" $paginator -}}

@@ -1,10 +1,12 @@
-<section id="header" class="header max-body-width"><p><a class="home" href="{{- `/` | relURL -}}">
-{{- with .Site.Params.logo -}}
-<img class="site-logo" src="{{- . | relURL -}}" alt />
-{{- else -}}
-<span class="site-name">{{- .Site.Title -}}</span>
-{{- end -}}
-{{- with .Site.Params.slogan -}}
-<span class="site-slogan">{{- . | safeHTML -}}</span>
-{{- end -}}
-</a></p></section>
+<section id="header" class="header max-body-width">
+    <p><a class="home" href="{{- `/` | relURL -}}">
+            {{- with .Site.Params.logo -}}
+            <img class="site-logo" src="{{- . | relURL -}}" alt />
+            {{- else -}}
+            <span class="site-name">{{- .Site.Title -}}</span>
+            {{- end -}}
+            {{- with .Site.Params.slogan -}}
+            <span class="site-slogan">{{- . | safeHTML -}}</span>
+            {{- end -}}
+        </a></p>
+</section>
