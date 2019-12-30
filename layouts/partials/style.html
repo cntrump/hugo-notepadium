@@ -4,6 +4,13 @@
 {{- end -}}
 
 {{- $coreCSS := resources.Get "css/style.css" -}}
+{{- $darkStyleBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_style_dark_begin.css" -}}
+{{- $darkStyle := resources.Get "css/dark-style.css" -}}
+{{- $darkStyleEnd := (print "}") | resources.FromString "css/tmp_style_dark_end.css" -}}
+{{- $darkStyleCSS := slice $darkStyleBegin $darkStyle | resources.Concat "css/tmp_style_dark_.css" -}}
+{{- $darkStyleCSS = slice $darkStyleCSS $darkStyleEnd | resources.Concat "css/tmp_style_dark.css" -}}
+{{- $coreCSS = slice $coreCSS $darkStyleCSS | resources.Concat "css/tmp_style.css" -}}
+
 {{- if ne $fontCSS "" -}}
 {{- $coreCSS = slice $fontCSS $coreCSS | resources.Concat "css/tmp.css" -}}
 {{- end -}}
@@ -26,17 +33,17 @@
 {{- $themePath = "css/chroma/" -}}
 {{- end -}}
 
-{{- $themeCSS := resources.Get (print (path.Join $themePath $theme) ".css") -}}
+{{- $syntaxCSS := resources.Get (print (path.Join $themePath $theme) ".css") -}}
 
 {{- $darkTheme := .Site.Params.syntax.darkTheme -}}
 {{- if and $darkTheme (ne $darkTheme "") -}}
-{{- $darkBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_dark_begin.css" -}}
-{{- $darkCSS := resources.Get (print (path.Join $themePath $darkTheme) ".css") -}}
-{{- $darkEnd := (print "}") | resources.FromString "css/tmp_dark_end.css" -}}
-{{- $darkThemeCSS := slice $darkBegin $darkCSS | resources.Concat "css/tmp_dark.css" -}}
-{{- $darkThemeCSS = slice $darkThemeCSS $darkEnd | resources.Concat "css/tmp_syntax_dark.css" -}}
-{{- $themeCSS = slice $themeCSS $darkThemeCSS | resources.Concat "css/tmp_syntax.css" -}}
+{{- $darkSyntaxBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_syntax_dark_begin.css" -}}
+{{- $darkSyntax := resources.Get (print (path.Join $themePath $darkTheme) ".css") -}}
+{{- $darkSyntaxEnd := (print "}") | resources.FromString "css/tmp_syntax_dark_end.css" -}}
+{{- $darkSyntaxCSS := slice $darkSyntaxBegin $darkSyntax | resources.Concat "css/tmp_syntax_dark_.css" -}}
+{{- $darkSyntaxCSS = slice $darkSyntaxCSS $darkSyntaxEnd | resources.Concat "css/tmp_syntax_dark.css" -}}
+{{- $syntaxCSS = slice $syntaxCSS $darkSyntaxCSS | resources.Concat "css/tmp_syntax.css" -}}
 {{- end -}}
 
-{{- $coreCSS = slice $coreCSS $themeCSS | resources.Concat "css/core.css" | minify | fingerprint "sha384" -}}
+{{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/core.css" | minify | fingerprint "sha384" -}}
 <link rel="stylesheet" href="{{- $coreCSS.RelPermalink -}}" integrity="{{- $coreCSS.Data.Integrity -}}">
