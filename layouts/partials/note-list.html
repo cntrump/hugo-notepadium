@@ -5,8 +5,8 @@
     {{- range $paginator.Pages -}}
     <li><a class="note" href="{{- .RelPermalink -}}">
             <p class="note-title">{{- .Title | safeHTML -}}</p>
-            <p class="note-date">{{- .Date.Format "2006-01-02" -}}</p>
-            <p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}…{{- end -}}</p>
+            {{- if .Date -}}<p class="note-date">{{- .Date.Format "2006-01-02" -}}</p>{{- end -}}
+            {{- if .Summary -}}<p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}…{{- end -}}</p>{{- end -}}
             {{- $relURL := .RelPermalink -}}
             {{- $imgs := .Params.imgs -}}
             {{- with .Params.imgs -}}

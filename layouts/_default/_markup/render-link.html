@@ -1,4 +1,5 @@
 {{- $url := .Destination | safeURL -}}
 {{- $text := .Text | safeHTML -}}
-<a href="{{- $url -}}" {{- with .Title -}}title="{{- . -}}" {{- end -}}
-    {{- if strings.HasPrefix $url "http" -}}target="_blank" {{- end -}}>{{- $text -}}</a>
+<a href="{{- $url -}}" 
+{{- with .Title -}}title="{{- . -}}"{{- end -}} 
+{{- if strings.HasPrefix $url "http" -}}target="_blank"{{- end -}}>{{- $text -}}</a>
