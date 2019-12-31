@@ -199,6 +199,29 @@ Support large number of pages
 
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/03.png)
 
+### Custom footer copyright layout
+
+Thanks [@Benjamin-Lee](https://github.com/Benjamin-Lee)'s good idea!
+
+Create an user-side partial:
+
+```
+.
+└── layouts
+    └── partials
+        └── copyright.html
+```
+
+You can relayout copyright like this:
+
+```html
+{{- $copyright := . -}}
+<div style="display: flex;flex-direction: row; justify-content: space-between;">
+<p>{{- $copyright -}}</p>
+<p><span>Powered by </span><a href="https://gohugo.io">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/">Notepadium</a></p>
+</div>
+```
+
 ## Thanks
 
 - [**Hugo**](https://gohugo.io/)

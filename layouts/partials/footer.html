@@ -3,8 +3,7 @@
     {{- if not $copyright -}}
     {{- $copyright = .Site.Title | safeHTML -}}
     {{- end -}}
-    <p>{{- $copyright | safeHTML -}}</p>
-    <p>{{- partial "footer-bottom.html" . -}}</p>
+    {{- partial "copyright.html" ($copyright | safeHTML) -}}
 </section>
 {{- partial "math.html" . -}}
 {{- partial "syntax.html" . -}}
