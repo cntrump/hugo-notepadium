@@ -18,6 +18,7 @@ Features
 - Pagination with large number of pages supporting
 - Light & Dark Mode
 - Google analytics supporting
+- Custom CSS supporting
 
 Preview the exampleSite:
 
@@ -221,6 +222,25 @@ You can relayout copyright like this:
 <p><span>Powered by </span><a href="https://gohugo.io">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/">Notepadium</a></p>
 </div>
 ```
+
+### Custom CSS supporting
+
+```
+[params.assets]
+css = ["css/font.css", "css/color.css"]
+```
+
+On user-side:
+
+```
+.
+└── assets
+    └── css
+        ├── color.css
+        └── font.css
+```
+
+`color.css` and `font.css` will be bundled into `core.css`.
 
 ## Thanks
 
