@@ -414,6 +414,10 @@ strong {
   margin: 0;
 }
 
+.article-header {
+  margin: 20px 0;
+}
+
 .article-date {
   font-size: 14px;
   color: #8e8e93;
