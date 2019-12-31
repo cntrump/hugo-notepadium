@@ -62,15 +62,15 @@
 {{- end -}}
 {{- end -}}
 
-{{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/core.css" -}}
+{{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/tmp_core.css" -}}
 
-{{- range .Site.Params.assets.css -}}
-{{- $customCSS := resources.Get . -}}
-    {{- if $customCSS -}}
-    {{- $coreCSS = slice $coreCSS $customCSS | resources.Concat (printf "%s.tmp_core.css" .) -}}
+{{- with partial "custom_css.html" . -}}
+    {{- if ne . "" -}}
+        {{- $coreCSS = slice $coreCSS . | resources.Concat "css/custom_core.css" -}}
     {{- end -}}
 {{- end -}}
 
+{{- $coreCSS := slice $coreCSS ("" | resources.FromString "css/_core.css") | resources.Concat "css/core.css" -}}
 {{- $coreCSS = $coreCSS | resources.Minify | resources.Fingerprint "sha384" -}}
 
 <link rel="stylesheet" href="{{- $coreCSS.RelPermalink -}}" integrity="{{- $coreCSS.Data.Integrity -}}">

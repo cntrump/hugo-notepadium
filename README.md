@@ -19,6 +19,7 @@ Features
 - Light & Dark Mode
 - Google analytics supporting
 - Custom CSS supporting
+- Custom JS supporting
 
 Preview the exampleSite:
 
@@ -241,6 +242,25 @@ On user-side:
 ```
 
 `color.css` and `font.css` will be bundled into `core.css`.
+
+### Custom JS supporting
+
+```
+[params.assets]
+js = ["js/font.js", "js/color.js"]
+```
+
+On user-side:
+
+```
+.
+└── assets
+    └── js
+        ├── color.js
+        └── font.js
+```
+
+`color.js` and `font.js` will be bundled into `core.js`.
 
 ## Thanks
 

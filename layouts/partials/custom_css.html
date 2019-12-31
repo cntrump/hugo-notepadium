@@ -1,0 +1,12 @@
+{{- $css := "" -}}
+{{- range .Site.Params.assets.css -}}
+  {{- $customCSS := resources.Get . -}}
+  {{- if $customCSS -}}
+    {{- if eq $css "" -}}
+      {{- $css = $customCSS -}}
+    {{- else -}}
+      {{- $css = slice $css $customCSS | resources.Concat (printf "%s.tmp_custom.css" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $css -}}
