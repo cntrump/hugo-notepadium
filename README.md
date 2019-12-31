@@ -12,7 +12,7 @@ Features
 - Navigation items
 - Syntanx highlighting
 - Math supporting
-- Comments by Disqus
+- Comments powered by Disqus
 - CC License
 - Builtin `Source Code Pro` font for code
 - Pagination with large number of pages supporting
@@ -64,6 +64,9 @@ style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: bas
 logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
 [params.math]
 enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
@@ -145,6 +148,19 @@ enable = true  # true means globally, or on a per page set "math = true"
 use = "katex"  # "mathjax" or "katex"
 ```
 
+Enable comments on per page:
+
+```md
++++
+title = "..."
+date = 2019-12-08
+...
+math = true
++++
+
+...
+```
+
 Example
 
 ```
@@ -164,9 +180,7 @@ disqusShortname = "XXX"  # your short name
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 ```
 
-By default, comments is disabled for all posts.
-
-You can enable comments like below:
+You can enable comments on per page:
 
 ```md
 +++
