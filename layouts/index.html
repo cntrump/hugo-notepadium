@@ -11,7 +11,8 @@
         {{- end -}}
         {{- range .Site.Params.nav.custom -}}
         <li>
-            {{- $url := .url | relURL -}}
+            {{- $url := .url | safeURL -}}
+            {{- if strings.HasPrefix $url "/" -}}{{- $url = $url | relURL -}}{{- end -}}
             <a class="site-tag" href="{{- $url -}}" 
                 {{- if strings.HasPrefix $url "http" -}}target="_blank"
                 {{- end -}}>{{- .title -}}</a></li>
