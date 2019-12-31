@@ -13,5 +13,5 @@
 {{- if ne $js "" -}}
   {{- $coreJS := slice $js ("" | resources.FromString "js/_core.js") | resources.Concat "js/core.js" -}}
   {{- $coreJS = $coreJS | resources.Minify | resources.Fingerprint "sha384" -}}
-  <script src="{{- $coreJS.RelPermalink -}}" integrity="{{- $coreJS.Data.Integrity -}}"></script>
+  {{- partial "js.html" $coreJS -}}
 {{- end -}}
