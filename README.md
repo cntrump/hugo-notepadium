@@ -66,7 +66,7 @@ slogan = "100% JavaScript-free"
 license = ""  # CC License
 
 [params.math]
-enable = false  # optional: true, false. Enable globally, default: false, you can always enable math on per page.
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
 use = "katex"  # option: "katex", "mathjax". default: "katex"
 
 [params.syntax]
@@ -159,6 +159,9 @@ Setup Disqus [shortname](https://help.disqus.com/en/articles/1717111-what-s-a-sh
 ```toml
 # disqus
 disqusShortname = "XXX"  # your short name
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 ```
 
 By default, comments is disabled for all posts.

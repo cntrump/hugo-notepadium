@@ -1,6 +1,6 @@
 {{- define "main" -}}
 {{- $justify := false -}}
-{{- if and (isset .Params "justify") (eq .Params.justify true) -}} {{- $justify = true -}} {{- end -}}
+{{- if eq .Params.justify true -}} {{- $justify = true -}} {{- end -}}
 <section class="article-header" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
     <h1>{{- .Title | safeHTML -}}</h1>
     {{- if .Date -}}
@@ -44,9 +44,11 @@
     {{- end -}}
 </section>
 {{- end -}}
-{{- if and .Params.comments (gt (len .Site.DisqusShortname) 0) -}}
-<section class="article-discussion">
-    {{- template "_internal/disqus.html" . -}}
-</section>
+{{- if gt (len .Site.DisqusShortname) 0 -}}
+    {{- if or (eq .Params.comments true) (and (ne .Params.comments false) (eq .Site.Params.comments.enable true)) -}}
+        <section class="article-discussion">
+            {{- template "_internal/disqus.html" . -}}
+        </section>
+    {{- end -}}
 {{- end -}}
 {{- end -}}
