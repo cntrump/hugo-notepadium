@@ -41,7 +41,6 @@ use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "xcode"
 darkTheme = "xcode-dark"
-webFonts = true  # builtin: 'Source Code Pro'
 
 [params.nav]
 showCategories = true       # /categories/
