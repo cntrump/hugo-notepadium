@@ -259,29 +259,22 @@ strong {
   margin: 20px 0;
 }
 
-.header-wrap {
+.header-wrap,
+.nav-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: -5px;
 }
 
-.header-wrap>* {
+.header-wrap>*,
+.nav-wrap>* {
   margin-top: 5px;
 }
 
 .header-left-side {
   display: inline-block;
   flex-shrink: 0;
-}
-
-.nav {
-  display: inline-block;
-  list-style: none;
-}
-
-.nav li {
-  display: inline-block;
 }
 
 .site-name {
