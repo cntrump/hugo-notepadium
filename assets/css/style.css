@@ -256,14 +256,18 @@ strong {
 }
 
 .header {
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  margin: 20px 0;
 }
 
-.header p {
-  margin: 0;
-  line-height: 1;
+.header-left-side {
+  display: inline-block;
+}
+
+.header-right-side {
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 
 .nav {
