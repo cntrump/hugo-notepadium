@@ -332,7 +332,6 @@ strong {
 
 .flex-body {
   margin: 0 auto;
-  padding-bottom: 20px;
 }
 
 .footer {
@@ -473,10 +472,6 @@ strong {
   border-bottom: 1px dashed #e1e4e8;
 }
 
-.article-navigation {
-  margin-top: 40px;
-}
-
 .article-navigation p {
   margin: 0;
 }
@@ -547,7 +542,7 @@ strong {
 .markdown-body {
   display: block;
   color: #838387;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 .markdown-body> :first-child {
@@ -841,5 +836,11 @@ strong {
   .max-body-width {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .header-right-side {
+    position: static;
+    text-align: right;
+    margin: 20px 0;
   }
 }
