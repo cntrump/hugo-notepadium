@@ -256,19 +256,23 @@ strong {
 }
 
 .header {
+  margin: 20px 0;
+}
+
+.header-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0;
+  margin-top: -5px;
+}
+
+.header-wrap>* {
+  margin-top: 5px;
 }
 
 .header-left-side {
   display: inline-block;
   flex-shrink: 0;
-}
-
-.header-right-side {
-  margin-top: 5px;
 }
 
 .nav {
@@ -291,6 +295,9 @@ strong {
   vertical-align: middle;
 }
 
+.home {
+  display: block;
+}
 .home:hover,
 .home:focus,
 .home:active {
@@ -309,7 +316,7 @@ strong {
   font-size: 85%;
   color: #8e8e93;
   vertical-align: middle;
-  margin-left: 8px;
+  margin: 0 4px;
 }
 
 .site-tag {

@@ -1,15 +1,17 @@
 <section id="header" class="header max-body-width">
-    <div class="header-left-side"><a class="home" href="{{- `/` | relURL -}}">
-            {{- with .Site.Params.logo -}}
-                <img class="site-logo" src="{{- . | relURL -}}" alt />
-            {{- else -}}
-                <span class="site-name">{{- .Site.Title -}}</span>
-            {{- end -}}
-            {{- with .Site.Params.slogan -}}
-                <span class="site-slogan">{{- . | safeHTML -}}</span>
-            {{- end -}}
-        </a></div>
-    <div class="header-right-side">
-        {{- partial "header-right.html" . -}}
+    <div class="header-wrap">
+        <div class="header-left-side"><a class="home" href="{{- `/` | relURL -}}">
+                {{- with .Site.Params.logo -}}
+                    <img class="site-logo" src="{{- . | relURL -}}" alt />
+                {{- else -}}
+                    <span class="site-name">{{- .Site.Title -}}</span>
+                {{- end -}}
+                {{- with .Site.Params.slogan -}}
+                    <span class="site-slogan">{{- . | safeHTML -}}</span>
+                {{- end -}}
+            </a></div>
+        <div class="header-right-side">
+            {{- partial "header-right.html" . -}}
+        </div>
     </div>
 </section>
