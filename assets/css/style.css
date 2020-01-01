@@ -257,6 +257,8 @@ strong {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 20px 0;
 }
 
@@ -266,8 +268,7 @@ strong {
 }
 
 .header-right-side {
-  flex-grow: 1;
-  text-align: right;
+  margin-top: 5px;
 }
 
 .nav {
