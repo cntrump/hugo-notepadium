@@ -1,15 +1,16 @@
-{{- if or .Site.Params.nav.showCategories .Site.Params.nav.showTags .Site.Params.nav.custom -}}
+{{- $nav := . -}}
+{{- if or $nav.showCategories $nav.showTags $nav.custom -}}
 <div class="nav-wrap"><div class="nav">
-    {{- if .Site.Params.nav.showCategories -}}
-        <a class="site-tag" href="{{- `/categories/` | relURL -}}">Categories</a>
+    {{- if $nav.showCategories -}}
+        <a class="nav-item" href="{{- `/categories/` | relURL -}}">Categories</a>
     {{- end -}}
-    {{- if .Site.Params.nav.showTags -}}
-        <a class="site-tag" href="{{- `/tags/` | relURL -}}">Tags</a>
+    {{- if $nav.showTags -}}
+        <a class="nav-item" href="{{- `/tags/` | relURL -}}">Tags</a>
     {{- end -}}
-    {{- range .Site.Params.nav.custom -}}
+    {{- range $nav.custom -}}
         {{- $url := .url | safeURL -}}
         {{- if strings.HasPrefix $url "/" -}}{{- $url = ($url | relURL) -}}{{- end -}}
-        <a class="site-tag" href="{{- $url -}}" 
+        <a class="nav-item" href="{{- $url -}}" 
             {{- if strings.HasPrefix $url "http" -}}target="_blank"
             {{- end -}}>{{- .title -}}</a>
     {{- end -}}

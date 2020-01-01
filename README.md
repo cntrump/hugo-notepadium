@@ -262,22 +262,36 @@ On user-side:
 
 ### Custom header right items
 
-Create an user-side partial: `header-right.html`
+Create an user-side partial: `navigation-items.html`
 
 ```
 .
 └── layouts
     └── partials
-        └── header-right.html
+        └── navigation-items.html
 ```
 
-An example header-right.html:
+An example navigation-items.html:
 
 ```html
-<a class="article-tag" href="{{- `/tags/ios/` | relURL -}}">iOS</a>
-<a class="article-tag" href="{{- `/tags/swift/` | relURL -}}">Swift</a>
-<a class="article-tag" href="{{- `/tags/` | relURL -}}">Tags</a>
-<a class="article-tag" href="https://github.com/cntrump" target="_blank">Github</a>
+{{- $nav := . -}}
+{{- if or $nav.showCategories $nav.showTags $nav.custom -}}
+<div class="nav-wrap"><div class="nav">
+    {{- if $nav.showCategories -}}
+        <a class="nav-item" href="{{- `/categories/` | relURL -}}">Categories</a>
+    {{- end -}}
+    {{- if $nav.showTags -}}
+        <a class="nav-item" href="{{- `/tags/` | relURL -}}">Tags</a>
+    {{- end -}}
+    {{- range $nav.custom -}}
+        {{- $url := .url | safeURL -}}
+        {{- if strings.HasPrefix $url "/" -}}{{- $url = ($url | relURL) -}}{{- end -}}
+        <a class="nav-item" href="{{- $url -}}" 
+            {{- if strings.HasPrefix $url "http" -}}target="_blank"
+            {{- end -}}>{{- .title -}}</a>
+    {{- end -}}
+</div></div>
+{{- end -}}
 ```
 
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/04.png)

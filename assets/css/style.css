@@ -307,7 +307,7 @@ strong {
   margin: 0 4px;
 }
 
-.site-tag {
+.nav-item {
   display: inline-block;
   font-size: 15px;
   line-height: 1;
@@ -319,9 +319,9 @@ strong {
   border-radius: 3px;
 }
 
-.site-tag:hover,
-.site-tag:focus,
-.site-tag:active {
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
   text-decoration: none;
   background-color: rgba(242, 80, 34, .5);
 }

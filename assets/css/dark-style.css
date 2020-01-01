@@ -57,14 +57,14 @@ a {
   color: #0a84ff;
 }
 
-.site-tag {
+.nav-item {
   color: #f13f0e;
   background-color: rgba(241, 63, 14, .05);
 }
 
-.site-tag:hover,
-.site-tag:focus,
-.site-tag:active {
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
   text-decoration: none;
   background-color: rgba(241, 63, 14, .5);
 }
