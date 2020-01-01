@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Averia Sans Libre Light Italic'), local('AveriaSansLibre-LightItalic'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6caxZG_G5OvCf_rt7FH3B6BHLMEdVLKisSH5DdLw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Averia Sans Libre Italic'), local('AveriaSansLibre-Italic'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6RaxZG_G5OvCf_rt7FH3B6BHLMEdVLIoAwDw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Averia Sans Libre Bold Italic'), local('AveriaSansLibre-BoldItalic'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6caxZG_G5OvCf_rt7FH3B6BHLMEdVLKjsVH5DdLw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Averia Sans Libre Light'), local('AveriaSansLibre-Light'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6SaxZG_G5OvCf_rt7FH3B6BHLMEd3lMJcXL5c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6XaxZG_G5OvCf_rt7FH3B6BHLMEdVOEoc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Averia Sans Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Averia Sans Libre Bold'), local('AveriaSansLibre-Bold'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6SaxZG_G5OvCf_rt7FH3B6BHLMEd31N5cXL5c.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Code Pro Italic'), local('SourceCodePro-It'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Source Code Pro Medium Italic'), local('SourceCodePro-MediumIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONMnt9co5mg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Source Code Pro SemiBold Italic'), local('SourceCodePro-SemiBoldIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONMLsNco5mg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Code Pro Bold Italic'), local('SourceCodePro-BoldIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONNvsdco5mg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Source Code Pro Medium'), local('SourceCodePro-Medium'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7PqtzsjDs-cv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Source Code Pro SemiBold'), local('SourceCodePro-SemiBold'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cv.ttf) format('truetype');
+}
+
+html {
+  font-family: 'Averia Sans Libre', -system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, SimHei, 'Segoe UI', Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+code,
+pre,
+tt,
+kbd,
+samp {
+  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
+  font-weight: 500;
+}
