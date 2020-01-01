@@ -1,6 +1,6 @@
 {{- define "main" -}}
 {{- $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
-{{- if .Site.Params.nav -}}
+{{- if or .Site.Params.nav.showCategories .Site.Params.nav.showTags .Site.Params.nav.custom -}}
 <div class="nav">
     <ul>
         {{- if .Site.Params.nav.showCategories -}}

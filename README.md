@@ -19,6 +19,7 @@ Features
 - Google analytics supporting
 - Custom CSS supporting
 - Custom JS supporting
+- Custom header right items supporting
 
 Preview the exampleSite:
 
@@ -202,7 +203,7 @@ Support large number of pages
 
 Thanks [@Benjamin-Lee](https://github.com/Benjamin-Lee)'s good idea!
 
-Create an user-side partial:
+Create an user-side partial: `copyright.html`
 
 ```
 .
@@ -215,7 +216,7 @@ You can relayout copyright like this:
 
 ```html
 {{- $copyright := . -}}
-<div style="display: flex;flex-direction: row; justify-content: space-between;">
+<div style="display:flex; flex-direction:row; justify-content:space-between;">
 <p>{{- $copyright -}}</p>
 <p><span>Powered by </span><a href="https://gohugo.io">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/">Notepadium</a></p>
 </div>
@@ -223,7 +224,7 @@ You can relayout copyright like this:
 
 ### Custom CSS supporting
 
-```
+```toml
 [params.assets]
 css = ["css/font.css", "css/color.css"]
 ```
@@ -242,7 +243,7 @@ On user-side:
 
 ### Custom JS supporting
 
-```
+```toml
 [params.assets]
 js = ["js/font.js", "js/color.js"]
 ```
@@ -258,6 +259,28 @@ On user-side:
 ```
 
 `color.js` and `font.js` will be bundled into `core.js`.
+
+### Custom header right items
+
+Create an user-side partial: `header-right.html`
+
+```
+.
+└── layouts
+    └── partials
+        └── header-right.html
+```
+
+An example header-right.html:
+
+```html
+<a class="article-tag" href="{{- `/tags/ios/` | relURL -}}">iOS</a>
+<a class="article-tag" href="{{- `/tags/swift/` | relURL -}}">Swift</a>
+<a class="article-tag" href="{{- `/tags/` | relURL -}}">Tags</a>
+<a class="article-tag" href="https://github.com/cntrump" target="_blank">Github</a>
+```
+
+![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/04.png)
 
 ## Thanks
 
