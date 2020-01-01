@@ -315,7 +315,7 @@ strong {
 }
 
 .site-tag {
-  display: block;
+  display: inline-block;
   font-size: 15px;
   line-height: 1;
   padding: 4px 6px;
