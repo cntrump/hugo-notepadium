@@ -256,18 +256,18 @@ strong {
 }
 
 .header {
-  position: relative;
+  display: flex;
   margin: 20px 0;
 }
 
 .header-left-side {
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .header-right-side {
-  position: absolute;
-  top: 0;
-  right: 20px;
+  flex-grow: 1;
+  text-align: right;
 }
 
 .nav {
@@ -299,16 +299,16 @@ strong {
 
 .site-logo {
   height: 42px;
-  vertical-align: middle;
   border-radius: 3px;
+  vertical-align: middle;
 }
 
 .site-slogan {
   display: inline-block;
   font-size: 85%;
   color: #8e8e93;
-  margin-left: 12px;
   vertical-align: middle;
+  margin-left: 8px;
 }
 
 .site-tag {
@@ -836,11 +836,5 @@ strong {
   .max-body-width {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .header-right-side {
-    position: static;
-    text-align: right;
-    margin: 20px 0;
   }
 }
