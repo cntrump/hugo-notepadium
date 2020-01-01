@@ -1,7 +1,7 @@
 <section id="footer" class="footer max-body-width">
     {{- $copyright := .Site.Copyright -}}
     {{- if not $copyright -}}
-    {{- $copyright = .Site.Title | safeHTML -}}
+        {{- $copyright = .Site.Title | safeHTML -}}
     {{- end -}}
     {{- partial "copyright.html" ($copyright | safeHTML) -}}
 </section>

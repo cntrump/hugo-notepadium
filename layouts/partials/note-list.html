@@ -10,29 +10,29 @@
             {{- $relURL := .RelPermalink -}}
             {{- $imgs := .Params.imgs -}}
             {{- with .Params.imgs -}}
-            <figure class="note-imgs">
-                {{- $imgCount := len $imgs -}}
-                {{- range $imgs -}}
-                {{- $imgurl := lower . -}}
-                {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
-                {{- $imgurl = path.Join $relURL . -}}
-                {{- end -}}
-                <img src="{{- $imgurl -}}" alt />
-                {{- end -}}
-            </figure>
+                <figure class="note-imgs">
+                    {{- $imgCount := len $imgs -}}
+                    {{- range $imgs -}}
+                    {{- $imgurl := lower . -}}
+                    {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
+                    {{- $imgurl = path.Join $relURL . -}}
+                    {{- end -}}
+                    <img src="{{- $imgurl -}}" alt />
+                    {{- end -}}
+                </figure>
             {{- end -}}
         </a>
         {{- if or .Params.categories .Params.tags -}}
-        <p class="note-labels">
-            {{- range .Params.categories -}}
-            {{- $url := print "/categories/" (. | urlize) "/" -}}
-            <a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
-            {{- end -}}
-            {{- range .Params.tags -}}
-            {{- $url := print "/tags/" ( . | urlize) "/" -}}
-            <a class="article-tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
-            {{- end -}}
-        </p>
+            <p class="note-labels">
+                {{- range .Params.categories -}}
+                {{- $url := print "/categories/" (. | urlize) "/" -}}
+                <a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
+                {{- end -}}
+                {{- range .Params.tags -}}
+                {{- $url := print "/tags/" ( . | urlize) "/" -}}
+                <a class="article-tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
+                {{- end -}}
+            </p>
         {{- end -}}
     </li>
     {{- end -}}
