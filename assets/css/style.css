@@ -276,7 +276,7 @@ strong {
 }
 
 .nav {
-  margin: 20px 0;
+  list-style: none;
 }
 
 .nav ul {
@@ -322,7 +322,7 @@ strong {
 .site-tag {
   display: inline-block;
   padding: 2px 10px;
-  margin: 0 12px 12px 0;
+  margin: 0 5px 5px 0;
   font-size: 14px;
   font-weight: 600;
   position: relative;

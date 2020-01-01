@@ -55,7 +55,7 @@
 
 {{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/tmp_core.css" -}}
 
-{{- with partial "custom_css.html" . -}}
+{{- with partial "custom-css.html" . -}}
     {{- if ne . "" -}}
         {{- $coreCSS = slice $coreCSS . | resources.Concat "css/custom_core.css" -}}
     {{- end -}}
