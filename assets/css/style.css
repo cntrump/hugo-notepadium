@@ -138,8 +138,8 @@ pre,
 tt,
 kbd,
 samp {
-  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
-  font-weight: 500;
+  font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+  font-weight: 400;
 }
 
 pre {

@@ -14,7 +14,6 @@ Features
 - Math supporting
 - Comments powered by Disqus
 - CC License
-- Builtin `Source Code Pro` font for code
 - Pagination with large number of pages supporting
 - Light & Dark Mode
 - Google analytics supporting
@@ -78,7 +77,6 @@ use = "katex"  # option: "katex", "mathjax". default: "katex"
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "dracula"
 darkTheme = "xcode-dark"  # apply this theme in dark mode
-webFonts = true  # builtin: 'Source Code Pro'
 
 [params.nav]
 showCategories = true       # /categories/
@@ -139,7 +137,6 @@ url = "https://gohugo.io/"
 use = "hljs"  # 1. prismjs 2. hljs 3. none
 theme = "dracula"
 darkTheme = "xcode-dark"  # apply this theme in dark mode
-webFonts = true  # use builtin font: Source Code Pro
 ```
 
 ### Math
@@ -270,7 +267,6 @@ On user-side:
 - [**MathJax**](https://www.mathjax.org/)
 - [**Katex**](https://katex.org/)
 - [**Disqus**](https://disqus.com/)
-- [**Source Code Pro**](https://fonts.adobe.com/fonts/source-code-pro)
 
 ## Note
 

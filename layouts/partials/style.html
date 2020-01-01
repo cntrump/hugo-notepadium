@@ -1,8 +1,3 @@
-{{- $fontCSS := "" -}}
-{{- if eq .Site.Params.syntax.webFonts true -}}
-{{- $fontCSS = resources.Get "css/source-code-pro.css" -}}
-{{- end -}}
-
 {{- $style := "auto" -}}
 {{- if and (isset .Site.Params "style") (ne .Site.Params.style "") -}}
 {{- $style = .Site.Params.style | lower -}}
@@ -20,10 +15,6 @@
         {{- $darkStyleCSS = slice $darkStyleCSS $darkStyleEnd | resources.Concat "css/tmp_style_dark.css" -}}
         {{- $coreCSS = slice $coreCSS $darkStyleCSS | resources.Concat "css/tmp_style.css" -}}
     {{- end -}}
-{{- end -}}
-
-{{- if ne $fontCSS "" -}}
-{{- $coreCSS = slice $fontCSS $coreCSS | resources.Concat "css/tmp_core.css" -}}
 {{- end -}}
 
 {{- $themePath := "" -}}
