@@ -9,7 +9,7 @@
     {{- end -}}
     {{- range $nav.custom -}}
         {{- $url := .url | safeURL -}}
-        {{- if strings.HasPrefix $url "/" -}}{{- $url = ($url | relURL) -}}{{- end -}}
+        {{- if strings.HasPrefix $url "/" -}}{{- $url = $url | relURL -}}{{- end -}}
         <a class="nav-item" href="{{- $url -}}" 
             {{- if strings.HasPrefix $url "http" -}}target="_blank"
             {{- end -}}>{{- .title -}}</a>
