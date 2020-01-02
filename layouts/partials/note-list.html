@@ -8,7 +8,7 @@
             {{- if .Date -}}
                 {{- $dateFormat := .Site.Params.dateFormat -}}
                 {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
-                <p class="note-date">{{- .Date.Format $dateFormat -}}</p>
+                <p class="date">{{- .Date.Format $dateFormat -}}</p>
             {{- end -}}
             {{- if .Summary -}}<p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span>&mldr;</span>{{- end -}}</p>{{- end -}}
             {{- $relURL := .RelPermalink -}}

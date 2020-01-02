@@ -364,6 +364,10 @@ strong {
   display: inline-block;
 }
 
+.date {
+  font-size: 14px;
+}
+
 .note-list {
   margin: 0;
   padding: 0;
@@ -401,7 +405,6 @@ strong {
   color: #303033;
 }
 
-.note-date,
 .note-content {
   font-size: 15px;
 }
@@ -438,8 +441,7 @@ strong {
   margin: 20px 0;
 }
 
-.article-date {
-  font-size: 14px;
+.article-header .date {
   margin-top: 20px;
 }
 
@@ -557,7 +559,7 @@ strong {
 
 .site-slogan,
 .note,
-.article-date,
+.date,
 .footer,
 .markdown-body {
   color: #838387;

@@ -6,7 +6,7 @@
     {{- if .Date -}}
         {{- $dateFormat := .Site.Params.dateFormat -}}
         {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
-        <p class="article-date">{{- .Date.Format $dateFormat -}}</p>
+        <p class="date">{{- .Date.Format $dateFormat -}}</p>
     {{- end -}}
 </section>
 <article class="markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
