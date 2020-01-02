@@ -1,0 +1,30 @@
+<span{{ with .Get "class" }} class="{{ . }}"{{ else }} class="image-container"{{ end }}>
+    {{- $src := .Get "src" -}}
+    {{- $link := .Get "link" -}}
+    {{- if not $link -}}{{- $link = $src -}}{{- end -}}
+    <a class="link" 
+        href="{{ $link }}"{{ with .Get "target" }} 
+        target="{{ . }}"{{ end }}{{ with .Get "rel" }} 
+        rel="{{ . }}"{{ end }}><img class="img" src="{{ $src }}" 
+         {{- if or (.Get "alt") (.Get "caption") }} 
+         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+         {{- end -}}
+         {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+         {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    /></a>
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <span class="caption">
+            {{ with (.Get "title") -}}
+                <span class="title">{{ . }}</span class="image-container-caption">
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </span>
+    {{- end }}
+</span>

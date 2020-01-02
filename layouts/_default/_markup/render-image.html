@@ -3,14 +3,13 @@
 
 {{- if $block -}}
 <span class="image-container">
-  <span class="link">
-    {{- end -}}
-    <a target="_blank" rel="noopener noreferrer" href="{{- $url -}}"><img class="img" src="{{- $url -}}"
+{{- end -}}
+<a {{ if $block }}class="link"{{ end }} target="_blank" rel="noopener noreferrer" 
+  href="{{- $url -}}"><img {{ if $block }}class="img"{{ end }} src="{{- $url -}}"
         alt{{- with .Text -}}="{{- . -}}" {{- end -}} /></a>
-    {{- if $block -}}
-  </span>
+{{- if $block -}}
   {{- if ne .Title " " -}}
-  <span class="caption"><span class="title">{{- .Title | safeHTML -}}</span></span>
+    <span class="caption"><span class="title">{{- .Title | safeHTML -}}</span></span>
   {{- end -}}
 </span>
 {{- end -}}

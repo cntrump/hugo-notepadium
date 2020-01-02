@@ -10,16 +10,16 @@
             {{- $relURL := .RelPermalink -}}
             {{- $imgs := .Params.imgs -}}
             {{- with .Params.imgs -}}
-                <figure class="note-imgs">
+                <span class="note-imgs">
                     {{- $imgCount := len $imgs -}}
                     {{- range $imgs -}}
                     {{- $imgurl := lower . -}}
                     {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
                     {{- $imgurl = path.Join $relURL . -}}
                     {{- end -}}
-                    <img src="{{- $imgurl -}}" alt />
+                    <img class="img" src="{{- $imgurl -}}" alt />
                     {{- end -}}
-                </figure>
+                </span>
             {{- end -}}
         </a>
         {{- if or .Params.categories .Params.tags -}}

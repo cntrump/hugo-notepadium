@@ -207,21 +207,6 @@ a:active {
   text-decoration: underline;
 }
 
-figure {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
-figcaption>h4,
-.markdown-body .image-container .caption .title {
-  display: inline-block;
-  color: currentColor;
-  font-size: 14px;
-  font-weight: 400;
-}
-
 svg {
   max-width: 100%;
 }
@@ -239,6 +224,31 @@ b,
 strong {
   color: #303033;
   font-weight: 600;
+}
+
+.image-container,
+.image-container .caption {
+  display: block;
+}
+.image-container {
+  text-align: center;
+}
+
+.image-container .title,
+.image-container .link {
+  display: inline-block;
+}
+.image-container .img {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, .15);
+}
+.image-container .title {
+  font-size: 14px;
+  min-width: 20%;
+  max-width: 80%;
+  min-height: 22px;
+  padding: 10px 10px 6px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .max-width {
@@ -402,7 +412,7 @@ strong {
   overflow: auto;
 }
 
-.note-imgs>img {
+.note-imgs .img {
   object-fit: cover;
   height: 80px;
   min-width: 80px;
@@ -412,7 +422,7 @@ strong {
   margin: 0 5px 0 0;
 }
 
-.note-imgs>img:last-child {
+.note-imgs .img:last-child {
   margin: 0;
 }
 
@@ -561,7 +571,8 @@ strong {
 .markdown-body p,
 .markdown-body pre,
 .markdown-body table,
-.markdown-body ul {
+.markdown-body ul,
+.markdown-body .image-container {
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -645,43 +656,6 @@ strong {
 
 .markdown-body li> :last-child {
   margin-bottom: 0 !important;
-}
-
-.markdown-body .image-container {
-  display: block;
-  line-height: 1.45;
-  text-align: center;
-}
-
-.markdown-body .image-container .link,
-.markdown-body .image-container .caption {
-  display: block;
-}
-
-.markdown-body .image-container .caption {
-  margin-top: 8px;
-}
-
-.markdown-body figure {
-  text-align: center;
-  margin: 0 0 20px 0;
-}
-
-.markdown-body .image-container .img,
-.markdown-body figure>img {
-  margin: 0;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, .15);
-}
-
-.markdown-body .image-container .caption .title,
-.markdown-body figcaption>h4 {
-  min-width: 20%;
-  max-width: 80%;
-  min-height: 22px;
-  padding: 10px 10px 6px;
-  margin: 0 auto;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .markdown-body blockquote> :first-child {
