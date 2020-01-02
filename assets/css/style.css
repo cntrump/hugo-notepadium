@@ -331,14 +331,18 @@ strong {
 }
 
 .footer {
-  text-align: center;
   font-size: 12px;
-  color: #8e8e93;
   margin: 40px 0 20px 0;
 }
 
-.footer p {
-  margin: 0;
+.footer-wrap {
+  display: block;
+  text-align: center;
+}
+
+.footer .copyright,
+.footer .powerby {
+  display: inline-block;
 }
 
 .note-list {
