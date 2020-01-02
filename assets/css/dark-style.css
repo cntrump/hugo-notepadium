@@ -33,7 +33,8 @@ strong,
 
 .markdown-body h1,
 .markdown-body h2,
-.image-container .title {
+.image-container .title,
+.site-slogan .title {
   border-bottom-color: rgba(84, 84, 88, .6);
 }
 
@@ -102,7 +103,7 @@ a {
   background-color: rgba(114, 240, 126, .5);
 }
 
-.note-list li {
+.note-list .item {
   border-bottom-color: rgba(84, 84, 88, .6);
 }
 

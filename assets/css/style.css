@@ -289,18 +289,14 @@ strong {
 }
 
 .header-left-side {
-  display: inline-block;
   flex-shrink: 0;
+  max-width: 290px;
 }
 
 .site-name {
-  display: inline-block;
   font-weight: 600;
 }
 
-.home {
-  display: block;
-}
 .home:hover,
 .home:focus,
 .home:active {
@@ -314,10 +310,16 @@ strong {
 }
 
 .site-slogan {
-  display: inline-block;
   font-size: 85%;
   color: #8e8e93;
-  margin: 0 4px;
+  line-height: 1.5;
+  text-align: center;
+}
+.site-slogan .title {
+  display: inline-block;
+  text-align: initial;
+  padding: 10px 10px 6px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .nav-item {
@@ -364,7 +366,7 @@ strong {
   list-style: none;
 }
 
-.note-list li {
+.note-list .item {
   position: relative;
   width: 100%;
   margin: 0;
@@ -373,7 +375,7 @@ strong {
   word-wrap: break-word;
 }
 
-.note-list li:last-child {
+.note-list .item:last-child {
   border: 0 !important;
 }
 

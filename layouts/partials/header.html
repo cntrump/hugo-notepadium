@@ -4,14 +4,14 @@
                 {{- with .Site.Params.logo -}}
                     <img class="site-logo" src="{{- . | relURL -}}" alt />
                 {{- else -}}
-                    <span class="site-name">{{- .Site.Title -}}</span>
-                {{- end -}}
-                {{- with .Site.Params.slogan -}}
-                    <span class="site-slogan">{{- . | safeHTML -}}</span>
-                {{- end -}}
-            </a></div>
+                    <p class="site-name">{{- .Site.Title -}}</p>
+                {{- end -}}</a>
+        </div>
         <div class="header-right-side">
             {{- partial "navigation-items.html" .Site.Params.nav -}}
         </div>
     </div>
+    {{- with .Site.Params.slogan -}}
+        <div class="site-slogan"><p class="title">{{- . | safeHTML -}}</p></div>
+    {{- end -}}
 </section>
