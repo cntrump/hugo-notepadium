@@ -1,10 +1,12 @@
 <span{{ with .Get "class" }} class="{{ . }}"{{ else }} class="image-container"{{ end }}>
     {{- $src := .Get "src" -}}
     {{- $link := .Get "link" -}}
+    {{- $target := .Get "target" -}}
     {{- if not $link -}}{{- $link = $src -}}{{- end -}}
+    {{- if not $target -}}{{- $target = "_blank" -}}{{- end -}}
     <a class="link" 
-        href="{{ $link }}"{{ with .Get "target" }} 
-        target="{{ . }}"{{ end }}{{ with .Get "rel" }} 
+        href="{{ $link }}" 
+        target="{{ $target }}"{{ with .Get "rel" }} 
         rel="{{ . }}"{{ end }}><img class="img" src="{{ $src }}" 
          {{- if or (.Get "alt") (.Get "caption") }} 
          alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
