@@ -280,7 +280,6 @@ strong {
 .site-name {
   display: inline-block;
   font-weight: 600;
-  vertical-align: middle;
 }
 
 .home {
@@ -296,14 +295,12 @@ strong {
 .site-logo {
   height: 42px;
   border-radius: 3px;
-  vertical-align: middle;
 }
 
 .site-slogan {
   display: inline-block;
   font-size: 85%;
   color: #8e8e93;
-  vertical-align: middle;
   margin: 0 4px;
 }
 
@@ -491,7 +488,6 @@ strong {
   border-style: solid;
   border-width: 4px;
   margin-right: 4px;
-  vertical-align: middle;
 }
 
 .article-license {
