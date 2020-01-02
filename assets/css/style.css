@@ -310,10 +310,11 @@ strong {
 }
 
 .site-slogan {
-  font-size: 85%;
+  font-size: 13.6px;
   color: #8e8e93;
   line-height: 1.5;
   text-align: center;
+  margin-bottom: 20px;
 }
 .site-slogan .title {
   display: inline-block;
