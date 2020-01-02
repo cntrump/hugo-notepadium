@@ -294,6 +294,15 @@ An example navigation-items.html:
 {{- end -}}
 ```
 
+Or, you can rewrite it:
+
+```html
+<a class="nav-item" href="/pages/about/"><span class="iconfont icon-aboutus"></span> About</a>
+<a class="nav-item" href="https://github.com/cntrump" target="_blank"><span class="iconfont icon-logo_github"></span> Github</a>
+```
+
+`iconfont`, `icon-*` classes are my custom CSS.
+
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/04.png)
 
 ## Thanks
