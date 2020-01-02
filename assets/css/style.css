@@ -233,7 +233,12 @@ strong {
 .image-container {
   text-align: center;
 }
-
+.image-container .link {
+  line-height: 1;
+}
+.image-container .caption {
+  line-height: 1.5;
+}
 .image-container .title,
 .image-container .link {
   display: inline-block;
@@ -244,6 +249,7 @@ strong {
 }
 .image-container .title {
   font-size: 14px;
+  text-align: initial;
   min-width: 20%;
   max-width: 80%;
   min-height: 22px;
