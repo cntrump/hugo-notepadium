@@ -58,15 +58,15 @@ a {
 }
 
 .nav-item {
-  color: #f13f0e;
-  background-color: rgba(241, 63, 14, .05);
+  color: #f57d5b;
+  background-color: rgba(245, 125, 91, .05);
 }
 
 .nav-item:hover,
 .nav-item:focus,
 .nav-item:active {
   text-decoration: none;
-  background-color: rgba(241, 63, 14, .5);
+  background-color: rgba(245, 125, 91, .5);
 }
 
 .pagination ul li a {
