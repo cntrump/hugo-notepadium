@@ -595,23 +595,23 @@ strong {
   padding: 0 0 0 22px;
 }
 
-.markdown-body blockquote::before,
-.markdown-body blockquote::after,
-.markdown-body q::before,
-.markdown-body q::after {
+.markdown-body blockquote:before,
+.markdown-body blockquote:after,
+.markdown-body q:before,
+.markdown-body q:after {
   color: #c6c6cc;
 }
 
-.markdown-body blockquote::before,
-.markdown-body q::before {
+.markdown-body blockquote:before,
+.markdown-body q:before {
   content: "❝";
 }
 
-.markdown-body q::after {
+.markdown-body q:after {
   content: "❞";
 }
 
-.markdown-body blockquote::before {
+.markdown-body blockquote:before {
   position: absolute;
   top: 0;
   left: 0;
