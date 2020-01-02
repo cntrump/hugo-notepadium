@@ -280,6 +280,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: baseline;
   margin-top: -5px;
 }
 
@@ -294,6 +295,7 @@ strong {
 }
 
 .site-name {
+  display: inline-block;
   font-weight: 600;
 }
 
@@ -307,11 +309,12 @@ strong {
 .site-logo {
   height: 42px;
   border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .site-slogan {
   font-size: 13.6px;
-  color: #8e8e93;
   line-height: 1.5;
   text-align: center;
   margin-bottom: 20px;
@@ -382,7 +385,6 @@ strong {
 
 .note {
   display: block;
-  color: #8e8e93;
   text-decoration: none;
 }
 
@@ -438,7 +440,6 @@ strong {
 
 .article-date {
   font-size: 14px;
-  color: #8e8e93;
   margin-top: 20px;
 }
 
@@ -554,9 +555,15 @@ strong {
   background-color: rgba(0, 122, 255, .5);
 }
 
+.site-slogan,
+.note,
+.article-date,
+.footer,
+.markdown-body {
+  color: #838387;
+}
 .markdown-body {
   display: block;
-  color: #838387;
   margin: 20px 0;
 }
 

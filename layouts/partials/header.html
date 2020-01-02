@@ -1,11 +1,11 @@
 <section id="header" class="header max-body-width">
     <div class="header-wrap">
         <div class="header-left-side"><a class="home" href="{{- `/` | relURL -}}">
-                {{- with .Site.Params.logo -}}
-                    <img class="site-logo" src="{{- . | relURL -}}" alt />
-                {{- else -}}
-                    <p class="site-name">{{- .Site.Title -}}</p>
-                {{- end -}}</a>
+            {{- $logo := .Site.Params.logo -}}
+            {{- if $logo -}}
+                <img class="site-logo" src="{{- $logo | relURL -}}" alt />
+            {{- end -}}
+            <p class="site-name">{{- .Site.Title -}}</p></a>
         </div>
         <div class="header-right-side">
             {{- partial "navigation-items.html" .Site.Params.nav -}}

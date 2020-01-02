@@ -27,6 +27,10 @@ strong,
   color: #ebebf5;
 }
 
+.site-slogan,
+.note,
+.article-date,
+.footer,
 .markdown-body {
   color: rgba(235, 235, 245, .6);
 }
