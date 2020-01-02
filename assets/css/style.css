@@ -250,7 +250,6 @@ strong {
 .image-container .title {
   font-size: 14px;
   text-align: initial;
-  min-width: 20%;
   max-width: 80%;
   min-height: 22px;
   padding: 10px 10px 6px;
@@ -322,6 +321,7 @@ strong {
 .site-slogan .title {
   display: inline-block;
   text-align: initial;
+  min-height: 22px;
   padding: 10px 10px 6px;
   border-bottom: 1px solid #d9d9d9;
 }
