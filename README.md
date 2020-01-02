@@ -63,6 +63,7 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
 logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
