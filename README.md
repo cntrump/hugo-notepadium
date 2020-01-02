@@ -297,8 +297,8 @@ An example navigation-items.html:
 Or, you can rewrite it:
 
 ```html
-<a class="nav-item" href="/pages/about/"><span class="iconfont icon-aboutus"></span> About</a>
-<a class="nav-item" href="https://github.com/cntrump" target="_blank"><span class="iconfont icon-logo_github"></span> Github</a>
+<a class="nav-item" href="{{- `/pages/about/` | relURL -}}"><span class="iconfont icon-aboutus"></span>&nbsp;About</a>
+<a class="nav-item" href="https://github.com/cntrump" target="_blank"><span class="iconfont icon-logo_github"></span>&nbsp;Github</a>
 ```
 
 `iconfont`, `icon-*` classes are my custom CSS.
