@@ -67,5 +67,5 @@
 /* CommentPreproc */ .chroma .cp { color: #4A5560 }
 /* CommentPreprocFile */ .chroma .cpf { color: #4A5560 }
 /* GenericHeading */ .chroma .gh { color: #005cc5; }
-/* GenericDeleted */ .chroma .gd { color: #b31d28; background-color: #ffeef0; }
-/* GenericInserted */ .chroma .gi { color: #22863a; background-color: #f0fff4;}
+/* GenericDeleted */ .chroma .gd { color: #b31d28; background-color: rgba(179, 29, 40, .05); }
+/* GenericInserted */ .chroma .gi { color: #22863a; background-color: rgba(34, 134, 58, .05);}
