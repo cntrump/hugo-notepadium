@@ -1,8 +1,7 @@
-{{- $dateFormat := .Site.Params.dateFormat -}}
-{{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
 +++
 title = "{{ replace .Name `-` ` ` | title }}"
-date = "{{ now.Format $dateFormat }}"
+date = {{ .Date }}
+lastmod = {{ .Date }}
 tags = []
 categories = []
 imgs = []
