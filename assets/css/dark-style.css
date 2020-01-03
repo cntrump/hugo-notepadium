@@ -9,6 +9,8 @@ mark {
 body,
 b,
 strong,
+.site-name,
+.nav-item,
 .note-title,
 .article-navigation .link,
 .markdown-body h1,
@@ -46,8 +48,8 @@ code,
 kbd,
 tt,
 samp {
-  color: #e46c8a;
-  background-color: rgba(228, 108, 138, .05);
+  color: #fc6a5d;
+  background-color: rgba(252, 106, 93, .1);
 }
 
 pre,
@@ -60,18 +62,6 @@ pre,
 
 a {
   color: #0a84ff;
-}
-
-.nav-item {
-  color: #f57d5b;
-  background-color: rgba(245, 125, 91, .05);
-}
-
-.nav-item:hover,
-.nav-item:focus,
-.nav-item:active {
-  text-decoration: none;
-  background-color: rgba(245, 125, 91, .5);
 }
 
 .pagination ul li a {
@@ -87,24 +77,11 @@ a {
 }
 
 .article-tag {
-  background-color: rgba(10, 132, 255, .05);
-}
-
-.article-tag:hover,
-.article-tag:focus,
-.article-tag:active {
-  background-color: rgba(10, 132, 255, .5);
+  color: #fc6a5d;
 }
 
 .article-category {
-  color: #16d028;
-  background-color: rgba(22, 208, 40, .05);
-}
-
-.article-category:hover,
-.article-category:focus,
-.article-category:active {
-  background-color: rgba(114, 240, 126, .5);
+  color: #5dd8ff;
 }
 
 .note-list .item {

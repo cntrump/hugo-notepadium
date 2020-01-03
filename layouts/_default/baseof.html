@@ -5,7 +5,7 @@
 <body>
     <div class="base-body max-width">
         {{- partial "header.html" . -}}
-        <div id="content" class="flex-body max-body-width">
+        <div id="content" class="max-body-width">
             {{- block "main" . -}}{{- end -}}
         </div>
         {{- partial "footer.html" . -}}
