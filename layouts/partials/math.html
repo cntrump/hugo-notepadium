@@ -1,7 +1,7 @@
-{{- if or (eq .Site.Params.math.enable true) (eq .Params.math true) -}}
+{{- if or (eq site.Params.math.enable true) (eq .Params.math true) -}}
     {{- $use := "katex" -}}
 
-    {{- with .Site.Params.math -}}
+    {{- with site.Params.math -}}
         {{- if and (isset . "use") (eq (.use | lower) "mathjax") -}}
             {{- $use = "mathjax" -}}
         {{- end -}}

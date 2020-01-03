@@ -1,6 +1,6 @@
 {{- $style := "auto" -}}
-{{- if and (isset .Site.Params "style") (ne .Site.Params.style "") -}}
-{{- $style = .Site.Params.style | lower -}}
+{{- if and (isset site.Params "style") (ne site.Params.style "") -}}
+{{- $style = site.Params.style | lower -}}
 {{- end -}}
 
 {{- $coreCSS := resources.Get "css/style.css" -}}
@@ -19,7 +19,7 @@
 
 {{- $themePath := "" -}}
 {{- $theme := "dracula" -}}
-{{- with .Site.Params.syntax -}}
+{{- with site.Params.syntax -}}
 {{- $use := "none" -}}
 {{- if and (isset . "use") (ne .use "") -}}{{- $use = .use | lower -}}{{- end -}}
 {{- if and (isset . "theme") (ne .theme "") -}}{{- $theme = .theme | lower -}}{{- end -}}
@@ -37,7 +37,7 @@
 
 {{- $syntaxCSS := resources.Get (print (path.Join $themePath $theme) ".css") -}}
 
-{{- $darkTheme := .Site.Params.syntax.darkTheme -}}
+{{- $darkTheme := site.Params.syntax.darkTheme -}}
 {{- if and $darkTheme (ne $darkTheme "") -}}
 {{- if ne $style "light" -}}
     {{- $darkSyntax := resources.Get (print (path.Join $themePath $darkTheme) ".css") -}}

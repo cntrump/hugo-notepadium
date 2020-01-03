@@ -6,11 +6,11 @@
 
 {{- define "title" -}}
     {{- $title := .Title -}}
-    {{- if and (ne $title "") (ne $title .Site.Title) -}}
-        <title>{{- $title | safeHTML -}} &nbsp;&ndash;&nbsp; {{- .Site.Title | safeHTML -}}</title>
+    {{- if and (ne $title "") (ne $title site.Title) -}}
+        <title>{{- $title | safeHTML -}} &nbsp;&ndash;&nbsp; {{- site.Title | safeHTML -}}</title>
     {{- else -}}
-        {{- $slogan := .Site.Params.slogan -}}
-        <title>{{- .Site.Title | safeHTML -}}{{- if and (isset .Site.Params "slogan") (ne $slogan "") -}} &nbsp;&ndash;&nbsp;
+        {{- $slogan := site.Params.slogan -}}
+        <title>{{- site.Title | safeHTML -}}{{- if and (isset site.Params "slogan") (ne $slogan "") -}} &nbsp;&ndash;&nbsp;
             {{- $slogan | safeHTML -}}{{- end -}}</title>
     {{- end -}}
 {{- end -}}

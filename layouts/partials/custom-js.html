@@ -1,5 +1,5 @@
 {{- $js := "" -}}
-{{- range .Site.Params.assets.js -}}
+{{- range site.Params.assets.js -}}
   {{- $customJS := resources.Get . -}}
   {{- if $customJS -}}
     {{- if eq $js "" -}}

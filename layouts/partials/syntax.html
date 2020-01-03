@@ -1,4 +1,4 @@
-{{- with .Site.Params.syntax -}}
+{{- with site.Params.syntax -}}
     {{- $use := "none" -}}
     {{- if and (isset . "use") (ne .use "") -}}
         {{- $use = .use | lower -}}
