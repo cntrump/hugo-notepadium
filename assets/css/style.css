@@ -163,11 +163,11 @@ kbd,
 tt,
 samp {
   display: inline;
-  font-size: 15px;
+  font-size: 13.6px;
   padding: 2px 4px;
   border-radius: 3px;
-  color: #c41a16;
-  background-color: rgba(196, 26, 22, .1);
+  color: #9b2393;
+  background-color: rgba(155, 35, 147, .05);
 }
 
 pre>code,
