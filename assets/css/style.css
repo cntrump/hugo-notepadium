@@ -306,11 +306,6 @@ strong {
   font-weight: 600;
 }
 
-.site-name,
-.nav-item {
-  color: #6c36a9;
-}
-
 .home:hover,
 .home:focus,
 .home:active {
@@ -462,6 +457,8 @@ strong {
   font-weight: 700;
 }
 
+.site-name,
+.nav-item,
 .article-tag {
   color: #c41a16;
 }

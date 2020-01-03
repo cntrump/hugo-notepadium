@@ -75,10 +75,7 @@ a {
 }
 
 .site-name,
-.nav-item {
-  color: #d0a8ff;
-}
-
+.nav-item,
 .article-tag {
   color: #fc6a5d;
 }
