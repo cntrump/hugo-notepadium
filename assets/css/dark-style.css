@@ -1,39 +1,9 @@
 body {
-  background-color: #1c1c1e;
+  background-color: #1f1f24;
 }
 
 mark {
   background-color: rgba(25, 255, 156, .2);
-}
-
-body,
-b,
-strong,
-.site-name,
-.note-title,
-.article-navigation .link,
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6,
-.markdown-body blockquote,
-.markdown-body q,
-.markdown-body table th,
-.markdown-body .katex,
-.markdown-body .katex-display,
-.markdown-body .MathJax,
-.markdown-body .MathJax_Display {
-  color: #ebebf5;
-}
-
-.site-slogan,
-.note,
-.date,
-.footer,
-.markdown-body {
-  color: rgba(235, 235, 245, .6);
 }
 
 .markdown-body h1,
@@ -57,31 +27,6 @@ pre,
 .markdown-body table td,
 .markdown-body table th {
   border-color: rgba(84, 84, 88, .6);
-}
-
-a {
-  color: #0a84ff;
-}
-
-.pagination ul li a {
-  color: #0a84ff;
-}
-
-.pagination ul li a.active {
-  background-color: #0a84ff;
-}
-
-.pagination ul li a:hover:not(.active) {
-  background-color: rgba(10, 132, 255, .5);
-}
-
-.nav-item,
-.article-tag {
-  color: #fc6a5d;
-}
-
-.article-category {
-  color: #5dd8ff;
 }
 
 .note-list .item {

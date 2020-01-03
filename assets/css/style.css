@@ -3,6 +3,25 @@
   supported-color-schemes: light dark;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: rgba(0, 0, 0, 0.8);
+    --accent-01: #007aff;
+    --accent-02: rgba(0, 122, 255, .5);
+    --accent-03: #c41a16;
+    --accent-04: #0b4f79;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: rgba(255, 255, 255, 0.8);
+    --accent-01: #0a84ff;
+    --accent-02: rgba(10, 132, 255, .5);
+    --accent-03: #fc6a5d;
+    --accent-04: #5dd8ff;
+  }
+}
+
 *,
 :after,
 :before {
@@ -12,7 +31,7 @@
 }
 
 html {
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, SimHei, 'Segoe UI', Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, SimHei, 'Segoe UI', Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 17px;
   font-weight: 400;
   line-height: 1.7;
@@ -20,7 +39,7 @@ html {
 
 body {
   display: block;
-  color: #303033;
+  color: var(--text-color);
   background-color: #fff;
   margin: 0 auto;
   padding: 0;
@@ -76,6 +95,33 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+body,
+b,
+strong,
+.site-name,
+.site-slogan,
+.note,
+.date,
+.footer,
+.note-title,
+.article-navigation .link,
+.markdown-body
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6,
+.markdown-body blockquote,
+.markdown-body q,
+.markdown-body table th,
+.markdown-body .katex,
+.markdown-body .katex-display,
+.markdown-body .MathJax,
+.markdown-body .MathJax_Display {
+  color: var(--text-color);
 }
 
 ol,
@@ -193,7 +239,7 @@ th {
 }
 
 a {
-  color: #007aff;
+  color: var(--accent-01);
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -222,7 +268,7 @@ acronym {
 
 b,
 strong {
-  color: #303033;
+  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -400,7 +446,6 @@ strong {
 .note-title {
   font-size: 17px;
   font-weight: 600;
-  color: #303033;
 }
 
 .note-content {
@@ -450,11 +495,11 @@ strong {
 
 .nav-item,
 .article-tag {
-  color: #c41a16;
+  color: var(--accent-03);
 }
 
 .article-category {
-  color: #0b4f79;
+  color: var(--accent-04);
 }
 
 .article-labels,
@@ -479,7 +524,6 @@ strong {
 
 .article-navigation .link {
   font-weight: 600;
-  color: #303033;
 }
 
 .article-navigation .li {
@@ -514,28 +558,21 @@ strong {
 }
 
 .pagination ul li a {
-  color: #007aff;
+  color: var(--accent-01);
   float: left;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 .pagination ul li a.active {
-  background-color: #007aff;
+  background-color: var(--accent-01);
   color: #fff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(0, 122, 255, .5);
+  background-color: var(--accent-02);
 }
 
-.site-slogan,
-.note,
-.date,
-.footer,
-.markdown-body {
-  color: #838387;
-}
 .markdown-body {
   display: block;
   margin: 20px 0;
@@ -569,7 +606,7 @@ strong {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  color: #303033;
+  color: var(--text-color);
   margin-top: 24px;
   margin-bottom: 20px;
 }
@@ -583,7 +620,7 @@ strong {
 .markdown-body blockquote,
 .markdown-body q {
   font-size: 15px;
-  color: #303033;
+  color: var(--text-color);
 }
 
 .markdown-body blockquote {
@@ -670,7 +707,7 @@ strong {
 }
 
 .markdown-body table th {
-  color: #303033;
+  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -695,7 +732,7 @@ strong {
   width: auto;
   margin: 0;
   padding: 2px 4px;
-  color: #303033;
+  color: var(--text-color);
 }
 
 .markdown-body .MathJax {
