@@ -1,15 +1,15 @@
 {{- define "main" -}}
 {{- $justify := false -}}
 {{- if eq .Params.justify true -}} {{- $justify = true -}} {{- end -}}
-<section class="article-header" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
-    <h1>{{- .Title | safeHTML -}}</h1>
+<section class="article header" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
+    <h1 class="article title">{{- .Title | safeHTML -}}</h1>
     {{- if .Date -}}
         {{- $dateFormat := site.Params.dateFormat -}}
         {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
-        <p class="date">{{- .Date.Format $dateFormat -}}</p>
+        <p class="article date">{{- .Date.Format $dateFormat -}}</p>
     {{- end -}}
 </section>
-<article class="markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
+<article class="article markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
     {{- .Content -}}
 </article>
 {{- $license := "" -}}
@@ -19,24 +19,24 @@
 {{- $license = site.Params.license -}}
 {{- end -}}
 {{- if or .Params.categories .Params.tags -}}
-<section class="article-labels">
+<section class="article labels">
     {{- range .Params.categories -}}
     {{- $url := print "/categories/" (. | urlize) "/" -}}
-    <a class="article-category li" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
+    <a class="article category" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
     {{- end -}}
     {{- range .Params.tags -}}
     {{- $url := print "/tags/" ( . | urlize) "/" -}}
-    <a class="article-tag li" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
+    <a class="article tag" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
     {{- end -}}
 </section>
 {{- end -}}
 {{- if ne $license "" -}}
-<section class="article-license">
+<section class="article license">
     {{- $license | safeHTML -}}
 </section>
 {{- end -}}
 {{- if or .PrevInSection .NextInSection -}}
-<section class="article-navigation">
+<section class="article navigation">
     {{- with .NextInSection -}}
     <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a></p>
     {{- end -}}
@@ -48,7 +48,7 @@
 {{- end -}}
 {{- if gt (len site.DisqusShortname) 0 -}}
     {{- if or (eq .Params.comments true) (and (ne .Params.comments false) (eq site.Params.comments.enable true)) -}}
-        <section class="article-discussion">
+        <section class="article discussion">
             {{- template "_internal/disqus.html" . -}}
         </section>
     {{- end -}}

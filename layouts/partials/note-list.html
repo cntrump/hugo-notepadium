@@ -3,18 +3,18 @@
 {{- if gt $paginator.TotalPages 0 -}}
 {{- $dateFormat := site.Params.dateFormat -}}
 {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
-<ul class="note-list">
+<ul class="note list">
     {{- range $paginator.Pages -}}
     <li class="item"><a class="note" href="{{- .RelPermalink -}}">
-            <p class="note-title">{{- .Title | safeHTML -}}</p>
+            <p class="note title">{{- .Title | safeHTML -}}</p>
             {{- if .Date -}}
-                <p class="date">{{- .Date.Format $dateFormat -}}</p>
+                <p class="note date">{{- .Date.Format $dateFormat -}}</p>
             {{- end -}}
-            {{- if .Summary -}}<p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span>&mldr;</span>{{- end -}}</p>{{- end -}}
+            {{- if .Summary -}}<p class="note content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span>&mldr;</span>{{- end -}}</p>{{- end -}}
             {{- $relURL := .RelPermalink -}}
             {{- $imgs := .Params.imgs -}}
             {{- with .Params.imgs -}}
-                <span class="note-imgs">
+                <span class="note imgs">
                     {{- $imgCount := len $imgs -}}
                     {{- range $imgs -}}
                     {{- $imgurl := lower . -}}
@@ -27,14 +27,14 @@
             {{- end -}}
         </a>
         {{- if or .Params.categories .Params.tags -}}
-            <p class="note-labels">
+            <p class="note labels">
                 {{- range .Params.categories -}}
                 {{- $url := print "/categories/" (. | urlize) "/" -}}
-                <a class="article-category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
+                <a class="note category" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
                 {{- end -}}
                 {{- range .Params.tags -}}
                 {{- $url := print "/tags/" ( . | urlize) "/" -}}
-                <a class="article-tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
+                <a class="note tag" href="{{- $url | relURL -}}"><span class="hashtag">#</span>{{- . -}}</a>
                 {{- end -}}
             </p>
         {{- end -}}
