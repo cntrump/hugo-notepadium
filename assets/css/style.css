@@ -20,7 +20,7 @@ html {
 
 body {
   display: block;
-  color: #303033;
+  color: #333;
   background-color: #fff;
   margin: 0 auto;
   padding: 0;
@@ -400,7 +400,6 @@ strong {
 .note.title {
   font-size: 17px;
   font-weight: 600;
-  color: #303033;
 }
 
 .note.content {
@@ -530,13 +529,18 @@ strong {
 }
 
 .site.slogan,
-.note,
 .note.date,
+.note.content,
 .article.date,
-.footer,
-.article.markdown-body {
-  color: #838387;
+.footer {
+  color: #999;
 }
+
+.site.name,
+.note.title {
+  color: #333;
+}
+
 .article.markdown-body {
   display: block;
   margin: 20px 0;

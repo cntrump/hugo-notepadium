@@ -29,12 +29,15 @@ strong,
 }
 
 .site.slogan,
-.note,
 .note.date,
+.note.content,
 .article.date,
-.footer,
-.article.markdown-body {
+.footer {
   color: rgba(235, 235, 245, .6);
+}
+
+.article.markdown-body {
+  color: rgba(235, 235, 245, .8);
 }
 
 .article.markdown-body h1,
