@@ -301,9 +301,9 @@ strong {
   text-align: initial;
 }
 
-.home:hover,
-.home:focus,
-.home:active {
+.site.home:hover,
+.site.home:focus,
+.site.home:active {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -389,9 +389,9 @@ strong {
   text-decoration: none;
 }
 
-.note:hover,
-.note:focus,
-.note:active {
+.note a:hover,
+.note a:focus,
+.note a:active {
   opacity: .5;
   text-decoration: none;
 }
