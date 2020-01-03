@@ -1,5 +1,5 @@
 {{- $css := "" -}}
-{{- range .Site.Params.assets.css -}}
+{{- range site.Params.assets.css -}}
   {{- $customCSS := resources.Get . -}}
   {{- if $customCSS -}}
     {{- if eq $css "" -}}
