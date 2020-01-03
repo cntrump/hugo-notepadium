@@ -160,8 +160,8 @@ samp {
   font-size: 13.6px;
   padding: 2px 4px;
   border-radius: 3px;
-  color: #9b2393;
-  background-color: rgba(155, 35, 147, .05);
+  color: #d14;
+  background-color: rgb(221, 17, 68, .05);
 }
 
 pre>code,
