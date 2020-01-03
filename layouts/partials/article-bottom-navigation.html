@@ -1,0 +1,11 @@
+{{- if or .PrevInSection .NextInSection -}}
+<section class="article navigation">
+    {{- with .NextInSection -}}
+    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a></p>
+    {{- end -}}
+    {{- with .PrevInSection -}}
+    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a class="link">
+    </p>
+    {{- end -}}
+</section>
+{{- end -}}

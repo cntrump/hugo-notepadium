@@ -35,17 +35,7 @@
     {{- $license | safeHTML -}}
 </section>
 {{- end -}}
-{{- if or .PrevInSection .NextInSection -}}
-<section class="article navigation">
-    {{- with .NextInSection -}}
-    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a></p>
-    {{- end -}}
-    {{- with .PrevInSection -}}
-    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a class="link">
-    </p>
-    {{- end -}}
-</section>
-{{- end -}}
+{{- partial "article-bottom-navigation.html" . -}}
 {{- if gt (len site.DisqusShortname) 0 -}}
     {{- if or (eq .Params.comments true) (and (ne .Params.comments false) (eq site.Params.comments.enable true)) -}}
         <section class="article discussion">
