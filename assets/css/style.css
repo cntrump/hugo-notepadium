@@ -276,7 +276,7 @@ strong {
 
 .header-wrap {
   text-align: justify;
-  font-size: 0;
+  font-size: 1px;
 }
 .header-wrap:after {
   display: inline-block;
@@ -351,10 +351,6 @@ strong {
 .nav-item:active {
   text-decoration: none;
   background-color: rgba(242, 80, 34, .5);
-}
-
-.flex-body {
-  margin: 0 auto;
 }
 
 .footer {
