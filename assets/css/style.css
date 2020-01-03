@@ -301,11 +301,6 @@ strong {
   text-align: initial;
 }
 
-.site-name {
-  display: inline-block;
-  font-weight: 600;
-}
-
 .home:hover,
 .home:focus,
 .home:active {
@@ -401,6 +396,7 @@ strong {
   text-decoration: none;
 }
 
+.site-name,
 .note-title {
   font-size: 17px;
   font-weight: 600;
@@ -452,12 +448,6 @@ strong {
   border-radius: 3px;
 }
 
-.article-category .hashtag,
-.article-tag .hashtag {
-  font-weight: 700;
-}
-
-.site-name,
 .nav-item,
 .article-tag {
   color: #c41a16;
