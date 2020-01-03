@@ -9,8 +9,6 @@ mark {
 body,
 b,
 strong,
-.site-name,
-.nav-item,
 .note-title,
 .article-navigation .link,
 .markdown-body h1,
@@ -74,6 +72,11 @@ a {
 
 .pagination ul li a:hover:not(.active) {
   background-color: rgba(10, 132, 255, .5);
+}
+
+.site-name,
+.nav-item {
+  color: #d0a8ff;
 }
 
 .article-tag {

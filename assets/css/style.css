@@ -286,7 +286,6 @@ strong {
 
 .header-wrap,
 .nav-wrap {
-  color: #303033;
   margin-top: -5px;
 }
 
@@ -309,7 +308,7 @@ strong {
 
 .site-name,
 .nav-item {
-  color: initial;
+  color: #6c36a9;
 }
 
 .home:hover,
