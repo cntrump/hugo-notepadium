@@ -1,4 +1,4 @@
-{{- if or .PrevInSection .NextInSection -}}
+{{- if and (not (eq .Params.single true)) (or .PrevInSection .NextInSection) -}}
 <section class="article navigation">
     {{- with .NextInSection -}}
     <p><a class="link" href="{{- .RelPermalink -}}"><span class="li"></span>{{- .Title | safeHTML -}}</a></p>
