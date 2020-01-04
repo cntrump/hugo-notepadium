@@ -1,44 +1,44 @@
 @font-face {
-  font-family: 'Averia Sans Libre';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Averia Sans Libre Light Italic'), local('AveriaSansLibre-LightItalic'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6caxZG_G5OvCf_rt7FH3B6BHLMEdVLKisSH5DdLw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Averia Sans Libre';
+  font-family: 'Gelasio';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local('Averia Sans Libre Italic'), local('AveriaSansLibre-Italic'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6RaxZG_G5OvCf_rt7FH3B6BHLMEdVLIoAwDw.ttf) format('truetype');
+  src: local('Gelasio Italic'), local('Gelasio-Italic'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf_MaFfvUQxTTqS9CuRY0EG.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Averia Sans Libre';
+  font-family: 'Gelasio';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Gelasio SemiBold Italic'), local('Gelasio-SemiBoldItalic'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZvGUWn6pl.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gelasio';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: local('Averia Sans Libre Bold Italic'), local('AveriaSansLibre-BoldItalic'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6caxZG_G5OvCf_rt7FH3B6BHLMEdVLKjsVH5DdLw.ttf) format('truetype');
+  src: local('Gelasio Bold Italic'), local('Gelasio-BoldItalic'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZ2GQWn6pl.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Averia Sans Libre';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Averia Sans Libre Light'), local('AveriaSansLibre-Light'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6SaxZG_G5OvCf_rt7FH3B6BHLMEd3lMJcXL5c.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Averia Sans Libre';
+  font-family: 'Gelasio';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Averia Sans Libre Regular'), local('AveriaSansLibre-Regular'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6XaxZG_G5OvCf_rt7FH3B6BHLMEdVOEoc.ttf) format('truetype');
+  src: local('Gelasio Regular'), local('Gelasio-Regular'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf9MaFfvUQxTTqS9C6hZA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Averia Sans Libre';
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Gelasio SemiBold'), local('Gelasio-SemiBold'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_PGFdGYmmA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gelasio';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Averia Sans Libre Bold'), local('AveriaSansLibre-Bold'), url(https://fonts.gstatic.com/s/averiasanslibre/v8/ga6SaxZG_G5OvCf_rt7FH3B6BHLMEd31N5cXL5c.ttf) format('truetype');
+  src: local('Gelasio Bold'), local('Gelasio-Bold'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_JWEdGYmmA.ttf) format('truetype');
 }
 
 @font-face {
@@ -99,7 +99,7 @@
 }
 
 html {
-  font-family: 'Averia Sans Libre', -system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, SimHei, 'Segoe UI', Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: Gelasio, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 code,
