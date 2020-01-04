@@ -1,0 +1,12 @@
+{{- $license := "" -}}
+{{- if and (isset .Params "license") (ne .Params.license "") -}}
+    {{- $license = .Params.license -}}
+{{- else if and (isset site.Params "license") (ne site.Params.license "") -}}
+    {{- $license = site.Params.license -}}
+{{- end -}}
+
+{{- if ne $license "" -}}
+<section class="article license">
+    {{- $license | safeHTML -}}
+</section>
+{{- end -}}

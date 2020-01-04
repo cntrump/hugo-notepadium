@@ -12,35 +12,8 @@
 <article class="article markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
     {{- .Content -}}
 </article>
-{{- $license := "" -}}
-{{- if and (isset .Params "license") (ne .Params.license "") -}}
-{{- $license = .Params.license -}}
-{{- else if and (isset site.Params "license") (ne site.Params.license "") -}}
-{{- $license = site.Params.license -}}
-{{- end -}}
-{{- if or .Params.categories .Params.tags -}}
-<section class="article labels">
-    {{- range .Params.categories -}}
-    {{- $url := print "/categories/" (. | urlize) "/" -}}
-    <a class="article category" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
-    {{- end -}}
-    {{- range .Params.tags -}}
-    {{- $url := print "/tags/" ( . | urlize) "/" -}}
-    <a class="article tag" href={{- $url | relURL -}}><span class="hashtag">#</span>{{- . -}}</a>
-    {{- end -}}
-</section>
-{{- end -}}
-{{- if ne $license "" -}}
-<section class="article license">
-    {{- $license | safeHTML -}}
-</section>
-{{- end -}}
+{{- partial "article-labels.html" . -}}
+{{- partial "article-license.html" . -}}
 {{- partial "article-bottom-navigation.html" . -}}
-{{- if gt (len site.DisqusShortname) 0 -}}
-    {{- if or (eq .Params.comments true) (and (ne .Params.comments false) (eq site.Params.comments.enable true)) -}}
-        <section class="article discussion">
-            {{- template "_internal/disqus.html" . -}}
-        </section>
-    {{- end -}}
-{{- end -}}
+{{- partial "article-comments.html" . -}}
 {{- end -}}
