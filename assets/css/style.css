@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -216,8 +216,7 @@ acronym {
 
 b,
 strong {
-  color: #303033;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .image-container,
@@ -392,7 +391,7 @@ strong {
 .site.name,
 .note.title {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .note.content {
@@ -470,8 +469,8 @@ strong {
 }
 
 .article.navigation .link {
-  font-weight: 600;
-  color: #303033;
+  font-weight: 700;
+  color: #333;
 }
 
 .article.navigation .li {
@@ -496,7 +495,7 @@ strong {
 .pagination ul {
   display: inline-block;
   list-style: none;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0;
   margin: 0;
 }
@@ -567,7 +566,7 @@ strong {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: #303033;
+  color: #333;
   margin-top: 24px;
   margin-bottom: 20px;
 }
@@ -581,7 +580,7 @@ strong {
 .article.markdown-body blockquote,
 .article.markdown-body q {
   font-size: 15px;
-  color: #303033;
+  color: #333;
 }
 
 .article.markdown-body blockquote {
@@ -611,7 +610,7 @@ strong {
   top: 0;
   left: 0;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -668,8 +667,8 @@ strong {
 }
 
 .article.markdown-body table th {
-  color: #303033;
-  font-weight: 600;
+  color: #333;
+  font-weight: 700;
 }
 
 .article.markdown-body table td,
@@ -693,7 +692,7 @@ strong {
   width: auto;
   margin: 0;
   padding: 2px 4px;
-  color: #303033;
+  color: #333;
 }
 
 .article.markdown-body .MathJax {
