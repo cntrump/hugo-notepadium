@@ -1,44 +1,44 @@
 @font-face {
-  font-family: 'Gelasio';
+  font-family: 'Source Sans Pro';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local('Gelasio Italic'), local('Gelasio-Italic'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf_MaFfvUQxTTqS9CuRY0EG.ttf) format('truetype');
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Gelasio';
+  font-family: 'Source Sans Pro';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: local('Gelasio SemiBold Italic'), local('Gelasio-SemiBoldItalic'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZvGUWn6pl.ttf) format('truetype');
+  src: local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18E.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Gelasio';
+  font-family: 'Source Sans Pro';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: local('Gelasio Bold Italic'), local('Gelasio-BoldItalic'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf6MaFfvUQxTTqS9CuZ2GQWn6pl.ttf) format('truetype');
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18E.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Gelasio';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Gelasio Regular'), local('Gelasio-Regular'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf9MaFfvUQxTTqS9C6hZA.ttf) format('truetype');
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Gelasio';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local('Gelasio SemiBold'), local('Gelasio-SemiBold'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_PGFdGYmmA.ttf) format('truetype');
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Gelasio';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Gelasio Bold'), local('Gelasio-Bold'), url(https://fonts.gstatic.com/s/gelasio/v1/cIf4MaFfvUQxTTqS_JWEdGYmmA.ttf) format('truetype');
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
 }
 
 @font-face {
@@ -99,7 +99,7 @@
 }
 
 html {
-  font-family: Gelasio, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 code,
