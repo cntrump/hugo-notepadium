@@ -116,6 +116,7 @@ img {
 }
 
 p {
+  margin: 0;  /* IE 10+ */
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
@@ -156,9 +157,6 @@ code,
 kbd,
 tt,
 samp {
-  display: inline;
-  padding: .2em .4em;
-  border-radius: 3px;
   color: #d14;
 }
 
