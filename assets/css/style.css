@@ -378,8 +378,12 @@ strong {
   border: 0 !important;
 }
 
-.note.list .item:hover {
+.note.list .item a:hover,
+.nav.item:hover,
+.article.tag:hover,
+.article.category:hover {
   background-color: #eee;
+  text-decoration: none;
 }
 
 .note {

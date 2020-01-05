@@ -51,8 +51,12 @@ a {
   color: #5dd8ff;
 }
 
-.note.list .item:hover {
+.note.list .item a:hover,
+.nav.item:hover,
+.article.tag:hover,
+.article.category:hover {
   background-color: #333;
+  text-decoration: none;
 }
 
 /* border color */
