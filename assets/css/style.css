@@ -542,17 +542,7 @@ strong {
   margin-bottom: 0 !important;
 }
 
-.article.markdown-body blockquote,
-.article.markdown-body details,
-.article.markdown-body dl,
-.article.markdown-body ol,
-.article.markdown-body hr,
-.article.markdown-body p,
-.article.markdown-body pre,
-.article.markdown-body table,
-.article.markdown-body ul,
-.article.markdown-body div,
-.article.markdown-body .image-container {
+.article.markdown-body>* {
   margin-top: 0;
   margin-bottom: 20px;
 }
