@@ -123,8 +123,8 @@ p {
 }
 
 mark {
-  background-color: rgba(12, 242, 143, .2);
   color: currentColor;
+  background-color: rgba(12, 242, 143, .2);
 }
 
 code,
@@ -134,12 +134,12 @@ kbd,
 samp {
   font-family: Menlo, Consolas, 'Liberation Mono', monospace;
   font-weight: 400;
+  font-size: 13.6px;
 }
 
 pre {
   display: block;
   overflow: auto;
-  font-size: 13.6px;
   line-height: 1.45;
   padding: 12px 10px;
   margin: 8px 0;
@@ -157,17 +157,16 @@ kbd,
 tt,
 samp {
   display: inline;
-  font-size: 13.6px;
   padding: .2em .4em;
   border-radius: 3px;
   color: #d14;
   background-color: #f8f8f8;
 }
 
-pre>code,
-pre>kbd,
-pre>tt,
-pre>samp {
+pre code,
+pre kbd,
+pre tt,
+pre samp {
   font-size: inherit;
   color: inherit;
   background-color: inherit;
@@ -195,9 +194,7 @@ a {
   text-decoration-skip: objects;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover {
   text-decoration: underline;
 }
 
@@ -223,23 +220,29 @@ strong {
 .image-container .caption {
   display: block;
 }
+
 .image-container {
   text-align: center;
 }
+
 .image-container .link {
   line-height: 1;
 }
+
 .image-container .caption {
   line-height: 1.5;
 }
+
 .image-container .title,
 .image-container .link {
   display: inline-block;
 }
+
 .image-container .img {
   border-radius: 8px;
   border: 1px solid #eee;
 }
+
 .image-container .title {
   font-size: 14px;
   text-align: initial;
@@ -271,6 +274,7 @@ strong {
   text-align: justify;
   font-size: 1px;
 }
+
 .header.wrap:after {
   display: inline-block;
   content: "";
@@ -294,9 +298,7 @@ strong {
   text-align: initial;
 }
 
-.site.home:hover,
-.site.home:focus,
-.site.home:active {
+.site.home:hover {
   opacity: 0.5;
   text-decoration: none;
 }
@@ -308,15 +310,21 @@ strong {
   margin-right: 8px;
 }
 
+.site.name {
+  color: #333;
+}
+
 .site.slogan {
-  font-size: 13.6px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: center;
   margin-bottom: 20px;
 }
+
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
+  color: #999;
   min-height: 22px;
   padding: 10px 10px 6px;
   border-bottom: 1px solid #eee;
@@ -332,15 +340,9 @@ strong {
   border-radius: 3px;
 }
 
-.nav.item:hover,
-.nav.item:focus,
-.nav.item:active {
-  text-decoration: none;
-  opacity: .5;
-}
-
 .footer {
   font-size: 12px;
+  color: #999;
   margin: 40px 0 20px 0;
 }
 
@@ -377,21 +379,24 @@ strong {
 }
 
 .note {
+  color: #333;
   display: block;
   text-decoration: none;
 }
 
-.note a:hover,
-.note a:focus,
-.note a:active {
+.note a:hover {
   opacity: .5;
   text-decoration: none;
 }
 
-.site.name,
-.note.title {
+.note.title,
+.site.name {
   font-size: 17px;
   font-weight: 700;
+}
+
+.note.date {
+  color: #999;
 }
 
 .note.content {
@@ -425,6 +430,7 @@ strong {
 }
 
 .article.header .date {
+  color: #999;
   margin-top: 20px;
 }
 
@@ -439,7 +445,6 @@ strong {
   border-radius: 3px;
 }
 
-.nav.item,
 .tag {
   color: #c41a16;
 }
@@ -470,7 +475,6 @@ strong {
 
 .article.navigation .link {
   font-weight: 700;
-  color: #333;
 }
 
 .article.navigation .li {
@@ -520,19 +524,6 @@ strong {
   background-color: rgba(0, 122, 255, .5);
 }
 
-.site.slogan,
-.note.date,
-.note.content,
-.article.date,
-.footer {
-  color: #999;
-}
-
-.site.name,
-.note.title {
-  color: #333;
-}
-
 .article.markdown-body {
   display: block;
   margin: 20px 0;
@@ -555,6 +546,7 @@ strong {
 .article.markdown-body pre,
 .article.markdown-body table,
 .article.markdown-body ul,
+.article.markdown-body div,
 .article.markdown-body .image-container {
   margin-top: 0;
   margin-bottom: 20px;
@@ -566,7 +558,6 @@ strong {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: #333;
   margin-top: 24px;
   margin-bottom: 20px;
 }
@@ -575,12 +566,6 @@ strong {
 .article.markdown-body h2 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid #eee;
-}
-
-.article.markdown-body blockquote,
-.article.markdown-body q {
-  font-size: 15px;
-  color: #333;
 }
 
 .article.markdown-body blockquote {
@@ -593,7 +578,7 @@ strong {
 .article.markdown-body blockquote:after,
 .article.markdown-body q:before,
 .article.markdown-body q:after {
-  color: #c6c6cc;
+  opacity: .6;
 }
 
 .article.markdown-body blockquote:before,
@@ -667,7 +652,6 @@ strong {
 }
 
 .article.markdown-body table th {
-  color: #333;
   font-weight: 700;
 }
 
@@ -681,84 +665,6 @@ strong {
 .article.markdown-body table th:empty {
   padding: 0;
   border: 0;
-}
-
-.article.markdown-body .katex,
-.article.markdown-body .katex-display,
-.article.markdown-body .MathJax,
-.article.markdown-body .MathJax_Display {
-  display: inline-block !important;
-  font-size: 18px !important;
-  width: auto;
-  margin: 0;
-  padding: 2px 4px;
-  color: #333;
-}
-
-.article.markdown-body .MathJax {
-  outline: none;
-}
-
-.article.markdown-body .highlight {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.article.markdown-body .highlight .chroma {
-  margin: 0;
-}
-
-.article.markdown-body .chroma .lntable {
-  display: table;
-  table-layout: auto;
-  width: 100%;
-  font-size: 13.6px;
-  border-radius: 3px;
-  border: 1px solid #eee;
-}
-
-.article.markdown-body .chroma .lntable .lntd {
-  min-width: 0;
-  max-width: 50px;
-  width: 30px;
-}
-
-.article.markdown-body .chroma .lntable tr {
-  border: 0;
-}
-
-.article.markdown-body .chroma .lntable tr>td:last-child {
-  width: auto;
-}
-
-.article.markdown-body .chroma .lntable tr>td:last-child>pre {
-  padding-left: 0;
-}
-
-.article.markdown-body .chroma .lntable .lntd .lnt {
-  display: block;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
-  cursor: default;
-
-  /* Prevent selection */
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.article.markdown-body .chroma .lntable pre {
-  font-size: inherit;
-  border-radius: 0;
-  border: 0;
-  margin: 0;
-  width: 100%;
-  overflow: auto;
 }
 
 @media (max-width: 375px) {
@@ -799,4 +705,20 @@ strong {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+/* mathjax & katex patch */
+.article.markdown-body .katex,
+.article.markdown-body .katex-display,
+.article.markdown-body .MathJax,
+.article.markdown-body .MathJax_Display {
+  display: inline-block !important;
+  font-size: 18px !important;
+  width: auto;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.article.markdown-body .MathJax {
+  outline: none;
 }

@@ -1,48 +1,22 @@
 body {
+  color: #ebebf5;
   background-color: #1c1c1e;
 }
 
 mark {
-  background-color: rgba(25, 255, 156, .2);
+  background-color: #444;
 }
 
-body,
-.site.name,
-.note.title,
-.article.navigation .link,
-.article.markdown-body h1,
-.article.markdown-body h2,
-.article.markdown-body h3,
-.article.markdown-body h4,
-.article.markdown-body h5,
-.article.markdown-body h6,
-.article.markdown-body blockquote,
-.article.markdown-body q,
-.article.markdown-body table th,
-.article.markdown-body .katex,
-.article.markdown-body .katex-display,
-.article.markdown-body .MathJax,
-.article.markdown-body .MathJax_Display {
+.note,
+.site.name {
   color: #ebebf5;
 }
 
-.site.slogan,
+.site.slogan .title,
 .note.date,
-.note.content,
 .article.date,
 .footer {
   color: rgba(235, 235, 245, .6);
-}
-
-.article.markdown-body {
-  color: rgba(235, 235, 245, .8);
-}
-
-.article.markdown-body h1,
-.article.markdown-body h2,
-.image-container .title,
-.site.slogan .title {
-  border-bottom-color: rgba(84, 84, 88, .6);
 }
 
 code,
@@ -51,14 +25,6 @@ tt,
 samp {
   color: #e78;
   background-color: #080808;
-}
-
-pre,
-.note.imgs .img,
-.image-container .img,
-.article.markdown-body table td,
-.article.markdown-body table th {
-  border-color: rgba(84, 84, 88, .6);
 }
 
 a {
@@ -77,7 +43,6 @@ a {
   background-color: rgba(10, 132, 255, .5);
 }
 
-.nav.item,
 .tag {
   color: #fc6a5d;
 }
@@ -86,6 +51,19 @@ a {
   color: #5dd8ff;
 }
 
+/* border color */
+pre,
+.note.imgs .img,
+.image-container .img,
+.article.markdown-body table td,
+.article.markdown-body table th {
+  border-color: rgba(84, 84, 88, .6);
+}
+
+.article.markdown-body h1,
+.article.markdown-body h2,
+.image-container .title,
+.site.slogan .title,
 .note.list .item {
   border-bottom-color: rgba(84, 84, 88, .6);
 }
