@@ -160,7 +160,6 @@ samp {
   padding: .2em .4em;
   border-radius: 3px;
   color: #d14;
-  background-color: #f8f8f8;
 }
 
 pre code,
@@ -350,11 +349,6 @@ strong {
 .footer-wrap {
   display: block;
   text-align: center;
-}
-
-.footer .copyright,
-.footer .powerby {
-  display: inline-block;
 }
 
 .date {
