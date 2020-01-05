@@ -6,15 +6,14 @@
     {{- $dateFormat := site.Params.dateFormat -}}
     {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
     {{- $lastmodFormat := "" -}}
-    {{- $lastmod := .Date -}}
-    {{- if .GitInfo -}}
-        {{- $lastmod = .Lastmod -}}
+    {{- $lastmod := .Lastmod -}}
+    {{- if $lastmod -}}
         {{- $lastmodFormat = $lastmod.Format $dateFormat -}}
     {{- end -}}
     {{- if .Date -}}
         {{- $dateFormat := .Date.Format $dateFormat -}}
         <p class="article date">{{- $dateFormat -}}
-            {{- if and (ne $lastmod "") ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
+            {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
                 <span class="lastmod">{{- printf " • edited %s" $lastmodFormat -}}</span>
             {{- end -}}
         </p>
