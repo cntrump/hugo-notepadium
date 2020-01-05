@@ -378,14 +378,17 @@ strong {
   border: 0 !important;
 }
 
+.note.list .item:hover {
+  background-color: #eee;
+}
+
 .note {
   color: #333;
   display: block;
   text-decoration: none;
 }
 
-.note a:hover {
-  opacity: .5;
+.note:hover {
   text-decoration: none;
 }
 
