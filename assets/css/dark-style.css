@@ -19,6 +19,11 @@ mark {
   color: rgba(235, 235, 245, .6);
 }
 
+.note.content,
+.article.markdown-body {
+  color: #ddd;
+}
+
 code,
 kbd,
 tt,

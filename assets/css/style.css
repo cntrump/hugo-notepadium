@@ -532,6 +532,11 @@ strong {
   background-color: rgba(0, 122, 255, .5);
 }
 
+.note.content,
+.article.markdown-body {
+  color: #444;
+}
+
 .article.markdown-body {
   display: block;
   margin: 20px 0;
