@@ -4,8 +4,7 @@
     {{- $target := .Get "target" -}}
     {{- if not $link -}}{{- $link = $src -}}{{- end -}}
     {{- if not $target -}}{{- $target = "_blank" -}}{{- end -}}
-    <a class="link" 
-        href="{{ $link }}" 
+    <span class="link" ><a href="{{ $link }}" 
         target="{{ $target }}"{{ with .Get "rel" }} 
         rel="{{ . }}"{{ end }}><img class="img" src="{{ $src }}" 
          {{- if or (.Get "alt") (.Get "caption") }} 
@@ -13,7 +12,7 @@
          {{- end -}}
          {{- with .Get "width" }} width="{{ . }}"{{ end -}}
          {{- with .Get "height" }} height="{{ . }}"{{ end -}}
-    /></a>
+    /></a></span>
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
         <span class="caption">
             {{ with (.Get "title") -}}

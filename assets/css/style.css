@@ -214,6 +214,7 @@ strong {
 }
 
 .image-container,
+.image-container .link,
 .image-container .caption {
   display: block;
 }
@@ -230,8 +231,7 @@ strong {
   line-height: 1.5;
 }
 
-.image-container .title,
-.image-container .link {
+.image-container .title {
   display: inline-block;
 }
 
