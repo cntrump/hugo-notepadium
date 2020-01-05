@@ -246,6 +246,7 @@ strong {
 .image-container .title {
   font-size: 14px;
   text-align: initial;
+  color: #999;
   max-width: 80%;
   min-height: 22px;
   padding: 10px 10px 6px;
