@@ -6,6 +6,7 @@
 {{- $coreCSS := resources.Get "css/style.css" -}}
 {{- if ne $style "light" -}}
     {{- $darkStyle := resources.Get "css/dark-style.css" -}}
+    {{- if $darkStyle -}}
     {{- if eq $style "dark" -}}
         {{- $coreCSS = slice $coreCSS $darkStyle | resources.Concat "css/tmp_style.css" -}}
     {{- else -}}
@@ -14,6 +15,7 @@
         {{- $darkStyleCSS := slice $darkStyleBegin $darkStyle | resources.Concat "css/tmp_style_dark_.css" -}}
         {{- $darkStyleCSS = slice $darkStyleCSS $darkStyleEnd | resources.Concat "css/tmp_style_dark.css" -}}
         {{- $coreCSS = slice $coreCSS $darkStyleCSS | resources.Concat "css/tmp_style.css" -}}
+    {{- end -}}
     {{- end -}}
 {{- end -}}
 
