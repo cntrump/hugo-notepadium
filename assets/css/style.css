@@ -143,12 +143,16 @@ pre {
   display: block;
   overflow: auto;
   line-height: 1.45;
+  
   padding: 12px 10px;
-  margin: 8px 0;
+  margin: 0;
+
   word-wrap: normal;
   white-space: pre;
+
   border-radius: 3px;
   border: 1px solid #eee;
+
   -o-tab-size: 4;
   -moz-tab-size: 4;
   tab-size: 4;
@@ -614,6 +618,11 @@ strong {
   margin-top: 20px;
 }
 
+.article.markdown-body li>* {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .article.markdown-body li> :first-child {
   margin-top: 0 !important;
 }
@@ -622,12 +631,17 @@ strong {
   margin-bottom: 0 !important;
 }
 
-.article.markdown-body blockquote> :first-child {
+.article.markdown-body blockquote>* {
   margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.article.markdown-body blockquote> :first-child {
+  margin-top: 0 !important;
 }
 
 .article.markdown-body blockquote> :last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .article.markdown-body hr {
