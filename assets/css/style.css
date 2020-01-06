@@ -646,8 +646,8 @@ strong {
 }
 
 .max-body-width {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @media (max-width: 375px) {
@@ -685,8 +685,8 @@ strong {
   }
 
   .max-body-width {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
