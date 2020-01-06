@@ -262,8 +262,10 @@ strong {
 
 .base-body {
   display: block;
-  margin: 0 auto;
+  margin: -1px auto;
   max-width: 800px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .site.header {

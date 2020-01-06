@@ -1,6 +1,6 @@
 body {
   color: #ebebf5;
-  background-color: #1c1c1e;
+  background-color: #333;
 }
 
 mark {
@@ -59,7 +59,7 @@ a {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #333;
+  background-color: #222;
   text-decoration: none;
 }
 
