@@ -367,8 +367,8 @@ strong {
 
 .note.list .item {
   width: 100%;
-  margin: 0;
-  padding: 8px 0;
+  margin: 5px 0 10px 0;
+  padding: 0;
   border-bottom: 1px solid #eee;
   word-wrap: break-word;
 }
@@ -409,15 +409,17 @@ strong {
   font-size: 15px;
 }
 
+.note.title,
+.note.date,
 .note.content,
+.note.imgs,
 .note.labels {
-  margin: 4px 0;
+  margin: 5px 0;
 }
 
 .note.imgs {
   display: block;
   border: 0px solid transparent;
-  margin: -4px 0 0 -4px;
   line-height: 1;
 }
 
@@ -428,7 +430,7 @@ strong {
   max-width: 120px;
   border-radius: 4px;
   border: 1px solid #eee;
-  margin: 4px 0 0 4px;
+  margin: 5px 0 0 5px;
 }
 
 .article.header {
