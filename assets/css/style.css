@@ -93,18 +93,6 @@ ul {
   -webkit-padding-start: 0;
 }
 
-li+li {
-  margin-top: 4px;
-}
-
-li> :first-child {
-  margin-top: 0;
-}
-
-li> :last-child {
-  margin-bottom: 0;
-}
-
 blockquote,
 q {
   quotes: none;
@@ -255,11 +243,6 @@ strong {
   border-bottom: 1px solid #eee;
 }
 
-.max-body-width {
-  margin-left: 20px !important;
-  margin-right: 20px !important;
-}
-
 .base-body {
   display: block;
   margin: -1px auto;
@@ -373,10 +356,6 @@ strong {
   word-wrap: break-word;
 }
 
-.note.list .item:last-child {
-  border: 0 !important;
-}
-
 .note.list .item a:hover,
 .nav.item:hover,
 .article.tag:hover,
@@ -478,7 +457,7 @@ strong {
 }
 
 .article.navigation p+p {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .article.navigation .link {
@@ -540,19 +519,6 @@ strong {
 .article.markdown-body {
   display: block;
   margin: 20px 0;
-}
-
-.article.markdown-body> :first-child {
-  margin-top: 0 !important;
-}
-
-.article.markdown-body> :last-child {
-  margin-bottom: 0 !important;
-}
-
-.article.markdown-body>* {
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .article.markdown-body h1,
@@ -623,36 +589,6 @@ strong {
   -webkit-padding-start: 2em;
 }
 
-.article.markdown-body li+li {
-  margin-top: 20px;
-}
-
-.article.markdown-body li>* {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.article.markdown-body li> :first-child {
-  margin-top: 0 !important;
-}
-
-.article.markdown-body li> :last-child {
-  margin-bottom: 0 !important;
-}
-
-.article.markdown-body blockquote>* {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.article.markdown-body blockquote> :first-child {
-  margin-top: 0 !important;
-}
-
-.article.markdown-body blockquote> :last-child {
-  margin-bottom: 0 !important;
-}
-
 .article.markdown-body hr {
   border-top: 1px dashed #eee;
   border-right: none;
@@ -684,6 +620,34 @@ strong {
 .article.markdown-body table th:empty {
   padding: 0;
   border: 0;
+}
+
+.article.markdown-body li+li {
+  margin-top: 20px;
+}
+
+.article.markdown-body>*,
+.article.markdown-body li>*,
+.article.markdown-body blockquote>* {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.article.markdown-body> :first-child,
+.article.markdown-body li> :first-child,
+.article.markdown-body blockquote> :first-child {
+  margin-top: 0;
+}
+
+.article.markdown-body> :last-child,
+.article.markdown-body li> :last-child,
+.article.markdown-body blockquote> :last-child {
+  margin-bottom: 0;
+}
+
+.max-body-width {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (max-width: 375px) {
