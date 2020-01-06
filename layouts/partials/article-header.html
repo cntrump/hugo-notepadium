@@ -11,7 +11,7 @@
         {{- $dateFormat := .Date.Format $dateFormat -}}
         <p class="article date">{{- $dateFormat -}}
             {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
-                <span class="lastmod">{{- printf " • edited %s" $lastmodFormat -}}</span>
+                <span class="lastmod">{{- printf ("edited" | i18n) $lastmodFormat -}}</span>
             {{- end -}}
         </p>
     {{- end -}}

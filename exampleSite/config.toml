@@ -3,7 +3,9 @@ title = "Notepadium"
 theme = "hugo-notepadium"
 copyright = "©2019 Notepadium."
 
-languageCode = "zh-cn"
+languageCode = "en"  # for the RSS generation
+defaultContentLanguage = "en"
+
 hasCJKLanguage = true
 
 enableRobotsTXT = true
