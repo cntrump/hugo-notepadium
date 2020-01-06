@@ -255,22 +255,20 @@ strong {
   border-bottom: 1px solid #eee;
 }
 
-.max-width {
-  max-width: 800px;
-}
-
 .max-body-width {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 .base-body {
   display: block;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .site.header {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header.wrap {
@@ -346,7 +344,8 @@ strong {
 .footer {
   font-size: 12px;
   color: #999;
-  margin: 40px 0 20px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-wrap {
@@ -718,8 +717,8 @@ strong {
   }
 
   .max-body-width {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
