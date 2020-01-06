@@ -2,6 +2,10 @@
 {{- range site.Params.assets.css -}}
   {{- $customCSS := resources.Get . -}}
   {{- if $customCSS -}}
+    {{- $scss := false -}}
+    {{- $filePath := . | lower -}}
+    {{- if or (strings.HasSuffix $filePath ".scss") (strings.HasSuffix $filePath ".sass") -}}{{- $scss = true -}}{{- end -}}
+    {{- if $scss -}}{{- $customCSS = $customCSS | resources.ToCSS -}}{{- end -}}
     {{- if eq $css "" -}}
       {{- $css = $customCSS -}}
     {{- else -}}
