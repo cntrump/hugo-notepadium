@@ -41,19 +41,27 @@
 {{- if and $darkTheme (ne $darkTheme "") -}}
 {{- if ne $style "light" -}}
     {{- $darkSyntax := resources.Get (print (path.Join $themePath $darkTheme) ".css") -}}
-    {{- if eq $style "dark" -}}
-        {{- $syntaxCSS = slice $syntaxCSS $darkSyntax | resources.Concat "css/tmp_syntax.css" -}}
-    {{- else -}}
-        {{- $darkSyntaxBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_syntax_dark_begin.css" -}}
-        {{- $darkSyntaxEnd := (print "}") | resources.FromString "css/tmp_syntax_dark_end.css" -}}
-        {{- $darkSyntaxCSS := slice $darkSyntaxBegin $darkSyntax | resources.Concat "css/tmp_syntax_dark_.css" -}}
-        {{- $darkSyntaxCSS = slice $darkSyntaxCSS $darkSyntaxEnd | resources.Concat "css/tmp_syntax_dark.css" -}}
-        {{- $syntaxCSS = slice $syntaxCSS $darkSyntaxCSS | resources.Concat "css/tmp_syntax.css" -}}
+    {{- if $darkSyntax -}}
+        {{- if eq $style "dark" -}}
+            {{- $syntaxCSS = $darkSyntax -}}
+        {{- else -}}
+            {{- $darkSyntaxBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_syntax_dark_begin.css" -}}
+            {{- $darkSyntaxEnd := (print "}") | resources.FromString "css/tmp_syntax_dark_end.css" -}}
+            {{- $darkSyntaxCSS := slice $darkSyntaxBegin $darkSyntax | resources.Concat "css/tmp_syntax_dark_.css" -}}
+            {{- $darkSyntaxCSS = slice $darkSyntaxCSS $darkSyntaxEnd | resources.Concat "css/tmp_syntax_dark.css" -}}
+            {{- if $syntaxCSS -}}
+                {{- $syntaxCSS = slice $syntaxCSS $darkSyntaxCSS | resources.Concat "css/tmp_syntax.css" -}}
+            {{- else -}}
+                {{- $syntaxCSS = $darkSyntaxCSS -}}
+            {{- end -}}
+        {{- end -}}
     {{- end -}}
 {{- end -}}
 {{- end -}}
 
+{{- if $syntaxCSS -}}
 {{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/tmp_core.css" -}}
+{{- end -}}
 
 {{- with partial "custom-css.html" . -}}
     {{- if ne . "" -}}
