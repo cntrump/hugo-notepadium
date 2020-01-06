@@ -1,0 +1,18 @@
+<section class="article header">
+    <h1 class="article title">{{- .Title | safeHTML -}}</h1>
+    {{- $dateFormat := site.Params.dateFormat -}}
+    {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
+    {{- $lastmodFormat := "" -}}
+    {{- $lastmod := .Lastmod -}}
+    {{- if $lastmod -}}
+        {{- $lastmodFormat = $lastmod.Format $dateFormat -}}
+    {{- end -}}
+    {{- if .Date -}}
+        {{- $dateFormat := .Date.Format $dateFormat -}}
+        <p class="article date">{{- $dateFormat -}}
+            {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
+                <span class="lastmod">{{- printf " • edited %s" $lastmodFormat -}}</span>
+            {{- end -}}
+        </p>
+    {{- end -}}
+</section>
