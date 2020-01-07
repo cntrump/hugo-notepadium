@@ -5,6 +5,7 @@ lastmod = {{ .Date }}
 tags = []
 categories = []
 imgs = []
+readingTime = true  # show reading time after article date
 toc = true
 comments = false
 justify = false  # text-align: justify;

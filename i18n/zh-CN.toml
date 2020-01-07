@@ -1,2 +1,6 @@
 [edited]
 other = " • 更新于 %s"
+
+[readingTime]
+one = " • 阅完全文大约 1 分钟"
+other = " • 阅完全文大约 {{.Count}} 分钟"

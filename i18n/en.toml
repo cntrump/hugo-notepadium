@@ -1,2 +1,6 @@
 [edited]
 other = " • edited %s"
+
+[readingTime]
+one = " • One minute to read"
+other = " • {{.Count}} minutes to read"
