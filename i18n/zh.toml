@@ -2,5 +2,5 @@
 other = " • 更新于 %s"
 
 [readingTime]
-one = " • 阅完全文大约 1 分钟"
-other = " • 阅完全文大约 {{ .Count }} 分钟"
+one = " • 预计阅读时间 1 分钟"
+other = " • 预计阅读时间 {{ .Count }} 分钟"
