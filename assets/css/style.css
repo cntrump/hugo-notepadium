@@ -26,6 +26,8 @@ body {
   padding: 0;
   word-wrap: break-word;
 
+  -webkit-overflow-scrolling: touch;
+
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
