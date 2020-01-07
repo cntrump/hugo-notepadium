@@ -246,21 +246,11 @@ strong {
 }
 
 .base-body {
-  position: relative;
   display: block;
   margin: -1px auto;
   max-width: 830px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-}
-
-.base-body .background {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .site.header {
