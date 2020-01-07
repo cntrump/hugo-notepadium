@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-{{- $lang := "en" -}}
-{{- if site.LanguageCode -}}{{- $lang = site.LanguageCode -}}{{- end -}}
-<html lang="{{- $lang -}}">
+<html lang="{{- site.Language.Lang -}}">
 {{- partial "head.html" . -}}
 
 <body>
