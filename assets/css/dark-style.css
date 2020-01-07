@@ -1,6 +1,6 @@
 body {
-  color: #ebebf5;
-  background-color: #333;
+  color: #eee;
+  background-color: #222;
 }
 
 mark {
@@ -9,7 +9,7 @@ mark {
 
 .note,
 .site.name {
-  color: #ebebf5;
+  color: #eee;
 }
 
 .site.slogan .title,
@@ -59,7 +59,7 @@ a {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #222;
+  background-color: #333;
   text-decoration: none;
 }
 

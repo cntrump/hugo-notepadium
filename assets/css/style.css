@@ -362,7 +362,7 @@ strong {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #eee;
+  background-color: #f3f3f3;
   text-decoration: none;
 }
 
