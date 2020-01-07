@@ -133,7 +133,7 @@ pre {
   display: block;
   overflow: auto;
   line-height: 1.45;
-
+  text-align: left;
   padding: 12px 10px;
   margin: 0;
 
