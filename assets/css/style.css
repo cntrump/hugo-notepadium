@@ -24,7 +24,14 @@ body {
   background-color: #fff;
   margin: 0 auto;
   padding: 0;
+
+  word-break: break-all;
   word-wrap: break-word;
+  
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
 
   -webkit-overflow-scrolling: touch;
 
@@ -135,8 +142,9 @@ pre {
   text-align: left;
   
   margin: 0;
-  padding: 0;
+  padding: 12px 15px;
 
+  word-break: normal;
   word-wrap: normal;
   white-space: pre;
 
@@ -161,11 +169,10 @@ pre code,
 pre kbd,
 pre tt,
 pre samp {
-  display: inline-block;
+  display: inline;
   font-size: inherit;
   color: inherit;
   background-color: transparent;
-  padding: 12px 15px;
 }
 
 table {
@@ -325,7 +332,6 @@ strong {
   line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
-  white-space: nowrap;
   border-radius: 3px;
 }
 
@@ -356,7 +362,6 @@ strong {
   margin: 5px 0 10px 0;
   padding: 0;
   border-bottom: 1px solid #eee;
-  word-wrap: break-word;
 }
 
 .note.list .item a:hover,
@@ -431,7 +436,6 @@ strong {
   line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
-  white-space: nowrap;
   border-radius: 3px;
 }
 
