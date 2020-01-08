@@ -85,3 +85,7 @@ pre,
   border-top-color: rgba(84, 84, 88, .6);
   border-bottom-color: rgba(84, 84, 88, .6);
 }
+
+.article.markdown-body .lntable tr>:first-child {
+  border-right-color: rgba(84, 84, 88, .6);
+}

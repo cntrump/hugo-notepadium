@@ -734,3 +734,7 @@ strong {
   margin-right: -15px;
   border: 0;
 }
+
+.article.markdown-body .lntable tr>:first-child {
+  border-right: 1px dashed #eee;
+}
