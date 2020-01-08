@@ -134,7 +134,8 @@ pre {
   overflow: auto;
   line-height: 1.45;
   text-align: left;
-  padding: 12px 10px;
+  
+  padding: 0;
   margin: 0;
 
   word-wrap: normal;
@@ -159,10 +160,11 @@ pre code,
 pre kbd,
 pre tt,
 pre samp {
+  display: inline-block;
   font-size: inherit;
   color: inherit;
-  background-color: inherit;
-  padding: 0;
+  background-color: transparent;
+  margin: 12px 15px;
   border: 0;
   border-radius: 0;
 }
@@ -706,4 +708,30 @@ strong {
 
 .article.markdown-body .MathJax {
   outline: none;
+}
+
+/* chroma lntable patch */
+.article.markdown-body .lntable {
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+
+.article.markdown-body .lntable .lntd .lnt {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.article.markdown-body .lntable .lntd {
+  min-width: 0;
+  padding: 0 5px;
+  border: 0;
+}
+
+.article.markdown-body .lntable .lntd pre {
+  overflow: visible;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  border: 0;
 }

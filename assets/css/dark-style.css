@@ -68,7 +68,8 @@ pre,
 .note.imgs .img,
 .image-container .img,
 .article.markdown-body table td,
-.article.markdown-body table th {
+.article.markdown-body table th,
+.article.markdown-body .lntable {
   border-color: rgba(84, 84, 88, .6);
 }
 
