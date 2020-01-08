@@ -131,12 +131,11 @@ samp {
 
 pre {
   display: block;
-  overflow: auto;
   line-height: 1.45;
   text-align: left;
   
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   word-wrap: normal;
   white-space: pre;
@@ -147,6 +146,8 @@ pre {
   -o-tab-size: 4;
   -moz-tab-size: 4;
   tab-size: 4;
+
+  overflow: auto;
 }
 
 code,
@@ -164,9 +165,7 @@ pre samp {
   font-size: inherit;
   color: inherit;
   background-color: transparent;
-  margin: 12px 15px;
-  border: 0;
-  border-radius: 0;
+  padding: 12px 15px;
 }
 
 table {
