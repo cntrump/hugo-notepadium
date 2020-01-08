@@ -247,9 +247,8 @@ strong {
   font-size: 14px;
   text-align: initial;
   color: #999;
-  max-width: 80%;
   min-height: 22px;
-  padding: 10px 10px 6px;
+  padding: 10px 5px;
   border-bottom: 1px solid #eee;
 }
 
