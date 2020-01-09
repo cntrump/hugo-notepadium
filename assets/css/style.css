@@ -266,6 +266,7 @@ strong {
 .site.header {
   margin-top: 20px;
   margin-bottom: 20px;
+  min-height: 64px;
 }
 
 .header.wrap {
