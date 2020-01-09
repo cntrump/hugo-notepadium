@@ -1,6 +1,6 @@
 {{- $nav := . -}}
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
-<div class="nav wrap"><div class="nav">
+<div class="nav wrap"><nav class="nav">
     {{- if $nav.showCategories -}}
         <a class="nav item" href="{{- `/categories/` | relLangURL -}}">Categories</a>
     {{- end -}}
@@ -14,5 +14,5 @@
             {{- if strings.HasPrefix $url "http" -}}target="_blank"
             {{- end -}}>{{- .title -}}</a>
     {{- end -}}
-</div></div>
+</nav></div>
 {{- end -}}
