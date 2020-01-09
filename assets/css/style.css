@@ -702,12 +702,9 @@ strong {
 
 /* mathjax & katex patch */
 .article.markdown-body .katex,
-.article.markdown-body .katex-display,
 .article.markdown-body .MathJax,
+.article.markdown-body .katex-display,
 .article.markdown-body .MathJax_Display {
-  display: inline-block !important;
-  font-size: 18px !important;
-  width: auto;
   margin: 0;
   padding: .2em .4em;
 }
