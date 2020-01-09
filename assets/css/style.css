@@ -26,8 +26,7 @@ body {
   display: block;
   color: #333;
   background-color: #fff;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
 
   word-break: normal;
   word-wrap: break-word;
