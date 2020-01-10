@@ -17,7 +17,7 @@ Features
 - Pagination with large number of pages supporting
 - Light & Dark Mode
 - Google analytics supporting
-- Custom CSS supporting
+- Custom CSS/SASS/SCSS supporting
 - Custom JS supporting
 - Custom header right items supporting
 
@@ -225,11 +225,11 @@ You can relayout copyright like this:
 </div>
 ```
 
-### Custom CSS supporting
+### Custom CSS
 
 ```toml
 [params.assets]
-css = ["css/font.css", "css/color.css"]
+css = ["css/font.css", "css/color.css", "css/layout.scss"]  # *.css/scss/sass
 ```
 
 On user-side:
@@ -244,7 +244,7 @@ On user-side:
 
 `color.css` and `font.css` will be bundled into `core.css`.
 
-### Custom JS supporting
+### Custom JS
 
 ```toml
 [params.assets]
