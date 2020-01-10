@@ -1,6 +1,6 @@
 body {
   color: #eee;
-  background-color: #2e2e2e;
+  background-color: #262a28;
 }
 
 mark {
@@ -32,19 +32,19 @@ samp {
 }
 
 a {
-  color: #0a84ff;
+  color: #82aaff;
 }
 
 .pagination ul li a {
-  color: #0a84ff;
+  color: #82aaff;
 }
 
 .pagination ul li a.active {
-  background-color: #0a84ff;
+  background-color: #82aaff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(10, 132, 255, .5);
+  background-color: rgba(130, 170, 255, .5);
 }
 
 .tag {
