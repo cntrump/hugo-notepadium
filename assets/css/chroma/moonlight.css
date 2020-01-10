@@ -1,0 +1,71 @@
+/* Background */ .chroma { color: #c8d3f5; background-color: #222436; }
+/* Error */ .chroma .err { color: #c8d3f5 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #2f334d }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #4d5482 }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #4d5482 }
+/* Keyword */ .chroma .k { color: #ff757f }
+/* KeywordConstant */ .chroma .kc { color: #ff757f }
+/* KeywordDeclaration */ .chroma .kd { color: #ff757f }
+/* KeywordNamespace */ .chroma .kn { color: #ff757f }
+/* KeywordPseudo */ .chroma .kp { color: #ff757f }
+/* KeywordReserved */ .chroma .kr { color: #ff757f }
+/* KeywordType */ .chroma .kt { color: #ff757f }
+/* Name */ .chroma .n { color: #c8d3f5 }
+/* NameAttribute */ .chroma .na { color: #c597f9 }
+/* NameBuiltin */ .chroma .nb { color: #ff757f }
+/* NameBuiltinPseudo */ .chroma .bp { color: #c597f9 }
+/* NameClass */ .chroma .nc { color: #c597f9 }
+/* NameConstant */ .chroma .no { color: #c597f9 }
+/* NameDecorator */ .chroma .nd { color: #82aaff }
+/* NameEntity */ .chroma .ni { color: #82aaff }
+/* NameException */ .chroma .ne { color: #82aaff }
+/* NameFunction */ .chroma .nf { color: #82aaff }
+/* NameFunctionMagic */ .chroma .fm { color: #82aaff }
+/* NameLabel */ .chroma .nl { color: #82aaff }
+/* NameNamespace */ .chroma .nn { color: #82aaff }
+/* NameOther */ .chroma .nx { color: #82aaff }
+/* NameProperty */ .chroma .py { color: #82aaff }
+/* NameTag */ .chroma .nt { color: #ff757f }
+/* NameVariable */ .chroma .nv { color: #56c9ff }
+/* NameVariableClass */ .chroma .vc { color: #56c9ff }
+/* NameVariableGlobal */ .chroma .vg { color: #56c9ff }
+/* NameVariableInstance */ .chroma .vi { color: #56c9ff }
+/* NameVariableMagic */ .chroma .vm { color: #56c9ff }
+/* Literal */ .chroma .l { color: #ff966c }
+/* LiteralDate */ .chroma .ld { color: #ff966c }
+/* LiteralString */ .chroma .s { color: #c3e88d }
+/* LiteralStringAffix */ .chroma .sa { color: #c3e88d }
+/* LiteralStringBacktick */ .chroma .sb { color: #c3e88d }
+/* LiteralStringChar */ .chroma .sc { color: #ff966c }
+/* LiteralStringDelimiter */ .chroma .dl { color: #c3e88d }
+/* LiteralStringDoc */ .chroma .sd { color: #c3e88d }
+/* LiteralStringDouble */ .chroma .s2 { color: #c3e88d }
+/* LiteralStringEscape */ .chroma .se { color: #c3e88d }
+/* LiteralStringHeredoc */ .chroma .sh { color: #c3e88d }
+/* LiteralStringInterpol */ .chroma .si { color: #c3e88d }
+/* LiteralStringOther */ .chroma .sx { color: #c3e88d }
+/* LiteralStringRegex */ .chroma .sr { color: #c3e88d }
+/* LiteralStringSingle */ .chroma .s1 { color: #c3e88d }
+/* LiteralStringSymbol */ .chroma .ss { color: #c3e88d }
+/* LiteralNumber */ .chroma .m { color: #ff966c }
+/* LiteralNumberBin */ .chroma .mb { color: #ff966c }
+/* LiteralNumberFloat */ .chroma .mf { color: #ff966c }
+/* LiteralNumberHex */ .chroma .mh { color: #ff966c }
+/* LiteralNumberInteger */ .chroma .mi { color: #ff966c }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ff966c }
+/* LiteralNumberOct */ .chroma .mo { color: #ff966c }
+/* Operator */ .chroma .o { color: #86e1fc }
+/* OperatorWord */ .chroma .ow { color: #86e1fc }
+/* Punctuation */ .chroma .p { color: #86e1fc }
+/* Comment */ .chroma .c { color: #7a88cf }
+/* CommentHashbang */ .chroma .ch { color: #7a88cf }
+/* CommentMultiline */ .chroma .cm { color: #7a88cf }
+/* CommentSingle */ .chroma .c1 { color: #7a88cf }
+/* CommentSpecial */ .chroma .cs { color: #7a88cf }
+/* CommentPreproc */ .chroma .cp { color: #828bb8 }
+/* CommentPreprocFile */ .chroma .cpf { color: #828bb8 }
+/* GenericHeading */ .chroma .gh { color: #52a3ff; }
+/* GenericDeleted */ .chroma .gd { color: #e76a72; background-color: rgba(231, 106, 114, 0.05); }
+/* GenericInserted */ .chroma .gi { color: #74dc8d; background-color: rgba(71, 209, 104, 0.05); }
