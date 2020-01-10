@@ -1,10 +1,10 @@
 body {
   color: #eee;
-  background-color: #222;
+  background-color: #2e2e2e;
 }
 
 mark {
-  background-color: #444;
+  background-color: #26486a;
 }
 
 .note,
@@ -59,7 +59,7 @@ a {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #333;
+  background-color: #36485a;
 }
 
 /* border color */
