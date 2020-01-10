@@ -127,23 +127,25 @@ p {
 mark {
   color: currentColor;
   background-color: rgba(12, 242, 143, .2);
+  padding-left: .15em;
+  padding-right: .15em;
+  border-radius: 3px;
 }
 
 code,
-pre,
 tt,
 kbd,
 samp {
   font-family: Menlo, Consolas, 'Liberation Mono', monospace;
   font-weight: 400;
-  font-size: 13.6px;
+  font-size: 90%;
 }
 
 pre {
   display: block;
   line-height: 1.45;
   text-align: left;
-  
+  font-size: 13.6px;
   margin: 0;
   padding: 12px 15px;
 
@@ -175,7 +177,7 @@ pre samp {
   display: inline;
   font-size: inherit;
   color: inherit;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 table {
