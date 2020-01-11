@@ -69,7 +69,7 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(255,255,255,.08);
+  border-color: rgba(235, 235, 245,.1);
 }
 
 .article.markdown-body h1,
@@ -77,14 +77,14 @@ pre,
 .image-container .title,
 .site.slogan .title,
 .note.list .item {
-  border-bottom-color: rgba(255,255,255,.08);
+  border-bottom-color: rgba(235, 235, 245,.1);
 }
 
 .article.discussion {
-  border-top-color: rgba(255,255,255,.08);
-  border-bottom-color: rgba(255,255,255,.08);
+  border-top-color: rgba(235, 235, 245,.1);
+  border-bottom-color: rgba(235, 235, 245,.1);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(255,255,255,.08);
+  border-right-color: rgba(235, 235, 245,.1);
 }
