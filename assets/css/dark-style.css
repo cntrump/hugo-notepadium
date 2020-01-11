@@ -15,6 +15,7 @@ mark {
 .site.slogan .title,
 .note.date,
 .article.date,
+.image-container .title,
 .footer {
   color: rgba(235, 235, 245, .6);
 }
