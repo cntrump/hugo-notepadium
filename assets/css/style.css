@@ -419,6 +419,10 @@ strong {
   font-size: 15px;
 }
 
+.mldr {
+  opacity: .5;
+}
+
 .note.title,
 .note.date,
 .note.content,

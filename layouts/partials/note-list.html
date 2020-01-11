@@ -10,7 +10,7 @@
             {{- if .Date -}}
                 <p class="note date">{{- .Date.Format $dateFormat -}}</p>
             {{- end -}}
-            {{- if .Summary -}}<p class="note content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span>&mldr;</span>{{- end -}}</p>{{- end -}}
+            {{- if .Summary -}}<p class="note content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span class="mldr">&mldr;{{- T "more" -}}</span>{{- end -}}</p>{{- end -}}
             {{- $relURL := .RelPermalink -}}
             {{- $imgs := .Params.imgs -}}
             {{- with .Params.imgs -}}
