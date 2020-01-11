@@ -1,15 +1,13 @@
 {{- with .Params -}}
-    <table class="plstable">
-        <tbody>
-        {{- range . -}}
-            {{ $arg := split . ":" }}
-            {{ $key := index $arg 0 }}
-            {{ $value := index $arg 1 }}
-            <tr>
-                <th>{{- $key | markdownify -}}</th>
-                <td>{{- $value | markdownify -}}</td>
-            </tr>
-        {{- end -}}
-        </tbody>
-    </table>
+<table class="plstable">
+{{- range . -}}
+{{- $arg := split . ":" -}}
+{{- $key := index $arg 0 -}}
+{{- $value := index $arg 1 -}}
+  <tr>
+    <th>{{- $key | markdownify -}}</th>
+    <td>{{- $value | markdownify -}}</td>
+  </tr>
+{{- end -}}
+</table>
 {{- end -}}
