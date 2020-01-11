@@ -20,6 +20,7 @@ Features
 - Custom CSS/SASS/SCSS supporting
 - Custom JS supporting
 - Custom header right items supporting
+- Builtin `plist` shortcode for API document.
 
 Preview the exampleSite:
 
@@ -307,6 +308,46 @@ Or, you can rewrite it:
 `iconfont`, `icon-*` classes are my custom CSS.
 
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/04.png)
+
+### `plist` shortcode
+
+Syntax:
+
+```md
+{{< plist
+    "key1: value1"
+    "key2: value2"
+    "key3: value3"
+    ...
+    "keyN: valueN"
+>}}
+```
+
+Example:
+
+```md
+- `text-align`
+
+    ```css
+    .box {
+        text-align: center;
+    }
+    ```
+
+    Definition and Usage
+
+    The `text-align` property specifies the horizontal alignment of text in an element.
+
+    {{< plist
+        "Default value: `left` if direction is ltr, and `right` if direction is rtl"
+        "Inherited: yes"
+        "Animatable: no. Read about animatable"
+        "Version: CSS1"
+        "JavaScript syntax: `object.style.textAlign=\"right\"`"
+    >}}
+```
+
+![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/05.png)
 
 ## Thanks
 
