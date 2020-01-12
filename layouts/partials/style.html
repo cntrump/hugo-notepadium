@@ -3,7 +3,8 @@
 {{- $style = site.Params.style | lower -}}
 {{- end -}}
 
-{{- $coreCSS := resources.Get "css/style.css" -}}
+{{- $coreCSS := resources.Get "css/normalize.css" -}}
+{{- $coreCSS = slice $coreCSS (resources.Get "css/style.css") | resources.Concat "css/tmp_normalize.css" -}}
 {{- if ne $style "light" -}}
     {{- $darkStyle := resources.Get "css/dark-style.css" -}}
     {{- if $darkStyle -}}
