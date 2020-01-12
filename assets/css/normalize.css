@@ -27,7 +27,6 @@ body {
 
 p {
     margin: 0;
-
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -35,6 +34,7 @@ p {
 }
 
 hr {
+    margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -54,6 +54,8 @@ hr {
 
 ol,
 ul {
+    margin: 0;
+    padding: 0;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -91,6 +93,7 @@ pre {
 }
 
 blockquote {
+    margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -103,6 +106,7 @@ h3,
 h4,
 h5,
 h6 {
+    margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
