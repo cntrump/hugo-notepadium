@@ -533,6 +533,9 @@ acronym {
 
 .article.markdown-body ol,
 .article.markdown-body ul {
+  margin-bottom: 20px;
+  padding-left: 2em;
+
   margin-block-start: 0;
   margin-block-end: 20px;
   margin-inline-start: 0;
