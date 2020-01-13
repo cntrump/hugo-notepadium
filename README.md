@@ -280,29 +280,29 @@ An example navigation-items.html:
 ```html
 {{- $nav := . -}}
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
-<div class="nav-wrap"><div class="nav">
+<div class="nav wrap"><nav class="nav">
     {{- if $nav.showCategories -}}
-        <a class="nav-item" href="{{- `/categories/` | relURL -}}">Categories</a>
+        <a class="nav item" href="{{- `/categories/` | relLangURL -}}">Categories</a>
     {{- end -}}
     {{- if $nav.showTags -}}
-        <a class="nav-item" href="{{- `/tags/` | relURL -}}">Tags</a>
+        <a class="nav item" href="{{- `/tags/` | relLangURL -}}">Tags</a>
     {{- end -}}
     {{- range $nav.custom -}}
         {{- $url := .url | safeURL -}}
-        {{- if strings.HasPrefix $url "/" -}}{{- $url = ($url | relURL) -}}{{- end -}}
-        <a class="nav-item" href="{{- $url -}}" 
+        {{- if strings.HasPrefix $url "/" -}}{{- $url = $url | relLangURL -}}{{- end -}}
+        <a class="nav item" href="{{- $url -}}" 
             {{- if strings.HasPrefix $url "http" -}}target="_blank"
             {{- end -}}>{{- .title -}}</a>
     {{- end -}}
-</div></div>
+</nav></div>
 {{- end -}}
 ```
 
 Or, you can rewrite it:
 
 ```html
-<a class="nav-item" href="{{- `/pages/about/` | relURL -}}"><span class="iconfont icon-aboutus"></span>&nbsp;About</a>
-<a class="nav-item" href="https://github.com/cntrump" target="_blank"><span class="iconfont icon-logo_github"></span>&nbsp;Github</a>
+<a class="nav item" href="{{- `/pages/about/` | relURL -}}"><span class="iconfont icon-aboutus"></span>&nbsp;About</a>
+<a class="nav item" href="https://github.com/cntrump" target="_blank"><span class="iconfont icon-logo_github"></span>&nbsp;Github</a>
 ```
 
 `iconfont`, `icon-*` classes are my custom CSS.
