@@ -371,7 +371,7 @@ acronym {
 }
 
 .article.header {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .article.date {
@@ -525,19 +525,19 @@ acronym {
 .article.markdown-body ol,
 .article.markdown-body ul {
   margin-bottom: 20px;
-  padding-left: 2em;
+  padding-left: 1.3em;
 
   margin-block-start: 0;
   margin-block-end: 20px;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  padding-inline-start: 2em;
+  padding-inline-start: 1.3em;
 
   -webkit-margin-before: 0;
   -webkit-margin-after: 20px;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  -webkit-padding-start: 2em;
+  -webkit-padding-start: 1.3em;
 }
 
 .article.markdown-body hr {
