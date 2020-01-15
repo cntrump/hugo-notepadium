@@ -2,13 +2,7 @@
 {{- $paginator := .Paginator -}}
 
 <section class="article header"><h1>{{- .Title -}}</h1></section>
-{{- if .Content -}}
-<article class="article markdown-body">
-    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-    {{- .Content -}}
-    <hr>
-</article>
-{{- end -}}
+{{- partial "section-body.html" . -}}
 <!-- Ranges through content/posts/*.md -->
 
 {{- partial "note-list.html" $paginator -}}
