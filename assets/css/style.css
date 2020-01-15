@@ -494,10 +494,13 @@ acronym {
   border-bottom: 1px solid #eee;
 }
 
+.article.markdown-body q {
+  font-size: 90%;
+}
+
 .article.markdown-body blockquote {
-  position: relative;
-  border: 0;
-  padding: 0 0 0 20px;
+  padding: 0 0.3em;
+  font-size: 15px;
 }
 
 .article.markdown-body blockquote::before,
@@ -509,26 +512,14 @@ acronym {
 
 .article.markdown-body blockquote::before,
 .article.markdown-body q::before {
-  display: inline-block;
   /* ❝ */
   content: "\275D";
-  margin-right: 2px;
 }
 
+.article.markdown-body blockquote::after,
 .article.markdown-body q::after {
-  display: inline-block;
   /* ❞ */
   content: "\275E";
-  margin-left: 2px;
-}
-
-.article.markdown-body blockquote::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1;
 }
 
 .article.markdown-body ol,
