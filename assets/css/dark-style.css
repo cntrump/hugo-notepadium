@@ -1,6 +1,6 @@
 body {
-  color: rgba(235, 235, 245, .95);
-  background-color: #292a2a;
+  color: #efefef;
+  background-color: #292a30;
 }
 
 mark {
@@ -9,7 +9,7 @@ mark {
 
 .note,
 .site.name {
-  color: rgba(235, 235, 245, .95);
+  color: #efefef;
 }
 
 .site.slogan .title,
@@ -17,12 +17,12 @@ mark {
 .article.date,
 .image-container .title,
 .footer {
-  color: rgba(235, 235, 245, .6);
+  color: #828b98;
 }
 
 .note.content,
 .article.markdown-body {
-  color: rgba(235, 235, 245, .85);
+  color: #dfdfdf;
 }
 
 code,
@@ -33,7 +33,7 @@ samp {
 }
 
 pre {
-  background-color: #292a2a;
+  background-color: #292a30;
 }
 
 a {
@@ -64,7 +64,7 @@ a {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #36485a;
+  background-color: #404147;
 }
 
 /* border color */
@@ -74,7 +74,7 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(235, 235, 245,.1);
+  border-color: #3e3f44;
 }
 
 .article.markdown-body h1,
@@ -82,7 +82,7 @@ pre,
 .image-container .title,
 .site.slogan .title,
 .note.list .item {
-  border-bottom-color: rgba(235, 235, 245,.1);
+  border-bottom-color: #3e3f44;
 }
 
 .article.markdown-body blockquote {
@@ -91,10 +91,10 @@ pre,
 }
 
 .article.discussion {
-  border-top-color: rgba(235, 235, 245,.1);
-  border-bottom-color: rgba(235, 235, 245,.1);
+  border-top-color: #3e3f44;
+  border-bottom-color: #3e3f44;
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(235, 235, 245,.1);
+  border-right-color: #3e3f44;
 }
