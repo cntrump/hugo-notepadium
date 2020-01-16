@@ -12,7 +12,7 @@ html {
 
 body {
   display: block;
-  color: #333;
+  color: #2e2e2e;
   background-color: #fff;
 
   word-break: normal;
@@ -248,7 +248,7 @@ acronym {
 }
 
 .site.name {
-  color: #333;
+  color: #2e2e2e;
 }
 
 .site.slogan {
@@ -314,7 +314,7 @@ acronym {
 }
 
 .note {
-  color: #333;
+  color: #2e2e2e;
   display: block;
   text-decoration: none;
 }
@@ -466,7 +466,7 @@ acronym {
 
 .note.content,
 .article.markdown-body {
-  color: #444;
+  color: #3c3c3c;
 }
 
 .article.markdown-body {
