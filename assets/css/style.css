@@ -96,10 +96,10 @@ pre {
   text-align: left;
   font-size: 13.6px;
   margin: 0;
-  padding: 12px 15px;
-
-  border-radius: 3px;
-  border: 1px solid #eee;
+  padding: 6px 16px;
+  background-color: #f9fafa;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
 
   -o-tab-size: 4;
   -moz-tab-size: 4;
@@ -181,7 +181,7 @@ acronym {
 
 .image-container .img {
   border-radius: 8px;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
 }
 
 .image-container .title {
@@ -190,7 +190,7 @@ acronym {
   color: #999;
   min-height: 22px;
   padding: 10px 5px 5px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .base-body {
@@ -263,7 +263,7 @@ acronym {
   color: #999;
   min-height: 22px;
   padding: 10px 10px 6px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .nav.item {
@@ -302,7 +302,7 @@ acronym {
   width: 100%;
   margin: 5px 0 10px 0;
   padding: 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .note.list .item a:hover,
@@ -362,7 +362,7 @@ acronym {
   min-width: 80px;
   max-width: 120px;
   border-radius: 4px;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
   margin: 5px 0 0 5px;
 }
 
@@ -401,8 +401,8 @@ acronym {
 }
 
 .article.discussion {
-  border-top: 1px dashed #eee;
-  border-bottom: 1px dashed #eee;
+  border-top: 1px dashed #e6e6e6;
+  border-bottom: 1px dashed #e6e6e6;
 }
 
 .article.navigation p {
@@ -487,7 +487,7 @@ acronym {
 .article.markdown-body h1,
 .article.markdown-body h2 {
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .article.markdown-body q {
@@ -552,7 +552,7 @@ acronym {
 .article.markdown-body table th {
   min-width: 86px;
   padding: 6px 13px;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
 }
 
 .article.markdown-body table th:empty {
@@ -649,7 +649,7 @@ acronym {
 /* chroma lntable patch */
 .article.markdown-body .lntable {
   border-radius: 3px;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
 }
 
 .article.markdown-body .lntable .lntd .lnt {
@@ -673,5 +673,5 @@ acronym {
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right: 1px dashed #eee;
+  border-right: 1px dashed #e6e6e6;
 }
