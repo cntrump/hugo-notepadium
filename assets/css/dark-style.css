@@ -1,6 +1,6 @@
 body {
   color: rgba(235, 235, 245, .95);
-  background-color: #20202a;
+  background-color: #292a2a;
 }
 
 mark {
@@ -30,6 +30,10 @@ kbd,
 tt,
 samp {
   color: #f7a4ec;
+}
+
+pre {
+  background-color: #292a2a;
 }
 
 a {
