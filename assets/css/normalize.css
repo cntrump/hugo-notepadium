@@ -56,6 +56,7 @@ ol,
 ul {
     margin: 0;
     padding: 0;
+
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -67,6 +68,26 @@ ul {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
+}
+
+dl {
+    margin: 0;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+dd {
+    margin-left: 0;
+    margin-inline-start: 0;
+    -webkit-margin-start: 0;
 }
 
 table {
