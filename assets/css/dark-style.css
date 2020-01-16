@@ -81,6 +81,11 @@ pre,
   border-bottom-color: rgba(235, 235, 245,.1);
 }
 
+.article.markdown-body blockquote {
+  border-left-color: #38c;
+  background-color: rgba(51, 136, 204, .15);
+}
+
 .article.discussion {
   border-top-color: rgba(235, 235, 245,.1);
   border-bottom-color: rgba(235, 235, 245,.1);
