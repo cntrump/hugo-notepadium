@@ -4,7 +4,10 @@
 }
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI', 
+                Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
+                'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', 
+                sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;

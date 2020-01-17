@@ -85,7 +85,10 @@
 }
 
 html {
-  font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI', 
+                Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
+                'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', 
+                sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 code,
