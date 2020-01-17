@@ -70,7 +70,7 @@ a {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #404147;
+  background-color: rgba(227,231,235,.15);
 }
 
 /* border color */
