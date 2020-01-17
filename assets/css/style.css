@@ -385,11 +385,12 @@ acronym {
 .tag,
 .category {
   display: inline-block;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
-  border-radius: 3px;
+  border-radius: 20px;
+  background-color: rgba(27,31,35,.08);
 }
 
 .tag {
@@ -506,7 +507,7 @@ acronym {
   padding: 10px;
   border-radius: 2px;
   border-left: 5px solid #fc8383;
-  background-color: rgba(252, 131, 131, .05);
+  background-color: rgba(252, 131, 131, .08);
 }
 
 .article.markdown-body q::before,

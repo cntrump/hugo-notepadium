@@ -61,6 +61,11 @@ a {
   color: #ffc777;
 }
 
+.tag,
+.category {
+  background-color: rgba(227,231,235,.08);
+}
+
 .note.list .item a:hover,
 .nav.item:hover,
 .article.tag:hover,
@@ -88,7 +93,7 @@ pre,
 
 .article.markdown-body blockquote {
   border-left-color: #d95755;
-  background-color: rgba(217, 87, 85, .05);
+  background-color: rgba(217, 87, 85, .08);
 }
 
 .article.discussion {
