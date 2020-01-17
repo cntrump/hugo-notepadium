@@ -3,8 +3,9 @@ body {
   background-color: #292a30;
 }
 
-mark {
-  background-color: #36405a;
+mark,
+::selection {
+  background-color: #515b70;
 }
 
 .note,

@@ -77,8 +77,12 @@ q {
   margin: 0;
 }
 
-mark {
+mark,
+::selection {
   background-color: rgba(12, 242, 143, .2);
+}
+
+mark {
   padding-left: .15em;
   padding-right: .15em;
   border-radius: 3px;
