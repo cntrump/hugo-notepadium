@@ -87,8 +87,8 @@ pre,
 }
 
 .article.markdown-body blockquote {
-  border-left-color: #3f86cf;
-  background-color: rgba(63, 134, 207, .15);
+  border-left-color: #d95755;
+  background-color: rgba(217, 87, 85, .05);
 }
 
 .article.discussion {

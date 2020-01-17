@@ -505,8 +505,8 @@ acronym {
   font-size: 95%;
   padding: 10px;
   border-radius: 2px;
-  border-left: 5px solid #65a9fa;
-  background-color: rgba(101, 169, 250, .15);
+  border-left: 5px solid #fc8383;
+  background-color: rgba(252, 131, 131, .05);
 }
 
 .article.markdown-body q::before,
