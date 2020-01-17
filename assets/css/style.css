@@ -194,7 +194,7 @@ acronym {
 .image-container .title {
   font-size: 14px;
   text-align: initial;
-  color: #999;
+  color: #586069;
   min-height: 22px;
   padding: 10px 5px 5px;
   border-bottom: 1px solid #e6e6e6;
@@ -267,7 +267,7 @@ acronym {
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
-  color: #999;
+  color: #586069;
   min-height: 22px;
   padding: 10px 10px 6px;
   border-bottom: 1px solid #e6e6e6;
@@ -284,7 +284,7 @@ acronym {
 
 .footer {
   font-size: 12px;
-  color: #999;
+  color: #586069;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -296,7 +296,7 @@ acronym {
 }
 
 .date {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .note.list {
@@ -316,7 +316,7 @@ acronym {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: rgba(27,31,35,.08);
+  background-color: rgba(27,31,35,.15);
   text-decoration: none;
 }
 
@@ -385,12 +385,12 @@ acronym {
 .tag,
 .category {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
   border-radius: 20px;
-  background-color: rgba(27,31,35,.04);
+  background-color: rgba(27,31,35,.08);
 }
 
 .tag {
