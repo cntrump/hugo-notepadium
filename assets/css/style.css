@@ -279,7 +279,7 @@ acronym {
   line-height: 1;
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 
 .footer {
@@ -316,7 +316,7 @@ acronym {
 .nav.item:hover,
 .article.tag:hover,
 .article.category:hover {
-  background-color: #f3f3f3;
+  background-color: rgba(27,31,35,.08);
   text-decoration: none;
 }
 
@@ -390,15 +390,15 @@ acronym {
   padding: 4px 6px;
   margin: 2px 3px 2px 0;
   border-radius: 20px;
-  background-color: rgba(27,31,35,.08);
+  background-color: rgba(27,31,35,.04);
 }
 
 .tag {
-  color: #5a8ce6;
+  color: #c41a16;
 }
 
 .category {
-  color: #df3e3e;
+  color: #eb7350;
 }
 
 .article.labels,
