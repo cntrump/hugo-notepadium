@@ -55,21 +55,16 @@ a {
 
 .tag {
   color: #ff757f;
-}
-
-.category {
-  color: #ffc777;
-}
-
-.tag,
-.category {
   background-color: rgba(227,231,235,.08);
 }
 
-.note.list .item a:hover,
-.nav.item:hover,
-.article.tag:hover,
-.article.category:hover {
+.category {
+  color: #efefef;
+  background-color: #8a4a4a;
+}
+
+.note.list .item>a:hover,
+.nav.item:hover {
   background-color: rgba(227,231,235,.15);
 }
 
