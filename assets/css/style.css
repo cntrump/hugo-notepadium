@@ -390,7 +390,7 @@ acronym {
   padding: 4px 6px;
   margin: 5px 5px 5px 0;
   border-radius: 20px;
-  background-color: rgba(27,31,35,.08);
+  background-color: rgba(0,12,56,.03);
 }
 
 .tag {
@@ -398,8 +398,8 @@ acronym {
 }
 
 .category {
-  font-weight: 700;
-  color: #eb7350;
+  color: #fff;
+  background-color: #eb7350;
 }
 
 .article.labels,
@@ -507,7 +507,7 @@ acronym {
   padding: 10px;
   border-radius: 2px;
   border-left: 5px solid #fc8383;
-  background-color: rgba(252, 131, 131, .08);
+  background-color: rgba(0, 29, 59, .02);
 }
 
 .article.markdown-body q::before,
