@@ -7,3 +7,9 @@ other = " • {{ .Count }} minutes to read"
 
 [more]
 other = "more"
+
+[Categories]
+other = "Categories"
+
+[Tags]
+other = "Tags"
