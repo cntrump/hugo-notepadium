@@ -299,6 +299,16 @@ acronym {
   font-size: 13px;
 }
 
+.langs {
+  display: inline-block;
+  list-style: none;
+  font-size: 15px;
+}
+
+.lang {
+  margin-left: 10px;
+}
+
 .note.list {
   margin: 0;
   padding: 0;

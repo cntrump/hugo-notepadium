@@ -16,6 +16,13 @@
             {{- if or (eq .Params.readingTime true) (and (not (eq .Params.readingTime false)) (eq site.Params.readingTime true)) -}}
             <span class="reading-time">{{ T "readingTime" .ReadingTime }}</span>
             {{- end -}}
+            {{- if .IsTranslated -}}
+            <span class="langs">
+                {{- range .Translations -}}
+                <span class="lang"><a href="{{- .RelPermalink -}}">{{- .Lang -}}</a></span>
+                {{- end -}}
+            </span>
+            {{- end -}}
         </p>
     {{- end -}}
 </section>
