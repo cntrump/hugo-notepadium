@@ -5,6 +5,13 @@
                 <img class="site logo" src="{{- $logo | relURL -}}" alt />
                 {{- end -}}
                 <span class="site name">{{- site.Title | safeHTML -}}</span></a></span>
+                {{- if .IsTranslated -}}
+                <span class="langs">
+                    {{- range .Translations -}}
+                    <span class="lang">{{ T "in" }} <a href="{{- .RelPermalink -}}">{{ .Language.LanguageName }} →</a></span>
+                    {{- end -}}
+                </span>
+                {{- end -}}
         <span class="header right-side">
             {{- partial "navigation-items.html" site.Params.nav -}}
         </span></div>
