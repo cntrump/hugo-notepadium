@@ -172,6 +172,9 @@ acronym {
 
 .image-container {
   text-align: center;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: rgba(0, 29, 59, .02);
 }
 
 .image-container .link {
@@ -187,8 +190,6 @@ acronym {
 }
 
 .image-container .img {
-  border-radius: 3px;
-  border: 1px solid #e6e6e6;
   width: 100%;
 }
 
@@ -197,8 +198,7 @@ acronym {
   text-align: initial;
   color: #586069;
   min-height: 22px;
-  padding: 10px 5px 5px;
-  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 5px;
 }
 
 .base-body {

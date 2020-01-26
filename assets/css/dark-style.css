@@ -71,7 +71,7 @@ a {
 /* border color */
 pre,
 .note.imgs .img,
-.image-container .img,
+.image-container,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
@@ -80,7 +80,6 @@ pre,
 
 .article.markdown-body h1,
 .article.markdown-body h2,
-.image-container .title,
 .site.slogan .title,
 .note.list .item {
   border-bottom-color: #3e3f44;
@@ -89,6 +88,10 @@ pre,
 .article.markdown-body blockquote {
   border-left-color: #d95755;
   background-color: rgba(229, 239, 249, .08);
+}
+
+.image-container {
+  background-color: rgba(229, 239, 249, .02)
 }
 
 .article.discussion {
