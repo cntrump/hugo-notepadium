@@ -5,7 +5,7 @@
     <a class="category" href={{- $url | relLangURL -}}>{{- . -}}</a>
     {{- end -}}
     {{- range .Params.tags -}}
-    {{- $url := print "/tags/" ( . | urlize) "/" -}}
+    {{- $url := print "/tags/" (. | urlize) "/" -}}
     <a class="tag" href={{- $url | relLangURL -}}>{{- . -}}</a>
     {{- end -}}
 </section>
