@@ -15,7 +15,7 @@ html {
 
 body {
   display: block;
-  color: #212121;
+  color: rgba(0,0,0,.85);
   background-color: #fff;
 
   word-break: normal;
@@ -196,7 +196,7 @@ acronym {
 .image-container .title {
   font-size: 14px;
   text-align: initial;
-  color: #586069;
+  color: #4a5560;
   min-height: 22px;
   padding: 10px 5px;
 }
@@ -256,7 +256,7 @@ acronym {
 }
 
 .site.name {
-  color: #212121;
+  color: rgba(0,0,0,.85);
 }
 
 .site.slogan {
@@ -268,7 +268,7 @@ acronym {
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
-  color: #586069;
+  color: #4a5560;
   min-height: 22px;
   padding: 10px 10px 6px;
   border-bottom: 1px solid #e6e6e6;
@@ -285,7 +285,7 @@ acronym {
 
 .footer {
   font-size: 12px;
-  color: #586069;
+  color: #4a5560;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -336,7 +336,7 @@ acronym {
 }
 
 .note {
-  color: #212121;
+  color: rgba(0,0,0,.85);
   display: block;
   text-decoration: none;
 }
@@ -352,7 +352,7 @@ acronym {
 }
 
 .note.date {
-  color: #999;
+  color: #4a5560;
 }
 
 .note.content {
@@ -393,7 +393,7 @@ acronym {
 }
 
 .article.date {
-  color: #999;
+  color: #4a5560;
   margin-top: 20px;
 }
 
@@ -489,7 +489,7 @@ acronym {
 
 .note.content,
 .article.markdown-body {
-  color: #333;
+  color: rgba(0,0,0,.85);
 }
 
 .article.markdown-body {
