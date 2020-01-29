@@ -1,6 +1,6 @@
 body {
-  color: #efefef;
-  background-color: #292a30;
+  color: rgba(255,255,255,.85);
+  background-color: #1f1f24;
 }
 
 mark,
@@ -10,7 +10,7 @@ mark,
 
 .note,
 .site.name {
-  color: #efefef;
+  color: rgba(255,255,255,.85);
 }
 
 .site.slogan .title,
@@ -18,12 +18,12 @@ mark,
 .article.date,
 .image-container .title,
 .footer {
-  color: #828b98;
+  color: #92a1b1;
 }
 
 .note.content,
 .article.markdown-body {
-  color: #dfdfdf;
+  color: rgba(255,255,255,.85);
 }
 
 code,
@@ -34,7 +34,7 @@ samp {
 }
 
 pre {
-  background-color: #292a30;
+  background-color: #1f1f24;
 }
 
 a {
@@ -59,7 +59,7 @@ a {
 }
 
 .category {
-  color: #efefef;
+  color: rgba(255,255,255,.85);
   background-color: #8a4a4a;
 }
 

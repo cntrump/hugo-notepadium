@@ -319,7 +319,7 @@ acronym {
 .note.list .item {
   width: 100%;
   margin: 5px 0 10px 0;
-  padding: 0;
+  padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
