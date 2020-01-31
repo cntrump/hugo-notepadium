@@ -1,6 +1,10 @@
 body {
   color: rgba(255,255,255,.85);
-  background-color: #1f1f24;
+  background-color: #2f2f34;
+}
+
+.base-body {
+  background-color: rgba(31, 31, 36, .85);
 }
 
 mark,
