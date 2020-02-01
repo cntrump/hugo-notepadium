@@ -613,8 +613,15 @@ acronym {
 }
 
 .base-body {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 414px) {
+  .base-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 375px) {
