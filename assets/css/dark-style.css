@@ -1,10 +1,10 @@
 body {
   color: rgba(255,255,255,.85);
-  background-color: #2d2d32;
+  background-color: #2c2c2e;
 }
 
 .base-body {
-  background-color: rgba(31, 31, 36, .85);
+  background-color: #1c1c1e;
 }
 
 mark,
@@ -34,7 +34,7 @@ code,
 kbd,
 tt,
 samp {
-  color: #f7a4ec;
+  color: #fc6a5d;
 }
 
 pre {
@@ -42,15 +42,15 @@ pre {
 }
 
 a {
-  color: #82aaff;
+  color: #5482ff;
 }
 
 .pagination ul li a {
-  color: #82aaff;
+  color: #5482ff;
 }
 
 .pagination ul li a.active {
-  background-color: #82aaff;
+  background-color: #5482ff;
 }
 
 .pagination ul li a:hover:not(.active) {
@@ -58,8 +58,8 @@ a {
 }
 
 .tag {
-  color: #ff757f;
-  background-color: rgba(227,231,235,.08);
+  color: #fc6a5d;
+  background-color: #2c2c2e;
 }
 
 .category {
@@ -69,13 +69,12 @@ a {
 
 .note.list .item>a:hover,
 .nav.item:hover {
-  background-color: rgba(227,231,235,.15);
+  background-color: #2c2c2e;
 }
 
 /* border color */
 pre,
 .note.imgs .img,
-.image-container,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
@@ -94,8 +93,8 @@ pre,
   background-color: rgba(81, 130, 206, .08);
 }
 
-.image-container {
-  background-color: rgba(229, 239, 249, .02)
+.image-container .caption {
+  background-color: #2c2c2e
 }
 
 .article.discussion {
