@@ -512,15 +512,13 @@ acronym {
 }
 
 .article.markdown-body q {
-  font-size: 90%;
+  opacity: .65;
 }
 
 .article.markdown-body blockquote {
-  font-size: 95%;
-  padding: 10px;
-  border-radius: 2px;
-  border-left: 5px solid #75a4f8;
-  background-color: rgba(117, 164, 248, .08);
+  opacity: .65;
+  padding: 0 1em;
+  border-left: .25em solid #75a4f8;
 }
 
 .article.markdown-body q::before,
