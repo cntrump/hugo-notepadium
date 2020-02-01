@@ -16,7 +16,7 @@ html {
 body {
   display: block;
   color: rgba(0,0,0,.85);
-  background-color: #f2f2f6;
+  background-color: #fff;
 
   word-break: normal;
   word-wrap: break-word;
@@ -203,7 +203,6 @@ acronym {
   display: block;
   margin: -1px auto;
   max-width: 830px;
-  background-color: rgba(255,255,255,.85);
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
 }
