@@ -180,21 +180,13 @@ acronym {
 
 .image-container .caption {
   line-height: 1.5;
-  background-color: #f2f2f6;
 }
 
 .image-container .title {
   display: inline-block;
-}
-
-.image-container .img {
-  width: 100%;
-}
-
-.image-container .title {
-  font-size: 14px;
+  opacity: .65;
+  font-size: 15px;
   text-align: initial;
-  color: #4a5560;
   min-height: 22px;
   padding: 10px 5px;
 }
@@ -537,12 +529,12 @@ acronym {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.article.markdown-body blockquote,
 .article.markdown-body q {
-  opacity: .65;
+  opacity: .85;
 }
 
 .article.markdown-body blockquote {
-  opacity: .65;
   padding: 0 1em;
   border-left: .25em solid #75a4f8;
 }
