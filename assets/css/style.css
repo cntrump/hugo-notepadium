@@ -8,7 +8,7 @@ html {
                 Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
                 'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', 
                 sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -94,14 +94,14 @@ kbd,
 samp {
   font-family: Menlo, Consolas, 'Liberation Mono', monospace;
   font-weight: 400;
-  font-size: 90%;
+  font-size: 85%;
 }
 
 pre {
   display: block;
   line-height: 1.45;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
   padding: 6px 16px;
   background-color: #f9fafa;
@@ -416,15 +416,11 @@ acronym {
   background-color: #eb7350;
 }
 
-.article.labels {
-  padding: 10px;
-}
-
 .article.labels,
 .article.license,
 .article.navigation,
 .article.discussion {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .article.discussion {
@@ -492,7 +488,7 @@ acronym {
 
 .note.content,
 .article.markdown-body {
-  color: rgba(0,0,0,.85);
+  color: rgba(0,0,0,.6);
 }
 
 .note.list .item,
@@ -515,9 +511,12 @@ acronym {
 }
 
 .article.markdown-body {
-  display: block;
   background-color: #fff;
+}
 
+.article.markdown-body {
+  display: block;
+  
   margin-top: 20px;
   margin-bottom: 20px;
 }
