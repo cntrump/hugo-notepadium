@@ -8,7 +8,7 @@ html {
                 Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
                 'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', 
                 sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -16,7 +16,7 @@ html {
 body {
   display: block;
   color: rgba(0,0,0,.85);
-  background-color: #fff;
+  background-color: #f2f2f6;
 
   word-break: normal;
   word-wrap: break-word;
@@ -101,7 +101,7 @@ pre {
   display: block;
   line-height: 1.45;
   text-align: left;
-  font-size: 13.6px;
+  font-size: 12px;
   margin: 0;
   padding: 6px 16px;
   background-color: #f9fafa;
@@ -205,6 +205,7 @@ acronym {
   max-width: 830px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  overflow: hidden;
 }
 
 .site.header {
@@ -317,13 +318,12 @@ acronym {
 .note.list .item {
   width: 100%;
   margin: 5px 0 10px 0;
-  padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  background-color: #fff;
 }
 
 .note.list .item>a:hover,
 .nav.item:hover {
-  background-color: #f2f2f6;
+  opacity: .5;
   text-decoration: none;
 }
 
@@ -403,6 +403,7 @@ acronym {
   padding: 4px 6px;
   margin: 5px 5px 5px 0;
   border-radius: 20px;
+  border: 1px solid #e6e6e6;
 }
 
 .tag {
@@ -413,6 +414,10 @@ acronym {
 .category {
   color: #fff;
   background-color: #eb7350;
+}
+
+.article.labels {
+  padding: 10px;
 }
 
 .article.labels,
@@ -490,9 +495,28 @@ acronym {
   color: rgba(0,0,0,.85);
 }
 
+.note.list .item,
+.article.markdown-body {
+  padding: 20px;
+  border-radius: 6px;
+}
+
+@media (max-width: 500px) {
+  .note.list .item,
+  .article.markdown-body {
+    border-radius: 0;
+  }
+
+  .note.list,
+  .article.markdown-body {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
 .article.markdown-body {
   display: block;
-  margin: 20px 0;
+  background-color: #fff;
 }
 
 .article.markdown-body h1,
