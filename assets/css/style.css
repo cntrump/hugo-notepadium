@@ -517,6 +517,9 @@ acronym {
 .article.markdown-body {
   display: block;
   background-color: #fff;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .article.markdown-body h1,
