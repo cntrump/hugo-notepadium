@@ -70,6 +70,14 @@ a {
 .note.list .item,
 .article.markdown-body {
   background-color: #1c1c1e;
+  box-shadow: 0 12px 16px 0 rgba(202, 202, 202, .12);
+}
+
+@media (max-width: 500px) {
+  .note.list .item,
+  .article.markdown-body {
+    box-shadow: none;
+  }
 }
 
 /* border color */
