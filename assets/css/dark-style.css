@@ -54,7 +54,7 @@ a {
 
 .tag,
 .category {
-  border-color: #3e3f44;
+  border-color: #3c3c3e;
 }
 
 .tag {
@@ -86,13 +86,13 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: #3e3f44;
+  border-color: #3c3c3e;
 }
 
 .article.markdown-body h1,
 .article.markdown-body h2,
 .site.slogan .title {
-  border-bottom-color: #3e3f44;
+  border-bottom-color: #3c3c3e;
 }
 
 .article.markdown-body blockquote {
@@ -100,10 +100,10 @@ pre,
 }
 
 .article.discussion {
-  border-top-color: #3e3f44;
-  border-bottom-color: #3e3f44;
+  border-top-color: #3c3c3e;
+  border-bottom-color: #3c3c3e;
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: #3e3f44;
+  border-right-color: #3c3c3e;
 }
