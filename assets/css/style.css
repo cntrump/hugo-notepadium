@@ -378,6 +378,10 @@ acronym {
   margin: 5px 0 0 5px;
 }
 
+.cover {
+  width: 100%;
+}
+
 .article.header {
   margin-bottom: 20px;
 }

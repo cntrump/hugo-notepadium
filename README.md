@@ -20,7 +20,8 @@ Features
 - Custom CSS/SASS/SCSS supporting
 - Custom JS supporting
 - Custom header right items supporting
-- Builtin `plist` shortcode for API document.
+- Builtin `plist` shortcode for API document
+- Custom article cover supporting
 
 Preview the exampleSite:
 
@@ -348,6 +349,17 @@ Example:
 ```
 
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/05.png)
+
+### Custom article cover
+
+Set `01.png` as cover, example:
+
+```toml
++++
+title = "..."
+cover = "01.png"
++++
+```
 
 ## Thanks
 
