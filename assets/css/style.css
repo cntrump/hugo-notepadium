@@ -204,6 +204,8 @@ acronym {
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 64px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .header.wrap {
@@ -251,9 +253,10 @@ acronym {
 }
 
 .site.slogan {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: center;
+  margin-top: 20px;
 }
 
 .site.slogan .title {
@@ -261,8 +264,6 @@ acronym {
   text-align: initial;
   color: #4a5560;
   min-height: 22px;
-  padding: 10px 10px 6px;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .nav.item {
@@ -277,9 +278,8 @@ acronym {
 .footer {
   font-size: 12px;
   color: #4a5560;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-wrap {
@@ -451,7 +451,7 @@ acronym {
 .pagination {
   display: block;
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .pagination ul {

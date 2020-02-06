@@ -89,9 +89,9 @@ pre,
   border-color: #3c3c3e;
 }
 
+.site.header,
 .article.markdown-body h1,
-.article.markdown-body h2,
-.site.slogan .title {
+.article.markdown-body h2 {
   border-bottom-color: #3c3c3e;
 }
 
