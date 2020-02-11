@@ -535,6 +535,34 @@ acronym {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.article.markdown-body img {
+  -ms-transform: scale(1);
+  -ms-transition: transform 0.25s ease-in-out 0s;
+
+  -moz-transform: scale(1);
+  -moz-transition: transform 0.25s ease-in-out 0s;
+
+  -webkit-transform: scale(1);
+  -webkit-transition: transform 0.25s ease-in-out 0s;
+
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out 0s;
+}
+
+.article.markdown-body img:hover {
+  -ms-transform: scale(1.04);
+  -ms-transition: transform 0.25s ease-in-out 0s;
+
+  -moz-transform: scale(1.04);
+  -moz-transition: transform 0.25s ease-in-out 0s;
+
+  -webkit-transform: scale(1.04);
+  -webkit-transition: transform 0.25s ease-in-out 0s;
+
+  transform: scale(1.04);
+  transition: transform 0.25s ease-in-out 0s;
+}
+
 .article.markdown-body blockquote,
 .article.markdown-body q {
   opacity: .85;
