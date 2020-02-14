@@ -67,6 +67,15 @@ a {
   background-color: #8a4a4a;
 }
 
+.article.markdown-body h1,
+.article.markdown-body h2,
+.article.markdown-body h3,
+.article.markdown-body h4,
+.article.markdown-body h5,
+.article.markdown-body h6 {
+  color: rgba(255,255,255,.8);
+}
+
 .note.list .item,
 .article.markdown-body {
   background-color: #1c1c1e;
