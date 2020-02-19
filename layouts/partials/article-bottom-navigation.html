@@ -4,8 +4,7 @@
     <p><a class="link" href="{{- .RelPermalink -}}"><span class="li">&larr;</span>{{- .Title | safeHTML -}}</a></p>
     {{- end -}}
     {{- with .PrevInSection -}}
-    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li">&rarr;</span>{{- .Title | safeHTML -}}</a class="link">
-    </p>
+    <p><a class="link" href="{{- .RelPermalink -}}"><span class="li">&rarr;</span>{{- .Title | safeHTML -}}</a></p>
     {{- end -}}
 </section>
 {{- end -}}
