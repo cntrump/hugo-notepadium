@@ -10,7 +10,7 @@ html {
                 sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 body {
@@ -194,7 +194,7 @@ acronym {
 .base-body {
   display: block;
   margin: -1px auto;
-  max-width: 830px;
+  max-width: 780px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   overflow: hidden;
