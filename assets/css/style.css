@@ -405,7 +405,6 @@ acronym {
 
 .tag {
   color: #c41a16;
-  background-color: #f2f2f6;
 }
 
 .category {
@@ -417,7 +416,7 @@ acronym {
 .article.license,
 .article.navigation,
 .article.discussion {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .article.discussion {
