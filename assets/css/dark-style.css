@@ -1,6 +1,6 @@
 body {
   color: rgba(255,255,255,.85);
-  background-color: #232325;
+  background-color: #182634;
 }
 
 mark,
@@ -17,7 +17,7 @@ mark,
 .note.date,
 .article.date,
 .footer {
-  color: #92a1b1;
+  color: rgba(255,255,255,.5);
 }
 
 .note.content,
@@ -37,15 +37,15 @@ pre {
 }
 
 a {
-  color: #5482ff;
+  color: #1b95e0;
 }
 
 .pagination ul li a {
-  color: #5482ff;
+  color: #1b95e0;
 }
 
 .pagination ul li a.active {
-  background-color: #5482ff;
+  background-color: #1b95e0;
 }
 
 .pagination ul li a:hover:not(.active) {
@@ -54,12 +54,12 @@ a {
 
 .tag,
 .category {
-  border-color: #3c3c3e;
+  border-color: rgba(255,255,255,.2);
 }
 
 .tag {
   color: #fc6a5d;
-  background-color: #2c2c2e;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .category {
@@ -78,8 +78,8 @@ a {
 
 .note.list .item,
 .article.markdown-body {
-  background-color: #1c1c1e;
-  box-shadow: 0 12px 16px 0 rgba(202, 202, 202, .12);
+  background-color: #0a2c3b;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 500px) {
@@ -95,13 +95,13 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: #3c3c3e;
+  border-color: rgba(255,255,255,.2);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: #3c3c3e;
+  border-bottom-color: rgba(255,255,255,.2);
 }
 
 .article.markdown-body blockquote {
@@ -109,10 +109,10 @@ pre,
 }
 
 .article.discussion {
-  border-top-color: #3c3c3e;
-  border-bottom-color: #3c3c3e;
+  border-top-color: rgba(255,255,255,.2);
+  border-bottom-color: rgba(255,255,255,.2);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: #3c3c3e;
+  border-right-color: rgba(255,255,255,.2);
 }
