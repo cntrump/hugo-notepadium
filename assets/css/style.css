@@ -143,7 +143,7 @@ th {
 }
 
 a {
-  color: #007aff;
+  color: #406599;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -262,7 +262,7 @@ acronym {
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
-  color: #4a5560;
+  color: rgba(0,0,0,.5);
   min-height: 22px;
 }
 
@@ -277,7 +277,7 @@ acronym {
 
 .footer {
   font-size: 12px;
-  color: #4a5560;
+  color: rgba(0,0,0,.5);
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -342,7 +342,7 @@ acronym {
 }
 
 .note.date {
-  color: #4a5560;
+  color: rgba(0,0,0,.5);
 }
 
 .note.content {
@@ -388,7 +388,7 @@ acronym {
 }
 
 .article.date {
-  color: #4a5560;
+  color: rgba(0,0,0,.5);
   margin-top: 20px;
 }
 
@@ -467,14 +467,14 @@ acronym {
 }
 
 .pagination ul li a {
-  color: #007aff;
+  color: #406599;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 .pagination ul li a.active {
-  background-color: #007aff;
+  background-color: #406599;
   color: #fff;
 }
 
@@ -484,7 +484,7 @@ acronym {
 
 .note.content,
 .article.markdown-body {
-  color: rgba(0,0,0,.6);
+  color: rgba(0,0,0,.65);
 }
 
 .note.list .item,
