@@ -384,12 +384,13 @@ acronym {
 
 .article.header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 4px;
+  margin-bottom: 24px;
 }
 
 .article.date {
   color: rgba(0,0,0,.5);
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .tag,
@@ -488,7 +489,7 @@ acronym {
 }
 
 .note.list .item,
-.article.markdown-body {
+.article-container {
   padding: 20px;
   border-radius: 6px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,.12);
@@ -496,19 +497,19 @@ acronym {
 
 @media (max-width: 500px) {
   .note.list .item,
-  .article.markdown-body {
+  .article-container {
     border-radius: 0;
     box-shadow: none;
   }
 
   .note.list,
-  .article.markdown-body {
+  .article-container {
     margin-left: -20px;
     margin-right: -20px;
   }
 }
 
-.article.markdown-body {
+.article-container {
   background-color: #fff;
 }
 

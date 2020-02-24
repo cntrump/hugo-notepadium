@@ -76,14 +76,14 @@ a {
 }
 
 .note.list .item,
-.article.markdown-body {
+.article-container {
   background-color: #0a2c3b;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 500px) {
   .note.list .item,
-  .article.markdown-body {
+  .article-container {
     box-shadow: none;
   }
 }
