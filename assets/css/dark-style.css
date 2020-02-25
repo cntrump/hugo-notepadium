@@ -1,6 +1,6 @@
 body {
   color: rgba(255,255,255,.85);
-  background-color: #182634;
+  background-color: #222831;
 }
 
 mark,
@@ -77,7 +77,7 @@ a {
 
 .note.list .item,
 .article-container {
-  background-color: #0a2c3b;
+  background-color: #393e46;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
 }
 
