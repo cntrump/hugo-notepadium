@@ -104,7 +104,8 @@ pre,
 }
 
 .article.markdown-body blockquote {
-  border-left-color: #5182ce;
+  border-left-color: #c9ced6;
+  background-color: #292e36;
 }
 
 .article.discussion {

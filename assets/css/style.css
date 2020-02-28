@@ -571,8 +571,10 @@ acronym {
 }
 
 .article.markdown-body blockquote {
-  padding: 0 1em;
-  border-left: .25em solid #75a4f8;
+  padding: .95em;
+  border-radius: 6px;
+  border-left: 6px solid #fee450;
+  background-color: #fbf8e8;
 }
 
 .article.markdown-body q::before,
