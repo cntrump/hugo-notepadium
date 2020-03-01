@@ -21,6 +21,9 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .RelPermalink }}</guid>
       <description>{{ .Summary | html }}</description>
+      {{ if and (isset .Site.Params "fullrss") (.Site.Params.fullrss) }}
+      <content:encoded>{{ `<![CDATA[` | safeHTML }}{{ .Content | safeHTML }}{{ `]]>` | safeHTML }}</content:encoded>
+      {{ end }}
     </item>
     {{ end }}
   </channel>
