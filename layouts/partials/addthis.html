@@ -1,0 +1,5 @@
+{{- if gt (len .Site.Params.addThisId) 0 -}}
+    {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
+        <div class="addthis_inline_share_toolbox"></div>
+    {{- end -}}
+{{- end -}}
