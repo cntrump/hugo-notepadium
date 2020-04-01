@@ -9,11 +9,10 @@
         {{- .Content -}}
     </article>
     {{- partial "article-labels.html" . -}}
+    {{- partial "addthis.html" . -}}
     {{- partial "article-license.html" . -}}
     {{- partial "article-author.html" . -}}
 </div>
-{{- partial "addthis.html" . -}}
 {{- partial "article-bottom-navigation.html" . -}}
 {{- partial "article-comments.html" . -}}
-{{- partial "addthis-script.html" . -}}
 {{- end -}}
