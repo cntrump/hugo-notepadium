@@ -416,7 +416,8 @@ acronym {
 .article.labels,
 .article.license,
 .article.navigation,
-.article.discussion {
+.article.discussion,
+.article.share {
   margin-top: 24px;
 }
 

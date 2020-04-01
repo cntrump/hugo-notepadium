@@ -22,6 +22,7 @@ Features
 - Custom header right items supporting
 - Builtin `plist` shortcode for API document
 - Custom article cover supporting
+- Article share supporting (thanks [@jianyuanzh](https://github.com/jianyuanzh))
 
 Preview the exampleSite:
 
@@ -83,6 +84,10 @@ use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "xcode"
 darkTheme = "xcode-dark"  # apply this theme in dark mode
 
+[params.share]
+enable = false
+addThisId = ""
+
 [params.nav]
 showCategories = true       # /categories/
 showTags = true             # /tags/
@@ -134,7 +139,7 @@ url = "https://gohugo.io/"
 
 ```
 
-### Syntax highlighting:
+### Syntax highlighting
 
 ```toml
 # enable JS highlight
@@ -142,6 +147,13 @@ url = "https://gohugo.io/"
 use = "hljs"  # 1. prismjs 2. hljs 3. none
 theme = "dracula"
 darkTheme = "xcode-dark"  # apply this theme in dark mode
+```
+
+### Article share
+```toml
+[params.share]
+enable = true
+addThisId = "ra-1234567890"
 ```
 
 ### Math
