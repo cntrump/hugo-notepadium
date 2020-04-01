@@ -1,5 +1,0 @@
-{{- if gt (len .Site.Params.addThisId) 0 -}}
-    {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{- .Site.Params.addThisId -}}" async></script>
-    {{- end -}}
-{{- end -}}
