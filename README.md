@@ -87,6 +87,7 @@ darkTheme = "xcode-dark"  # apply this theme in dark mode
 [params.share]
 enable = false
 addThisId = ""
+inlineToolId = ""
 
 [params.nav]
 showCategories = true       # /categories/
@@ -154,6 +155,7 @@ darkTheme = "xcode-dark"  # apply this theme in dark mode
 [params.share]
 enable = true
 addThisId = "ra-1234567890"
+inlineToolId = ""
 ```
 
 ### Math
