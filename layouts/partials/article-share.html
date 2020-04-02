@@ -1,6 +1,5 @@
-{{- $addThisId := site.Params.share.addThisId -}}
-{{- if gt (len $addThisId) 0 -}}
-    {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
+{{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
+    {{- if gt (len site.Params.share.addThisId) 0 -}}
         {{- $inlineToolId := site.Params.share.inlineToolId -}}
         <div class="article share addthis_inline_share_toolbox{{- if gt (len $inlineToolId) 0 -}}{{- print "_" $inlineToolId -}}{{- end -}}"></div>
         {{- $js := resources.Get "js/addthis_widget.js" | resources.Minify | resources.Fingerprint "sha384" -}}
