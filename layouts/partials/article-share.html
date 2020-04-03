@@ -1,9 +1,11 @@
 {{- $addThisId := site.Params.share.addThisId -}}
-{{- if gt (len $addThisId) 0 -}}
-    {{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
+{{- if $addThisId -}}
+{{- if or (eq .Params.share true) (and (ne .Params.share false) (eq site.Params.share.enable true)) -}}
+    {{- if (gt (len $addThisId) 0) -}}
         {{- $inlineToolId := site.Params.share.inlineToolId -}}
-        <div class="article share addthis_inline_share_toolbox{{- if gt (len $inlineToolId) 0 -}}{{- print "_" $inlineToolId -}}{{- end -}}"></div>
+        <div class="article share addthis_inline_share_toolbox{{- if $inlineToolId -}}{{- if gt (len $inlineToolId) 0 -}}{{- print "_" $inlineToolId -}}{{- end -}}{{- end -}}"></div>
         {{- $js := resources.Get "js/addthis_widget.js" | resources.Minify | resources.Fingerprint "sha384" -}}
         <script defer src="{{- $js.RelPermalink -}}#pubid={{- $addThisId -}}" integrity="{{- $js.Data.Integrity -}}"></script>
     {{- end -}}
+{{- end -}}
 {{- end -}}
