@@ -108,6 +108,12 @@ pre,
   background-color: #292e36;
 }
 
+.article.license {
+  background-color: #31373f;
+  color: rgba(255,255,255,.6);
+  border-color: rgba(255,255,255,.2);
+}
+
 .article.discussion {
   border-top-color: rgba(255,255,255,.2);
   border-bottom-color: rgba(255,255,255,.2);
