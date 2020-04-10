@@ -75,6 +75,9 @@ fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, de
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
+[params.comments.utterances]
+repo = "MetalBlueberry/MetalBlueberry.github.io" # enable comments with [utteranc.es](https://utteranc.es/)
+
 [params.math]
 enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
 use = "katex"  # option: "katex", "mathjax". default: "katex"

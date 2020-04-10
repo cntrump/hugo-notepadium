@@ -5,3 +5,15 @@
         </section>
     {{- end -}}
 {{- end -}}
+{{- if ne site.Params.comments.utterances.repo "" -}}
+    {{- if or (eq .Params.comments true) (and (ne .Params.comments false) (eq site.Params.comments.enable true)) -}}
+        <script 
+            src="https://utteranc.es/client.js" 
+            repo="{{- site.Params.comments.utterances.repo }}"
+            issue-term="{{ default "pathname" site.Params.comments.utterances.issueTerm }}"
+            label="{{- default "" site.Params.comments.utterances.label -}}"
+            theme="{{- default "github-light" site.Params.comments.utterances.theme -}}"
+            crossorigin="anonymous" async>
+        </script>
+    {{- end -}}
+{{- end -}}
