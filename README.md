@@ -166,19 +166,6 @@ enable = true  # true means globally, or on a per page set "math = true"
 use = "katex"  # "mathjax" or "katex"
 ```
 
-Enable comments on per page:
-
-```md
-+++
-title = "..."
-date = 2019-12-08
-...
-math = true
-+++
-
-...
-```
-
 Example
 
 ```
