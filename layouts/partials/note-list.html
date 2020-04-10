@@ -5,7 +5,7 @@
 {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
 <ul class="note list">
     {{- range $paginator.Pages -}}
-    <li class="item"><a class="note" href="{{- .RelPermalink -}}">
+    <li class="item"><a class="note" href="{{- replace .RelPermalink "#" "%23" -}}">
             <p class="note title">{{- .Title | safeHTML -}}</p>
             {{- if .Date -}}
                 <p class="note date">{{- .Date.Format $dateFormat -}}</p>
