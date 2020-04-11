@@ -275,6 +275,13 @@ acronym {
   border-radius: 20px;
 }
 
+.link.logo {
+  height: 16px;
+  border-radius: 1px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 .footer {
   font-size: 12px;
   color: rgba(0,0,0,.5);

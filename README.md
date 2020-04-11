@@ -140,7 +140,20 @@ url = "https://gohugo.io/"
 
 ```
 
-### Syntax highlighting
+### Profile link items
+
+```toml
+[[params.link]]
+title = "mastodon"
+url = "https://joinmastodon.org@username"
+logo = "images/icon-mastodon.svg"
+
+[[params.link]]
+title = "twitter"
+url = "https://twitter.com@username"
+```
+
+### Syntax highlighting:
 
 ```toml
 # enable JS highlight

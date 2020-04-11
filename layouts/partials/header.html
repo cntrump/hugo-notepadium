@@ -8,6 +8,19 @@
         <span class="header right-side">
             {{- partial "navigation-items.html" site.Params.nav -}}
         </span></div>
+    <div>
+        {{- $link := site.Params.link -}}
+        {{- range $link}}
+        <a href="{{- .url -}}" rel="me" target="_blank">
+            {{- $logo := .logo -}}
+            {{- if $logo -}}
+            <img class="link logo" src="{{- $logo | relURL -}}" alt="{{- .title -}}" />
+            {{- else -}}
+            {{- .title -}}
+            {{- end -}}
+        </a>
+        {{- end -}}
+    </div>
     {{- with site.Params.slogan -}}
         <div class="site slogan"><span class="title">{{- . | safeHTML -}}</span></div>
     {{- end -}}
