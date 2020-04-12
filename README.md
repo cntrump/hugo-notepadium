@@ -57,6 +57,9 @@ enableRobotsTXT = true
 # Google Analytics
 #googleAnalytics = "UA-123-45"
 
+# To display edited date when the files are under git VCS. When enabled need of lastmod in frontmatter.
+# enableGitInfo = true
+
 [markup.highlight]
 codeFences = true
 noClasses = false
