@@ -1,5 +1,5 @@
 body {
-  color: rgba(255,255,255,.85);
+  color: rgba(255,255,255,.75);
   background-color: #222831;
 }
 
@@ -10,7 +10,7 @@ mark,
 
 .note,
 .site.name {
-  color: rgba(255,255,255,.85);
+  color: rgba(255,255,255,.75);
 }
 
 .site.slogan .title,
@@ -72,7 +72,7 @@ a {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.75);
 }
 
 .note.list .item,

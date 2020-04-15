@@ -15,7 +15,7 @@ html {
 
 body {
   display: block;
-  color: rgba(0,0,0,.85);
+  color: rgba(0,0,0,.75);
   background-color: #f9f9fd;
 
   word-break: normal;
@@ -249,7 +249,7 @@ acronym {
 }
 
 .site.name {
-  color: rgba(0,0,0,.85);
+  color: rgba(0,0,0,.75);
 }
 
 .site.slogan {
@@ -326,7 +326,7 @@ acronym {
 }
 
 .note {
-  color: rgba(0,0,0,.85);
+  color: rgba(0,0,0,.75);
   display: block;
   text-decoration: none;
 }
@@ -532,7 +532,7 @@ acronym {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(0,0,0,.8);
+  color: rgba(0,0,0,.75);
   margin-top: 24px;
   margin-bottom: 20px;
 }
