@@ -23,7 +23,7 @@ Features
 - Builtin `plist` shortcode for API document
 - Custom article cover supporting
 - Article share supporting (thanks [@jianyuanzh](https://github.com/jianyuanzh))
-- [Twitter Card supoorting](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary)
+- [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary) supporting
 
 Preview the exampleSite:
 
