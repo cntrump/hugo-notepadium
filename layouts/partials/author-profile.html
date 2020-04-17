@@ -1,0 +1,31 @@
+<div class="row center-xs center-md center-lg" style="margin-top: 10px;">
+    <div class="col" style="width: 150px; height: 150px; border-radius: 50%;  overflow: hidden;">
+            {{- with .Params.profilepic -}} 
+                <img class="profilepic" style="width: 100%; height: 100%;" src="{{- . | safeURL -}}"  
+                alt>
+            {{ else }}
+                <img src="/img/male.png"  style="width: 100%; height: 100%;" alt="">
+            {{- end -}}
+    </div>
+</div>
+<section class="bio article header" style="">
+    <p>
+        I'm {{ $.Param "complete_name" }} {{- .Content -}}
+    </p>
+    <div class="row around-xs around-md " style="width: 50%;  margin:auto; margin-top: 10px;">
+        <div class="col">
+            <a href="{{ $.Param "github" }}" style="color: inherit;"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div class="col">
+            <a href="mailto:{{ $.Param "email" }}" style="color: inherit;"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
+        </div>
+        <div class="col">
+             <a href="{{ $.Param "twitter" }}" style="color: inherit;"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
+        </div>
+        <div class="col">
+            <a href="{{ $.Param "linkedin" }}" style="color:inherit" > <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+        </div>
+        <div class="col">
+            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+        </div>
+</section>
