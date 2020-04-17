@@ -142,6 +142,10 @@ th {
   padding: 0;
 }
 
+table tr:nth-child(even){
+  background: #f3f6fa;
+}
+
 a {
   color: #406599;
   text-decoration: none;

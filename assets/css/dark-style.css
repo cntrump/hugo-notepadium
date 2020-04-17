@@ -3,6 +3,10 @@ body {
   background-color: #222831;
 }
 
+table tr:nth-child(even){
+  background: #323841;
+}
+
 mark,
 ::selection {
   background-color: #515b70;
