@@ -4,28 +4,42 @@
                 <img class="profilepic" style="width: 100%; height: 100%;" src="{{- . | safeURL -}}"  
                 alt>
             {{ else }}
-                <img src="/img/male.png"  style="width: 100%; height: 100%;" alt="">
+                <img src="img/male.png"  style="width: 100%; height: 100%;" alt="">
             {{- end -}}
     </div>
 </div>
 <section class="bio article header" >
     <p>
-        I'm {{ $.Param "complete_name" }} {{- .Content -}}
+        {{- .Content -}}
     </p>
     <div class="row around-xs around-md " style="width: 50%;  margin:auto; margin-top: 10px;">
-        <div class="col">
-            <a href="{{ $.Param "github" }}" style="color: inherit;"><i class="fa fa-github" aria-hidden="true"></i></a>
-        </div>
-        <div class="col">
-            <a href="mailto:{{ $.Param "email" }}" style="color: inherit;"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
-        </div>
-        <div class="col">
-             <a href="{{ $.Param "twitter" }}" style="color: inherit;"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
-        </div>
+        {{- with .Params.github}}
+            <div class="col">
+                <a href="{{ $.Param "github" }}" style="color: inherit;"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        {{- end -}}
+
+        {{- with .Params.email -}}
+            <div class="col">
+                <a href="mailto:{{ $.Param "email" }}" style="color: inherit;"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
+            </div>
+        {{- end -}}
+        
+        {{- with .Params.twitter -}}
+            <div class="col">
+                <a href="{{ $.Param "twitter" }}" style="color: inherit;"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
+            </div>
+        {{- end -}}
+        
+        {{- with .Params.linkedin -}}
         <div class="col">
             <a href="{{ $.Param "linkedin" }}" style="color:inherit" > <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
         </div>
+        {{- end -}}
+
+        {{- with .Params.stack_overflow -}}
         <div class="col">
-            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+            <a href="{{ $.Param "stack_overflow" }}" style="color:inherit;"><i class="fa fa-stack-overflow" aria-hidden="true"></i> </a>
         </div>
+        {{- end -}}
 </section>
