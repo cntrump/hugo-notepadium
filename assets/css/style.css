@@ -407,8 +407,7 @@ acronym {
 
 .tag::before {
   content: "#";
-  opacity: .6;
-  font-weight: 900;
+  opacity: .5;
 }
 
 .tag {
