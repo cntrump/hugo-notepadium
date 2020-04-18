@@ -56,18 +56,13 @@ a {
   background-color: rgba(130, 170, 255, .5);
 }
 
-.tag,
-.category {
-  border-color: rgba(255,255,255,.2);
-}
-
 .tag {
-  color: #fc6a5d;
+  color: #1b95e0;
 }
 
 .category {
-  color: rgba(255,255,255,.85);
-  background-color: #8a4a4a;
+  color: rgba(255,255,255,.75);
+  background-color: #136396;
 }
 
 .article.markdown-body h1,

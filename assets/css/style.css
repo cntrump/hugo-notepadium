@@ -402,19 +402,24 @@ acronym {
   display: inline-block;
   font-size: 13px;
   line-height: 1;
-  padding: 4px 6px;
-  margin: 5px 5px 5px 0;
-  border-radius: 20px;
-  border: 1px solid #e6e6e6;
+  margin: 5px 8px 5px 0;
+}
+
+.tag::before {
+  content: "#";
+  opacity: .6;
+  font-weight: 900;
 }
 
 .tag {
-  color: #c41a16;
+  color: #406599;
 }
 
 .category {
+  padding: 4px 6px;
+  border-radius: 3px;
   color: #fff;
-  background-color: #eb7350;
+  background-color: #5079b7;
 }
 
 .article.labels,
