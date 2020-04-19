@@ -98,13 +98,13 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.05);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(255,255,255,.2);
+  border-bottom-color: rgba(255,255,255,.05);
 }
 
 .article.markdown-body blockquote {
@@ -115,14 +115,14 @@ pre,
 .article.license {
   background-color: #31373f;
   color: rgba(255,255,255,.6);
-  border-color: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.05);
 }
 
 .article.discussion {
-  border-top-color: rgba(255,255,255,.2);
-  border-bottom-color: rgba(255,255,255,.2);
+  border-top-color: rgba(255,255,255,.05);
+  border-bottom-color: rgba(255,255,255,.05);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(255,255,255,.2);
+  border-right-color: rgba(255,255,255,.05);
 }
