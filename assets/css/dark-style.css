@@ -3,8 +3,13 @@ body {
   background-color: #222831;
 }
 
+table thead {
+  color: rgba(0, 0, 0, .6);
+  background-color: #93969a;
+}
+
 table tr:nth-child(even){
-  background: #323841;
+  background-color: #33363a;
 }
 
 mark,
@@ -61,8 +66,8 @@ a {
 }
 
 .category {
-  color: rgba(255,255,255,.75);
-  background-color: #136396;
+  color: rgba(0,0,0,.6);
+  background-color: #93c6ea;
 }
 
 .article.markdown-body h1,

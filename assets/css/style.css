@@ -142,8 +142,13 @@ th {
   padding: 0;
 }
 
+table thead {
+  color: #fff;
+  background-color: #5079b7;
+}
+
 table tr:nth-child(even){
-  background: #f3f6fa;
+  background-color: #f3f6fa;
 }
 
 a {
