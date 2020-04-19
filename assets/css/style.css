@@ -173,6 +173,10 @@ acronym {
   cursor: help;
 }
 
+strong, b {
+  color: rgba(0,0,0,.75);
+}
+
 .image-container,
 .image-container .link,
 .image-container .caption {
