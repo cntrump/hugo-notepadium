@@ -15,7 +15,7 @@
     <div class="row around-xs around-md " style="width: 50%;  margin:auto; margin-top: 10px;">
         {{- with .Params.github}}
             <div class="col">
-                <a href="{{ $.Param "github" }}" style="color: inherit;"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a onclick="redirect_social_media({{ $.Param "github" }})" style="color: inherit;"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
         {{- end -}}
 
@@ -27,13 +27,13 @@
         
         {{- with .Params.twitter -}}
             <div class="col">
-                <a href="{{ $.Param "twitter" }}" style="color: inherit;"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
+                <a onclick=" redirect_social_media( {{ $.Param "twitter" }}) " style="color: inherit;"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
             </div>
         {{- end -}}
         
         {{- with .Params.linkedin -}}
         <div class="col">
-            <a href="{{ $.Param "linkedin" }}" style="color:inherit" > <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            <a onclick="redirect_social_media( {{ $.Param "linkedin" }})" style="color:inherit" > <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
         </div>
         {{- end -}}
 
