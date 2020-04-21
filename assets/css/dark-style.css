@@ -1,5 +1,5 @@
 body {
-  color: rgba(255,255,255,.75);
+  color: rgba(220, 252, 242, .75);
   background-color: #222831;
 }
 
@@ -8,7 +8,7 @@ table thead {
   background-color: #93969a;
 }
 
-table tr:nth-child(even){
+table tr:nth-child(even) {
   background-color: #33363a;
 }
 
@@ -19,19 +19,19 @@ mark,
 
 .note,
 .site.name {
-  color: rgba(255,255,255,.75);
+  color: rgba(220, 252, 242, 0.75);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-  color: rgba(255,255,255,.5);
+  color: rgba(220, 252, 242, .5);
 }
 
 .note.content,
 .article.markdown-body {
-  color: rgba(255,255,255,.65);
+  color: rgba(255, 255, 255, .65);
 }
 
 code,
@@ -66,18 +66,19 @@ a {
 }
 
 .category {
-  color: rgba(0,0,0,.6);
+  color: rgba(0, 0, 0, .6);
   background-color: #93c6ea;
 }
 
-strong, b,
+strong,
+b,
 .article.markdown-body h1,
 .article.markdown-body h2,
 .article.markdown-body h3,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(255,255,255,.75);
+  color: rgba(220, 252, 242, .75);
 }
 
 .note.list .item,
@@ -87,6 +88,7 @@ strong, b,
 }
 
 @media (max-width: 500px) {
+
   .note.list .item,
   .article-container {
     box-shadow: none;
@@ -99,13 +101,13 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(255,255,255,.05);
+  border-color: rgba(220, 252, 242, .05);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(255,255,255,.05);
+  border-bottom-color: rgba(220, 252, 242, .05);
 }
 
 .article.markdown-body blockquote {
@@ -115,15 +117,15 @@ pre,
 
 .article.license {
   background-color: #31373f;
-  color: rgba(255,255,255,.6);
-  border-color: rgba(255,255,255,.05);
+  color: rgba(220, 252, 242, .6);
+  border-color: rgba(220, 252, 242, .05);
 }
 
 .article.discussion {
-  border-top-color: rgba(255,255,255,.05);
-  border-bottom-color: rgba(255,255,255,.05);
+  border-top-color: rgba(220, 252, 242, .05);
+  border-bottom-color: rgba(220, 252, 242, .05);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(255,255,255,.05);
+  border-right-color: rgba(220, 252, 242, .05);
 }

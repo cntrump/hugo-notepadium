@@ -4,10 +4,10 @@
 }
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI', 
-                Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
-                'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', 
-                sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI',
+    Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
@@ -15,12 +15,12 @@ html {
 
 body {
   display: block;
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 32, 22, .75);
   background-color: #f9f9fd;
 
   word-break: normal;
   word-wrap: break-word;
-  
+
   hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -147,7 +147,7 @@ table thead {
   background-color: #5079b7;
 }
 
-table tr:nth-child(even){
+table tr:nth-child(even) {
   background-color: #f3f6fa;
 }
 
@@ -173,8 +173,9 @@ acronym {
   cursor: help;
 }
 
-strong, b {
-  color: rgba(0,0,0,.75);
+strong,
+b {
+  color: rgba(0, 32, 22, .75);
 }
 
 .image-container,
@@ -262,7 +263,7 @@ strong, b {
 }
 
 .site.name {
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 32, 22, .75);
 }
 
 .site.slogan {
@@ -275,7 +276,7 @@ strong, b {
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 32, 22, .5);
   min-height: 22px;
 }
 
@@ -290,7 +291,7 @@ strong, b {
 
 .footer {
   font-size: 12px;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 32, 22, .5);
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -339,7 +340,7 @@ strong, b {
 }
 
 .note {
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 32, 22, .75);
   display: block;
   text-decoration: none;
 }
@@ -355,7 +356,7 @@ strong, b {
 }
 
 .note.date {
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 32, 22, .5);
 }
 
 .note.content {
@@ -402,7 +403,7 @@ strong, b {
 }
 
 .article.date {
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 32, 22, .5);
   margin-top: 24px;
 }
 
@@ -508,17 +509,18 @@ strong, b {
 
 .note.content,
 .article.markdown-body {
-  color: rgba(0,0,0,.65);
+  color: rgba(0, 0, 0, .65);
 }
 
 .note.list .item,
 .article-container {
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,.12);
+  box-shadow: 0 12px 16px 0 rgba(0, 32, 22, .12);
 }
 
 @media (max-width: 500px) {
+
   .note.list .item,
   .article-container {
     border-radius: 0;
@@ -538,7 +540,7 @@ strong, b {
 
 .article.markdown-body {
   display: block;
-  
+
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -549,7 +551,7 @@ strong, b {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 32, 22, 0.75);
   margin-top: 24px;
   margin-bottom: 20px;
 }

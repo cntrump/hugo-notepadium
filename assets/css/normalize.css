@@ -147,7 +147,8 @@ mark {
     background-color: yellow;
 }
 
-svg, img {
+svg,
+img {
     max-width: 100%;
     border: none;
 }
