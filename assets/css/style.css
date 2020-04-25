@@ -747,7 +747,11 @@ b {
 }
 
 .article.markdown-body .katex,
-.article.markdown-body .MathJax,
+.article.markdown-body .MathJax {
+  margin: 0;
+  padding: 0;
+}
+
 .article.markdown-body .katex-display,
 .article.markdown-body .MathJax_Display {
   margin: 0;
