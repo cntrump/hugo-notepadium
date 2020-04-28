@@ -15,7 +15,7 @@ html {
 
 body {
   display: block;
-  color: rgba(29, 43, 76, .75);
+  color: rgba(29, 43, 76, .85);
   background-color: #f9f9fd;
 
   word-break: normal;
@@ -143,7 +143,7 @@ th {
 }
 
 table thead {
-  color: rgba(29, 43, 76, 0.75);
+  color: rgba(29, 43, 76, 0.85);
 }
 
 table tr:nth-child(even) {
@@ -174,7 +174,7 @@ acronym {
 
 strong,
 b {
-  color: rgba(29, 43, 76, .75);
+  color: rgba(29, 43, 76, .85);
 }
 
 .image-container,
@@ -197,7 +197,7 @@ b {
 
 .image-container .title {
   display: inline-block;
-  opacity: .65;
+  opacity: .6;
   font-size: 15px;
   text-align: initial;
   min-height: 22px;
@@ -262,7 +262,7 @@ b {
 }
 
 .site.name {
-  color: rgba(29, 43, 76, .75);
+  color: rgba(29, 43, 76, .85);
 }
 
 .site.slogan {
@@ -339,7 +339,7 @@ b {
 }
 
 .note {
-  color: rgba(29, 43, 76, .75);
+  color: rgba(29, 43, 76, .85);
   display: block;
   text-decoration: none;
 }
@@ -359,7 +359,7 @@ b {
 }
 
 .note.content {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .mldr {
@@ -421,14 +421,14 @@ b {
 }
 
 .tag {
-  color: rgba(29, 43, 76, .65);
+  color: rgba(29, 43, 76, .85);
 }
 
 .category {
   padding: 4px 6px;
   border-radius: 3px;
   color: #fff;
-  background-color: rgba(80, 121, 183, .65);
+  background-color: rgba(80, 121, 183, .85);
 }
 
 .article.labels,
@@ -509,7 +509,7 @@ b {
 
 .note.content,
 .article.markdown-body {
-  color: rgba(0, 0, 0, .65);
+  color: rgba(0, 0, 0, .85);
 }
 
 .note.list .item,
@@ -555,7 +555,7 @@ b {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(29, 43, 76, 0.75);
+  color: rgba(29, 43, 76, 0.85);
   margin-top: 24px;
   margin-bottom: 20px;
 }

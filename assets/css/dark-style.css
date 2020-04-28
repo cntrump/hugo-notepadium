@@ -1,10 +1,10 @@
 body {
-  color: rgba(226, 212, 179, .75);
+  color: rgba(226, 212, 179, .85);
   background-color: #222831;
 }
 
 table thead {
-  color: rgba(226, 212, 179, .75);
+  color: rgba(226, 212, 179, .85);
 }
 
 table tr:nth-child(even) {
@@ -18,7 +18,7 @@ mark,
 
 .note,
 .site.name {
-  color: rgba(226, 212, 179, 0.75);
+  color: rgba(226, 212, 179, .85);
 }
 
 .site.slogan .title,
@@ -30,11 +30,11 @@ mark,
 
 .note.content,
 .article.markdown-body {
-  color: rgba(255, 255, 255, .65);
+  color: rgba(255, 255, 255, .85);
 }
 
 .article.markdown-body {
-  background-image: linear-gradient(90deg, rgba(200, 255, 255, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(200, 255, 255, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
+  background-image: linear-gradient(90deg, rgba(200, 255, 255, .05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(200, 255, 255, .05) 3%, rgba(0, 0, 0, 0) 3%);
 }
 
 code,
@@ -65,12 +65,12 @@ a {
 }
 
 .tag {
-  color: rgba(226, 212, 179, .65);
+  color: rgba(226, 212, 179, .85);
 }
 
 .category {
-  color: rgba(20, 20, 20, .65);
-  background-color: rgba(175, 134, 72, .65);
+  color: rgba(20, 20, 20, .85);
+  background-color: rgba(175, 134, 72, .85);
 }
 
 strong,
@@ -81,7 +81,7 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(226, 212, 179, .75);
+  color: rgba(226, 212, 179, .85);
 }
 
 .note.list .item,
@@ -120,7 +120,7 @@ pre,
 
 .article.license {
   background-color: #31373f;
-  color: rgba(226, 212, 179, .6);
+  color: rgba(226, 212, 179, .85);
   border-color: rgba(226, 212, 179, .05);
 }
 
