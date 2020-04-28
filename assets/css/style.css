@@ -198,7 +198,7 @@ b {
 .image-container .title {
   display: inline-block;
   opacity: .6;
-  font-size: 15px;
+  font-size: .875em;
   text-align: initial;
   min-height: 22px;
   padding: 10px 5px;
@@ -223,7 +223,7 @@ b {
 
 .header.wrap {
   text-align: justify;
-  font-size: 1px;
+  line-height: 1.0;
 }
 
 .header.wrap::after {
@@ -245,7 +245,6 @@ b {
 .header.left-side,
 .header.right-side {
   display: inline-block;
-  font-size: 16px;
   text-align: initial;
 }
 
@@ -266,7 +265,7 @@ b {
 }
 
 .site.slogan {
-  font-size: 15px;
+  font-size: .875em;
   line-height: 1.5;
   text-align: center;
   margin-top: 20px;
@@ -288,7 +287,7 @@ b {
 }
 
 .footer {
-  font-size: 12px;
+  font-size: .75em;
   color: rgba(29, 43, 76, .5);
   margin-top: 30px;
   margin-bottom: 20px;
@@ -306,7 +305,7 @@ b {
 .langs {
   display: inline-block;
   list-style: none;
-  font-size: 15px;
+  font-size: .875em;
 }
 
 .lang {
@@ -461,7 +460,6 @@ b {
   background-color: #f9f9f9;
   border-radius: 3px;
   margin: 30px 0;
-  font-size: 13px;
   padding: 15px 20px;
   border: 2px dashed #ddd;
   color: #999;
