@@ -6,6 +6,7 @@
     {{- partial "article-header.html" . -}}
     <article class="article markdown-body" {{- if $justify -}}style="text-align: justify;" {{- end -}}>
         {{- with .Params.cover -}}<p><img class="cover" src="{{- . | safeURL -}}" alt></p>{{- end -}}
+        {{- partial "toc.html" . -}}
         {{- .Content -}}
     </article>
     {{- partial "article-labels.html" . -}}
