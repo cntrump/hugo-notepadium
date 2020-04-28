@@ -8,7 +8,7 @@ html {
     Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -43,32 +43,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.25em;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: .875em;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: .85em;
 }
 
 blockquote,
@@ -245,7 +245,7 @@ b {
 .header.left-side,
 .header.right-side {
   display: inline-block;
-  font-size: 17px;
+  font-size: 16px;
   text-align: initial;
 }
 
@@ -350,8 +350,8 @@ b {
 
 .note.title,
 .site.name {
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .note.date {
@@ -410,7 +410,7 @@ b {
 .category {
   display: inline-block;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   margin: 5px 8px 5px 0;
 }
@@ -453,7 +453,7 @@ b {
 }
 
 .article.navigation .link {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .article.navigation .li {
@@ -482,7 +482,7 @@ b {
 .pagination ul {
   display: inline-block;
   list-style: none;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0;
   margin: 0;
 }
@@ -649,7 +649,7 @@ b {
 }
 
 .article.markdown-body table th {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .article.markdown-body table td,
@@ -705,39 +705,6 @@ b {
 }
 
 @media (max-width: 375px) {
-  html {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 23px;
-  }
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 19px;
-  }
-
-  h5 {
-    font-size: 17px;
-  }
-
-  h6 {
-    font-size: 15px;
-  }
-
-  .header.left-side,
-  .header.right-side {
-    font-size: 15px;
-  }
-
   .base-body {
     padding-left: 15px;
     padding-right: 15px;
