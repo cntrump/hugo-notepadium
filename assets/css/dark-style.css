@@ -1,5 +1,5 @@
 body {
-  color: rgba(220, 252, 242, .75);
+  color: rgba(226, 212, 179, .75);
   background-color: #222831;
 }
 
@@ -19,14 +19,14 @@ mark,
 
 .note,
 .site.name {
-  color: rgba(220, 252, 242, 0.75);
+  color: rgba(226, 212, 179, 0.75);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-  color: rgba(220, 252, 242, .5);
+  color: rgba(226, 212, 179, .5);
 }
 
 .note.content,
@@ -82,7 +82,7 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(220, 252, 242, .75);
+  color: rgba(226, 212, 179, .75);
 }
 
 .note.list .item,
@@ -105,13 +105,13 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(220, 252, 242, .05);
+  border-color: rgba(226, 212, 179, .05);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(220, 252, 242, .15);
+  border-bottom-color: rgba(226, 212, 179, .15);
 }
 
 .article.markdown-body blockquote {
@@ -121,15 +121,15 @@ pre,
 
 .article.license {
   background-color: #31373f;
-  color: rgba(220, 252, 242, .6);
-  border-color: rgba(220, 252, 242, .05);
+  color: rgba(226, 212, 179, .6);
+  border-color: rgba(226, 212, 179, .05);
 }
 
 .article.discussion {
-  border-top-color: rgba(220, 252, 242, .05);
-  border-bottom-color: rgba(220, 252, 242, .05);
+  border-top-color: rgba(226, 212, 179, .05);
+  border-bottom-color: rgba(226, 212, 179, .05);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(220, 252, 242, .05);
+  border-right-color: rgba(226, 212, 179, .05);
 }

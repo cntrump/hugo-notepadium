@@ -15,7 +15,7 @@ html {
 
 body {
   display: block;
-  color: rgba(0, 32, 22, .75);
+  color: rgba(29, 43, 76, .75);
   background-color: #f9f9fd;
 
   word-break: normal;
@@ -175,7 +175,7 @@ acronym {
 
 strong,
 b {
-  color: rgba(0, 32, 22, .75);
+  color: rgba(29, 43, 76, .75);
 }
 
 .image-container,
@@ -263,7 +263,7 @@ b {
 }
 
 .site.name {
-  color: rgba(0, 32, 22, .75);
+  color: rgba(29, 43, 76, .75);
 }
 
 .site.slogan {
@@ -276,7 +276,7 @@ b {
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
-  color: rgba(0, 32, 22, .5);
+  color: rgba(29, 43, 76, .5);
   min-height: 22px;
 }
 
@@ -291,7 +291,7 @@ b {
 
 .footer {
   font-size: 12px;
-  color: rgba(0, 32, 22, .5);
+  color: rgba(29, 43, 76, .5);
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -340,7 +340,7 @@ b {
 }
 
 .note {
-  color: rgba(0, 32, 22, .75);
+  color: rgba(29, 43, 76, .75);
   display: block;
   text-decoration: none;
 }
@@ -356,7 +356,7 @@ b {
 }
 
 .note.date {
-  color: rgba(0, 32, 22, .5);
+  color: rgba(29, 43, 76, .5);
 }
 
 .note.content {
@@ -403,7 +403,7 @@ b {
 }
 
 .article.date {
-  color: rgba(0, 32, 22, .5);
+  color: rgba(29, 43, 76, .5);
   margin-top: 24px;
 }
 
@@ -516,7 +516,7 @@ b {
 .article-container {
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0 12px 16px 0 rgba(0, 32, 22, .12);
+  box-shadow: 0 12px 16px 0 rgba(29, 43, 76, .12);
 }
 
 @media (max-width: 500px) {
@@ -555,7 +555,7 @@ b {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(0, 32, 22, 0.75);
+  color: rgba(29, 43, 76, 0.75);
   margin-top: 24px;
   margin-bottom: 20px;
 }
