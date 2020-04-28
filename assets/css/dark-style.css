@@ -4,12 +4,11 @@ body {
 }
 
 table thead {
-  color: rgba(20, 20, 20, .65);
-  background-color: rgba(175, 134, 72, .65);
+  color: rgba(226, 212, 179, .75);
 }
 
 table tr:nth-child(even) {
-  background-color: #33363a;
+  background-color: rgba(51, 54, 58, .35);
 }
 
 mark,

@@ -143,8 +143,7 @@ th {
 }
 
 table thead {
-  color: #fff;
-  background-color: rgba(80, 121, 183, .65);
+  color: rgba(29, 43, 76, 0.75);
 }
 
 table tr:nth-child(even) {
