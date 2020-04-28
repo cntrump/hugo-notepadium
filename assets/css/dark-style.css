@@ -4,8 +4,8 @@ body {
 }
 
 table thead {
-  color: rgba(0, 0, 0, .6);
-  background-color: #93969a;
+  color: rgba(0, 0, 0, .75);
+  background-color: rgba(175, 134, 72, .6);
 }
 
 table tr:nth-child(even) {
