@@ -50,15 +50,15 @@ pre {
 }
 
 a {
-  color: #1b95e0;
+  color: #2997ff;
 }
 
 .pagination ul li a {
-  color: #1b95e0;
+  color: #2997ff;
 }
 
 .pagination ul li a.active {
-  background-color: #1b95e0;
+  background-color: #2997ff;
 }
 
 .pagination ul li a:hover:not(.active) {

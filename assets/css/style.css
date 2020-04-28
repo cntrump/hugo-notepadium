@@ -152,7 +152,7 @@ table tr:nth-child(even) {
 }
 
 a {
-  color: #406599;
+  color: #06c;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -493,14 +493,14 @@ b {
 }
 
 .pagination ul li a {
-  color: #406599;
+  color: #06c;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 .pagination ul li a.active {
-  background-color: #406599;
+  background-color: #06c;
   color: #fff;
 }
 
