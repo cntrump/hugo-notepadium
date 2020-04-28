@@ -281,7 +281,6 @@ b {
 
 .nav.item {
   display: inline-block;
-  font-size: 15px;
   line-height: 1;
   padding: 4px 6px;
   margin: 5px 5px 5px 0;
@@ -301,7 +300,7 @@ b {
 }
 
 .date {
-  font-size: 13px;
+  font-size: .875em;
 }
 
 .langs {
@@ -339,8 +338,8 @@ b {
 }
 
 .note {
-  color: rgba(29, 43, 76, .85);
   display: block;
+  color: rgba(29, 43, 76, .85);
   text-decoration: none;
 }
 
@@ -350,16 +349,12 @@ b {
 
 .note.title,
 .site.name {
-  font-size: 16px;
+  font-size: 1.125em;
   font-weight: 600;
 }
 
 .note.date {
   color: rgba(29, 43, 76, .5);
-}
-
-.note.content {
-  font-size: 16px;
 }
 
 .mldr {
@@ -409,7 +404,7 @@ b {
 .tag,
 .category {
   display: inline-block;
-  font-size: 15px;
+  font-size: .875em;
   font-weight: 600;
   line-height: 1;
   margin: 5px 8px 5px 0;
