@@ -144,7 +144,7 @@ th {
 
 table thead {
   color: #fff;
-  background-color: rgba(80, 121, 183, .75);
+  background-color: rgba(80, 121, 183, .65);
 }
 
 table tr:nth-child(even) {
@@ -411,6 +411,7 @@ b {
 .category {
   display: inline-block;
   font-size: 15px;
+  font-weight: 700;
   line-height: 1;
   margin: 5px 8px 5px 0;
 }
@@ -421,14 +422,14 @@ b {
 }
 
 .tag {
-  color: rgba(29, 43, 76, .75);
+  color: rgba(29, 43, 76, .65);
 }
 
 .category {
   padding: 4px 6px;
   border-radius: 3px;
   color: #fff;
-  background-color: rgba(80, 121, 183, .75);
+  background-color: rgba(80, 121, 183, .65);
 }
 
 .article.labels,

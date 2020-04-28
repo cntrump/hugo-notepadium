@@ -4,8 +4,8 @@ body {
 }
 
 table thead {
-  color: rgba(0, 0, 0, .75);
-  background-color: rgba(175, 134, 72, .75);
+  color: rgba(20, 20, 20, .65);
+  background-color: rgba(175, 134, 72, .65);
 }
 
 table tr:nth-child(even) {
@@ -66,12 +66,12 @@ a {
 }
 
 .tag {
-  color: rgba(226, 212, 179, .75);
+  color: rgba(226, 212, 179, .65);
 }
 
 .category {
-  color: rgba(0, 0, 0, .75);
-  background-color: rgba(175, 134, 72, .75);
+  color: rgba(20, 20, 20, .65);
+  background-color: rgba(175, 134, 72, .65);
 }
 
 strong,
