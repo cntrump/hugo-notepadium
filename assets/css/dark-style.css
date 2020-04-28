@@ -35,7 +35,7 @@ mark,
 }
 
 .article.markdown-body {
-  background-image: linear-gradient(90deg, rgba(252, 200, 200, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(252, 200, 200, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
+  background-image: linear-gradient(90deg, rgba(200, 255, 255, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(200, 255, 255, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
 }
 
 code,
