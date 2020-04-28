@@ -66,12 +66,12 @@ a {
 }
 
 .tag {
-  color: #e2d4b3;
+  color: rgba(226, 212, 179, .75);
 }
 
 .category {
   color: rgba(0, 0, 0, .75);
-  background-color: #af8648;
+  background-color: rgba(175, 134, 72, .75);
 }
 
 strong,

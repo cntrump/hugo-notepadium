@@ -421,14 +421,14 @@ b {
 }
 
 .tag {
-  color: #1d2b4c;
+  color: rgba(29, 43, 76, .75);
 }
 
 .category {
   padding: 4px 6px;
   border-radius: 3px;
   color: #fff;
-  background-color: #5079b7;
+  background-color: rgba(80, 121, 183, .75);
 }
 
 .article.labels,
