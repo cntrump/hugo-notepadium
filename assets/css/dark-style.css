@@ -42,7 +42,7 @@ code,
 kbd,
 tt,
 samp {
-  color: #fc6a5d;
+  color: hsl(23, 100%, 62%);
 }
 
 pre {
