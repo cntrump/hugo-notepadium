@@ -11,8 +11,11 @@ table tr:nth-child(even) {
   background-color: rgba(51, 54, 58, .35);
 }
 
-mark,
 ::selection {
+  background-color: #e66e66;
+}
+
+mark {
   background-color: #515b70;
 }
 

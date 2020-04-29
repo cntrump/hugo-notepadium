@@ -77,8 +77,12 @@ q {
   margin: 0;
 }
 
-mark,
 ::selection {
+  color: #fff;
+  background-color: #e33e33;
+}
+
+mark {
   background-color: rgba(12, 242, 143, .2);
 }
 
