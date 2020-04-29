@@ -98,7 +98,7 @@ pre,
   border-color: rgba(199, 213, 246, .25);
 }
 
-.site.header,
+#header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
   border-bottom-color: rgba(199, 213, 246, .25);

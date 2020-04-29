@@ -200,7 +200,15 @@ b {
   padding: 10px 5px;
 }
 
-.base-body {
+#header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 64px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#content {
   display: block;
   margin: -1px auto;
   max-width: 780px;
@@ -209,12 +217,10 @@ b {
   overflow: hidden;
 }
 
-.site.header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-height: 64px;
+#footer {
+  font-size: .75em;
+  margin-top: 60px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .header.wrap {
@@ -262,7 +268,7 @@ b {
 .site.slogan {
   font-size: .875em;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .site.slogan .title {
@@ -274,14 +280,6 @@ b {
 .nav.item {
   display: inline-block;
   padding: 4px 6px;
-  margin: 5px 5px 5px 0;
-  border-radius: 20px;
-}
-
-.footer {
-  font-size: .75em;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 .footer-wrap {
@@ -456,8 +454,7 @@ b {
 
 .slogan,
 .date,
-.license,
-.footer {
+.license {
   color: #999;
 }
 
@@ -503,7 +500,6 @@ b {
 }
 
 @media (max-width: 500px) {
-
   .note.list .item,
   .article-container {
     border-radius: 0;
@@ -675,20 +671,26 @@ b {
   margin-bottom: 0;
 }
 
-.base-body {
+#header,
+#foooter {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#content {
   padding-left: 30px;
   padding-right: 30px;
 }
 
 @media (max-width: 414px) {
-  .base-body {
+  #content {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
 @media (max-width: 375px) {
-  .base-body {
+  #content {
     padding-left: 15px;
     padding-right: 15px;
   }
