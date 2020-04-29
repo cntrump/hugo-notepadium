@@ -1,10 +1,10 @@
 body {
-  color: rgba(226, 212, 179, .85);
+  color: rgb(216, 221, 226);
   background-color: #222831;
 }
 
 table thead {
-  color: rgba(226, 212, 179, .85);
+  color: rgba(199, 213, 246);
 }
 
 table tr:nth-child(even) {
@@ -19,25 +19,17 @@ mark {
   background-color: #515b70;
 }
 
-.note,
+.title,
 .site.name {
-  color: rgba(226, 212, 179, .85);
+  color: rgba(199, 213, 246);
 }
 
-.site.slogan .title,
-.note.date,
-.article.date,
-.footer {
-  color: rgba(226, 212, 179, .5);
-}
-
-.note.content,
-.article.markdown-body {
-  color: rgba(255, 255, 255, .85);
+.note.content {
+  color: rgb(216, 221, 226);
 }
 
 .article.markdown-body {
-  background-image: linear-gradient(90deg, rgba(200, 255, 255, .05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(200, 255, 255, .05) 3%, rgba(0, 0, 0, 0) 3%);
+  background-image: linear-gradient(90deg, rgba(250, 200, 200, .05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(250, 200, 200, .05) 3%, rgba(0, 0, 0, 0) 3%);
 }
 
 code,
@@ -64,16 +56,16 @@ a {
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(130, 170, 255, .5);
+  background-color: rgba(41, 151, 255, .5);
 }
 
 .tag {
-  color: rgba(226, 212, 179, .85);
+  color: rgba(199, 213, 246);
 }
 
 .category {
-  color: rgba(0, 0, 0, .85);
-  background-color: rgba(226, 212, 179, .85);
+  color: rgba(36, 41, 46);
+  background-color: rgba(199, 213, 246);
 }
 
 strong,
@@ -84,7 +76,7 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(226, 212, 179, .85);
+  color: rgba(199, 213, 246);
 }
 
 .note.list .item,
@@ -107,13 +99,13 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(226, 212, 179, .05);
+  border-color: rgba(199, 213, 246, .25);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(226, 212, 179, .15);
+  border-bottom-color: rgba(199, 213, 246, .25);
 }
 
 .article.markdown-body blockquote {
@@ -123,14 +115,14 @@ pre,
 
 .article.license {
   background-color: #323842;
-  border-color: rgba(226, 212, 179, .15);
+  border-color: rgba(199, 213, 246, .25);
 }
 
 .article.discussion {
-  border-top-color: rgba(226, 212, 179, .05);
-  border-bottom-color: rgba(226, 212, 179, .05);
+  border-top-color: rgba(199, 213, 246, .25);
+  border-bottom-color: rgba(199, 213, 246, .25);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(226, 212, 179, .05);
+  border-right-color: rgba(199, 213, 246, .25);
 }

@@ -15,7 +15,7 @@ html {
 
 body {
   display: block;
-  color: rgba(29, 43, 76, .85);
+  color: rgb(36, 41, 46);
   background-color: #f9f9fd;
 
   word-break: normal;
@@ -147,7 +147,7 @@ th {
 }
 
 table thead {
-  color: rgba(29, 43, 76, 0.85);
+  color: rgba(29, 43, 76);
 }
 
 table tr:nth-child(even) {
@@ -268,7 +268,6 @@ b {
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
-  color: rgba(29, 43, 76, .5);
   min-height: 22px;
 }
 
@@ -281,7 +280,6 @@ b {
 
 .footer {
   font-size: .75em;
-  color: rgba(29, 43, 76, .5);
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -329,9 +327,12 @@ b {
   text-decoration: none;
 }
 
+.title {
+  color: rgba(29, 43, 76, .85);
+}
+
 .note {
   display: block;
-  color: rgba(29, 43, 76, .85);
   text-decoration: none;
 }
 
@@ -345,10 +346,6 @@ b {
   font-weight: 600;
 }
 
-.note.date {
-  color: rgba(29, 43, 76, .5);
-}
-
 .mldr {
   opacity: .6;
 }
@@ -359,6 +356,10 @@ b {
 .note.imgs,
 .note.labels {
   margin: 5px 0;
+}
+
+.note.content {
+  color: rgb(36, 41, 46);
 }
 
 .note.imgs {
@@ -387,7 +388,6 @@ b {
 }
 
 .article.date {
-  color: rgba(29, 43, 76, .5);
   margin-top: 24px;
 }
 
@@ -452,6 +452,12 @@ b {
   margin: 30px 0;
   padding: 15px 20px;
   border: 2px dashed #ddd;
+}
+
+.slogan,
+.date,
+.license,
+.footer {
   color: #999;
 }
 
@@ -486,12 +492,7 @@ b {
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(0, 122, 255, .5);
-}
-
-.note.content,
-.article.markdown-body {
-  color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 102, 204, .5);
 }
 
 .note.list .item,
@@ -537,7 +538,7 @@ b {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(29, 43, 76, 0.85);
+  color: rgba(29, 43, 76);
   margin-top: 24px;
   margin-bottom: 20px;
 }
