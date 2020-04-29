@@ -211,11 +211,8 @@ b {
 
 #content {
   display: block;
-  margin: -1px auto;
-  max-width: 780px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  overflow: hidden;
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 #footer {
@@ -501,20 +498,6 @@ b {
   box-shadow: 0 12px 16px 0 rgba(29, 43, 76, .12);
 }
 
-@media (max-width: 500px) {
-  .note.list .item,
-  .article-container {
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .note.list,
-  .article-container {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-}
-
 .article-container {
   background-color: #fff;
 }
@@ -677,25 +660,6 @@ b {
 #foooter {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-#content {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-@media (max-width: 414px) {
-  #content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 375px) {
-  #content {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 /* mathjax & katex patch */
