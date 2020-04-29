@@ -531,6 +531,8 @@ b {
 }
 
 .article.markdown-body img {
+  border-radius: 3px;
+
   -ms-transform: scale(1);
   -ms-transition: transform 0.25s ease-in-out 0s;
 
