@@ -225,13 +225,7 @@ b {
 }
 
 .header.wrap {
-  text-align: justify;
-}
-
-.header.wrap::after {
-  display: inline-block;
-  content: "";
-  width: 100%;
+  overflow: hidden;
 }
 
 .header.wrap,
@@ -248,6 +242,14 @@ b {
 .header.right-side {
   display: inline-block;
   text-align: initial;
+}
+
+.header.left-side {
+  float: left;
+}
+
+.header.right-side {
+  float: right;
 }
 
 .site.home:hover {
