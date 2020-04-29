@@ -664,6 +664,19 @@ b {
   padding-right: 15px;
 }
 
+@media (max-width: 720px) {
+  .note.list .item,
+  .article-container {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .article.bottom {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 /* mathjax & katex patch */
 
 .article.markdown-body .katex-display {
