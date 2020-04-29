@@ -217,7 +217,7 @@ b {
 
 #footer {
   font-size: .75em;
-  margin-top: 60px;
+  margin-top: 48px;
   margin-bottom: 30px;
 }
 
@@ -416,7 +416,7 @@ b {
 .article.navigation,
 .article.discussion,
 .article.share {
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
 .article.discussion {
