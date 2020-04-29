@@ -205,7 +205,8 @@ b {
   padding-bottom: 20px;
   min-height: 64px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #e6e6e6;
+  
+  background-color: #fff;
 }
 
 #content {

@@ -75,6 +75,10 @@ b,
   color: rgba(199, 213, 246);
 }
 
+#header {
+  background-color: #393e46;
+}
+
 .note.list .item,
 .article-container {
   background-color: #393e46;
@@ -82,7 +86,6 @@ b,
 }
 
 @media (max-width: 500px) {
-
   .note.list .item,
   .article-container {
     box-shadow: none;
@@ -98,7 +101,6 @@ pre,
   border-color: rgba(199, 213, 246, .25);
 }
 
-#header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
   border-bottom-color: rgba(199, 213, 246, .25);
