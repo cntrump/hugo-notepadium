@@ -1,0 +1,45 @@
+<div class="row center-xs center-md center-lg" style="margin-top: 10px;">
+    <div class="col" style="width: 150px; height: 150px; border-radius: 50%;  overflow: hidden;">
+            {{- with .Params.profilepic -}} 
+                <img class="profilepic" style="width: 100%; height: 100%;" src="{{- . | safeURL -}}"  
+                alt>
+            {{ else }}
+                <img src="img/male.png"  style="width: 100%; height: 100%;" alt="">
+            {{- end -}}
+    </div>
+</div>
+<section class="bio article header" >
+    <p>
+        {{- .Content -}}
+    </p>
+    <div class="row around-xs around-md " style="width: 50%;  margin:auto; margin-top: 10px;">
+        {{- with .Params.github}}
+            <div class="col">
+                <a  onclick="redirect_social_media({{ $.Param "github" }})" style="color: inherit; cursor: pointer;"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        {{- end -}}
+
+        {{- with .Params.email -}}
+            <div class="col">
+                <a href="mailto:{{ $.Param "email" }}" style="color: inherit;"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
+            </div>
+        {{- end -}}
+        
+        {{- with .Params.twitter -}}
+            <div class="col">
+                <a  onclick=" redirect_social_media( {{ $.Param "twitter" }}) " style="color: inherit;"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
+            </div>
+        {{- end -}}
+        
+        {{- with .Params.linkedin -}}
+        <div class="col">
+            <a  onclick="redirect_social_media( {{ $.Param "linkedin" }})" style="color:inherit; cursor: pointer;" > <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+        </div>
+        {{- end -}}
+
+        {{- with .Params.stack_overflow -}}
+        <div class="col">
+            <a href="{{ $.Param "stack_overflow" }}" style="color:inherit; cursor: pointer;"><i class="fa fa-stack-overflow" aria-hidden="true"></i> </a>
+        </div>
+        {{- end -}}
+</section>
