@@ -5,15 +5,17 @@
 {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
 <ul class="note list">
     {{- range $paginator.Pages -}}
-    <li class="item"><a class="note" href="{{- replace .RelPermalink "#" "%23" -}}">
+      {{- $relURL := replace .RelPermalink "#" "%23" -}}
+      {{- $relURL = replace $relURL "." "%2e" -}}
+    <li class="item"><a class="note" href="{{- $relURL -}}">
             <p class="note title">{{- .Title | safeHTML -}}</p>
             {{- if .Date -}}
                 <p class="note date">{{- .Date.Format $dateFormat -}}</p>
             {{- end -}}
             {{- if .Summary -}}<p class="note content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span class="mldr">&mldr;</span>{{- end -}}</p>{{- end -}}
-            {{- $relURL := .RelPermalink -}}
+            
             {{- $imgs := .Params.imgs -}}
-            {{- with .Params.imgs -}}
+            {{- with $imgs -}}
                 <span class="note imgs">
                     {{- $imgCount := len $imgs -}}
                     {{- range $imgs -}}

@@ -8,7 +8,9 @@
         <a class="nav item" href="{{- `/tags/` | relLangURL -}}">{{- T "Tags" -}}</a>
     {{- end -}}
     {{- range $nav.custom -}}
-        {{- $url := (replace .url "#" "%23") | safeURL -}}
+        {{- $url := replace .url "#" "%23" -}}
+        {{- $url = replace $url "." "%2e" -}}
+        {{- $url = $url | safeURL -}}
         {{- if strings.HasPrefix $url "/" -}}{{- $url = $url | relLangURL -}}{{- end -}}
         <a class="nav item" href="{{- $url -}}" 
             {{- if strings.HasPrefix $url "http" -}}target="_blank"
