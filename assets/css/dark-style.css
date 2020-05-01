@@ -79,7 +79,18 @@ b,
   background-color: #393e46;
 }
 
-.note.list .item,
+.note.list .item {
+  background-color: #393e46;
+  box-shadow: inset -1px 0 0 0 rgba(14, 17, 21, .6),
+              inset 0 -1px 0 0 #0e1215, inset 1px 0 0 0 rgba(14, 17, 21, .6);
+}
+
+.note.list .item:hover {
+  box-shadow: 0 2px 6px 0 #0e1215,
+              inset -1px 0 0 0 rgba(14, 17, 21, .3), inset 0 -1px 0 0 #0e1215,
+              inset 1px 0 0 0 rgba(14, 17, 21, .2);
+}
+
 .article-container {
   background-color: #393e46;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);

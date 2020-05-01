@@ -308,11 +308,20 @@ b {
 
 .note.list .item {
   width: 100%;
-  margin: 5px 0 10px 0;
+  margin-top: 16px;
+  padding: 20px;
   background-color: #fff;
+  border-radius: 6px;
+  box-shadow: inset -1px 0 0 0 rgba(224, 227, 231, .6),
+              inset 0 -1px 0 0 #e0e4e7, inset 1px 0 0 0 rgba(224, 227, 231, .6);
 }
 
-.note.list .item>a:hover,
+.note.list .item:hover {
+  box-shadow: 0 2px 6px 0 #e0e4e7,
+              inset -1px 0 0 0 rgba(224, 227, 231, .3), inset 0 -1px 0 0 #e0e4e7,
+              inset 1px 0 0 0 rgba(224, 227, 231, .2);
+}
+
 .nav.item:hover {
   opacity: .5;
   text-decoration: none;
@@ -491,7 +500,6 @@ b {
   background-color: rgba(0, 102, 204, .5);
 }
 
-.note.list .item,
 .article-container {
   padding: 20px;
   border-radius: 6px;
