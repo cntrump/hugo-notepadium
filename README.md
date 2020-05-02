@@ -24,6 +24,8 @@ Features
 - Custom article cover supporting
 - Article share supporting (thanks [@jianyuanzh](https://github.com/jianyuanzh))
 - [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary) supporting
+- Builtin iconfont (3KB)
+- Display author profile at article bottom
 
 Preview the exampleSite:
 
@@ -362,6 +364,30 @@ Set `01.png` as cover, example:
 title = "..."
 cover = "01.png"
 +++
+```
+
+### Display author profile at article bottom
+
+Edit `config.toml`
+
+```toml
+[params.author]
+  enable = true
+  avatar = "/img/avatar.jpg"
+  name = "XXX"
+  bio = "XXX"  # support markdown syntax
+
+[params.author.twitter]
+  name = "XXX"  # https://twitter.com/XXX
+
+[params.author.github]
+  name = "XXX"  # https://github.com/XXX
+
+[params.author.docker]
+  name = "XXX"  # https://hub.docker.com/u/XXX
+
+[params.author.email]
+  name = "XXX@mail.com"  # mailto:XXX@mail.com
 ```
 
 ## Thanks

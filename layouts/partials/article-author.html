@@ -1,3 +1,29 @@
-<!--
-    for user-side override
--->
+{{- with site.Params.author -}}
+{{- if .enable -}}
+<section class="article author">
+  {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
+  
+  {{- with .name -}}<p class="name">{{- . | safeHTML -}}<p>{{- end -}}
+  
+  {{- with .bio -}}<div class="bio">{{- . | markdownify -}}</div>{{- end -}}
+
+  <div class="details">
+    {{- with .github -}}
+      <a class="item" href="https://github.com/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-github"></span></a>
+    {{- end -}}
+
+    {{- with .docker -}}
+      <a class="item" href="https://hub.docker.com/u/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-docker"></span></a>
+    {{- end -}}
+
+    {{- with .twitter -}}
+      <a class="item" href="https://twitter.com/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-twitter"></span></a>
+    {{- end -}}
+    
+    {{- with .email -}}
+      <a class="item" href="mailto:{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-email"></span></a>
+    {{- end -}}
+  </div>
+</section>
+{{- end -}}
+{{- end -}}

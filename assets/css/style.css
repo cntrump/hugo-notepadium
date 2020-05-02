@@ -422,6 +422,7 @@ b {
 
 .article.labels,
 .article.license,
+.article.author,
 .article.navigation,
 .article.discussion,
 .article.share {
@@ -447,8 +448,6 @@ b {
 
 .article.navigation .li {
   display: inline-block;
-  font-size: 85%;
-  opacity: .5;
   margin-right: 5px;
 }
 
@@ -458,6 +457,36 @@ b {
   margin: 30px 0;
   padding: 15px 20px;
   border: 2px dashed #ddd;
+}
+
+.article.author {
+  text-align: center;
+}
+
+.article.author>* {
+  margin-top: 16px;
+}
+
+.article.author .avatar {
+  display: block;
+  max-width: 260px;
+  margin: auto;
+  border-radius: 3px;
+}
+
+.article.author .name {
+  font-size: 1.125em;
+}
+
+.article.author .bio {
+  color: #999;
+}
+
+.article.author .details .item {
+  display: inline-block;
+  font-size: 1.375em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .slogan,

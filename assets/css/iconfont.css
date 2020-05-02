@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('/assets/fonts/iconfont.ttf?t=1588390362269') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pagenext:before {
+  content: "\e66b";
+}
+
+.icon-pagepreview:before {
+  content: "\e66c";
+}
+
+.icon-twitter:before {
+  content: "\e655";
+}
+
+.icon-github:before {
+  content: "\e732";
+}
+
+.icon-email:before {
+  content: "\e651";
+}
+
+.icon-article:before {
+  content: "\e67d";
+}
+
+.icon-docker:before {
+  content: "\e521";
+}
