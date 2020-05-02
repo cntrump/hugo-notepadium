@@ -469,7 +469,7 @@ b {
 
 .article.author .avatar {
   display: block;
-  max-width: 260px;
+  max-width: 130px;
   margin: auto;
   border-radius: 3px;
 }
