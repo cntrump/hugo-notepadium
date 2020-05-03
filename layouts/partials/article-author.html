@@ -8,7 +8,7 @@
 <section class="article author">
   {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
   
-  {{- with .name -}}<p class="name">{{- . | safeHTML -}}</p>{{- end -}}
+  {{- with .name -}}<p class="name">{{- . -}}</p>{{- end -}}
   
   {{- with .bio -}}<div class="bio">{{- . | markdownify -}}</div>{{- end -}}
 
