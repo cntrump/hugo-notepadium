@@ -376,18 +376,10 @@ Global settings, Edit `config.toml`
   avatar = "/img/avatar.jpg"
   name = "XXX"
   bio = "XXX"  # support markdown syntax
-
-[params.author.twitter]
-  name = "XXX"  # https://twitter.com/XXX
-
-[params.author.github]
-  name = "XXX"  # https://github.com/XXX
-
-[params.author.docker]
-  name = "XXX"  # https://hub.docker.com/u/XXX
-
-[params.author.email]
-  name = "XXX@mail.com"  # mailto:XXX@mail.com
+  twitter = "XXX"  # https://twitter.com/XXX
+  github = "XXX"  # https://github.com/XXX
+  docker = "XXX"  # https://hub.docker.com/u/XXX
+  email = "XXX@mail.com"  # mailto:XXX@mail.com
 ```
 
 Or page-by-page, on front matter:
@@ -399,15 +391,13 @@ date = 2020-05-01T22:20:36+08:00
 
 [author]
   enable = true
-  avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
-  name = "gohugo"
-  bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
-
-[author.twitter]
-  name = "GoHugoIO"  # https://twitter.com/XXX
-
-[author.github]
-  name = "gohugoio"  # https://github.com/XXX
+  avatar = "/img/avatar.jpg"
+  name = "XXX"
+  bio = "XXX"  # support markdown syntax
+  twitter = "XXX"  # https://twitter.com/XXX
+  github = "XXX"  # https://github.com/XXX
+  docker = "XXX"  # https://hub.docker.com/u/XXX
+  email = "XXX@mail.com"  # mailto:XXX@mail.com
 +++
 ```
 
