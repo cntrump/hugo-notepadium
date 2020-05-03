@@ -1,4 +1,9 @@
-{{- with site.Params.author -}}
+{{- $author := .Params.author -}}
+{{- if not $author -}}
+  {{- $author = site.Params.author -}}
+{{- end -}}
+
+{{- with $author -}}
 {{- if .enable -}}
 <section class="article author">
   {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
