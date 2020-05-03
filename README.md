@@ -368,7 +368,7 @@ cover = "01.png"
 
 ### Display author profile at article bottom
 
-Edit `config.toml`
+Global settings, Edit `config.toml`
 
 ```toml
 [params.author]
@@ -388,6 +388,27 @@ Edit `config.toml`
 
 [params.author.email]
   name = "XXX@mail.com"  # mailto:XXX@mail.com
+```
+
+Or page-by-page, on front matter:
+
+```toml
++++
+title = "..."
+date = 2020-05-01T22:20:36+08:00
+
+[author]
+  enable = true
+  avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
+  name = "gohugo"
+  bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
+
+[author.twitter]
+  name = "GoHugoIO"  # https://twitter.com/XXX
+
+[author.github]
+  name = "gohugoio"  # https://github.com/XXX
++++
 ```
 
 ## Thanks
