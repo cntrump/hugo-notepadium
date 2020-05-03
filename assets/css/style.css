@@ -107,10 +107,10 @@ pre {
   font-size: 85%;
   line-height: 1.45;
   margin: 0;
-  padding: 6px 16px;
+  padding: 16px;
   
-  border-radius: 6px;
-  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #f6f8fa;
 
   -o-tab-size: 4;
   -moz-tab-size: 4;
@@ -127,7 +127,7 @@ samp {
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  background-color: #f6f3f3;
+  background-color: #f9f6f6;
   border-radius: 3px;
 }
 

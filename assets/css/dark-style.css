@@ -19,6 +19,10 @@ mark {
   background-color: #515b70;
 }
 
+pre {
+  background-color: #393b3d;
+}
+
 .title,
 .site.name {
   color: rgba(199, 213, 246);
@@ -36,8 +40,8 @@ code,
 kbd,
 tt,
 samp {
-  color: #ff9696;
-  background-color: #363333;
+  color: #ff8282;
+  background-color: #3c3939;
 }
 
 a {
@@ -105,7 +109,6 @@ b,
 }
 
 /* border color */
-pre,
 .note.imgs .img,
 .article.markdown-body table td,
 .article.markdown-body table th,
