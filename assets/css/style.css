@@ -138,6 +138,8 @@ pre samp {
   display: inline;
   font-size: inherit;
   color: inherit;
+  padding: 0;
+  border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
 }
 
