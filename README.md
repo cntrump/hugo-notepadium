@@ -371,7 +371,7 @@ cover = "01.png"
 Global settings, Edit `config.toml`
 
 ```toml
-[params.author]
+[params.profile]
   enable = true
   avatar = "/img/avatar.jpg"
   name = "XXX"
@@ -389,7 +389,7 @@ Or page-by-page, on front matter:
 title = "..."
 date = 2020-05-01T22:20:36+08:00
 
-[author]
+[profile]
   enable = true
   avatar = "/img/avatar.jpg"
   name = "XXX"
