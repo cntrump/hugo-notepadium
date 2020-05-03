@@ -491,9 +491,13 @@ b {
 
 .article.author .details .item {
   display: inline-block;
-  font-size: 1.375em;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.article.author .details .item:hover {
+  text-decoration: none;
+  opacity: .5;
 }
 
 .slogan,

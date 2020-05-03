@@ -9,19 +9,19 @@
 
   <div class="details">
     {{- with .github -}}
-      <a class="item" href="https://github.com/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-github"></span></a>
+      <a class="item" href="https://github.com/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-github"></span>&nbsp;{{- .name -}}</a>
     {{- end -}}
 
     {{- with .docker -}}
-      <a class="item" href="https://hub.docker.com/u/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-docker"></span></a>
+      <a class="item" href="https://hub.docker.com/u/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-docker"></span>&nbsp;{{- .name -}}</a>
     {{- end -}}
 
     {{- with .twitter -}}
-      <a class="item" href="https://twitter.com/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-twitter"></span></a>
+      <a class="item" href="https://twitter.com/{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-twitter"></span>&nbsp;@{{- .name -}}</a>
     {{- end -}}
     
     {{- with .email -}}
-      <a class="item" href="mailto:{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-email"></span></a>
+      <a class="item" href="mailto:{{- .name | safeURL -}}" target="_blank"><span class="iconfont icon-email"></span>&nbsp;{{- .name -}}</a>
     {{- end -}}
   </div>
 </section>
