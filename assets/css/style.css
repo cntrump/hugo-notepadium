@@ -123,7 +123,12 @@ code,
 kbd,
 tt,
 samp {
-  color: #bf4800;
+  color: #b00;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: #f6f3f3;
+  border-radius: 3px;
 }
 
 pre code,

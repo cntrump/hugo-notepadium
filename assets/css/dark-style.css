@@ -36,7 +36,8 @@ code,
 kbd,
 tt,
 samp {
-  color: hsl(23, 100%, 62%);
+  color: #f88;
+  background-color: #262323;
 }
 
 a {
