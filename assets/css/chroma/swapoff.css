@@ -1,4 +1,4 @@
-/* Background */ .chroma { color: #e5e5e5; background-color: #000000 }
+/* Background */ pre, .chroma { color: #e5e5e5; background-color: #000000 }
 /* Error */ .chroma .err { color: #ff0000 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
