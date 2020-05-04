@@ -5,12 +5,12 @@
  */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #f8f8f2;
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	background-color: #2b2b2b;
 }
 
@@ -85,13 +85,13 @@ pre[class*="language-"] {
 
 @media screen and (-ms-high-contrast: active) {
 	code[class*="language-"],
-	pre[class*="language-"] {
+	pre {
 		color: windowText;
 		background-color: window;
 	}
 
 	:not(pre) > code[class*="language-"],
-	pre[class*="language-"] {
+	pre {
 		background-color: window;
 	}
 

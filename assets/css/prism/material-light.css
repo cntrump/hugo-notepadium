@@ -1,21 +1,21 @@
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #90a4ae;
 	background-color: #fafafa;
 }
 
 code[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection,
+pre::-moz-selection,
 code[class*="language-"] ::-moz-selection,
-pre[class*="language-"] ::-moz-selection {
+pre ::-moz-selection {
 	background-color: #cceae7; 
 	color: #263238;
 }
 
 code[class*="language-"]::selection,
-pre[class*="language-"]::selection,
+pre::selection,
 code[class*="language-"] ::selection,
-pre[class*="language-"] ::selection {
+pre ::selection {
 	background-color: #cceae7;
 	color: #263238;
 }

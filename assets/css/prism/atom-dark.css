@@ -5,13 +5,13 @@
  */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #c5c8c6;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	background-color: #1d1f21;
 }
 

@@ -4,11 +4,11 @@
 * license: MIT; http://moox.mit-license.org/
 */
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #76d9e6;
 }
 
-pre[class*="language-"],
+pre,
 :not(pre)>code[class*="language-"] {
 	background-color: #2a2a2a;
 }
@@ -92,7 +92,7 @@ code.language-markup .token.script .token.keyword {
 }
 
 /* Line highlight plugin */
-pre[class*="language-"][data-line] {
+pre[data-line] {
 	position: relative;
 	padding: 1em 0 1em 3em;
 }

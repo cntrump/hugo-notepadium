@@ -4,22 +4,22 @@
  */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #393A34;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+pre::-moz-selection, pre ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	background-color: #C1DEF1;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+pre::selection, pre ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	background-color: #C1DEF1;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre {
 	background-color: white;
 }
 

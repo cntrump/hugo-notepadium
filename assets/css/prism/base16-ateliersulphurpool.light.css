@@ -8,25 +8,25 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 
 */
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	background-color: #f5f7ff;
 	color: #5e6687;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+pre::-moz-selection, pre ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	background-color: #dfe2f1;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+pre::selection, pre ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
 	background-color: #dfe2f1;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;

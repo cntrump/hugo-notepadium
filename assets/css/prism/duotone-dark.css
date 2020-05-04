@@ -7,18 +7,18 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	background-color: #2a2734;
 	color: #9a86fd;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+pre::-moz-selection, pre ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	background-color: #6a51e6;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+pre::selection, pre ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
 	background-color: #6a51e6;
