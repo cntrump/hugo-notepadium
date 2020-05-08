@@ -21,7 +21,7 @@
                     {{- range $imgs -}}
                     {{- $imgurl := lower . -}}
                     {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
-                    {{- $imgurl = path.Join $relURL . -}}
+                    {{- $imgurl := path.Join $relURL . -}}
                     {{- end -}}
                     <img class="img" src="{{- $imgurl -}}" alt />
                     {{- end -}}
