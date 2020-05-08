@@ -1,0 +1,12 @@
+[edited]
+other = " • Modificato il %s"
+
+[readingTime]
+one = " • Tempo di lettura 1 minuto"
+other = " • Tempo di lettura {{ .Count }} minuti"
+
+[Categories]
+other = "Categorie"
+
+[Tags]
+other = "Tag"
