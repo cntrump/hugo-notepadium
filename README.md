@@ -401,6 +401,17 @@ date = 2020-05-01T22:20:36+08:00
 +++
 ```
 
+### Set robots meta tag
+
+In the front matter of any page, you can selectively enable the `robots` meta tag
+and define its content:
+
+```toml
+robots = "noindex,nofollow"
+```
+
+If `noindex` is included, that page will also be hidden in `sitemap.xml`.
+
 ## Thanks
 
 - [**Hugo**](https://gohugo.io/)
