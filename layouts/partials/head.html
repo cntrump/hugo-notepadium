@@ -20,4 +20,7 @@
 {{- partial "style.html" . -}}
 {{- partial "rss-feed.html" . -}}
 {{- partial "twitter-card.html" . -}}
+{{- if .Params.Robots -}}
+<meta name="robots" content="{{ .Params.robots }}" />
+{{- end -}}
 {{- partial "head-extra.html" . -}}
