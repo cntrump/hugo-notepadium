@@ -251,6 +251,8 @@ On user-side:
 
 `color.css` and `font.css` will be bundled into `core.css`.
 
+_Note:_ Processing SASS/SCSS requires Hugo Extended.
+
 ### Custom JS
 
 ```toml
