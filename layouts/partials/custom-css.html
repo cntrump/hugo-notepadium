@@ -1,6 +1,6 @@
 {{- $css := "" -}}
 {{- range site.Params.assets.css -}}
-  {{- $customCSS := resources.Get . -}}
+  {{- $customCSS := resources.Get . | resources.ExecuteAsTemplate "foo" . -}}
   {{- if $customCSS -}}
     {{- $scss := false -}}
     {{- $filePath := . | lower -}}
