@@ -234,22 +234,37 @@ You can relayout copyright like this:
 
 ### Custom CSS
 
+Specify additional CSS files in the site config:
+
 ```toml
 [params.assets]
 css = ["css/font.css", "css/color.css", "css/layout.scss"]  # *.css/scss/sass
 ```
 
-On user-side:
+Or in the page front matter:
+
+```Markdown
+---
+title: "My Page"
+assets:
+  css: ["css/more-color.css"]
+---
+
+My colorful page
+```
+
+Put the files here:
 
 ```
 .
 └── assets
     └── css
         ├── color.css
+        ├── more-color.css
         └── font.css
 ```
 
-`color.css` and `font.css` will be bundled into `core.css`.
+All referenced files -- here, `color.css` and `font.css` for all pages, and `more-color.css` for some pages -- will be bundled into `core.css`. Note that this will create a separate CSS file for each combination of included assets.
 
 ### Custom JS
 
