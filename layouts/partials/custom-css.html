@@ -1,5 +1,7 @@
 {{- $css := "" -}}
-{{- range site.Params.assets.css -}}
+{{- $cssPageAssets := .Params.assets.css | default (slice ) -}}
+{{- $cssAssets := union site.Params.assets.css $cssPageAssets -}}
+{{- range $cssAssets -}}
   {{- $customCSS := resources.Get . -}}
   {{- if $customCSS -}}
     {{- $scss := false -}}
