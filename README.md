@@ -73,6 +73,7 @@ dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
 logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
+internalIconfont = true  # load internal iconfont or from remote url
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
 
 [params.comments]
