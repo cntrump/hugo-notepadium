@@ -252,7 +252,7 @@ On user-side:
 
 `color.css` and `font.css` will be bundled into `core.css`.
 
-_Note:_ Processing SASS/SCSS requires Hugo Extended.
+_Note:_ You can use Hugo templating in these CSS assets.
 
 ### Custom JS
 

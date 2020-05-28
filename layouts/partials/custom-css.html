@@ -1,6 +1,8 @@
+{{- $context := . -}}
 {{- $css := "" -}}
 {{- range site.Params.assets.css -}}
   {{- $customCSS := resources.Get . -}}
+  {{- $customCSS := $customCSS | resources.ExecuteAsTemplate (printf "%s.custom.css" .) $context -}}
   {{- if $customCSS -}}
     {{- $scss := false -}}
     {{- $filePath := . | lower -}}
