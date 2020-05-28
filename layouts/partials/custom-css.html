@@ -1,7 +1,7 @@
 {{- $context := . -}}
 {{- $css := "" -}}
 {{- range site.Params.assets.css -}}
-  {{- $customCSS := resources.Get . | resources.ExecuteAsTemplate "foo" . -}}
+  {{- $customCSS := resources.Get . -}}
   {{- $customCSS := $customCSS | resources.ExecuteAsTemplate (printf "%s.custom.css" .) $context -}}
   {{- if $customCSS -}}
     {{- $scss := false -}}
