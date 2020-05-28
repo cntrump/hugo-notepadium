@@ -66,7 +66,7 @@
   {{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/tmp_core.css" -}}
 {{- end -}}
 
-{{- $iconfontCSS := (resources.Get "css/iconfont.css") -}}
+{{- $iconfontCSS := (resources.Get "css/iconfont.css") | resources.ExecuteAsTemplate "css/tmp_iconfont.css" . -}}
 {{- $coreCSS = slice $coreCSS $iconfontCSS | resources.Concat "css/tmp_iconfont_core.css" -}}
 
 {{- with partial "custom-css.html" . -}}
