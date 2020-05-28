@@ -4,7 +4,7 @@
   {{- if site.Params.internalIconfont -}}
     {{- $url = "/assets/font/iconfont.ttf?t=1588390362269" -}}
   {{- end -}}
-  src: url('{{- $url -}}') format('truetype');
+  src: url('{{- $url | relURL -}}') format('truetype');
 }
 
 .iconfont {
