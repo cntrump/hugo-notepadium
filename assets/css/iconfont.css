@@ -1,9 +1,6 @@
 @font-face {
   font-family: "iconfont";
-  {{- $url := "https://fontbuf.com/assets/fonts/iconfont.ttf?t=1588390362269" -}}
-  {{- if site.Params.internalIconfont -}}
-    {{- $url = "/assets/font/iconfont.ttf?t=1588390362269" -}}
-  {{- end -}}
+  {{- $url := "/assets/font/iconfont.ttf?t=1588390362269" -}}
   src: url('{{- $url | relURL -}}') format('truetype');
 }
 
