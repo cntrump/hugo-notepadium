@@ -1,10 +1,10 @@
 body {
-  color: rgb(216, 221, 226);
+  color: #d8dde2;
   background-color: #222831;
 }
 
 table thead {
-  color: rgba(199, 213, 246);
+  color: #c7d5f6;
 }
 
 table tr:nth-child(even) {
@@ -25,11 +25,11 @@ pre {
 
 .title,
 .site.name {
-  color: rgba(199, 213, 246);
+  color: #c7d5f6;
 }
 
 .note.content {
-  color: rgb(216, 221, 226);
+  color: #d8dde2;
 }
 
 .article.markdown-body {
@@ -61,11 +61,11 @@ a {
 }
 
 .tag {
-  color: rgba(199, 213, 246);
+  color: #c7d5f6;
 }
 
 .category {
-  color: rgba(36, 41, 46);
+  color: #24292e;
   background-color: rgba(199, 213, 246);
 }
 
@@ -77,7 +77,7 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(199, 213, 246);
+  color: #c7d5f6;
 }
 
 #header {
@@ -119,11 +119,6 @@ b,
 .article.markdown-body h1,
 .article.markdown-body h2 {
   border-bottom-color: rgba(199, 213, 246, .25);
-}
-
-.article.markdown-body blockquote {
-  border-left-color: #c9ced6;
-  background-color: #292e36;
 }
 
 .article.license {

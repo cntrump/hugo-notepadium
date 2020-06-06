@@ -15,7 +15,7 @@ html {
 
 body {
   display: block;
-  color: rgb(36, 41, 46);
+  color: #24292e;
   background-color: #f3f6f9;
 
   word-break: normal;
@@ -154,7 +154,7 @@ th {
 }
 
 table thead {
-  color: rgba(29, 43, 76);
+  color: #1d2b4c;
 }
 
 table tr:nth-child(even) {
@@ -372,7 +372,7 @@ b {
 }
 
 .note.content {
-  color: rgb(36, 41, 46);
+  color: #24292e;
 }
 
 .note.imgs {
@@ -562,7 +562,7 @@ b {
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(29, 43, 76);
+  color: #1d2b4c;
   margin-top: 24px;
   margin-bottom: 20px;
 }
@@ -609,10 +609,8 @@ b {
 }
 
 .article.markdown-body blockquote {
-  padding: .95em;
-  border-radius: 6px;
-  border-left: 6px solid #fee450;
-  background-color: #fbf8e8;
+  padding: .15em .85em;
+  border-left: 4px solid #a6aaa9;
 }
 
 .article.markdown-body q::before,
