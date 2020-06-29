@@ -605,12 +605,12 @@ b {
 
 .article.markdown-body blockquote,
 .article.markdown-body q {
-  opacity: .85;
+  color: #6a737d;
 }
 
 .article.markdown-body blockquote {
-  padding: .15em .85em;
-  border-left: 4px solid #a6aaa9;
+  padding: 0 1em;
+  border-left: .25em solid #dfe2e5;
 }
 
 .article.markdown-body q::before,

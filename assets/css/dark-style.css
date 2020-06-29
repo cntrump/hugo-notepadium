@@ -12,7 +12,7 @@ table tr:nth-child(even) {
 }
 
 ::selection {
-  background-color: #e66e66;
+  background-color: #733733;
 }
 
 mark {
@@ -78,6 +78,15 @@ b,
 .article.markdown-body h5,
 .article.markdown-body h6 {
   color: #c7d5f6;
+}
+
+.article.markdown-body q,
+.article.markdown-body blockquote {
+  color: #9aa3ad;
+}
+
+.article.markdown-body blockquote {
+  border-left-color: #595e66;
 }
 
 #header {
