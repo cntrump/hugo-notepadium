@@ -1,3 +1,14 @@
+.color-orange { color: #d28e5d;}
+.color-red { color: #dc3c3c;}
+.color-fusia { color: #b73999;}
+.color-purple { color: #8485ce;}
+.color-forest-green { color: #64878f;}
+.color-mint-green { color: #95c76f;}
+.color-green { color: #52bd58;}
+.color-blue-green { color: #00aba5;}
+.color-blue { color: #4670d8;}
+.bg-dark { background-color: #20222B; }
+
 :root {
   color-scheme: light dark;
   supported-color-schemes: light dark;

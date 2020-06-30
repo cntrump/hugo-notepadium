@@ -1,0 +1,12 @@
+{{- with site.Params.beian -}}
+{{- if or .gongan .icp -}}
+<p style="font-size: 12px;">
+    {{- if .gongan -}}
+        <span><img style="vertical-align: middle; width: 18px; height: 18px;" src="http://www.beian.gov.cn/portal/download?token=606c3245-c97f-4e3e-8aa6-388d226c35d0">{{- .gongan -}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    {{- end -}}
+    {{- if .icp -}}
+        <a href="http://www.beian.miit.gov.cn/" target="_blank">{{- .icp -}}</a>
+    {{- end -}}
+</p>
+{{- end -}}
+{{- end -}}

@@ -105,6 +105,11 @@ url = "/about"
 [[params.nav.custom]]
 title = "Hugo"
 url = "https://gohugo.io/"
+
+# for chinese
+[params.beian]
+  icp = ""
+  gongan = ""
 ```
 
 ### Logo and Slogan
