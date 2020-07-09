@@ -117,6 +117,10 @@ b,
   }
 }
 
+.article.author .bio {
+  color: #828997;
+}
+
 /* border color */
 .note.imgs .img,
 .article.markdown-body table td,
