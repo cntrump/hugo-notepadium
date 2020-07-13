@@ -89,8 +89,7 @@ q {
 }
 
 ::selection {
-  color: #fff;
-  background-color: #e33e33;
+  background-color: #fffed5;
 }
 
 mark {
