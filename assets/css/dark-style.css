@@ -12,7 +12,8 @@ table tr:nth-child(even) {
 }
 
 ::selection {
-  background-color: #733733;
+  color: #191919;
+  background-color: #c2c1a2;
 }
 
 mark {
