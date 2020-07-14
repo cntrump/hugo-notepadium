@@ -2,10 +2,12 @@
 {{- if or .gongan .icp -}}
 <p style="font-size: 12px;">
     {{- if .gongan -}}
-        <span><img style="vertical-align: middle; width: 18px; height: 18px;" src="http://www.beian.gov.cn/portal/download?token=606c3245-c97f-4e3e-8aa6-388d226c35d0">{{- .gongan -}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{- .code -}}" target="_blank" rel="noopener noreferrer"><img style="vertical-align: text-bottom; width: 15px; height: 15px;" src={{- "/assets/img/gonganlogo.png" | relURL -}}>{{- .gongan -}}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;    
     {{- end -}}
+    
     {{- if .icp -}}
-        <a href="http://www.beian.miit.gov.cn/" target="_blank">{{- .icp -}}</a>
+        <a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">{{- .icp -}}</a>
     {{- end -}}
 </p>
 {{- end -}}

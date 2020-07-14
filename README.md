@@ -108,8 +108,9 @@ url = "https://gohugo.io/"
 
 # for chinese
 [params.beian]
-  icp = ""
-  gongan = ""
+  icp = ""     # example: 粤ICP备20056596号-1
+  gongan = ""  # example: 粤公网安备 44030502005645号
+  code = ""    # example: 44030502005645
 ```
 
 ### Logo and Slogan
