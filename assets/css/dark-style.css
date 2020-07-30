@@ -24,6 +24,12 @@ pre {
   background-color: #393b3d;
 }
 
+.slogan,
+.date,
+.license {
+  color: #6ae;
+}
+
 .title,
 .site.name {
   color: #c7d5f6;
@@ -136,8 +142,8 @@ b,
 }
 
 .article.license {
-  background-color: #323842;
-  border-color: rgba(199, 213, 246, .25);
+  background-color: #345;
+  border-color: #456;
 }
 
 .article.discussion {

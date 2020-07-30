@@ -464,11 +464,11 @@ b {
 }
 
 .article.license {
-  background-color: #f9f9f9;
-  border-radius: 3px;
-  margin: 30px 0;
-  padding: 15px 20px;
-  border: 2px dashed #ddd;
+  background-color: #ecf4fb;
+  border-radius: 4px;
+  margin: 0.8em;
+  padding: 0.925em 1.4em;
+  border: 1px solid #b7d8ef;
 }
 
 .article.author {
@@ -508,7 +508,7 @@ b {
 .slogan,
 .date,
 .license {
-  color: #999;
+  color: rgba(23,81,153,.72);
 }
 
 .pagination {
