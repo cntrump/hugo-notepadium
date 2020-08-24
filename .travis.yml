@@ -5,6 +5,7 @@ before_install:
 install: skip
 branches:
   only:
+    - master
     - main
 script:
   - cd exampleSite && hugo --minify --themesDir ../..
