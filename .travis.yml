@@ -6,4 +6,4 @@ branches:
   only:
     - main
 script:
-  - cd exampleSite && hugo --minify --themesDir ../..
+  - cd exampleSite && hugo --themesDir ../..
