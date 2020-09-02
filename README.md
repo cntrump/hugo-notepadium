@@ -10,11 +10,11 @@ Features
 
 - Logo and slogan
 - Navigation items
-- Syntanx highlighting
+- Syntax highlighting
 - Math supporting
 - Comments powered by Disqus
 - CC License
-- Pagination with large number of pages supporting
+- Pagination with a large number of pages supporting
 - Light & Dark Mode
 - Google analytics supporting
 - Custom CSS/SASS/SCSS supporting
