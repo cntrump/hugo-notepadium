@@ -1,3 +1,11 @@
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25)
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
 body {
   color: #d8dde2;
   background-color: #222831;
