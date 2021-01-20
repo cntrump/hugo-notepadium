@@ -6,7 +6,7 @@
 /* Works on Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: var(--color-scrollbar-thumb) transparent
+  scrollbar-color: rgba(0, 0, 0, 0.175) transparent
 }
 
 /* Works on Chrome, Edge, and Safari */
