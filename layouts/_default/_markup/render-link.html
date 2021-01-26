@@ -2,4 +2,4 @@
 {{- $text := .Text | safeHTML -}}
 <a href="{{- $url -}}" 
 {{- with .Title -}}title="{{- . -}}"{{- end -}} 
-{{- if strings.HasPrefix $url "http" -}}target="_blank"{{- end -}}>{{- $text -}}</a>
+{{- if strings.HasPrefix $url "http" -}}target="_blank" rel="noopener noreferrer"{{- end -}}>{{- $text -}}</a>
