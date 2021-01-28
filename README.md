@@ -428,6 +428,7 @@ If `noindex` is included, that page will also be hidden in `sitemap.xml`.
 - [**MathJax**](https://www.mathjax.org/)
 - [**Katex**](https://katex.org/)
 - [**Disqus**](https://disqus.com/)
+- Built-in Japanese language [@kofuk](https://github.com/kofuk)
 
 ## Note
 
