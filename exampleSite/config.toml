@@ -16,6 +16,8 @@ enableRobotsTXT = true
 # Google Analytics
 #googleAnalytics = "UA-123-45"
 
+ignoreErrors = ["error-remote-getjson"]
+
 [markup.highlight]
 codeFences = true
 noClasses = false

@@ -35,11 +35,11 @@
 }
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI',
+  font-family: 'Avenir Next', Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI',
     Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande',
+    'Helvetica Neue', Helvetica , Verdana, 'Lucida Grande',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -59,6 +59,8 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
 
   padding-top: constant(safe-area-inset-top);
   padding-right: constant(safe-area-inset-right);
@@ -109,10 +111,6 @@ blockquote,
 q {
   quotes: none;
   margin: 0;
-}
-
-::selection {
-  background-color: #fffed5;
 }
 
 mark {
