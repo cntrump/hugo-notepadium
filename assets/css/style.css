@@ -35,10 +35,7 @@
 }
 
 html {
-  font-family: 'Avenir Next', Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI',
-    Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', Helvetica , Verdana, 'Lucida Grande',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: 'Avenir Next', Arial, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Verdana, Ubuntu, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -127,7 +124,7 @@ code,
 tt,
 kbd,
 samp {
-  font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+  font-family: Menlo, Consolas, Monaco, 'Courier New', 'Ubuntu Mono', monospace, serif;
   font-weight: 400;
   font-size: 85%;
 }
