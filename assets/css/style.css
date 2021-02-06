@@ -247,7 +247,7 @@ b {
 #content {
   display: block;
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 1012px;
 }
 
 #footer {
@@ -733,7 +733,7 @@ b {
   padding-right: 15px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1012px) {
   .note.list .item,
   .article-container {
     border-radius: 0;
