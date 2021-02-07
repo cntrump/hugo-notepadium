@@ -344,7 +344,7 @@ b {
 .note.list .item {
   width: 100%;
   margin-top: 16px;
-  padding: 20px;
+  padding: 32px;
   background-color: #fff;
   border-radius: 6px;
   box-shadow: inset -1px 0 0 0 rgba(224, 227, 231, .6),
@@ -564,7 +564,7 @@ b {
 }
 
 .article-container {
-  padding: 20px;
+  padding: 32px;
   border-radius: 6px;
   box-shadow: 0 12px 16px 0 rgba(29, 43, 76, .12);
 }
@@ -603,32 +603,6 @@ b {
 
 .article.markdown-body img {
   border-radius: 3px;
-
-  -ms-transform: scale(1);
-  -ms-transition: transform 0.25s ease-in-out 0s;
-
-  -moz-transform: scale(1);
-  -moz-transition: transform 0.25s ease-in-out 0s;
-
-  -webkit-transform: scale(1);
-  -webkit-transition: transform 0.25s ease-in-out 0s;
-
-  transform: scale(1);
-  transition: transform 0.25s ease-in-out 0s;
-}
-
-.article.markdown-body img:hover {
-  -ms-transform: scale(1.04);
-  -ms-transition: transform 0.25s ease-in-out 0s;
-
-  -moz-transform: scale(1.04);
-  -moz-transition: transform 0.25s ease-in-out 0s;
-
-  -webkit-transform: scale(1.04);
-  -webkit-transition: transform 0.25s ease-in-out 0s;
-
-  transform: scale(1.04);
-  transition: transform 0.25s ease-in-out 0s;
 }
 
 .article.markdown-body blockquote,
@@ -736,6 +710,7 @@ b {
 @media (max-width: 1012px) {
   .note.list .item,
   .article-container {
+    padding: 24px;
     border-radius: 0;
     box-shadow: none;
   }

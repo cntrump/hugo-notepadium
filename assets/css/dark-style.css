@@ -12,7 +12,7 @@
 
 body {
   color: #d8dde2;
-  background-color: #222831;
+  background-color: #0d1117;
 }
 
 table thead {
@@ -55,7 +55,7 @@ kbd,
 tt,
 samp {
   color: #e5c07b;
-  background-color: #40454d;
+  background-color: rgba(240, 246, 252, 0.05);
 }
 
 a {
@@ -104,11 +104,11 @@ b,
 }
 
 #header {
-  background-color: #393e46;
+  background-color: #21262d;
 }
 
 .note.list .item {
-  background-color: #393e46;
+  background-color: #21262d;
   box-shadow: inset -1px 0 0 0 rgba(14, 17, 21, .6),
               inset 0 -1px 0 0 #0e1215, inset 1px 0 0 0 rgba(14, 17, 21, .6);
 }
@@ -120,8 +120,8 @@ b,
 }
 
 .article-container {
-  background-color: #393e46;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
+  background-color: #21262d;
+  box-shadow: 0 12px 16px 0 rgba(1, 4, 9, .85);
 }
 
 @media (max-width: 500px) {
