@@ -35,7 +35,7 @@
 }
 
 html {
-  font-family: 'Avenir Next', Arial, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Verdana, Ubuntu, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'Microsoft YaHei', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
