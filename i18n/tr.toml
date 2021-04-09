@@ -1,0 +1,12 @@
+[edited]
+other = " • %s tarihinde düzenlendi"
+
+[readingTime]
+one = " • Bir dakika okuma süresi"
+other = " • {{ .Count }} dakika okuma süresi"
+
+[Categories]
+other = "Kategoriler"
+
+[Tags]
+other = "Etiketler"
