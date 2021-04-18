@@ -1,4 +1,4 @@
-{{- $fontDir := "/assets/font" | relURL -}}
+{{- $fontDir := "../assets/font" -}}
 
 @font-face {
   font-family: 'fontello';
