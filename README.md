@@ -74,6 +74,7 @@ logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+ipv6ready = true # Show IPV6Ready logo on footer.
 
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
