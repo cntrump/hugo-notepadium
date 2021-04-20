@@ -10,6 +10,9 @@ hasCJKLanguage = true
 
 enableRobotsTXT = true
 
+# Enable relativeURLs if your site hosted on GitHub.io
+#relativeURLs = true
+
 # Enable Disqus
 #disqusShortname = "XXX"
 
