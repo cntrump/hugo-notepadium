@@ -1,6 +1,8 @@
 {{- $context := . -}}
 {{- $css := "" -}}
-{{- range site.Params.assets.css -}}
+{{- $cssPageAssets := .Params.assets.css | default (slice ) -}}
+{{- $cssAssets := union site.Params.assets.css $cssPageAssets -}}
+{{- range $cssAssets -}}
   {{- $customCSS := resources.Get . -}}
   {{- $customCSS := $customCSS | resources.ExecuteAsTemplate (printf "%s.custom.css" .) $context -}}
   {{- if $customCSS -}}
