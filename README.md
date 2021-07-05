@@ -26,6 +26,7 @@ Features
 - [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary) supporting
 - Builtin iconfont (3KB)
 - Display author profile at article bottom
+- Support Bilibili shortcodes
 
 Preview the exampleSite:
 
@@ -181,6 +182,14 @@ Example
 ```
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+```
+
+### Bilibili shortcodes
+
+```html
+{{< bilibili BV1FV411d7u7>}}
+OR
+{{< bilibili id="BV1FV411d7u7">}}
 ```
 
 ### Comments
