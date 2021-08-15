@@ -692,7 +692,7 @@ b {
 .article.markdown-body> :first-child,
 .article.markdown-body li> :first-child,
 .article.markdown-body blockquote> :first-child {
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 .article.markdown-body> :last-child,
