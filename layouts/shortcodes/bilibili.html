@@ -1,0 +1,24 @@
+<div class="video_wrapper" style="position: relative; padding-bottom: 75%;">
+  {{- $bvid := "" -}}
+  {{if .Get "id"}}
+    {{$bvid = .Get "id"}}
+  {{else if .Get 0}}
+    {{$bvid = .Get 0}}
+    {{end}}
+  {{if $bvid}}
+    <iframe
+      style="position: absolute; top: 0; left: 0;"
+      width="100%"
+      height="100%"
+      src="//player.bilibili.com/player.html?aid=123456&bvid={{ $bvid }}&cid=123456&page=1"
+      scrolling="no"
+      border="0"
+      frameborder="no"
+      framespacing="0"
+      allowfullscreen="true"
+    >
+    </iframe>
+  {{else}}
+    <h6>请填写视频 url 中的视频 id，例如：BV1FV411d7u7</h6>
+  {{end}}
+</div>
