@@ -124,7 +124,7 @@ code,
 tt,
 kbd,
 samp {
-  font-family: Menlo, Consolas, Monaco, 'Courier New', 'Ubuntu Mono', monospace, serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Code", "JetBrains Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
   font-weight: 400;
   font-size: 85%;
 }
@@ -136,7 +136,7 @@ pre {
   line-height: 1.5em;
   margin: 0;
   padding: 16px;
-  
+
   border-radius: 3px;
   background-color: #f6f8fa;
 
@@ -240,7 +240,7 @@ b {
   padding-bottom: 20px;
   min-height: 64px;
   margin-bottom: 30px;
-  
+
   background-color: #fff;
 }
 
