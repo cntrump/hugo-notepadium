@@ -309,10 +309,10 @@ An example navigation-items.html:
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
 <div class="nav wrap"><nav class="nav">
     {{- if $nav.showCategories -}}
-        <a class="nav item" href="{{- `/categories/` | relLangURL -}}">Categories</a>
+        <a class="nav item" href="{{- `/categories/` | absLangURL -}}">Categories</a>
     {{- end -}}
     {{- if $nav.showTags -}}
-        <a class="nav item" href="{{- `/tags/` | relLangURL -}}">Tags</a>
+        <a class="nav item" href="{{- `/tags/` | absLangURL -}}">Tags</a>
     {{- end -}}
     {{- range $nav.custom -}}
         {{- $url := .url | safeURL -}}
@@ -328,7 +328,7 @@ An example navigation-items.html:
 Or, you can rewrite it:
 
 ```html
-<a class="nav item" href="{{- `/pages/about/` | relURL -}}"><span class="iconfont icon-aboutus"></span>&nbsp;About</a>
+<a class="nav item" href="{{- `/pages/about/` | absURL -}}"><span class="iconfont icon-aboutus"></span>&nbsp;About</a>
 <a class="nav item" href="https://github.com/cntrump" target="_blank"><span class="iconfont icon-logo_github"></span>&nbsp;Github</a>
 ```
 
