@@ -3,13 +3,13 @@
         {{- range .Params.categories -}}
             {{- $category := replace . "#" "%23" -}}
             {{- $category = replace $category "." "%2e" -}}
-            {{- $url := print "/categories/" ($category | urlize) "/" -}}
+            {{- $url := print "categories/" ($category | urlize) "/" -}}
             <a class="category" href="{{- $url | relLangURL -}}">{{- . -}}</a>
         {{- end -}}
         {{- range .Params.tags -}}
             {{- $tag := replace . "#" "%23" -}}
             {{- $tag = replace $tag "." "%2e" -}}
-            {{- $url := print "/tags/" ($tag | urlize) "/" -}}
+            {{- $url := print "tags/" ($tag | urlize) "/" -}}
             <a class="tag" href="{{- $url | relLangURL -}}">{{- . -}}</a>
         {{- end -}}
     </p>
