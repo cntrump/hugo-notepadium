@@ -1,20 +1,20 @@
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #eee;
 	background-color: #2f2f2f;
 }
 
 code[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection,
+pre::-moz-selection,
 code[class*="language-"] ::-moz-selection,
-pre[class*="language-"] ::-moz-selection {
+pre ::-moz-selection {
 	background-color: #363636;
 }
 
 code[class*="language-"]::selection,
-pre[class*="language-"]::selection,
+pre::selection,
 code[class*="language-"] ::selection,
-pre[class*="language-"] ::selection {
+pre ::selection {
 	background-color: #363636;
 }
 

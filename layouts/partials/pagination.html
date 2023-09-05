@@ -13,7 +13,7 @@
 <div class="pagination">
     <ul>
         {{- if gt $row 1 -}}
-            <li><a href="{{- $paginator.Prev.URL -}}" class="previous_page">&laquo;</a></li>
+            <li><a href="{{- $paginator.Prev.URL -}}"><span class="iconfont icon-pagepreview"></span></a></li>
         {{- end -}}
 
         {{- range $paginator.Pagers -}}
@@ -27,7 +27,7 @@
         {{- end -}}
 
         {{- if lt $row $rows -}}
-            <li><a href="{{- $paginator.Next.URL -}}" class="next_page">&raquo;</a></li>
+            <li><a href="{{- $paginator.Next.URL -}}"><span class="iconfont icon-pagenext"></span></a></li>
         {{- end -}}
     </ul>
 </div>

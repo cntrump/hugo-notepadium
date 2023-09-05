@@ -5,9 +5,6 @@ other = " • 更新于 %s"
 one = " • 预计阅读时间 1 分钟"
 other = " • 预计阅读时间 {{ .Count }} 分钟"
 
-[more]
-other = "全文"
-
 [Categories]
 other = "分类"
 

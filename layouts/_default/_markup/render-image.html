@@ -4,9 +4,8 @@
 {{- if $block -}}
 <span class="image-container"><span class="link">
 {{- end -}}
-<a target="_blank" rel="noopener noreferrer" 
-  href="{{- $url -}}"><img {{ if $block }}class="img"{{ end }} src="{{- $url -}}"
-        alt{{- with .Text -}}="{{- . -}}" {{- end -}} /></a>
+<img {{ if $block }}class="img"{{ end }} src="{{- $url -}}"
+        alt{{- with .Text -}}="{{- . -}}" {{- end -}} />
 {{- if $block -}}
 </span>
   {{- if ne .Title " " -}}

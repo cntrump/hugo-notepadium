@@ -11,7 +11,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.2;
 }
 
@@ -97,7 +97,7 @@ table {
 }
 
 th {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 tt,
@@ -134,12 +134,12 @@ h6 {
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 strong,
 b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 mark {

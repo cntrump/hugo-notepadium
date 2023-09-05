@@ -1,0 +1,12 @@
+[edited]
+other = " • %s に編集"
+
+[readingTime]
+one = " • 所要時間 1 分"
+other = " • 所要時間 {{ .Count }} 分"
+
+[Categories]
+other = "カテゴリー"
+
+[Tags]
+other = "タグ"

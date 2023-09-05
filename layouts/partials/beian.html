@@ -1,0 +1,14 @@
+{{- with site.Params.beian -}}
+{{- if or .gongan .icp -}}
+<p style="font-size: 12px;">
+    {{- if .gongan -}}
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{- .code -}}" target="_blank" rel="noopener noreferrer"><img style="vertical-align: text-bottom; width: 15px; height: 15px;" src={{- "/assets/img/gonganlogo.png" | relURL -}}>{{- .gongan -}}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;    
+    {{- end -}}
+    
+    {{- if .icp -}}
+        <a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">{{- .icp -}}</a>
+    {{- end -}}
+</p>
+{{- end -}}
+{{- end -}}

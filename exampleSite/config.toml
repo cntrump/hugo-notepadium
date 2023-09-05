@@ -10,11 +10,16 @@ hasCJKLanguage = true
 
 enableRobotsTXT = true
 
+# Enable relativeURLs if your site hosted on GitHub.io
+#relativeURLs = true
+
 # Enable Disqus
 #disqusShortname = "XXX"
 
 # Google Analytics
 #googleAnalytics = "UA-123-45"
+
+ignoreErrors = ["error-remote-getjson"]
 
 [markup.highlight]
 codeFences = true
@@ -30,6 +35,7 @@ readingTime = false  # show reading time after article date
 logo = ""
 slogan = "100% JavaScript-free"
 #license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
+ipv6ready = true
 
 [params.assets]
 css = ["css/fonts.css"]
@@ -48,8 +54,16 @@ use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
 
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "xcode"
-darkTheme = "xcode-dark"
+theme = "github"
+darkTheme = "dracula"
+
+[params.profile]
+  enable = true
+  avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
+  name = "gohugo"
+  bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
+  twitter = "GoHugoIO"  # https://twitter.com/XXX
+  github = "gohugoio"  # https://github.com/XXX
 
 [params.nav]
 showCategories = true       # /categories/

@@ -1,6 +1,6 @@
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/screenshot.png)
 
-# Notepadium ![](https://img.shields.io/badge/license-MIT-blue.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/2f389751-e070-437b-9dbd-3773bd57322e/deploy-status)](https://lvv.me)
+# Notepadium [![Build Status](https://travis-ci.org/cntrump/hugo-notepadium.svg?branch=master)](https://travis-ci.org/cntrump/hugo-notepadium)
 
 Request Hugo Version: [0.60.0+](https://github.com/gohugoio/hugo/releases/)
 
@@ -10,11 +10,11 @@ Features
 
 - Logo and slogan
 - Navigation items
-- Syntanx highlighting
+- Syntax highlighting
 - Math supporting
 - Comments powered by Disqus
 - CC License
-- Pagination with large number of pages supporting
+- Pagination with a large number of pages supporting
 - Light & Dark Mode
 - Google analytics supporting
 - Custom CSS/SASS/SCSS supporting
@@ -24,6 +24,9 @@ Features
 - Custom article cover supporting
 - Article share supporting (thanks [@jianyuanzh](https://github.com/jianyuanzh))
 - [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary) supporting
+- Builtin iconfont (3KB)
+- Display author profile at article bottom
+- Support Bilibili shortcodes
 
 Preview the exampleSite:
 
@@ -72,9 +75,13 @@ logo = ""  # if you have a logo png
 slogan = "100% JavaScript-free"
 license = ""  # CC License
 fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+ipv6ready = true # Show IPV6Ready logo on footer.
 
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.comments.utterances]
+repo = "MetalBlueberry/MetalBlueberry.github.io" # enable comments with [utteranc.es](https://utteranc.es/)
 
 [params.math]
 enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
@@ -103,6 +110,12 @@ url = "/about"
 [[params.nav.custom]]
 title = "Hugo"
 url = "https://gohugo.io/"
+
+# for chinese
+[params.beian]
+  icp = ""     # example: 粤ICP备20056596号-1
+  gongan = ""  # example: 粤公网安备 44030502005645号
+  code = ""    # example: 44030502005645
 ```
 
 ### Logo and Slogan
@@ -172,6 +185,14 @@ Example
 ```
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+```
+
+### Bilibili shortcodes
+
+```html
+{{< bilibili BV1FV411d7u7>}}
+OR
+{{< bilibili id="BV1FV411d7u7">}}
 ```
 
 ### Comments
@@ -248,6 +269,8 @@ On user-side:
 ```
 
 `color.css` and `font.css` will be bundled into `core.css`.
+
+_Note:_ You can use Hugo templating in these CSS assets.
 
 ### Custom JS
 
@@ -364,6 +387,52 @@ cover = "01.png"
 +++
 ```
 
+### Display author profile at article bottom
+
+Global settings, Edit `config.toml`
+
+```toml
+[params.profile]
+  enable = true
+  avatar = "/img/avatar.jpg"
+  name = "XXX"
+  bio = "XXX"  # support markdown syntax
+  twitter = "XXX"  # https://twitter.com/XXX
+  github = "XXX"  # https://github.com/XXX
+  docker = "XXX"  # https://hub.docker.com/u/XXX
+  email = "XXX@mail.com"  # mailto:XXX@mail.com
+```
+
+Or page-by-page, on front matter:
+
+```toml
++++
+title = "..."
+date = 2020-05-01T22:20:36+08:00
+
+[profile]
+  enable = true
+  avatar = "/img/avatar.jpg"
+  name = "XXX"
+  bio = "XXX"  # support markdown syntax
+  twitter = "XXX"  # https://twitter.com/XXX
+  github = "XXX"  # https://github.com/XXX
+  docker = "XXX"  # https://hub.docker.com/u/XXX
+  email = "XXX@mail.com"  # mailto:XXX@mail.com
++++
+```
+
+### Set robots meta tag
+
+In the front matter of any page, you can selectively enable the `robots` meta tag
+and define its content:
+
+```toml
+robots = "noindex,nofollow"
+```
+
+If `noindex` is included, that page will also be hidden in `sitemap.xml`.
+
 ## Thanks
 
 - [**Hugo**](https://gohugo.io/)
@@ -372,6 +441,7 @@ cover = "01.png"
 - [**MathJax**](https://www.mathjax.org/)
 - [**Katex**](https://katex.org/)
 - [**Disqus**](https://disqus.com/)
+- Built-in Japanese language [@kofuk](https://github.com/kofuk)
 
 ## Note
 

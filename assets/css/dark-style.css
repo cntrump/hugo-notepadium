@@ -1,73 +1,86 @@
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25)
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
 body {
-  color: rgba(220, 252, 242, .75);
-  background-color: #222831;
+  color: #d8dde2;
+  background-color: #0d1117;
 }
 
 table thead {
-  color: rgba(0, 0, 0, .6);
-  background-color: #93969a;
+  color: #c7d5f6;
 }
 
 table tr:nth-child(even) {
-  background-color: #33363a;
+  background-color: rgba(51, 54, 58, .35);
 }
 
-mark,
-::selection {
+mark {
   background-color: #515b70;
 }
 
-.note,
+pre {
+  background-color: #393b3d;
+}
+
+.slogan,
+.date,
+.license {
+  color: #6ae;
+}
+
+.title,
 .site.name {
-  color: rgba(220, 252, 242, 0.75);
+  color: #c7d5f6;
 }
 
-.site.slogan .title,
-.note.date,
-.article.date,
-.footer {
-  color: rgba(220, 252, 242, .5);
+.note.content {
+  color: #d8dde2;
 }
 
-.note.content,
 .article.markdown-body {
-  color: rgba(255, 255, 255, .65);
+  background-image: linear-gradient(90deg, rgba(250, 200, 200, .05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(250, 200, 200, .05) 3%, rgba(0, 0, 0, 0) 3%);
 }
 
 code,
 kbd,
 tt,
 samp {
-  color: #fc6a5d;
-}
-
-pre {
-  background-color: #1f1f24;
+  color: #e5c07b;
+  background-color: rgba(240, 246, 252, 0.05);
 }
 
 a {
-  color: #1b95e0;
+  color: #2997ff;
 }
 
 .pagination ul li a {
-  color: #1b95e0;
+  color: #2997ff;
 }
 
 .pagination ul li a.active {
-  background-color: #1b95e0;
+  background-color: #2997ff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(130, 170, 255, .5);
+  background-color: rgba(41, 151, 255, .5);
 }
 
 .tag {
-  color: #1b95e0;
+  color: #c7d5f6;
 }
 
 .category {
-  color: rgba(0, 0, 0, .6);
-  background-color: #93c6ea;
+  color: #24292e;
+  background-color: rgba(199, 213, 246);
 }
 
 strong,
@@ -78,54 +91,73 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(220, 252, 242, .75);
+  color: #c7d5f6;
 }
 
-.note.list .item,
+.article.markdown-body q,
+.article.markdown-body blockquote {
+  color: #9aa3ad;
+}
+
+.article.markdown-body blockquote {
+  border-left-color: #595e66;
+}
+
+#header {
+  background-color: #21262d;
+}
+
+.note.list .item {
+  background-color: #21262d;
+  box-shadow: inset -1px 0 0 0 rgba(14, 17, 21, .6),
+              inset 0 -1px 0 0 #0e1215, inset 1px 0 0 0 rgba(14, 17, 21, .6);
+}
+
+.note.list .item:hover {
+  box-shadow: 0 2px 6px 0 #0e1215,
+              inset -1px 0 0 0 rgba(14, 17, 21, .3), inset 0 -1px 0 0 #0e1215,
+              inset 1px 0 0 0 rgba(14, 17, 21, .2);
+}
+
 .article-container {
-  background-color: #393e46;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
+  background-color: #21262d;
+  box-shadow: 0 12px 16px 0 rgba(1, 4, 9, .85);
 }
 
 @media (max-width: 500px) {
-
   .note.list .item,
   .article-container {
     box-shadow: none;
   }
 }
 
+.article.author .bio {
+  color: #828997;
+}
+
 /* border color */
-pre,
 .note.imgs .img,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(220, 252, 242, .05);
+  border-color: rgba(199, 213, 246, .25);
 }
 
-.site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(220, 252, 242, .05);
-}
-
-.article.markdown-body blockquote {
-  border-left-color: #c9ced6;
-  background-color: #292e36;
+  border-bottom-color: rgba(199, 213, 246, .25);
 }
 
 .article.license {
-  background-color: #31373f;
-  color: rgba(220, 252, 242, .6);
-  border-color: rgba(220, 252, 242, .05);
+  background-color: #345;
+  border-color: #456;
 }
 
 .article.discussion {
-  border-top-color: rgba(220, 252, 242, .05);
-  border-bottom-color: rgba(220, 252, 242, .05);
+  border-top-color: rgba(199, 213, 246, .25);
+  border-bottom-color: rgba(199, 213, 246, .25);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(220, 252, 242, .05);
+  border-right-color: rgba(199, 213, 246, .25);
 }

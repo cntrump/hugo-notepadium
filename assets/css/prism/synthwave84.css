@@ -6,13 +6,13 @@
  */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	color: #f92aad;
 	text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
 }
 
 :not(pre)>code[class*="language-"],
-pre[class*="language-"] {
+pre {
 	background-color: transparent !important;
 	background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
 }

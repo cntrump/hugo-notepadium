@@ -1,101 +1,61 @@
+/* cyrillic-ext */
 @font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
+  font-family: 'Fira Code';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37MOzlojwUKaJO.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+/* cyrillic */
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Source Code Pro Italic'), local('SourceCodePro-It'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMc.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Source Code Pro Medium Italic'), local('SourceCodePro-MediumIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONMnt9co5mg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Source Code Pro SemiBold Italic'), local('SourceCodePro-SemiBoldIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONMLsNco5mg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Source Code Pro Bold Italic'), local('SourceCodePro-BoldIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONNvsdco5mg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Code Pro';
+  font-family: 'Fira Code';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7MOzlojwUKaJO.woff) format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+/* greek-ext */
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: 'Fira Code';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
-  src: local('Source Code Pro Medium'), local('SourceCodePro-Medium'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7PqtzsjDs-cv.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7MOzlojwUKaJO.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
 }
+/* greek */
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: 'Fira Code';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-display: swap;
-  src: local('Source Code Pro SemiBold'), local('SourceCodePro-SemiBold'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqt4s_Ds-cv.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7MOzlojwUKaJO.woff) format('woff');
+  unicode-range: U+0370-03FF;
 }
+/* latin-ext */
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: 'Fira Code';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-display: swap;
-  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cv.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77MOzlojwUKaJO.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
-html {
-  font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI', 
-                Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
-                'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande', 
-                sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+/* latin */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v9/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7MOzlojwUKQ.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 code,
-pre,
 tt,
 kbd,
 samp {
-  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
-  font-weight: 500;
+  font-family: 'Fira Code', Menlo, Consolas, 'Liberation Mono', monospace;
 }
