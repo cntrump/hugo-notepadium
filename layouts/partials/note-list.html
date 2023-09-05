@@ -7,8 +7,13 @@
     {{- range $paginator.Pages -}}
       {{- $relURL := replace .RelPermalink "#" "%23" -}}
       {{- $relURL = replace $relURL "." "%2e" -}}
-    <li class="item"><a class="note" href="{{- $relURL -}}">
-            <p class="note title">{{- .Title | safeHTML -}}</p>
+    <li class="item">
+        {{ if .Params.external }}
+        <a class="note" href="{{- .Params.externalUrl -}}">
+        {{else}}
+        <a class="note" href="{{- $relURL -}}">
+        {{end}}
+            <p class="note title">{{- .Title | safeHTML -}} {{ if .Params.external }} ⇗{{end}}</p>
             {{- if .Date -}}
                 <p class="note date">{{- .Date.Format $dateFormat -}}</p>
             {{- end -}}
