@@ -195,6 +195,14 @@ OR
 {{< bilibili id="BV1FV411d7u7">}}
 ```
 
+Sepecify the part of the video:
+
+```html
+{{< bilibili BV1Yx42197Xm 4 >}}
+OR
+{{< bilibili id="BV1Yx42197Xm" p="4" >}}
+```
+
 ### Comments
 
 Setup Disqus [shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname) in config.toml:
