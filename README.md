@@ -55,11 +55,11 @@ hasCJKLanguage = true
 
 enableRobotsTXT = true
 
-# Enable Disqus
-#disqusShortname = "XXX"
+# [services.disqus]
+# shortname = '' # Disqus shortname
 
-# Google Analytics
-#googleAnalytics = "UA-123-45"
+# [services.googleAnalytics]
+# id = '' # Google tag ID
 
 [markup.highlight]
 codeFences = true
@@ -209,7 +209,8 @@ Setup Disqus [shortname](https://help.disqus.com/en/articles/1717111-what-s-a-sh
 
 ```toml
 # disqus
-disqusShortname = "XXX"  # your short name
+[services.disqus]
+shortname = '' # your short name
 
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.

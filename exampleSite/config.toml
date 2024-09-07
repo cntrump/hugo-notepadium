@@ -13,11 +13,11 @@ enableRobotsTXT = true
 # Enable relativeURLs if your site hosted on GitHub.io
 #relativeURLs = true
 
-# Enable Disqus
-#disqusShortname = "XXX"
+# [services.disqus]
+# shortname = '' # Disqus shortname
 
-# Google Analytics
-#googleAnalytics = "UA-123-45"
+# [services.googleAnalytics]
+# id = '' # Google tag ID
 
 ignoreErrors = ["error-remote-getjson"]
 
