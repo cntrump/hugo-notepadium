@@ -2,7 +2,7 @@
 
 # Notepadium [![Build Status](https://travis-ci.org/cntrump/hugo-notepadium.svg?branch=master)](https://travis-ci.org/cntrump/hugo-notepadium)
 
-Request Hugo Version: [0.60.0+](https://github.com/gohugoio/hugo/releases/)
+Request Hugo Version: [0.124.0+](https://github.com/gohugoio/hugo/releases/)
 
 a fast and focus on reading [Hugo](https://gohugo.io) theme, **100% JavaScript-free**.
 
