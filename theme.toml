@@ -8,7 +8,7 @@ description = "a fast Hugo theme, 100% JavaScript-free."
 homepage = "https://lvv.me/"
 tags = ["blog"]
 features = ["MathJax", "HighlightJS", "PrismJS"]
-min_version = "0.60.0"
+min_version = "0.124.0"
 
 [author]
   name = "lvv"

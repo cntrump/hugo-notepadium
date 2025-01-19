@@ -4,8 +4,8 @@
 {{- if $block -}}
 <span class="image-container"><span class="link">
 {{- end -}}
-<img {{ if $block }}class="img"{{ end }} src="{{- $url -}}"
-        alt{{- with .Text -}}="{{- . -}}" {{- end -}} />
+<img loading="lazy" {{ if $block }}class="img"{{ end }} src="{{- $url -}}"
+        alt{{- with .Text -}}="{{- . -}}" {{- end -}}/>
 {{- if $block -}}
 </span>
   {{- if ne .Title " " -}}

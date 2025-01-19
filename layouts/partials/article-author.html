@@ -6,7 +6,7 @@
 {{- with $profile -}}
 {{- if eq .enable true -}}
 <section class="article author">
-  {{- with .avatar -}}<img class="avatar" src="{{- . | relURL -}}" alt>{{- end -}}
+  {{- with .avatar -}}<img loading="lazy" class="avatar" src="{{- . | relURL -}}"/>{{- end -}}
   
   {{- with .name -}}<p class="name">{{- . -}}</p>{{- end -}}
   

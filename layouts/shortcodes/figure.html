@@ -11,7 +11,7 @@
     {{- if not $target -}}{{- $target = "_blank" -}}{{- end -}}
     <span class="link" ><a href="{{ $link }}" 
         target="{{ $target }}"{{ with .Get "rel" }} 
-        rel="{{ . }}"{{ end }}><img class="img" src="{{ $src }}" 
+        rel="{{ . }}"{{ end }}><img loading="lazy" class="img" src="{{ $src }}" 
          {{- if or $alt $caption }} 
          alt="{{ with $alt }}{{ . }}{{ else }}{{ $caption | markdownify| plainify }}{{ end }}"
          {{- end -}}

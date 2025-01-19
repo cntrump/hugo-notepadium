@@ -2,7 +2,7 @@
     <div class="header wrap"><span class="header left-side"><a class="site home" href="{{- `` | relLangURL -}}">
                 {{- $logo := site.Params.logo -}}
                 {{- if $logo -}}
-                <img class="site logo" src="{{- $logo | relURL -}}" alt />
+                <img loading="lazy" class="site logo" src="{{- $logo | relURL -}}"/>
                 {{- end -}}
                 <span class="site name">{{- site.Title | safeHTML -}}</span></a></span>
         <span class="header right-side">
