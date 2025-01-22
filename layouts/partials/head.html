@@ -4,6 +4,19 @@
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
 
+{{- $description := "" -}}
+{{- if .IsPage -}}
+  {{- if .Params.Description -}}
+    {{- $description = .Params.Description -}}
+  {{- else -}}
+    {{- $description = .Summary -}}
+  {{- end -}}
+{{- else if .Params.Description -}}
+  {{- $description = .Params.Description -}}
+{{- else -}}
+  {{- $description = .Site.Params.Description -}}
+{{- end -}}
+<meta name="description" content="{{- $description -}}">
 {{- define "title" -}}
     {{- $title := .Title -}}
     {{- if and (ne $title "") (ne $title site.Title) -}}
