@@ -1,6 +1,7 @@
 :root {
   color-scheme: light dark;
   supported-color-schemes: light dark;
+  text-autospace: normal
 }
 
 /* Works on Firefox */
