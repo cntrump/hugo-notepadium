@@ -463,3 +463,6 @@ For Hugo 0.62.0+ users
 `![](01.png " ")` render as block `<img>`, like as `<figure>` tag style.
 
 ![](https://raw.githubusercontent.com/cntrump/hugo-notepadium/master/images/02.png)
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=cntrump/hugo-notepadium&type=Date)](https://star-history.com/#cntrump/hugo-notepadium&Date)
